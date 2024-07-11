@@ -1,0 +1,52 @@
+:root {
+
+  /* Typography */
+  --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  --font-weight: 400;
+
+  /* Global Settings */
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Default Values */
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+  background-color: var(--background-color);
+  color: var(--color);
+
+
+  /* ======= [ Colors ] ======= */
+  /* Base Colors */
+  --color: rgba(255, 255, 255, 0.87);
+  --background-color: #242424;
+
+  /* Light Theme */
+  --l-background-color: #ffffff;
+  --l-color: #213547;
+
+
+  /* Dark Theme */
+  --d-background-color: #242424;
+  --d-color: #ffffff;
+
+
+  /* ======= [ Colors ] ======= */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--l-color);
+    background-color: var(--l-background-color);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: var(--d-color);
+    background-color: var(--d-background-color);
+  }
+}
