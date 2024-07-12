@@ -1,0 +1,7 @@
+@import '../../index.scss';
+@import '../../global/mixins.scss';
+
+.about-section{
+  @include sectionLayout;
+  background-color: black;
+}

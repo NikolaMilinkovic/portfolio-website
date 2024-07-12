@@ -20,5 +20,6 @@ module.exports = {
       { allowConstantExport: true },
     ],
     'linebreak-style': 'off',
+    'no-unused-expressions': 'off',
   },
 }

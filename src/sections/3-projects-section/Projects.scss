@@ -1,0 +1,6 @@
+@import '../../index.scss';
+@import '../../global/mixins.scss';
+
+.projects-section{
+  @include sectionLayout;
+}
