@@ -2,6 +2,17 @@
 @import '../../global/mixins.scss';
 
 .home-section{
-  @include sectionLayout;
+  // @include sectionLayout;
+  // height: min-content;
+  // background-color: white;
+  // height: 100dvh;
+  overflow: hidden;
+  position: relative;
+  height: 100dvh;  
+  .test-image{
+    object-fit: cover;
+    height: 100dvh;
+    width: 100dvw;
+  }
 }
 

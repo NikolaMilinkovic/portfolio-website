@@ -8,12 +8,12 @@ function ProjectDisplay({ imageUrl }) {
     backgroundPosition: 'center',
     height: '100dvh',
     width: '100dvw',
-    // overflow: 'hidden',
+    overflow: 'hidden',
   };
 
   return (
     <article style={backgroundStyle} className="project-display-article">
-      <p>Here I am displaying my project</p>
+      {/* <p>Here I am displaying my project</p> */}
     </article>
   );
 }

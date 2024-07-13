@@ -3,5 +3,20 @@
 
 .about-section{
   @include sectionLayout;
-  background-color: black;
+  // background-color: #10190D;
+  background-color: #040707;
+  // background-color: #10190D;
+  // background: linear-gradient(to bottom, #10190D 20%, #000000 80%);
+  display: flex;
+
+  .test-about-me{
+    display: flex;
+    font-size: 75px;
+    color: white;
+    margin: 0px;    
+    margin-left: 4rem;
+    margin-top: auto;
+    margin-bottom: 6rem;
+    font-weight: 500;
+  }
 }

@@ -5,12 +5,14 @@
   z-index: 2;
   @include navButton;
 
+
   .scroll-link{
     display: flex;
     width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
+    font-size: var(--nav-font-size);
   }
 
   // UNDERLINE
@@ -31,7 +33,7 @@
   .btn-active{
     opacity: 1;
     background-color: var(--nav-hover-color);
-    width: 90%;
+    width: 60%;
   }
   .btn-inactive{
     opacity: 0;

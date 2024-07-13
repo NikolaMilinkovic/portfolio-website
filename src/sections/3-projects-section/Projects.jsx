@@ -8,8 +8,9 @@ function Projects() {
     <Element id="scroll-projects" name="scroll-projects">
 
       <section className="projects-section">
-        <ProjectDisplay />
-        {/* imageUrl="public/images/battleship-landing.png" */}
+        <ProjectDisplay
+          imageUrl="public/images/battleship-landing.png"
+        />
       </section>
       <section className="projects-section">
         <ProjectDisplay />

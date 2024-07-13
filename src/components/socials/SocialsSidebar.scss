@@ -3,9 +3,10 @@
 .socials-sidebar{
   position: absolute;
   left: 0;
-  top: 40%;
+  top: 30%;
   bottom: 50%;
-  background-color: var(--socials-sidebar-background);
+  // background-color: var(--socials-sidebar-background);
+  background-color: rgba(255,255,255,0.5);
   display: flex;
   flex-direction: column;
   width: 60px;

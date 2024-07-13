@@ -19,6 +19,8 @@
     cursor: pointer;
     position: relative;
     color: var(#{$color});
+    font-size: var(--nav-font-size);
+
 
     
     &:hover{
