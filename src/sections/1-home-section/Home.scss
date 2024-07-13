@@ -9,8 +9,9 @@
   overflow: hidden;
   position: relative;
   height: 100dvh;  
+  background: linear-gradient(to bottom, #ffffff 50%, #000000 50%);
   .test-image{
-    object-fit: cover;
+    object-fit: contain;
     height: 100dvh;
     width: 100dvw;
   }
