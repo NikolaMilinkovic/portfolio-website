@@ -8,7 +8,7 @@ function Home() {
     <Element id="scroll-home" name="scroll-home">
       <section className="home-section">
         <SocialsSidebar />
-        <img className="test-image" alt="parallax-vector" src="public/images/image-4.png" />
+        <img className="test-image" alt="parallax-vector" src="/images/image-4.png" />
       </section>
     </Element>
 
