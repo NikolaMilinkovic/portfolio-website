@@ -6,7 +6,6 @@
   background: linear-gradient(to bottom, #ffffff 70%, #040707 30%);
   background: transparent;
   .test-image{
-    object-fit: contain;
     height: 100dvh;
     width: 100dvw;
   }
@@ -66,11 +65,11 @@
       z-index: 0;
     }
     #img-4{
-      --para-speed: 11;
+      --para-speed: 14;
       z-index: 0;
     }
     #img-5{
-      --para-speed: 13;
+      --para-speed: 17;
       z-index: 0;
     }
 

@@ -41,7 +41,7 @@ function Navbar() {
         <NavButton
           to="scroll-about"
           duration={300}
-          offset={-80}
+          offset={100}
           name="About"
           text="About"
           updateNav={(e) => updateNav(e)}
