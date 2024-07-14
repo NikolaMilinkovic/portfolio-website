@@ -39,6 +39,8 @@ html{
       --nav-open-phone-menu-background: #ffffff;
       --nav-open-phone-menu-text-color: black;
       --nav-text-color: black;
+    // Landing Page
+      --hero-text-color: #000000;
     // Footer
       --footer-background: black;
       --footer-text-color: #ffffff;
@@ -52,9 +54,14 @@ html{
     --l-background-color: rgba(255,255,255,0.9);
     --l-color: #213547;
     // Navbar
+      --l-nav-background-color: #ffffff;
       --l-nav-hover-color: #B2CC85;
       --l-nav-open-phone-menu-background: #ffffff;
       --l-nav-text-color: black;
+
+    // Landing Section
+      --l-hero-text-color: #000000;
+
     // Footer
       --l-footer-background: black;
       --l-footer-text-color: #ffffff;
@@ -66,9 +73,14 @@ html{
     --d-background-color: #242424;
     --d-color: #ffffff;
     // Navbar
+      --d-nav-background-color: #242424;
       --d-nav-hover-color: #B2CC85;
       --d-nav-open-phone-menu-background: #242424;
       --d-nav-text-color: #ffffff;
+
+    // Landing Section
+      --d-hero-text-color: #ffffff;
+
     // Footer
       --d-footer-background: black;
       --d-footer-text-color: #ffffff;
@@ -85,9 +97,13 @@ html{
   :root {
     --color: var(--l-color);
     --background-color: var(--l-background-color);
+    --nav-background-color: var(--l-nav-background-color);
     --nav-hover-color: var(--l-nav-hover-color);
     --nav-open-phone-menu-background: var(--l-nav-open-phone-menu-background);
     --nav-text-color: black;
+
+    // Landing Page
+    --hero-text-color: var(--l-hero-text-color);
 
     // Footer
     --footer-background: var(--l-footer-background);
@@ -102,9 +118,13 @@ html{
   :root {
     --color: var(--d-color);
     --background-color: var(--d-background-color);
+    --nav-background-color: var(--d-nav-background-color);
     --nav-hover-color: var(--d-nav-hover-color);
     --nav-open-phone-menu-background: var(--d-nav-open-phone-menu-background);
     --nav-text-color: #ffffff;
+
+    // Landing Page
+    --hero-text-color: var(--d-hero-text-color);
 
     // Footer
     --footer-background: var(--d-footer-background);
