@@ -2,7 +2,79 @@
 @import '../../global/mixins.scss';
 
 footer{
-  height: 50dvh;
+  height: 40dvh;
+  min-height: 280px;
   background-color: var(--footer-background);
   color: var(--footer-text-color);
+  padding: 0px 10vw;
+
+  .upper-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80%;
+
+    .left{
+      display: flex;
+      align-items: center;
+      justify-content: start;
+
+      .footer-header{
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .footer-text{
+        font-size: 12px;
+      }
+    }
+
+    .right{
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 18px;
+
+      .footer-socials{
+        display: grid;
+        grid-template-columns: 1fr;
+
+        .footer-socials-icon-link{
+          .footer-icon{
+            height: 40px;
+            width: 40px;
+            padding: 4px;
+
+            &:hover{
+              border-radius: 5px;
+              background-color: rgba(178, 204, 133, 0.8);
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+  .lower-section{
+    border-top: 1px solid #323232;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 20%;
+
+    .copyright{
+      font-size: 14px;
+      > a {
+        text-decoration: none;
+        color: white;
+        text-decoration: underline;
+
+        &:hover{
+          color: rgb(178, 204, 133);
+        }
+      }
+    }
+  }
 }

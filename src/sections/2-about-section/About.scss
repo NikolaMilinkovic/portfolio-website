@@ -10,16 +10,98 @@
   background: #040707;
   // background-color: #10190D;
   // background: linear-gradient(to bottom, #10190D 20%, #000000 80%);
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  padding: 0px 5vw;
 
-  .test-about-me{
-    display: flex;
-    font-size: 75px;
-    color: white;
-    margin: 0px;    
-    margin-left: 4rem;
-    margin-top: auto;
-    margin-bottom: 6rem;
-    font-weight: 500;
+  .about-left{
+    position: relative;
+
+    .about-section-hero-text{
+      position: absolute;
+      font-size: 75px;
+      color: white;
+      margin: 0px;
+      font-weight: 600;
+      z-index: 2;
+      bottom: 7vw;
+      left: 7vw;
+    }
+    .border-div{
+      position: absolute;
+      left: 10vw;
+      bottom: 7vw;
+      border: 4px solid #B2CC85;
+      width: 30vw;
+      height: 60%;
+    }
+    .profile-image{
+      position: absolute;
+      left: 14vw;
+      bottom: 5vw;
+      width: 30vw;
+      height: 60%;
+    }
+  }
+  
+  .about-right{
+    position: relative;
+
+
+    &:hover > div {
+      background-color: red;
+      width: 100%;
+    }
+
+    .about-header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      right: 10vw;
+      left: 10%;
+      right: 10%;
+      top: 51%;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover > .header-underline{
+        animation: extend-line 0.3s ease forwards;
+      }
+      .header-underline{
+        display: flex;
+        margin-top: 3px;
+        height: 3px;
+        width: 15%;
+        background-color: #B2CC85;
+        animation: shrink-line 0.3s ease forwards;
+      }
+    }
+    .about-article{
+      position: absolute;
+      right: 10vw;
+      left: 10%;
+      right: 10%;
+      top: 60%;
+      color: white;
+      font-size: 14px;
+    }
+  }
+}
+
+@keyframes extend-line {
+  from{
+    width: 15%;
+  } to {
+    width: 60%;
+  }
+}
+@keyframes shrink-line {
+  from{
+    width: 60%;
+  } to {
+    width: 15%;
   }
 }

@@ -11,19 +11,11 @@
   }
 
   .para-container{
-    // display: flex;
-    // position: relative;
-    // overflow-y: auto;
-    // overflow-x: hidden;
-    // height: 100vh;
-    // width: 100dvw;
-
-    // perspective: 10px;
-
     min-height: 100dvh;
     display: grid;
     grid-template-areas: "stack";
     position: relative;
+    contain: paint;
 
     #landing-hero-text,
     #landing-sub-text{
@@ -41,15 +33,14 @@
       animation-timeline: scroll();
       z-index: -1 !important;
     }
+
     #landing-sub-text{
       font-size: clamp(16px, 3vw, 1.5rem) !important;
       top: 10dvw;
       top: clamp(110px, 10vw, 10vw);
-
       color: #B2CC85;
       --para-speed: 22;
     }
-
 
     #img-1{
       height: 101%;
@@ -87,10 +78,7 @@
       animation-timeline: scroll();
       z-index: -1 !important;
     }
-
-
   }
-
 }
 
 @keyframes parallax {
