@@ -1,28 +1,18 @@
 import './App.scss';
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-// Sections
-import Home from './sections/1-home-section/Home';
-import About from './sections/2-about-section/About';
-import Projects from './sections/3-projects-section/Projects';
-import Skills from './sections/4-skills-section/Skills';
-import Contact from './sections/5-contact-section/Contact';
-
-// Components
-import Navbar from './components/navbar/Navbar';
-import Footer from './components/footer/Footer';
+// Pages
+import LandingPage from './pages/landing-page/LandingPage';
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Home />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        {/* <Route path="/battleship" element={} /> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

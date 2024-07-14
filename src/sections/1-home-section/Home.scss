@@ -2,18 +2,105 @@
 @import '../../global/mixins.scss';
 
 .home-section{
-  // @include sectionLayout;
-  // height: min-content;
-  // background-color: white;
-  // height: 100dvh;
-  overflow: hidden;
-  position: relative;
-  height: 100dvh;  
-  background: linear-gradient(to bottom, #ffffff 50%, #000000 50%);
+  @include sectionLayout;
+  background: linear-gradient(to bottom, #ffffff 70%, #040707 30%);
+  background: transparent;
   .test-image{
     object-fit: contain;
     height: 100dvh;
     width: 100dvw;
+  }
+
+  .para-container{
+    // display: flex;
+    // position: relative;
+    // overflow-y: auto;
+    // overflow-x: hidden;
+    // height: 100vh;
+    // width: 100dvw;
+
+    // perspective: 10px;
+
+    min-height: 100dvh;
+    display: grid;
+    grid-template-areas: "stack";
+    position: relative;
+
+    #landing-hero-text,
+    #landing-sub-text{
+      display: flex;
+      // align-items: center;
+      justify-content: center;
+      font-size: 70px;
+      font-weight: bold;
+      position: absolute;
+      top: 10dvh;
+      left: 0;
+      z-index: -1;
+      --para-speed: 23;
+      color: black;
+      animation: zoom-out, parallax linear;
+      animation-timeline: scroll();
+      z-index: -1 !important;
+    }
+    #landing-sub-text{
+      font-size: 22px;
+      top: 26dvh;
+      color: #B2CC85;
+      --para-speed: 22;
+    }
+
+
+    #img-1{
+      height: 101%;
+      --para-speed: 4;
+      z-index: 0;
+    }
+    #img-2{
+      --para-speed: 5;
+      z-index: 0;
+    }
+    #img-3{
+      --para-speed: 9;
+      z-index: 0;
+    }
+    #img-4{
+      --para-speed: 11;
+      z-index: 0;
+    }
+    #img-5{
+      --para-speed: 13;
+      z-index: 0;
+    }
+
+    .para{
+      grid-area: stack;
+      width: 100%;
+      height: 100%;
+
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+
+      animation: parallax linear;
+      animation-timeline: scroll();
+      z-index: -1 !important;
+    }
+
+
+  }
+
+}
+
+@keyframes parallax {
+  to {
+    transform: translateY(calc(var(--para-speed) * 200px));
+  }
+}
+@keyframes zoom-out {
+  to {
+    transform: scale(0);
   }
 }
 

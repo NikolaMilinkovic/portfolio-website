@@ -3,8 +3,10 @@
 
 .about-section{
   @include sectionLayout;
+  z-index: 2 !important;
   // background-color: #10190D;
   background-color: #040707;
+  background: #040707;
   // background-color: #10190D;
   // background: linear-gradient(to bottom, #10190D 20%, #000000 80%);
   display: flex;

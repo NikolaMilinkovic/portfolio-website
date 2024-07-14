@@ -43,7 +43,8 @@ html{
       --footer-background: black;
       --footer-text-color: #ffffff;
     // Socials Sidebar
-      --socials-sidebar-background: #ffffff;
+      --socials-sidebar-background: rgba(255,255,255,0.5);
+      --socials-hover: #B2CC85;
 
 
   // Ovde postvljam pojedinacne boje u zavisnosti od aktivne teme
@@ -58,7 +59,8 @@ html{
       --l-footer-background: black;
       --l-footer-text-color: #ffffff;
     // Socials Sidebar
-      --l-socials-sidebar-background: #ffffff;
+      --l-socials-sidebar-background: rgba(255, 255, 255, 0.5);
+      --l-socials-hover: #B2CC85;
 
   /* Dark Theme */
     --d-background-color: #242424;
@@ -71,7 +73,8 @@ html{
       --d-footer-background: black;
       --d-footer-text-color: #ffffff;
     // Socials Sidebar
-      --d-socials-sidebar-background: black;
+      --d-socials-sidebar-background: rgba(255, 255, 255, 0.5);
+      --d-socials-hover: #B2CC85;
 
 
   /* ======= [ Colors ] ======= */
@@ -92,6 +95,7 @@ html{
 
     // Socials Sidebar
       --socials-sidebar-background: var(--l-socials-sidebar-background);
+      --socials-hover: var(--l-socials-hover);
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -108,6 +112,7 @@ html{
 
     // Socials Sidebar
       --socials-sidebar-background: var(--d-socials-sidebar-background);
+      --socials-hover: var(--d-socials-hover);
   }
 }
 
