@@ -24,7 +24,7 @@
       font-size: clamp(18px, 6vw, 3rem);
       font-weight: bold;
       position: absolute;
-      top: clamp(70px,5dvw, 5vw);
+      top: clamp(80px,5dvw, 5vw);
       left: 0;
       z-index: -1;
       --para-speed: 23;
@@ -36,8 +36,7 @@
 
     #landing-sub-text{
       font-size: clamp(16px, 3vw, 1.5rem) !important;
-      top: 10dvw;
-      top: clamp(110px, 10vw, 10vw);
+      top: clamp(150px,5dvw, 5vw);
       color: #B2CC85;
       --para-speed: 22;
     }
@@ -92,3 +91,15 @@
   }
 }
 
+@media screen and (max-width: 600px){
+  .home-section{
+    .para-container{
+      #landing-hero-text{
+        top: clamp(100px,5dvw, 5vw);
+      }
+      #landing-sub-text{
+        top: clamp(150px,5dvw, 5vw);
+      }
+    }
+  }
+}
