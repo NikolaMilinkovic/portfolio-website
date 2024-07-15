@@ -119,7 +119,7 @@ function Loading({ isLoading }) {
           />
         </clipPath>
       </svg>
-
+      <p className="loading-text">Loading..</p>
     </div>
 
   );

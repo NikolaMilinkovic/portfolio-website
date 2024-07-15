@@ -15,12 +15,20 @@
   transition: 0.5s ease;
   overflow: hidden;
 
-  svg {
+  svg,
+  .loading-text {
     display:block;
     position:absolute;
     left:50%;
     top:50%;
     transform:translate(-50%,-50%);
+  }
+
+  .loading-text{
+    top: 55%;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--loading-fill)
   }
   
   .tree {
