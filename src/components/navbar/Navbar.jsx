@@ -51,7 +51,7 @@ function Navbar() {
         <NavButton
           to="scroll-projects"
           duration={300}
-          offset={-80}
+          offset={-50}
           name="Projects"
           text="Projects"
           updateNav={(e) => updateNav(e)}
