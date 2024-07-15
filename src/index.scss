@@ -3,10 +3,11 @@
 
 html{
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 :root {
-
+  
   /* Typography */
   // --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   --font-family: "Poppins", sans-serif;
@@ -51,10 +52,10 @@ html{
 
   // Ovde postvljam pojedinacne boje u zavisnosti od aktivne teme
   /* Light Theme */
-    --l-background-color: rgba(255,255,255,0.9);
+    --l-background-color: #ffffff;
     --l-color: #213547;
     // Navbar
-      --l-nav-background-color: #ffffff;
+      --l-nav-background-color: rgba(255,255,255,0.9);
       --l-nav-hover-color: #B2CC85;
       --l-nav-open-phone-menu-background: #ffffff;
       --l-nav-text-color: black;
@@ -73,7 +74,7 @@ html{
     --d-background-color: #242424;
     --d-color: #ffffff;
     // Navbar
-      --d-nav-background-color: #242424;
+      --d-nav-background-color: rgba(36, 36, 36, 0.9);
       --d-nav-hover-color: #B2CC85;
       --d-nav-open-phone-menu-background: #242424;
       --d-nav-text-color: #ffffff;
