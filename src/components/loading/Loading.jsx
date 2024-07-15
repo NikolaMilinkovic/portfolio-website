@@ -32,7 +32,6 @@ function Loading({ isLoading }) {
         </g>
 
         <clipPath id="clip-path">
-
           <path
             className="circle-mask"
             fill="#E73E0D"
