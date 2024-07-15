@@ -23,7 +23,6 @@
 
   .navbar-options{
     display: flex;
-    // gap: 1rem;
     margin-left: auto;
     box-sizing: border-box
   }
@@ -77,7 +76,7 @@
       position: absolute;
       background-color: var(--nav-open-phone-menu-background);
       width: 100dvw;
-      height: 100vh;
+      height: 120vh;
       top: 0px;
       left: 0;
       z-index: 3;
@@ -87,6 +86,7 @@
       box-sizing: border-box;
       left: -101dvw;
       transition: left 0.4s ease;
+      padding-bottom: 20vh
     }
     .nav-btn{
       @include navButton;
