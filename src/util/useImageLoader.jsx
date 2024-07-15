@@ -10,8 +10,13 @@ const useImageLoader = () => {
         if (img.complete) {
           resolve();
         } else {
-          img.addEventListener('load', resolve);
-          img.addEventListener('error', resolve); // Resolve on error as well
+          const onLoadOrError = () => {
+            img.removeEventListener('load', onLoadOrError);
+            img.removeEventListener('error', onLoadOrError);
+            resolve();
+          };
+          img.addEventListener('load', onLoadOrError);
+          img.addEventListener('error', onLoadOrError);
         }
       }));
 
@@ -22,13 +27,17 @@ const useImageLoader = () => {
       });
     };
 
+    handleImageLoad(); // Call the handler immediately in case images are already loaded
+
     window.addEventListener('load', handleImageLoad);
 
     return () => {
       const images = document.querySelectorAll('img');
       images.forEach((img) => {
-        img.removeEventListener('load', handleImageLoad);
-        img.removeEventListener('error', handleImageLoad);
+        const onLoadOrError = () => {
+          img.removeEventListener('load', onLoadOrError);
+          img.removeEventListener('error', onLoadOrError);
+        };
       });
       window.removeEventListener('load', handleImageLoad);
     };
