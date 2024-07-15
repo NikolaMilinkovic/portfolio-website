@@ -27,6 +27,8 @@
       z-index: 2;
       bottom: 7vw;
       left: 7vw;
+
+      transition: 0.8s ease;
     }
     .border-div{
       position: absolute;
@@ -42,6 +44,8 @@
       bottom: 5vw;
       width: 30vw;
       height: 60%;
+
+      transition: 0.8s ease;
     }
   }
   
@@ -67,6 +71,8 @@
       text-align: center;
       cursor: pointer;
 
+      transition: 0.8s ease;
+
       &:hover > .header-underline{
         animation: extend-line 0.3s ease forwards;
       }
@@ -77,6 +83,8 @@
         width: 15%;
         background-color: #B2CC85;
         animation: shrink-line 0.3s ease forwards;
+
+        transition: 0.8s ease;
       }
     }
     .about-article{
@@ -87,6 +95,8 @@
       top: 60%;
       color: white;
       font-size: 14px;
+
+      transition: 0.8s ease;
     }
   }
 }
@@ -104,4 +114,21 @@
   } to {
     width: 15%;
   }
+}
+
+.show-element-left{
+  opacity: 1;
+  transform: translateX(0px);
+}
+.hide-element-left{
+  opacity: 0;
+  transform: translateX(-100px);
+}
+.show-element-right{
+  opacity: 1;
+  transform: translateX(0px);
+}
+.hide-element-right{
+  opacity: 0;
+  transform: translateX(+100px);
 }

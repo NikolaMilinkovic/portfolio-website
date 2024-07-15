@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import { Element } from 'react-scroll';
 import './Home.scss';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
