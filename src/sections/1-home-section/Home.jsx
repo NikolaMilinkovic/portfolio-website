@@ -11,11 +11,14 @@ function Home() {
         <SocialsSidebar />
 
         <div className="para-container">
-          <p id="landing-hero-text" className="para">Hi. I am Nick.</p>
-          <p id="landing-sub-text" className="para">
-            A&nbsp;
-            <span className="header-span">FullStack Web Developer</span>
-          </p>
+          <div className="hero-wrapper para">
+            <p id="landing-hero-text" className="para">Hi. I am Nick.</p>
+            <p id="landing-sub-text" className="para">
+              A&nbsp;
+              <span className="header-span">FullStack Web Developer</span>
+            </p>
+          </div>
+
           <img id="img-5" className="para" alt="parallax-vector" src="/images/5.png" />
           <img id="img-4" className="para" alt="parallax-vector" src="/images/4.png" />
           <img id="img-3" className="para" alt="parallax-vector" src="/images/3.png" />
