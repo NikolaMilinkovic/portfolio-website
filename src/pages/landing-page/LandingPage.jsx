@@ -20,6 +20,7 @@ function LandingPage() {
         isLoading={loading}
       />
       <Navbar />
+      {/* HOME IS CAUSING SIDE ISSUE */}
       <Home />
       <About />
       <Projects />
