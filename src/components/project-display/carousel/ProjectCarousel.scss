@@ -70,3 +70,18 @@
 .index-2{
   transform: translateX(-200%);
 }
+
+@media screen and (max-width: 800px){
+  .project-carousel{
+    .image-wrapper{
+      height: auto;
+      .image-window{
+        .carousel-img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
