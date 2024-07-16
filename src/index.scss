@@ -117,27 +117,27 @@ html{
       --socials-hover: var(--l-socials-hover);
   }
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color: var(--d-color);
-    --background-color: var(--d-background-color);
-    --nav-background-color: var(--d-nav-background-color);
-    --nav-hover-color: var(--d-nav-hover-color);
-    --nav-open-phone-menu-background: var(--d-nav-open-phone-menu-background);
-    --nav-text-color: #ffffff;
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --color: var(--d-color);
+//     --background-color: var(--d-background-color);
+//     --nav-background-color: var(--d-nav-background-color);
+//     --nav-hover-color: var(--d-nav-hover-color);
+//     --nav-open-phone-menu-background: var(--d-nav-open-phone-menu-background);
+//     --nav-text-color: #ffffff;
 
-    // Landing Page
-    --hero-text-color: var(--d-hero-text-color);
+//     // Landing Page
+//     --hero-text-color: var(--d-hero-text-color);
 
-    // Footer
-    --footer-background: var(--d-footer-background);
-    --footer-text-color: var(--d-footer-text-color);
+//     // Footer
+//     --footer-background: var(--d-footer-background);
+//     --footer-text-color: var(--d-footer-text-color);
 
-    // Socials Sidebar
-      --socials-sidebar-background: var(--d-socials-sidebar-background);
-      --socials-hover: var(--d-socials-hover);
-  }
-}
+//     // Socials Sidebar
+//       --socials-sidebar-background: var(--d-socials-sidebar-background);
+//       --socials-hover: var(--d-socials-hover);
+//   }
+// }
 
 
 
