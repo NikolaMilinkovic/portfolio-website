@@ -106,6 +106,32 @@
 @media screen and (min-width: 600px) and (max-width: 800px){
   .home-section{
     .para-container{
+      #img-1{
+        height: 101%;
+        width: 100dvw;
+        --para-speed: 4;
+        z-index: 0;
+      }
+      #img-2{
+        width: 100dvw;
+        --para-speed: 5;
+        z-index: 0;
+      }
+      #img-3{
+        width: 100dvw;
+        --para-speed: 9;
+        z-index: 0;
+      }
+      #img-4{
+        width: 100dvw;
+        --para-speed: 14;
+        z-index: 0;
+      }
+      #img-5{
+        width: 100dvw;
+        --para-speed: 17;
+        z-index: 0;
+      }
       .hero-wrapper{
         #landing-hero-text{
           // top: clamp(100px,5dvw, 5vw);
@@ -122,6 +148,32 @@
 @media screen and (max-width: 600px){
   .home-section{
     .para-container{
+      #img-1{
+        height: 101%;
+        width: 100dvw;
+        --para-speed: 4;
+        z-index: 0;
+      }
+      #img-2{
+        width: 100dvw;
+        --para-speed: 5;
+        z-index: 0;
+      }
+      #img-3{
+        width: 100dvw;
+        --para-speed: 9;
+        z-index: 0;
+      }
+      #img-4{
+        width: 100dvw;
+        --para-speed: 14;
+        z-index: 0;
+      }
+      #img-5{
+        width: 100dvw;
+        --para-speed: 17;
+        z-index: 0;
+      }
       .hero-wrapper{
         #landing-hero-text{
           // top: clamp(100px,5dvw, 5vw);
