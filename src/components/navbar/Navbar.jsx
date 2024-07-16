@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import CV from '/public/files/CV.pdf';
+import CV from '/files/CV.pdf';
 import NavButton from './nav-button/NavButton';
 import useWindowDimensions from '../../util/windowDimentions';
 import './Navbar.scss';
@@ -51,7 +51,7 @@ function Navbar() {
         <NavButton
           to="scroll-projects"
           duration={300}
-          offset={-50}
+          offset={0}
           name="Projects"
           text="Projects"
           updateNav={(e) => updateNav(e)}

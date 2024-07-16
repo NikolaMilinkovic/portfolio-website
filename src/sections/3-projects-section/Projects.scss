@@ -1,6 +1,35 @@
 @import '../../index.scss';
 @import '../../global/mixins.scss';
 
-.projects-section{
+.projects-section-1,
+.projects-section-2,
+.projects-section-3{
   @include sectionLayout;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  // grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  gap: 5vw;
+}
+
+.projects-section-1{
+  background-color: #ffffff;
+  .test{
+    display: flex;
+    background-color: cyan;
+    height: 60vh;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.projects-section-2{
+  background-color: var(--background-custom-black);
+}
+.projects-section-3{
+  background-color: #ffffff;
 }

@@ -20,7 +20,7 @@
     position: relative;
     color: var(#{$color});
     font-size: var(--nav-font-size);
-    overflow-x: hidden;
+    // overflow-x: hidden;
     
     &:hover{
       color: var(#{$hover-color});
@@ -33,6 +33,4 @@
 @mixin sectionLayout(){
   min-height: 100vh;
   box-sizing: border-box;
-  // overflow: hidden;
-  // padding-top: 80px;
 }
