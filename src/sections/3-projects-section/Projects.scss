@@ -33,3 +33,13 @@
 .projects-section-3{
   background-color: #ffffff;
 }
+
+@media screen and (max-width: 800px){
+  .projects-section-1,
+.projects-section-2,
+.projects-section-3{
+  @include sectionLayout;
+    grid-template-columns: 1fr;
+    padding: 5vh;
+  }
+}
