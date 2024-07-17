@@ -1,4 +1,8 @@
 {
   "name": "Battleship",
-  "images": ["/images/battleship.png", "/images/mc-schematic-manager.png", "/images/cli-data-structures.png"]
+  "images": ["/images/battleship/battleship.png", "/images/battleship/battleship-1.png", "/images/battleship/battleship-2.png", "/images/battleship/battleship-3.png"],
+  "landingText": "Challenging Battleship game with smart AI opponent, storyline, randomly generated fields and much more!",
+  "demoLink": "https://nikolamilinkovic.github.io/battleship/",
+  "gitLink": "https://github.com/NikolaMilinkovic/battleship",
+  "usedTech": ["JavaScript", "HTML", "CSS"]
 }

@@ -1,0 +1,21 @@
+@import '../../../../index.scss';
+
+.link{
+  
+  .button{
+    background-color: transparent;
+    color: black;
+    border: 1px solid rgba(0,0,0,0.7);
+    border-radius: 3px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #ffffff;
+
+    &:hover{
+      background-color: #9cca4d !important;
+    }
+    &:active{
+      transform: scale(0.95);
+    }
+  }
+}

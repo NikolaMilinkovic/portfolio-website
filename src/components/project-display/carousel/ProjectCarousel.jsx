@@ -1,56 +1,42 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable max-len */
-import React, { useEffect, useState, useRef } from 'react';
-import { v4 as uuid } from 'uuid';
+import React, { useEffect, useState } from 'react';
 import './ProjectCarousel.scss';
 
-function ProjectCarousel({ filePath }) {
+function ProjectCarousel({ images }) {
   const [data, setData] = useState(null);
-  const [previousIndex, setPreviousIndex] = useState(2);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [nextIndex, setNextIndex] = useState(1);
-  const windowRef = useRef(null);
 
   useEffect(() => {
-    async function getData() {
-      const response = await fetch(filePath);
-      const projectData = await response.json();
-      setData(projectData);
-    }
-    getData();
-  }, [filePath]);
+    console.log('Data is:');
+    console.log(data);
+  }, [data]);
 
   useEffect(() => {
-    console.log(`PreviousIndex: ${previousIndex} ; CurrentIndex: ${currentIndex} ; NextIndex: ${nextIndex} ;`);
-  }, [previousIndex, currentIndex, nextIndex]);
+    setData(images);
+  }, [images]);
 
+  // Arrow methods
   function handleNext() {
-    console.log('Calling next');
-    if (data && data.images) {
-      const updateMethod = (prevState) => (prevState + 1) % data.images.length;
-      setPreviousIndex(updateMethod);
+    if (data) {
+      const updateMethod = (prevState) => (prevState + 1) % data.length;
       setCurrentIndex(updateMethod);
-      setNextIndex(updateMethod);
     }
   }
-
   function handlePrevious() {
-    console.log('Calling previous');
-    if (data && data.images) {
-      const updateMethod = (prevState) => (prevState === 0 ? data.images.length - 1 : prevState - 1);
-      setPreviousIndex(updateMethod);
+    if (data) {
+      const updateMethod = (prevState) => (prevState === 0 ? data.length - 1 : prevState - 1);
       setCurrentIndex(updateMethod);
-      setNextIndex(updateMethod);
     }
   }
 
   return (
     <section className="project-carousel">
       <div className="image-wrapper">
-        <div className={`image-window index-${currentIndex}`}>
+        <div className="image-window" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
 
-          {data?.images && data.images.map((image, index) => (
+          {data && data.map((image, index) => (
             <img
               key={index}
               className="carousel-img"

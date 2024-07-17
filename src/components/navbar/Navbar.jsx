@@ -1,6 +1,7 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import CV from '/files/CV.pdf';
+import { useNavigate, useLocation } from 'react-router-dom';
 import NavButton from './nav-button/NavButton';
 import useWindowDimensions from '../../util/windowDimentions';
 import './Navbar.scss';
@@ -10,11 +11,14 @@ function Navbar() {
   const [activeButton, setActiveButton] = useState('Home');
   const { width } = useWindowDimensions();
   const navRef = useRef();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const showNavbar = () => {
     if (width < 1024) navRef.current.classList.toggle('responsive_nav');
   };
   function updateNav(event) {
+    navigate('/');
     const { name } = event.target;
     setActiveButton(name);
     showNavbar();

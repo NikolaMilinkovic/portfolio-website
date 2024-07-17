@@ -1,6 +1,7 @@
 import './App.scss';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ProjectPage from './pages/project-page/ProjectPage';
 
 // Pages
 import LandingPage from './pages/landing-page/LandingPage';
@@ -10,7 +11,36 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        {/* <Route path="/battleship" element={} /> */}
+
+        {/* BATTLESHIP */}
+        <Route
+          path="/case-study/battleship"
+          element={(
+            <ProjectPage
+              projectUrl="/files/projects/battleship.json"
+            />
+          )}
+        />
+
+        {/* MC-SCHEM-MAN */}
+        <Route
+          path="/case-study/mc-schematic-manager"
+          element={(
+            <ProjectPage
+              projectUrl="/files/projects/mc-schematic-manager.json"
+            />
+          )}
+        />
+
+        {/* CLI DATA STRUCTURES */}
+        <Route
+          path="/case-study/cli-data-structures"
+          element={(
+            <ProjectPage
+              projectUrl="/files/projects/cli-data-structures.json"
+            />
+          )}
+        />
       </Routes>
     </BrowserRouter>
   );

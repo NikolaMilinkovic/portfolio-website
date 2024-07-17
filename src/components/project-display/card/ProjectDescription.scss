@@ -1,0 +1,22 @@
+@import '../../../index.scss';
+
+.project-description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  .tech-used{
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-text{
+    text-align: center;
+    font-size: clamp(12px, 14px, 16px);
+    max-width: 600px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}

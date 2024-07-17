@@ -12,7 +12,7 @@ function Loading({ isLoading }) {
       const timeoutId = setTimeout(() => {
         document.documentElement.classList.remove('no-scroll');
         setActive(false);
-      }, 500);
+      }, 100);
 
       return () => clearTimeout(timeoutId);
     }
