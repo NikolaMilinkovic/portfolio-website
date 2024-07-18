@@ -1,0 +1,14 @@
+{
+  "name": "CLI Data Structures",
+  "images": [
+    "/images/cliDataStructures/cli-data-structures.png", 
+    "/images/cliDataStructures/cli-data-structures-1.png", 
+    "/images/cliDataStructures/cli-data-structures-2.png", 
+    "/images/cliDataStructures/cli-data-structures-3.png", 
+    "/images/cliDataStructures/cli-data-structures-4.png"
+  ],
+  "landingText": "Visualise and interact with methods for Data Structures manipulation in a CLI themed environment!",
+  "demoLink": "https://nikolamilinkovic.github.io/CLI-data-structures/",
+  "gitLink": "https://github.com/NikolaMilinkovic/CLI-data-structures",
+  "usedTech": ["JavaScript", "HTML", "CSS"]
+}

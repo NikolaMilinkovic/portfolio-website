@@ -1,0 +1,10 @@
+{
+  "name": "CV Builder",
+  "images": [
+    "/images/cvBuilder/cv-builder-1.png"
+  ],
+  "landingText": "Craft you CV easily with this React CV builder!",
+  "demoLink": "https://cv-builder-ten-sigma.vercel.app/",
+  "gitLink": "https://github.com/NikolaMilinkovic/cv-builder",
+  "usedTech": ["JavaScript", "HTML", "CSS", "React"]
+}

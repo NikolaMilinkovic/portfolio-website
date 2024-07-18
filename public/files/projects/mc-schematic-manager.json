@@ -1,0 +1,20 @@
+{
+  "name": "Mc Schematic Manager",
+  "images": [
+    "/images/mcSchematicManager/mc-schematic-manager.png", 
+    "/images/mcSchematicManager/mc-schematic-manager-1.png", 
+    "/images/mcSchematicManager/mc-schematic-manager-2.png", 
+    "/images/mcSchematicManager/mc-schematic-manager-3.png", 
+    "/images/mcSchematicManager/mc-schematic-manager-4.png"
+  ],
+  "landingText": "Minecraft Schematic Manager is the ultimate online tool for managing your personal schematics. It is designed to be user friendly and can be used by Studios and individuals.",
+  "demoLink": "https://mc-schematic-manager.vercel.app/",
+  "gitLink": "https://github.com/NikolaMilinkovic/mc-schematic-manager",
+  "usedTech": ["JavaScript", "HTML", "CSS", "SASS", "React", "Vite", "Express", "NodeJs", "MongoDB"],
+  "embedData": [{
+    "width": "1189",
+    "height": "669",
+    "src": "dQw4w9WgXcQ",
+    "title": "Rick Astley - Never Gonna Give You Up (Official Music Video)"
+  }]
+}

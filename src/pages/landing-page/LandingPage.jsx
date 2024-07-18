@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 // import useImageLoader from '../../util/useImageLoader';
 import useImageLoader from '../../util/useImageLoader';
@@ -25,7 +25,7 @@ function LandingPage() {
       <Home />
       <About />
       <Projects />
-      <Skills />
+      {/* <Skills /> */}
       <Contact />
       <Footer />
     </>

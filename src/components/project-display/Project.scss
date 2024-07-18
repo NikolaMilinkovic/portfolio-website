@@ -1,0 +1,35 @@
+@import '../../index.scss';
+
+.project-description-background{
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-top: 5rem;
+
+  flex-direction: column;
+  width: 100% !important;
+  width: fit-content;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: end;
+
+  .carousel-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buttons-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: auto;
+    gap: 0.5rem;
+    z-index: 3;
+    align-self: center;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-bottom: 1rem;
+  }
+}

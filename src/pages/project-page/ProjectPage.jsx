@@ -17,10 +17,6 @@ function ProjectPage({ projectUrl }) {
     }
   }, [projectUrl]);
 
-  useEffect(() => {
-    console.log(window.location.href);
-  }, []);
-
   return (
     <>
       <Navbar />

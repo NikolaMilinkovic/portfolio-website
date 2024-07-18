@@ -1,0 +1,13 @@
+.video-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 100%;
+  .video{
+    display: flex;
+    min-width: 100% !important;
+    min-height: 100% !important;
+  }
+}
+

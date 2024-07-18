@@ -1,0 +1,10 @@
+{
+  "name": "Odin Registration Form",
+  "images": [
+    "/images/odinRegistrationForm/odin-registration-form-1.png"
+  ],
+  "landingText": "",
+  "demoLink": "https://nikolamilinkovic.github.io/odin-registration-form/",
+  "gitLink": "https://github.com/NikolaMilinkovic/odin-registration-form",
+  "usedTech": ["JavaScript", "HTML", "CSS", "React"]
+}

@@ -31,39 +31,7 @@
     position: relative;
   }
 
-  .project-description-background{
-    display: flex;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-top: 5rem;
 
-    flex-direction: column;
-    width: 100% !important;
-    width: fit-content;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: end;
-
-    .carousel-wrapper{
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .buttons-container{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: auto;
-      gap: 0.5rem;
-      z-index: 3;
-      align-self: center;
-      border-radius: 5px;
-      font-size: 12px;
-      margin-bottom: 1rem;
-    }
-  }
 
 }
 .projects-section-2{
@@ -86,3 +54,32 @@
 //   }
 // }
 
+.projects-section-4{
+  // display: grid;
+  // grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  gap: 3rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  box-sizing: border-box;
+  background-color: white;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 0px !important;
+
+
+  .other-projects-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+
+    > * {
+      margin: 0px;
+    }
+  }
+}

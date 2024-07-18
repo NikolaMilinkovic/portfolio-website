@@ -1,0 +1,10 @@
+{
+  "name": "WP Form Mockup",
+  "images": [
+    "/images/wpFormMockup/wp-form-mockup-1.gif"
+  ],
+  "landingText": "",
+  "demoLink": "https://nikolamilinkovic.github.io/wp-form-mockup/",
+  "gitLink": "https://github.com/NikolaMilinkovic/wp-form-mockup",
+  "usedTech": ["JavaScript", "HTML", "CSS", "React"]
+}

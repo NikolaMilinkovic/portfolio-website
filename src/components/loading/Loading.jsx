@@ -1,8 +1,10 @@
+/* eslint-disable no-tabs */
 import React, { useEffect, useState, useRef } from 'react';
 import './Loading.scss';
 
 function Loading({ isLoading }) {
   const [active, setActive] = useState(true);
+
   const loadingRef = useRef(null);
   useEffect(() => {
     if (isLoading) {
@@ -12,7 +14,7 @@ function Loading({ isLoading }) {
       const timeoutId = setTimeout(() => {
         document.documentElement.classList.remove('no-scroll');
         setActive(false);
-      }, 100);
+      }, 1000);
 
       return () => clearTimeout(timeoutId);
     }

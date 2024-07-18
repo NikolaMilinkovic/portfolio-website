@@ -1,0 +1,10 @@
+{
+  "name": "Knight Travails",
+  "images": [
+    "/images/knightTravails/knight-animation.gif"
+  ],
+  "landingText": "Algorithm for finding the shortest path for the knight to reach his goal!",
+  "demoLink": "https://nikolamilinkovic.github.io/knight-travails/",
+  "gitLink": "https://github.com/NikolaMilinkovic/knight-travails",
+  "usedTech": ["JavaScript", "HTML", "CSS", "React"]
+}

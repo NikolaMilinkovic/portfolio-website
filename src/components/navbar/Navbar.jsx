@@ -9,13 +9,20 @@ import './Navbar.scss';
 function Navbar() {
   // Handles active button display
   const [activeButton, setActiveButton] = useState('Home');
+  const [showDropdown, setShowDropdown] = useState(true);
   const { width } = useWindowDimensions();
   const navRef = useRef();
   const navigate = useNavigate();
   const location = useLocation();
 
   const showNavbar = () => {
-    if (width < 1024) navRef.current.classList.toggle('responsive_nav');
+    if (width < 1024) {
+      navRef.current.classList.toggle('responsive_nav');
+      setShowDropdown(false);
+    }
+    if (width > 1024) {
+      setShowDropdown(true);
+    }
   };
   function updateNav(event) {
     navigate('/');
@@ -52,17 +59,72 @@ function Navbar() {
           activeBtn={activeButton}
         />
         {/* PROJECTS */}
-        <NavButton
-          to="scroll-projects"
-          duration={300}
-          offset={0}
-          name="Projects"
-          text="Projects"
-          updateNav={(e) => updateNav(e)}
-          activeBtn={activeButton}
-        />
+        {showDropdown ? (
+          <div className="projects">
+            <NavButton
+              to="scroll-projects-1"
+              className="scroll-link"
+              duration={300}
+              offset={0}
+              name="Projects"
+              text="Projects"
+              updateNav={(e) => updateNav(e)}
+              activeBtn={activeButton}
+            />
+            <div className="projects-dropdown">
+              <NavButton
+                to="scroll-projects-1"
+                duration={300}
+                offset={0}
+                name="Projects"
+                text="Mc Schematic Manager"
+                updateNav={(e) => updateNav(e)}
+                activeBtn={activeButton}
+              />
+              <NavButton
+                to="scroll-projects-2"
+                duration={300}
+                offset={0}
+                name="battleship"
+                text="Battleship"
+                updateNav={(e) => updateNav(e)}
+                activeBtn={activeButton}
+              />
+              <NavButton
+                to="scroll-projects-3"
+                duration={300}
+                offset={0}
+                name="cli-data-structures"
+                text="CLI Data Structures"
+                updateNav={(e) => updateNav(e)}
+                activeBtn={activeButton}
+              />
+              <NavButton
+                to="scroll-projects-4"
+                duration={300}
+                offset={0}
+                name="other-projects"
+                text="Other Projects"
+                updateNav={(e) => updateNav(e)}
+                activeBtn={activeButton}
+              />
+            </div>
+          </div>
+        ) : (
+          <NavButton
+            to="scroll-projects-1"
+            className="scroll-link"
+            duration={300}
+            offset={0}
+            name="Projects"
+            text="Projects"
+            updateNav={(e) => updateNav(e)}
+            activeBtn={activeButton}
+          />
+        )}
+
         {/* SKILLS */}
-        <NavButton
+        {/* <NavButton
           to="scroll-skills"
           duration={300}
           offset={-80}
@@ -70,7 +132,7 @@ function Navbar() {
           text="Skills"
           updateNav={(e) => updateNav(e)}
           activeBtn={activeButton}
-        />
+        /> */}
         {/* CONTACT */}
         <NavButton
           to="scroll-contact"

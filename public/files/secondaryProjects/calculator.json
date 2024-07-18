@@ -1,0 +1,10 @@
+{
+  "name": "Calculator",
+  "images": [
+    "/images/calculator/calculator-1.png"
+  ],
+  "landingText": "",
+  "demoLink": "https://nikolamilinkovic.github.io/calculator/",
+  "gitLink": "https://github.com/NikolaMilinkovic/calculator",
+  "usedTech": ["JavaScript", "HTML", "CSS", "React"]
+}

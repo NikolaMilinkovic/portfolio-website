@@ -17,13 +17,16 @@ const useImageLoader = () => {
           };
           img.addEventListener('load', onLoadOrError);
           img.addEventListener('error', onLoadOrError);
+          // setTimeout(() => {
+          //   resolve();
+          // }, 500);
         }
       }));
 
       Promise.all(imagePromises).then(() => {
         setTimeout(() => {
           setLoading(false);
-        }, 1000);
+        }, 100);
       });
     };
 

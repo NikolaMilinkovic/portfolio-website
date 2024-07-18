@@ -28,7 +28,7 @@ function About() {
             About Me
           </p>
           <div className="border-div" />
-          <img loading="lazy" ref={imageRef} alt="Nikola Milinkovic" src="/images/moja-slika.png" className={`profile-image ${isVisible ? 'show-element-left' : 'hide-element-left'}`} />
+          <img ref={imageRef} alt="Nikola Milinkovic" src="/images/moja-slika.png" className={`profile-image ${isVisible ? 'show-element-left' : 'hide-element-left'}`} />
         </div>
         <div className="about-right">
           <h2 className={`about-header ${isVisible ? 'show-element-right' : 'hide-element-right'}`}>

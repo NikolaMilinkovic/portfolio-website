@@ -1,21 +1,31 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable max-len */
 import React, { useEffect, useState } from 'react';
 import './ProjectCarousel.scss';
+import PlayYoutube from './video/PlayYoutube';
 
-function ProjectCarousel({ images }) {
+function ProjectCarousel({ images = null, videos = null }) {
   const [data, setData] = useState(null);
+  const [videoData, setVideoData] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // useEffect(() => {
+  //   setData((prev) => [...prev, ...videos]);
+  //   setVideoData(videos);
+  // }, [images, videos]);
   useEffect(() => {
-    console.log('Data is:');
-    console.log(data);
-  }, [data]);
-
-  useEffect(() => {
+    // setData((prev) => [...prev, ...videos]);
     setData(images);
+    // setData()
   }, [images]);
+  useEffect(() => {
+    setVideoData(videos);
+    if (videos !== null) {
+      setData((prev) => [...prev, videos]);
+    }
+  }, [videos]);
 
   // Arrow methods
   function handleNext() {
@@ -35,12 +45,18 @@ function ProjectCarousel({ images }) {
     <section className="project-carousel">
       <div className="image-wrapper">
         <div className="image-window" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-
+          {videoData && videoData.map((video, index) => (
+            <div className="video-container">
+              <PlayYoutube
+                videoData={video}
+                key={`video-${index}`}
+              />
+            </div>
+          ))}
           {data && data.map((image, index) => (
             <img
-              key={index}
+              key={`carousel-image-${index}`}
               className="carousel-img"
-              loading="lazy"
               src={image}
               alt="project description"
             />

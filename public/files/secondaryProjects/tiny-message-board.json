@@ -1,0 +1,10 @@
+{
+  "name": "Mini Message Board",
+  "images": [
+    "/images/tinyMessageBoard/tiny-message-board-1.png"
+  ],
+  "landingText": "",
+  "demoLink": "https://tiny-message-board.adaptable.app/",
+  "gitLink": "https://github.com/NikolaMilinkovic/tiny-message-board",
+  "usedTech": ["JavaScript", "HTML", "CSS", "React"]
+}
