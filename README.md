@@ -4,7 +4,7 @@
 Website portraying my skills and projects.
 Contains all my socials and official ways to contact me.
 
-[Live Link]() ✨
+[Live Link](https://nikola-portfolio-website.vercel.app/) ✨
 
 ## Features
 - About me section
