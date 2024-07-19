@@ -1,8 +1,8 @@
 {
-  "name": "Mc Schematic Manager",
-  "images": ["/images/mcSchematicManager/mc-schematic-manager.png"],
-  "landingText": "Minecraft Schematic Manager is the ultimate online tool for managing your personal schematics. It is designed to be user friendly and can be used by Studios and individuals.",
-  "demoLink": "https://mc-schematic-manager.vercel.app/",
-  "gitLink": "https://github.com/NikolaMilinkovic/mc-schematic-manager",
-  "usedTech": ["JavaScript", "HTML", "CSS", "SASS", "React", "Vite", "Express", "NodeJs", "MongoDB"]
+  "name": "Portfolio Website",
+  "images": ["/images/portfolioWebsite/portfolio-website-1.png"],
+  "landingText": "My personal portfolio website used to showcase some of the skills and projects that I have worked on.",
+  "demoLink": "https://nikola-portfolio-website.vercel.app/",
+  "gitLink": "https://github.com/NikolaMilinkovic/portfolio-website",
+  "usedTech": ["JavaScript", "HTML", "CSS", "SASS", "React", "Vite"]
 }

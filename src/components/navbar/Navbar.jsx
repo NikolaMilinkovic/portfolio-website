@@ -103,6 +103,15 @@ function Navbar() {
                 to="scroll-projects-4"
                 duration={300}
                 offset={0}
+                name="portfolio-website"
+                text="Portfolio Website"
+                updateNav={(e) => updateNav(e)}
+                activeBtn={activeButton}
+              />
+              <NavButton
+                to="scroll-projects-5"
+                duration={300}
+                offset={0}
                 name="other-projects"
                 text="Other Projects"
                 updateNav={(e) => updateNav(e)}

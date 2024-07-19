@@ -12,6 +12,7 @@ function Projects() {
   const [battleship, setBattleship] = useState(null);
   const [mcSchemMan, setMcSchemMan] = useState(null);
   const [cliDatStruct, setCliDatStruct] = useState(null);
+  const [portfolioWebsite, setPortfolioWebsite] = useState(null);
   const [otherProjects, setOtherProjects] = useState([]);
   const navigate = useNavigate();
 
@@ -30,24 +31,28 @@ function Projects() {
       const cliDataStrucData = await res_3.json();
       setCliDatStruct(cliDataStrucData);
 
+      const res_4 = await fetch('/files/projects/portfolio-website.json');
+      const portWebsite = await res_4.json();
+      setPortfolioWebsite(portWebsite);
+
       // Other Projects
-      const res_4 = await fetch('/files/secondaryProjects/cv-builder.json');
-      const cvBuilder = await res_4.json();
+      const res_5 = await fetch('/files/secondaryProjects/cv-builder.json');
+      const cvBuilder = await res_5.json();
 
-      const res_5 = await fetch('/files/secondaryProjects/knight-travails.json');
-      const knightTravails = await res_5.json();
+      const res_6 = await fetch('/files/secondaryProjects/knight-travails.json');
+      const knightTravails = await res_6.json();
 
-      const res_6 = await fetch('/files/secondaryProjects/calculator.json');
-      const calculator = await res_6.json();
+      const res_7 = await fetch('/files/secondaryProjects/calculator.json');
+      const calculator = await res_7.json();
 
-      const res_7 = await fetch('/files/secondaryProjects/tiny-message-board.json');
-      const tinyMessageBoard = await res_7.json();
+      const res_8 = await fetch('/files/secondaryProjects/tiny-message-board.json');
+      const tinyMessageBoard = await res_8.json();
 
-      const res_8 = await fetch('/files/secondaryProjects/odin-registration-form.json');
-      const odinRegistrationForm = await res_8.json();
+      const res_9 = await fetch('/files/secondaryProjects/odin-registration-form.json');
+      const odinRegistrationForm = await res_9.json();
 
-      const res_9 = await fetch('/files/secondaryProjects/wp-form-mockup.json');
-      const wpFormMockup = await res_9.json();
+      const res_10 = await fetch('/files/secondaryProjects/wp-form-mockup.json');
+      const wpFormMockup = await res_10.json();
 
       setOtherProjects([cvBuilder, knightTravails, calculator, tinyMessageBoard, odinRegistrationForm, wpFormMockup]);
     }
@@ -106,6 +111,18 @@ function Projects() {
         </section>
       </Element>
       <Element id="scroll-projects-4" name="scroll-projects-4">
+        {/* "http://localhost:5173/case-study/battleship" */}
+        <section className="projects-section-2">
+          <Project
+            projectData={portfolioWebsite || null}
+            cardButtonPath="http://localhost:5173/case-study/portfolio-website"
+            cardButtonBackground="black"
+            cardButtonColor="white"
+            projectDescritpionColor="white"
+          />
+        </section>
+      </Element>
+      <Element id="scroll-projects-5" name="scroll-projects-5">
         <section className="projects-section-4">
           <header className="other-projects-header">
             <h2>Other Projects</h2>

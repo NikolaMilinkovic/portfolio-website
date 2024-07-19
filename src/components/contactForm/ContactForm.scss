@@ -1,1 +1,14 @@
 @import '../../index.scss';
+
+.contact-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid lightgray;
+
+
+  .contact-form{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -3,4 +3,18 @@
 
 .contact-section{
   @include sectionLayout;
+  position: relative;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .footer-image{
+    position: absolute;
+    left: 0px;
+    bottom: -20px;
+    height: 500px;
+    width: 100vw;
+    
+  }
 }
