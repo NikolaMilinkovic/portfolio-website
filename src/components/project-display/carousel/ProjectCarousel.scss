@@ -30,6 +30,7 @@
         height: 30px;
         fill: #ffffff;
         z-index: 3;
+        user-select: none;
     
         &:hover{
           transform: scale(1.2);

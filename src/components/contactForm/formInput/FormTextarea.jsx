@@ -14,6 +14,7 @@ function FormTextarea({
         {label}
       </label>
       <textarea
+        className="textarea"
         id={id}
         name={name}
         placeholder={placeholder}

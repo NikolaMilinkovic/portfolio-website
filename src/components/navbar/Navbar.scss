@@ -10,8 +10,6 @@
   padding-left: 10vw;
   padding-right: 10vw;
   box-sizing: border-box;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   position: relative;
   position: -webkit-sticky;
   position: sticky;
@@ -35,6 +33,7 @@
       &:hover{
 
         .projects-dropdown{
+          display: flex;
           opacity: 1;
         }
       }
@@ -43,13 +42,14 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        top: 2.5rem;
+        top: 3.45rem;
         border-radius: 3px;
         background-color: rgba(255,255,255,0.9);
         min-width: 200px;
         opacity: 0;
         transition: 0.2s ease;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        display: none;
 
         .scroll-link{
           display: flex;

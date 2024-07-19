@@ -7,21 +7,23 @@
   font-size: 14px;
   position: relative;
 
-  input{
-    border: 2px solid var(--black);
+  .textarea{
+    border: 1px solid rgba(4,7,7,0.7);
     position: relative;
     padding: 0.5rem;
     background-color: var(--black);
-    height: 40px !important;
-    color: black !important;
-
+    min-height: 200px;
+    color: black;
+    border-radius: 5px;
+    resize: none;
 
     &:focus{
-      outline: 2px solid var(--highlight)
+      border: 1px solid var(--highlight);
+      outline: none;
     }
   }
 
 }
 .input-group:focus-within > label{
-  color: var(--highlight) !important;
+  color: var(--highlight);
 }

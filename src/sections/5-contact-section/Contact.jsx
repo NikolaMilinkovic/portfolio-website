@@ -10,7 +10,7 @@ function Contact() {
         <p>This is my Contact section</p>
         <ContactForm />
       </Element>
-      <img src="public/images/1.png" className="footer-image" alt="forest transition" />
+      <img src="/images/1.png" className="footer-image" alt="forest transition" />
     </section>
   );
 }
