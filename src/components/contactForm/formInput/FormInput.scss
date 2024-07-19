@@ -1,0 +1,27 @@
+@import '../../../index.scss';
+
+.input-group{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 14px;
+  position: relative;
+
+  input{
+    border: 2px solid var(--black);
+    position: relative;
+    padding: 0.5rem;
+    background-color: var(--black);
+    height: 40px !important;
+    color: black !important;
+
+
+    &:focus{
+      outline: 2px solid var(--highlight)
+    }
+  }
+
+}
+.input-group:focus-within > label{
+  color: var(--highlight) !important;
+}

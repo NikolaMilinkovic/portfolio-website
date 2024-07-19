@@ -11,15 +11,10 @@ function ProjectCarousel({ images = null, videos = null }) {
   const [videoData, setVideoData] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // useEffect(() => {
-  //   setData((prev) => [...prev, ...videos]);
-  //   setVideoData(videos);
-  // }, [images, videos]);
   useEffect(() => {
-    // setData((prev) => [...prev, ...videos]);
     setData(images);
-    // setData()
   }, [images]);
+
   useEffect(() => {
     setVideoData(videos);
     if (videos !== null) {

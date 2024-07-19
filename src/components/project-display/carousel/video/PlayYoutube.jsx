@@ -5,6 +5,7 @@ import './PlayYoutube.scss';
 function PlayYoutube({ videoData }) {
   const [data, setData] = useState(null);
   const [dimensions, setDimensions] = useState({ width: 800, height: 500 });
+  const [loaded, setLoaded] = useState(false);
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -23,11 +24,29 @@ function PlayYoutube({ videoData }) {
 
     window.addEventListener('resize', handleResize);
     handleResize();
+    setLoaded(true);
 
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, [data]);
+
+  useEffect(() => {
+    const handleLoad = () => {
+      if (containerRef.current) {
+        setDimensions({
+          width: containerRef.current.offsetWidth,
+          height: containerRef.current.offsetHeight,
+        });
+      }
+    };
+
+    window.addEventListener('load', handleLoad);
+
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
+  }, []);
 
   const opts = {
     height: dimensions.height,
@@ -44,7 +63,7 @@ function PlayYoutube({ videoData }) {
 
   return (
     <div ref={containerRef} className="video-container">
-      {data && data.src && (
+      {data && data.src && loaded && (
         <YouTube
           className="video"
           videoId={data.src}

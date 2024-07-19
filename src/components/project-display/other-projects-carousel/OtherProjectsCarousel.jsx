@@ -5,6 +5,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import CardButton from '../card/cardButton/CardButton';
 import useWindowDimensions from '../../../util/windowDimentions';
+import useElementOnScreen from '../../../util/useElementOnScreen';
+import ProjectCard from './projectCard/ProjectCard';
 import './OtherProjectsCarousel.scss';
 
 function OtherProjectsCarousel({ projects }) {
@@ -21,11 +23,17 @@ function OtherProjectsCarousel({ projects }) {
   // @media screen and (max-width: 550px){
   // min-width: calc(100% / 1) !important;
 
+  const [isVisible, setIsVisible] = useState(false);
+  const [containerRef] = useElementOnScreen({
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.35,
+  }, isVisible, setIsVisible, true);
+
   useEffect(() => {
     function getScreens() {
       if (width > 1000) {
         // 4 per page
-
         setScreens(Math.round(data.length / 4));
       }
       if (width < 1000 && width > 800) {
@@ -70,6 +78,7 @@ function OtherProjectsCarousel({ projects }) {
 
   return (
     <div className="other-projects-wrapper">
+      {/* LEFT BUTTON */}
       <div className="left" onClick={handlePrevious}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -78,35 +87,26 @@ function OtherProjectsCarousel({ projects }) {
           <path d="M400 976 0 576l400-400 56 57-343 343 343 343-56 57Z" />
         </svg>
       </div>
+
+      {/* PROJECTS */}
       <section className="other-projects">
-        <div className="image-window" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+        <div
+          className="image-window"
+          ref={containerRef}
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
           {data && data.map((project, index) => (
-            <div className="project-card" href={project.gitLink} target="_blank">
-              <div className="project-card-inside">
-                <p className="header">{project.name}</p>
-                <img
-                  key={`carousel-image-${index}`}
-                  className="carousel-img"
-                  src={project.images[0]}
-                  alt="project description"
-                />
-                <div className="buttons-container">
-                  <CardButton
-                    className="button"
-                    path={project.gitLink}
-                    text="Code"
-                  />
-                  <CardButton
-                    className="button"
-                    path={project.demoLink}
-                    text="Live"
-                  />
-                </div>
-              </div>
-            </div>
+            <ProjectCard
+              key={`project-card-${index}`}
+              project={project}
+              index={index}
+              isVisible={isVisible}
+            />
           ))}
         </div>
       </section>
+
+      {/* RIGHT BUTTON */}
       <div className="right" onClick={handleNext}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

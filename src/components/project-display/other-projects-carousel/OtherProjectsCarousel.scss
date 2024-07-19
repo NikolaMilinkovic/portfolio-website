@@ -61,6 +61,8 @@
         text-decoration: none;
         color: black;
         font-size: 14px;
+
+        transition: 0.7s ease;
         
 
 
@@ -116,7 +118,6 @@
   }
 }
 
-
 @media screen and (max-width: 1000px){
   .other-projects-wrapper{
     .other-projects{
@@ -144,6 +145,7 @@
     }
   }
 }
+
 @media screen and (max-width: 550px){
   .other-projects-wrapper{
     .other-projects{
@@ -156,4 +158,11 @@
       }
     }
   }
+}
+
+.show-left{
+  opacity: 1;
+}
+.hide-left{
+  opacity: 0;
 }

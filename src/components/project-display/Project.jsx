@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 /* eslint-disable react/prop-types */
 /* eslint-disable camelcase */
 import React, { useEffect, useState, useRef } from 'react';
@@ -28,14 +29,12 @@ function Project({
     setData(projectData);
   }, [projectData]);
 
-  // useEffect(() => {
-  //   setDirection(animateSide);
-  // }, [animateSide]);
-
   return (
     <div
       className={`project-description-background 
-    ${direction === 'left' ? (isVisible ? 'show-left' : 'hide-left') : (isVisible ? 'show-right' : 'hide-right')}`}
+    ${direction === 'left'
+        ? (isVisible ? 'show-left' : 'hide-left')
+        : (isVisible ? 'show-right' : 'hide-right')}`}
       ref={containerRef}
     >
 
