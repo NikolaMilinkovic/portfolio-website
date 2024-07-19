@@ -1,10 +1,11 @@
 /* eslint-disable max-len */
 /* eslint-disable camelcase */
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Element } from 'react-scroll';
 import { useNavigate } from 'react-router-dom';
 import OtherProjectsCarousel from '../../components/project-display/other-projects-carousel/OtherProjectsCarousel';
 import Project from '../../components/project-display/Project';
+import useElementOnScreen from '../../util/useElementOnScreen';
 import './Projects.scss';
 
 function Projects() {
@@ -76,6 +77,7 @@ function Projects() {
             cardButtonBackground="white"
             cardButtonColor="black"
             projectDescritpionColor="black"
+            animateSide="right"
           />
         </section>
       </Element>
@@ -99,6 +101,7 @@ function Projects() {
             cardButtonBackground="white"
             cardButtonColor="black"
             projectDescritpionColor="black"
+            animateSide="right"
           />
         </section>
       </Element>

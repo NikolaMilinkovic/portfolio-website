@@ -13,6 +13,9 @@
   align-items: center;
   justify-content: end;
 
+  opacity: 0;
+  transition: 0.7s ease;
+
   .carousel-wrapper{
     position: relative;
     display: flex;
@@ -32,4 +35,21 @@
     font-size: 12px;
     margin-bottom: 1rem;
   }
+}
+
+.show-left{
+  opacity: 1;
+  transform: translateX(0px);
+}
+.hide-left{
+  opacity: 0;
+  transform: translateX(-100px);
+}
+.show-right{
+  opacity: 1;
+  transform: translateX(0px);
+}
+.hide-right{
+  opacity: 0;
+  transform: translateX(+100px);
 }

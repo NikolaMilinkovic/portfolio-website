@@ -38,6 +38,7 @@
     height: 40vh;
     position: relative;
     justify-self: center;
+    min-height: 300px;
   
     .image-window{
       display: flex;
@@ -46,6 +47,7 @@
       width: 100%;
       transition: 0.4s ease-in-out;
       align-items: center;
+      min-height: 300px;
       
       .project-card{
         overflow: hidden;
@@ -59,6 +61,8 @@
         text-decoration: none;
         color: black;
         font-size: 14px;
+        
+
 
         .header{
           margin: 0px;

@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable camelcase */
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import ProjectCarousel from './carousel/ProjectCarousel';
 import ProjectDescription from './card/ProjectDescription';
 import CardButton from './card/cardButton/CardButton';
+import useElementOnScreen from '../../util/useElementOnScreen';
 import './Project.scss';
 
 function Project({
@@ -12,15 +13,31 @@ function Project({
   cardButtonBackground = 'white',
   cardButtonColor = 'black',
   projectDescritpionColor = 'black',
+  animateSide = 'left',
 }) {
   const [data, setData] = useState(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const [direction, setDirection] = useState(animateSide);
+  const [containerRef] = useElementOnScreen({
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.35,
+  }, isVisible, setIsVisible, true);
 
   useEffect(() => {
     setData(projectData);
   }, [projectData]);
 
+  // useEffect(() => {
+  //   setDirection(animateSide);
+  // }, [animateSide]);
+
   return (
-    <div className="project-description-background">
+    <div
+      className={`project-description-background 
+    ${direction === 'left' ? (isVisible ? 'show-left' : 'hide-left') : (isVisible ? 'show-right' : 'hide-right')}`}
+      ref={containerRef}
+    >
 
       {/* HEADER */}
       <header className="header">
