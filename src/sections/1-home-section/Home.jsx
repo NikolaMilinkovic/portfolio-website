@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Element } from 'react-scroll';
 import './Home.scss';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
@@ -6,6 +6,18 @@ import SocialsSidebar from '../../components/socials/SocialsSidebar';
 import BirdGif from '../../components/birdGif/BirdGif';
 
 function Home() {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <Element id="scroll-home" name="scroll-home">
       <section className="home-section">
@@ -27,36 +39,40 @@ function Home() {
           <img id="img-1" className="para" alt="parallax-vector" src="/images/1.png" />
 
           {/* Birds */}
-          <BirdGif
-            id="bird-1"
-            initialTop="50vh"
-            left="10"
-            speed={23}
-          />
-          <BirdGif
-            id="bird-2"
-            initialTop="65vh"
-            left="-44"
-            speed={29}
-          />
-          <BirdGif
-            id="bird-3"
-            initialTop="48vh"
-            left="-50"
-            speed={26}
-          />
-          <BirdGif
-            id="bird-4"
-            initialTop="46vh"
-            left="-40"
-            speed={22}
-          />
-          <BirdGif
-            id="bird-5"
-            initialTop="77vh"
-            left="-7"
-            speed={19}
-          />
+          { screenWidth && (
+            <>
+              <BirdGif
+                id="bird-1"
+                initialTop="50vh"
+                left="10"
+                speed={screenWidth / 50}
+              />
+              <BirdGif
+                id="bird-2"
+                initialTop="65vh"
+                left="-44"
+                speed={screenWidth / 50}
+              />
+              <BirdGif
+                id="bird-3"
+                initialTop="48vh"
+                left="-50"
+                speed={screenWidth / 50}
+              />
+              <BirdGif
+                id="bird-4"
+                initialTop="46vh"
+                left="-40"
+                speed={screenWidth / 50}
+              />
+              <BirdGif
+                id="bird-5"
+                initialTop="77vh"
+                left="-7"
+                speed={screenWidth / 50}
+              />
+            </>
+          )}
         </div>
 
         {/* <img className="test-image" alt="parallax-vector" src="/images/image-4.png" /> */}
