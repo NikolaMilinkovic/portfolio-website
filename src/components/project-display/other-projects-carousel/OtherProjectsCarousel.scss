@@ -1,10 +1,10 @@
 @import '../../../index.scss';
 
-
 .other-projects-wrapper{
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 100fr 1fr;
+  
   .right,
   .left{
     display: flex;

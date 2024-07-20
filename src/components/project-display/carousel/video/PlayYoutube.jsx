@@ -15,6 +15,8 @@ function PlayYoutube({ videoData }) {
   useEffect(() => {
     function handleResize() {
       if (containerRef.current) {
+        // console.log(containerRef.current.offsetWidth);
+        // console.log(containerRef.current.offsetHeight);
         setDimensions({
           width: containerRef.current.offsetWidth,
           height: containerRef.current.offsetHeight,
@@ -29,7 +31,7 @@ function PlayYoutube({ videoData }) {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, [data]);
+  }, []);
 
   useEffect(() => {
     const handleLoad = () => {

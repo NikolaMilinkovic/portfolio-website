@@ -14,15 +14,6 @@ function OtherProjectsCarousel({ projects }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [screens, setScreens] = useState(2);
   const { width } = useWindowDimensions();
-  // @media screen and (max-width: 1000px){
-  // min-width: calc(100% / 3) !important;
-
-  // @media screen and (max-width: 800px){
-  // min-width: calc(100% / 2) !important;
-
-  // @media screen and (max-width: 550px){
-  // min-width: calc(100% / 1) !important;
-
   const [isVisible, setIsVisible] = useState(false);
   const [containerRef] = useElementOnScreen({
     root: null,

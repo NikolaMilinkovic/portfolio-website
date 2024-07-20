@@ -15,6 +15,7 @@ function Project({
   cardButtonColor = 'black',
   projectDescritpionColor = 'black',
   animateSide = 'left',
+  arrowColor,
 }) {
   const [data, setData] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -74,6 +75,7 @@ function Project({
       <ProjectCarousel
         images={data.images}
         videos={data.embedData}
+        arrowColor={arrowColor}
       />
       )}
 

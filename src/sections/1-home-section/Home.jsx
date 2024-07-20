@@ -39,12 +39,12 @@ function Home() {
           <img id="img-1" className="para" alt="parallax-vector" src="/images/1.png" />
 
           {/* Birds */}
-          { screenWidth && (
+          {/* { screenWidth && (
             <>
               <BirdGif
                 id="bird-1"
                 initialTop="50vh"
-                left="10"
+                left="-2"
                 speed={screenWidth / 50}
               />
               <BirdGif
@@ -72,7 +72,7 @@ function Home() {
                 speed={screenWidth / 50}
               />
             </>
-          )}
+          )} */}
         </div>
 
         {/* <img className="test-image" alt="parallax-vector" src="/images/image-4.png" /> */}

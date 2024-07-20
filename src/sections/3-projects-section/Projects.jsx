@@ -83,6 +83,7 @@ function Projects() {
             cardButtonColor="black"
             projectDescritpionColor="black"
             animateSide="right"
+            arrowColor="#000000"
           />
         </section>
       </Element>
@@ -95,6 +96,7 @@ function Projects() {
             cardButtonBackground="black"
             cardButtonColor="white"
             projectDescritpionColor="white"
+            arrowColor="#ffffff"
           />
         </section>
       </Element>
@@ -107,6 +109,7 @@ function Projects() {
             cardButtonColor="black"
             projectDescritpionColor="black"
             animateSide="right"
+            arrowColor="#000000"
           />
         </section>
       </Element>
@@ -119,6 +122,7 @@ function Projects() {
             cardButtonBackground="black"
             cardButtonColor="white"
             projectDescritpionColor="white"
+            arrowColor="#ffffff"
           />
         </section>
       </Element>
