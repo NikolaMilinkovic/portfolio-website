@@ -1,0 +1,19 @@
+@import '../../index.scss';
+
+.bird{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+
+  animation: animate-bird linear infinite;
+  animation-delay: 1s;
+  transition: 6s linear;
+}
+
+@keyframes animate-bird {
+  from{
+    transform: translateX(-10vw);
+  } to {
+    transform: translateX(var(--translateX-end, 150vw));
+  }
+}
