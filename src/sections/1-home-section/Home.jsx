@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Element } from 'react-scroll';
 import './Home.scss';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import SocialsSidebar from '../../components/socials/SocialsSidebar';
+import ScrollDownIcon from '../../components/scrollDownIcon/ScrollDownIcon';
 import BirdGif from '../../components/birdGif/BirdGif';
 
 function Home() {
@@ -28,6 +28,9 @@ function Home() {
             <p id="landing-hero-text" className="para">
               A&nbsp;
               <span className="header-span">FullStack Web Developer</span>
+              <div className="scroll-down-icon para">
+                <ScrollDownIcon />
+              </div>
             </p>
             <p id="landing-sub-text" className="para">
               Hi. I am Nick.
