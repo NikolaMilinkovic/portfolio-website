@@ -183,9 +183,13 @@
       justify-content: start;
       .border-div{
         width: 60vw;
+        height: 100%;
+        max-height: 400px;
       }
       .profile-image{
         width: 60vw;
+        height: 100%;
+        max-height: 400px;
       }
     }
     .about-right{
@@ -202,6 +206,7 @@
         top: 25%;
         height: max-content;
         text-align: justify;
+        margin-bottom: 50px;
       }
     }
   }
