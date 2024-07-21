@@ -1,9 +1,11 @@
-.video-container{
+.yt-video-container{
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 100%;
-  min-height: 100%;
+  min-width: 100% !important;
+  min-height: 100% !important;
+
+
   .video{
     display: flex;
     min-width: 100% !important;

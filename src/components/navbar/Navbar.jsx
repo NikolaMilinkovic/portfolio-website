@@ -41,7 +41,7 @@ function Navbar() {
         {/* HOME */}
         <NavButton
           to="scroll-home"
-          duration={300}
+          duration={600}
           offset={-80}
           name="Home"
           text="Home"
@@ -51,7 +51,7 @@ function Navbar() {
         {/* ABOUT */}
         <NavButton
           to="scroll-about"
-          duration={300}
+          duration={600}
           offset={100}
           name="About"
           text="About"
@@ -64,7 +64,7 @@ function Navbar() {
             <NavButton
               to="scroll-projects-1"
               className="scroll-link"
-              duration={300}
+              duration={600}
               offset={0}
               name="Projects"
               text="Projects"
@@ -74,7 +74,7 @@ function Navbar() {
             <div className="projects-dropdown">
               <NavButton
                 to="scroll-projects-1"
-                duration={300}
+                duration={600}
                 offset={0}
                 name="Projects"
                 text="Mc Schematic Manager"
@@ -83,7 +83,7 @@ function Navbar() {
               />
               <NavButton
                 to="scroll-projects-2"
-                duration={300}
+                duration={600}
                 offset={0}
                 name="battleship"
                 text="Battleship"
@@ -92,7 +92,7 @@ function Navbar() {
               />
               <NavButton
                 to="scroll-projects-3"
-                duration={300}
+                duration={600}
                 offset={0}
                 name="cli-data-structures"
                 text="CLI Data Structures"
@@ -101,7 +101,7 @@ function Navbar() {
               />
               <NavButton
                 to="scroll-projects-4"
-                duration={300}
+                duration={600}
                 offset={0}
                 name="portfolio-website"
                 text="Portfolio Website"
@@ -110,7 +110,7 @@ function Navbar() {
               />
               <NavButton
                 to="scroll-projects-5"
-                duration={300}
+                duration={600}
                 offset={0}
                 name="other-projects"
                 text="Other Projects"
@@ -123,7 +123,7 @@ function Navbar() {
           <NavButton
             to="scroll-projects-1"
             className="scroll-link"
-            duration={300}
+            duration={600}
             offset={0}
             name="Projects"
             text="Projects"
@@ -135,7 +135,7 @@ function Navbar() {
         {/* SKILLS */}
         {/* <NavButton
           to="scroll-skills"
-          duration={300}
+          duration={600}
           offset={-80}
           name="Skills"
           text="Skills"
@@ -145,7 +145,7 @@ function Navbar() {
         {/* CONTACT */}
         <NavButton
           to="scroll-contact"
-          duration={300}
+          duration={600}
           offset={-80}
           name="Contact"
           text="Contact"

@@ -6,8 +6,9 @@
   width: 100%;
   grid-template-columns: 1fr 100fr 1fr;
   overflow: hidden;
-  min-height: 300px;
+  height: fit-content !important;
   background-color: transparent !important;
+  // max-height: 65vh;
 
       .right,
       .left{
@@ -25,6 +26,7 @@
         }
       }
       .right{
+        padding-left: 5px;
         padding-right: 10px;
         right: 20px;
       }
@@ -32,8 +34,6 @@
         padding-left: 10px;
         left: 25px;
       }
-      background-color: var(--background-custom-black);
-      height: 65vh;
 
     .projects{
       display: flex;
@@ -45,9 +45,6 @@
       height: 100%;
       position: relative;
       justify-self: center;
-      min-height: 300px;
-      border-radius: 5px;
-
       
         .image-window{
           display: flex;
@@ -57,18 +54,16 @@
           height: inherit;
           align-items: center;
           width: 100%;
+          
 
           .video-container{
-            background-color: black;
+            background-color: transparent;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            align-self: center;
-            justify-self: center;
-            min-width: 100% !important;
+            height: max-content;
+            border-radius: 5px;
             min-height: 100% !important;
-            // object-fit: contain;
-            z-index: 3;
+            min-width: 100% !important;
+            height: 100%;
           }
 
           .image-container{
@@ -76,14 +71,17 @@
             height: inherit;
             width: 100%;
             justify-content: center;
+            max-height: 65vh;
 
             .carousel-img{
               display: flex;
-              min-width: 100% !important;
-              // min-height: 100% !important;
+              min-width: 100%;
               object-fit: contain;
               user-select: none;
               pointer-events: none;
+              object-fit: contain;
+              border-radius: 5px;
+
             }
           }
 
@@ -100,7 +98,7 @@
         .carousel-img{
           width: 100%;
           height: 100%;
-          object-fit: cover;
+          // object-fit: cover;
         }
       }
     }

@@ -7,7 +7,7 @@
     "/images/cliDataStructures/cli-data-structures-3.png", 
     "/images/cliDataStructures/cli-data-structures-4.png"
   ],
-  "landingText": "Visualise and interact with methods for Data Structures manipulation in a CLI themed environment!",
+  "landingText": "Learn, visualise and interact with different Data Structures in a CLI (Command Line Interface) themed environment!",
   "demoLink": "https://nikolamilinkovic.github.io/CLI-data-structures/",
   "gitLink": "https://github.com/NikolaMilinkovic/CLI-data-structures",
   "usedTech": ["JavaScript", "HTML", "CSS"]

@@ -2,9 +2,8 @@
 @import '../../global/mixins.scss';
 
 .about-section{
-  @include sectionLayout;
+  // @include sectionLayout;
   z-index: 2 !important;
-  height: calc(100dvh + 100px);
   // background-color: #10190D;
   background-color: #040707;
   background: #040707;
@@ -14,6 +13,35 @@
   grid-template-columns: 1fr 1fr;
   position: relative;
   padding: 0px 5vw;
+  min-height: calc(100dvh + 100px) !important;
+  // min-height: max-content !important;
+  // min-height: 100vh;
+
+  .contact-me-btn{
+    display: flex;
+    margin-left: auto;
+    background-color: var(--highlight);
+    border-radius: 5px;
+    padding: 0px;
+    border: none;
+    font-weight: 500;
+
+    .contact-me-link{
+      display: flex;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+
+    &:hover{
+      background-color: var(--highlight-hover);
+      cursor: pointer;
+    }
+    &:active{
+      transform: scale(0.97);
+    }
+  }
+
 
   .about-left{
     position: relative;
@@ -44,7 +72,7 @@
       left: 14vw;
       bottom: 5vw;
       width: 30vw;
-      height: 60%;
+      min-height: 60%;
       object-fit: cover;
       aspect-ratio: 1 / 1;
 
@@ -53,7 +81,15 @@
   }
   
   .about-right{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    // margin-bottom: 100px;
     position: relative;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 7vw;
 
 
     &:hover > div {
@@ -65,7 +101,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      position: absolute;
+      // position: absolute;
       left: 10%;
       right: 10%;
       top: 52%;
@@ -91,7 +127,7 @@
       }
     }
     .about-article{
-      position: absolute;
+      // position: absolute;
       right: 10vw;
       left: 10%;
       right: 10%;
@@ -140,31 +176,40 @@
 @media screen and (max-width: 800px){
   .about-section{
     grid-template-columns: 1fr;
-    grid-template-rows: 2.5fr 1fr;
-
+    grid-template-rows: 1fr 1fr;
     .about-left{
+      display: flex;
+      align-items: start;
+      justify-content: start;
       .border-div{
         width: 60vw;
-        height: 60%;
       }
       .profile-image{
         width: 60vw;
-        height: 60%;
       }
     }
     .about-right{
       .about-header{
+        position: unset;
         left: 10%;
         right: 10%;
         top: 5%;
       }
       .about-article{
+        position: unset;
         left: 10%;
         right: 10%;
         top: 25%;
+        height: max-content;
         text-align: justify;
       }
     }
+  }
+}
+.link{
+  color: var(--highlight);
+  &:hover{
+    color: var(--highlight-hover);
   }
 }
 

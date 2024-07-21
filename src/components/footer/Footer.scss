@@ -1,12 +1,27 @@
 @import '../../index.scss';
 @import '../../global/mixins.scss';
 
+
 footer{
   height: 40dvh;
   min-height: 280px;
   background-color: var(--background-custom-black);
   color: var(--footer-text-color);
   padding: 0px 10vw;
+  position: relative;
+
+  .footer-image{
+    position: absolute;
+    left: 0px;
+    top: -500px;
+    bottom: -20px;
+    height: 500px;
+    width: 100vw;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    z-index: -1;
+  }
 
   .upper-section{
     display: grid;

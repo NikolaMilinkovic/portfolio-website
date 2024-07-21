@@ -4,7 +4,7 @@ import './PlayYoutube.scss';
 
 function PlayYoutube({ videoData }) {
   const [data, setData] = useState(null);
-  const [dimensions, setDimensions] = useState({ width: 800, height: 500 });
+  const [dimensions, setDimensions] = useState({ width: 800, height: 300 });
   const [loaded, setLoaded] = useState(false);
   const containerRef = useRef(null);
 
@@ -13,10 +13,22 @@ function PlayYoutube({ videoData }) {
   }, [videoData]);
 
   useEffect(() => {
+    setLoaded(true);
+    let resizeTimeout;
+
     function handleResize() {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        if (containerRef.current) {
+          setDimensions({
+            width: containerRef.current.offsetWidth,
+            height: containerRef.current.offsetHeight,
+          });
+        }
+      }, 1000);
+    }
+    function handleLoad() {
       if (containerRef.current) {
-        // console.log(containerRef.current.offsetWidth);
-        // console.log(containerRef.current.offsetHeight);
         setDimensions({
           width: containerRef.current.offsetWidth,
           height: containerRef.current.offsetHeight,
@@ -24,29 +36,15 @@ function PlayYoutube({ videoData }) {
       }
     }
 
-    window.addEventListener('resize', handleResize);
     handleResize();
-    setLoaded(true);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  useEffect(() => {
-    const handleLoad = () => {
-      if (containerRef.current) {
-        setDimensions({
-          width: containerRef.current.offsetWidth,
-          height: containerRef.current.offsetHeight,
-        });
-      }
-    };
 
     window.addEventListener('load', handleLoad);
+    window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('load', handleLoad);
+      window.removeEventListener('resize', handleResize);
+      clearTimeout(resizeTimeout);
     };
   }, []);
 
@@ -64,7 +62,7 @@ function PlayYoutube({ videoData }) {
   }
 
   return (
-    <div ref={containerRef} className="video-container">
+    <div ref={containerRef} className="yt-video-container">
       {data && data.src && loaded && (
         <YouTube
           className="video"

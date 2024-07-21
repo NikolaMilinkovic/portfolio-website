@@ -25,21 +25,70 @@ function Home() {
 
         <div className="para-container">
           <div className="hero-wrapper para">
-            <p id="landing-hero-text" className="para">Hi. I am Nick.</p>
-            <p id="landing-sub-text" className="para">
+            <p id="landing-hero-text" className="para">
               A&nbsp;
               <span className="header-span">FullStack Web Developer</span>
             </p>
+            <p id="landing-sub-text" className="para">
+              Hi. I am Nick.
+            </p>
           </div>
 
-          <img id="img-5" className="para" alt="parallax-vector" src="/images/5.png" />
-          <img id="img-4" className="para" alt="parallax-vector" src="/images/4.png" />
-          <img id="img-3" className="para" alt="parallax-vector" src="/images/3.png" />
-          <img id="img-2" className="para" alt="parallax-vector" src="/images/2.png" />
-          <img id="img-1" className="para" alt="parallax-vector" src="/images/1.png" />
+          <img
+            id="img-5"
+            className="para"
+            alt="parallax-vector"
+            src="/images/5.png"
+            // srcSet="/images/landing/400w/forest-400w-5.png 600w,
+            //         /images/landing/600w/forest-600w-5.png 610w
+            //         /images/5.png 1000w"
+            // sizes="(max-width: 400px) 100vw,
+            //        (max-width: 610px) 100vw
+            //        (max-width: 1000px) 100vw"
+          />
+          <img
+            id="img-4"
+            className="para"
+            alt="parallax-vector"
+            src="/images/4.png"
+            // srcSet="/images/landing/400w/forest-400w-4.png 400w,
+            //         /images/landing/600w/forest-600w-4.png 610w"
+            // sizes="(max-width: 400px) 100vw,
+            //        (max-width: 610px) 100vw"
+          />
+          <img
+            id="img-3"
+            className="para"
+            alt="parallax-vector"
+            src="/images/3.png"
+            // srcSet="/images/landing/400w/forest-400w-3.png 400w,
+            //         /images/landing/600w/forest-600w-3.png 610w"
+            // sizes="(max-width: 400px) 100vw,
+            //        (max-width: 610px) 100vw"
+          />
+          <img
+            id="img-2"
+            className="para"
+            alt="parallax-vector"
+            src="/images/2.png"
+            // srcSet="/images/landing/400w/forest-400w-2.png 400w,
+            //         /images/landing/600w/forest-600w-2.png 610w"
+            // sizes="(max-width: 400px) 100vw,
+            //        (max-width: 610px) 100vw"
+          />
+          <img
+            id="img-1"
+            className="para"
+            alt="parallax-vector"
+            src="/images/1.png"
+            // srcSet="/images/landing/400w/forest-400w-1.png 400w,
+            //         /images/landing/600w/forest-600w-1.png 610w"
+            // sizes="(max-width: 610px) 100vw,
+            //        (max-width: 400px) 100vw"
+          />
 
           {/* Birds */}
-          {/* { screenWidth && (
+          { screenWidth && (
             <>
               <BirdGif
                 id="bird-1"
@@ -67,12 +116,12 @@ function Home() {
               />
               <BirdGif
                 id="bird-5"
-                initialTop="77vh"
+                initialTop="70vh"
                 left="-7"
                 speed={screenWidth / 50}
               />
             </>
-          )} */}
+          )}
         </div>
 
         {/* <img className="test-image" alt="parallax-vector" src="/images/image-4.png" /> */}

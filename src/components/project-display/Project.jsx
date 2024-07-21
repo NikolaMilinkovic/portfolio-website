@@ -16,6 +16,7 @@ function Project({
   projectDescritpionColor = 'black',
   animateSide = 'left',
   arrowColor,
+  showCaseStudyBtn = true,
 }) {
   const [data, setData] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -46,12 +47,14 @@ function Project({
 
       {/* Link Buttons */}
       <div className="buttons-container">
+        {showCaseStudyBtn && (
         <CardButton
           path={cardButtonPath}
           text="Case Study"
           background={cardButtonBackground}
           color={cardButtonColor}
         />
+        )}
         {data && (
         <>
           <CardButton

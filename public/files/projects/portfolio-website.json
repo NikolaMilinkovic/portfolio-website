@@ -1,7 +1,7 @@
 {
   "name": "Portfolio Website",
   "images": ["/images/portfolioWebsite/portfolio-website-1.png"],
-  "landingText": "My personal portfolio website used to showcase some of the skills and projects that I have worked on.",
+  "landingText": "Personal portfolio website used to showcase some my skills, technologies and personal projects that I have worked on.",
   "demoLink": "https://nikola-portfolio-website.vercel.app/",
   "gitLink": "https://github.com/NikolaMilinkovic/portfolio-website",
   "usedTech": ["JavaScript", "HTML", "CSS", "SASS", "React", "Vite"]

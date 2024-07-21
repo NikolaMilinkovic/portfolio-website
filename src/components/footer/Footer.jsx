@@ -4,6 +4,7 @@ import './Footer.scss';
 function Footer() {
   return (
     <footer>
+      <img src="/images/1.png" className="footer-image" alt="forest transition" />
       <div className="upper-section">
         <div className="left">
           <div>

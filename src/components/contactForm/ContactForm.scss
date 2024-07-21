@@ -1,14 +1,51 @@
 @import '../../index.scss';
 
 .contact-wrapper{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 1px solid lightgray;
-
+  display: flex;
+  margin-bottom: 15vw;
+  justify-content: center;
 
   .contact-form{
     margin: 2rem;
     display: flex;
     flex-direction: column;
+    max-width: 700px;
+    width: 100%;
+    gap: 0.5rem;
+    background-color: rgba(255,255,255,0.8);
+    padding: 1rem;
+    border-radius: 5px;
+    transition: 0.5s ease;
+
+    .btn-submit{
+      background-color: var(--highlight);
+      border: none;
+      padding: 0.7rem;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover{
+        transform: scale(1.01);
+        background-color: var(--highlight-hover);
+      }
+      &:active{
+        transform: scale(0.98);
+      }
+    }
   }
+}
+
+.hideForm{
+  opacity: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: -1;
+}
+.show-left{
+  opacity: 1;
+  transform: translateX(0px);
+}
+.hide-left{
+  opacity: 0;
+  transform: translateX(-100px);
 }

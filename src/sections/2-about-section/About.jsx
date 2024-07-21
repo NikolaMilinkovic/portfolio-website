@@ -1,6 +1,8 @@
+/* eslint-disable max-len */
 import React, { useState, useEffect, useRef } from 'react';
-import { Element } from 'react-scroll';
+import { Link, Element } from 'react-scroll';
 import useElementOnScreen from '../../util/useElementOnScreen';
+
 import './About.scss';
 
 function About() {
@@ -32,11 +34,41 @@ function About() {
         </div>
         <div className="about-right">
           <h2 className={`about-header ${isVisible ? 'show-element-right' : 'hide-element-right'}`}>
-            Random inspiring header
+            My name is Nikola,
+            <br />
+            {' '}
+            Full Stack Web Developer from Europe.
             <div className={`header-underline ${isVisible ? 'show-element-right' : 'hide-element-right'}`} />
           </h2>
           <article className={`about-article ${isVisible ? 'show-element-right' : 'hide-element-right'}`}>
-            <p className="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sunt soluta veniam. Explicabo ipsum quis minima labore esse? Impedit quia laudantium excepturi nostrum tenetur necessitatibus eaque nisi debitis inventore illo.</p>
+            <p className="about-text">
+              For some time now I&apos;ve been deeply immersed in web development. My humble beginnings in this career path came through self-study and
+              {' '}
+              <a className="link" href="https://www.theodinproject.com/" target="_blank">
+                TheOdinProject
+              </a>
+              {' '}
+              curriculum. While my academic background is also programming-centric, my tangible knowledge has largely come from my self-taught journey, tinkering with new techonologies and working on projects.
+            </p>
+            <p className="about-text">
+              I enjoy building fun, pleasing and usefull applications that aim to solve problems, enhance workflows and or at very least bring a smile to the face of its user. At this moment I am freelancing, crafting web apps and looking out for full time opportunities.
+            </p>
+            <p className="about-text">
+              Looking to collaborate, work together, or grab a cup of coffee and talk about tech? Get in touch by clicking the button bellow!
+            </p>
+
+            <button type="button" className="contact-me-btn">
+              <Link
+                offset={-80}
+                name="Contact"
+                className="contact-me-link"
+                to="scroll-contact"
+                smooth
+                duration={800}
+              >
+                Contact me here!
+              </Link>
+            </button>
           </article>
         </div>
       </section>

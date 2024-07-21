@@ -5,7 +5,6 @@ import { Element } from 'react-scroll';
 import { useNavigate } from 'react-router-dom';
 import OtherProjectsCarousel from '../../components/project-display/other-projects-carousel/OtherProjectsCarousel';
 import Project from '../../components/project-display/Project';
-import useElementOnScreen from '../../util/useElementOnScreen';
 import './Projects.scss';
 
 function Projects() {
