@@ -55,6 +55,7 @@ function ContactForm() {
   return (
     <div className="contact-wrapper" ref={containerRef}>
       <form ref={form} className={`contact-form ${showForm ? 'showForm' : 'hideForm'} ${isVisible ? 'show-left' : 'hide-left'}`} onSubmit={(e) => sendEmail(e)}>
+        <h2>Contact me!</h2>
         <FormInput
           label="Name"
           id="user_name"
@@ -84,7 +85,12 @@ function ContactForm() {
           text={formData.message}
           onChange={(e) => onChange(e)}
         />
-        <button type="submit" className="btn-submit">Submit</button>
+        <button type="submit" className="btn-submit">
+          Send
+          {'  email '}
+
+          {/* <img className="message-icon" src="/icons/black/envelope-solid.svg" alt="message" /> */}
+        </button>
       </form>
     </div>
 

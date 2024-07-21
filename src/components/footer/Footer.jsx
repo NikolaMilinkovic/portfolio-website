@@ -1,10 +1,16 @@
 import React from 'react';
 import './Footer.scss';
+import BirdGif from '../birdGif/BirdGif';
 
 function Footer() {
   return (
     <footer>
+      <img src="/images/5.png" className="footer-image" alt="forest transition" />
+      <img src="/images/4.png" className="footer-image" alt="forest transition" />
+      <img src="/images/3.png" className="footer-image" alt="forest transition" />
+      <img src="/images/2.png" className="footer-image" alt="forest transition" />
       <img src="/images/1.png" className="footer-image" alt="forest transition" />
+
       <div className="upper-section">
         <div className="left">
           <div>

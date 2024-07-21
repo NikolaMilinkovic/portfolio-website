@@ -51,6 +51,7 @@
       #landing-hero-text{
         position: relative;
 
+
         .scroll-down-icon{
           position: absolute;
           left: 50%;
@@ -58,7 +59,10 @@
           bottom: 60px;
           transform: translateX(-20px);
           --para-speed: 2;
+
+          cursor: pointer;
         }
+
 
       }
     }

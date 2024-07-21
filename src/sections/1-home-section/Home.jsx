@@ -28,6 +28,7 @@ function Home() {
             <p id="landing-hero-text" className="para">
               A&nbsp;
               <span className="header-span">FullStack Web Developer</span>
+
               <div className="scroll-down-icon para">
                 <ScrollDownIcon />
               </div>
