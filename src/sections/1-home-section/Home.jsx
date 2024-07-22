@@ -21,9 +21,10 @@ function Home() {
   return (
     <Element id="scroll-home" name="scroll-home">
       <section className="home-section">
-        <SocialsSidebar />
 
         <div className="para-container">
+          <SocialsSidebar />
+
           <div className="hero-wrapper para">
             <p id="landing-hero-text" className="para">
               A&nbsp;

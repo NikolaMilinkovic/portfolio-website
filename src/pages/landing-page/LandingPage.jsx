@@ -16,7 +16,7 @@ function LandingPage() {
   const loading = useImageLoader();
 
   return (
-    <>
+    <div className="landing-page-wrapper">
       <Loading
         isLoading={loading}
       />
@@ -28,7 +28,7 @@ function LandingPage() {
       {/* <Skills /> */}
       <Contact />
       <Footer />
-    </>
+    </div>
 
   );
 }
