@@ -38,8 +38,9 @@ function Footer() {
       </div>
       <div className="lower-section">
         <p className="copyright">
-          © Copyright 2024. Made by&nbsp;
-          <a href="https://github.com/NikolaMilinkovic/portfolio-website" target="_blank">Nikola Milinkovic</a>
+          © Copyright 2024.&nbsp;
+          <a href="https://github.com/NikolaMilinkovic/" target="_blank">Nikola Milinkovic</a>
+          &nbsp;all rights reserved.
         </p>
       </div>
     </footer>
