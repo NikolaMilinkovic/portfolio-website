@@ -42,13 +42,13 @@ function About() {
           </h2>
           <article className={`about-article ${isVisible ? 'show-element-right' : 'hide-element-right'}`}>
             <p className="about-text">
-              For some time now I&apos;ve been deeply immersed in web development. My humble beginnings in this career path came through self-study and
+              For some time now I&apos;ve been deeply immersed in web development. My humble beginnings in this career path came through self - study and
               {' '}
               <a className="link" href="https://www.theodinproject.com/" target="_blank">
                 TheOdinProject
               </a>
               {' '}
-              curriculum. While my academic background is also programming-centric, my tangible knowledge has largely come from my self-taught journey, tinkering with new techonologies and working on projects.
+              curriculum. While my academic background is also programming - centric, my tangible knowledge has largely come from my self - taught journey, tinkering with new techonologies and working on projects.
             </p>
             <p className="about-text">
               I enjoy building fun, pleasing and usefull applications that aim to solve problems, enhance workflows and or at very least bring a smile to the face of its user. At this moment I am freelancing, crafting web apps and looking out for full time opportunities.
