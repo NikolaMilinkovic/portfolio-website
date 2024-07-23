@@ -29,10 +29,10 @@
     }
 
     .hero-wrapper{
-      display: flex;
-      width: 100%;
-      height: 100%;
-      position: relative;
+      // display: flex;
+      // width: 100%;
+      // height: 100%;
+      // position: relative;
 
 
       #landing-hero-text,
@@ -45,9 +45,9 @@
         top: 100px;
         left: 0;
         z-index: -1;
-        --para-speed: 23;
+        --para-speed: 35;
         color: var(--hero-text-color);
-        animation: zoom-out, parallax linear;
+        animation: parallax linear;
         animation-timeline: scroll();
         z-index: -1 !important;
       }
@@ -56,7 +56,7 @@
         top: 100px;
         font-size: clamp(16px, 3vw, 1.5rem) !important;
         color: #B2CC85;
-        --para-speed: 22;
+        --para-speed: 35;
       }
 
       #landing-hero-text{
