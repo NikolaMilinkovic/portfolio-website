@@ -9,13 +9,13 @@ function Footer() {
       <img src="/images/4.png" className="footer-image" alt="forest transition" />
       <img src="/images/3.png" className="footer-image" alt="forest transition" />
       <img src="/images/2.png" className="footer-image" alt="forest transition" />
-      <img src="/images/1.png" className="footer-image" alt="forest transition" />
+      <img src="/images/1.png" id="img-1" className="footer-image" alt="forest transition" />
 
       <div className="upper-section">
         <div className="left">
           <div>
             <p className="footer-header">Nikola Milinkovic</p>
-            <p className="footer-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis itaque vero est rem provident dignissimos.</p>
+            <p className="footer-text">Thank you for checking out my portfolio, lets get in touch and work towards creating something special!</p>
           </div>
         </div>
 

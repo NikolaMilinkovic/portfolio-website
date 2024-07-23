@@ -54,6 +54,11 @@ function ContactForm() {
   };
   return (
     <div className="contact-wrapper" ref={containerRef}>
+      <div className={`after-message-screen ${showForm ? 'hideForm' : 'showForm'}`}>
+        <p>This text appears after a message has been sent!</p>
+        <p>Thank you for contacting me! I usually respond in the next 48h.</p>
+        <p>If you are looking to send anther message you can do so here:</p>
+      </div>
       <form ref={form} className={`contact-form ${showForm ? 'showForm' : 'hideForm'} ${isVisible ? 'show-left' : 'hide-left'}`} onSubmit={(e) => sendEmail(e)}>
         <h2>Contact me!</h2>
         <FormInput
@@ -87,8 +92,6 @@ function ContactForm() {
         />
         <button type="submit" className="btn-submit">
           Send
-          {'  email '}
-
           {/* <img className="message-icon" src="/icons/black/envelope-solid.svg" alt="message" /> */}
         </button>
       </form>

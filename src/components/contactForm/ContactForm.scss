@@ -5,6 +5,10 @@
   margin-bottom: 15vw;
   justify-content: center;
 
+  .after-message-screen{
+    position: absolute;
+  }
+
   .contact-form{
     margin: 2rem;
     display: flex;
@@ -43,13 +47,6 @@
     }
   }
 }
-
-.hideForm{
-  opacity: 0;
-  user-select: none;
-  -webkit-user-select: none;
-  z-index: -1;
-}
 .show-left{
   opacity: 1;
   transform: translateX(0px);
@@ -58,3 +55,10 @@
   opacity: 0;
   transform: translateX(-100px);
 }
+.hideForm{
+  opacity: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: -1;
+}
+

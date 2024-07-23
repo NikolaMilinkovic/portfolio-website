@@ -1,37 +1,29 @@
 @import '../../index.scss';
 @import '../../global/mixins.scss';
 
-html, body {
-  overflow-x: hidden;
-  height: 100%;
-  box-sizing: border-box
-}
-
 .home-section{
   @include sectionLayout;
   background: linear-gradient(to bottom, #ffffff 70%, #040707 30%);
   background: transparent;
   max-height: 100vh !important;
-  max-width: 100vw !important;
+  width: 100vw !important;
   box-sizing: border-box;
+  height: 100%;
 
   .para-container{
     position: relative;
     display: grid;
     grid-template-areas: "stack";
-    max-height: 100vh;
     contain: paint;
-    // overflow: hidden;
     box-sizing: border-box;
 
 
      .para {
-      // width: 10vw !important;
-      width: calc(100vw - 8px) !important;
-      grid-area: stack !important;
+      width: 100vw;
+      grid-area: stack;
       animation: parallax linear;
       animation-timeline: scroll();
-      height: 100vh;
+      min-height: 100vh;
 
     }
 

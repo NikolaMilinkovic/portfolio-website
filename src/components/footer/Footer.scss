@@ -10,6 +10,7 @@ footer{
   padding: 0px 10vw;
   position: relative;
 
+
   .footer-image{
     position: absolute;
     left: 0px;
@@ -89,6 +90,19 @@ footer{
         &:hover{
           color: rgb(178, 204, 133);
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer{
+    .upper-section{
+      grid-template-columns: 1fr;
+
+      .right{
+        justify-content: center;
+        align-items: start;
       }
     }
   }
