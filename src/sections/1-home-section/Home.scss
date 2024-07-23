@@ -42,7 +42,7 @@
         font-size: clamp(18px, 6vw, 3rem);
         font-weight: bold;
         position: absolute;
-        top: clamp(80px, 90px, 130px);
+        top: 100px;
         left: 0;
         z-index: -1;
         --para-speed: 23;
@@ -53,7 +53,7 @@
       }
 
       #landing-sub-text{
-        top: clamp(80px, 6vw, 130px);
+        top: 100px;
         font-size: clamp(16px, 3vw, 1.5rem) !important;
         color: #B2CC85;
         --para-speed: 22;
@@ -65,7 +65,7 @@
         .scroll-down-icon{
           position: absolute;
           left: 50%;
-          top: 8%;
+          top: 70px;
           bottom: 60px;
           transform: translateX(-20px);
           --para-speed: 2;
@@ -89,8 +89,8 @@
     #img-1 { --para-speed: 4; }
     #img-2 { --para-speed: 5; }
     #img-3 { --para-speed: 9; }
-    #img-4 { --para-speed: 14; }
-    #img-5 { --para-speed: 17; }
+    #img-4 { --para-speed: 12; }
+    #img-5 { --para-speed: 14; }
   }
 }
 

@@ -61,18 +61,6 @@ function Projects() {
   return (
     <>
       <Element id="scroll-projects-1" name="scroll-projects-1">
-        {/* <img
-        loading="lazy"
-        srcSet="
-          /images/1.png 480w,
-          /images/5.png 768w,
-          /images/4.png 834w,
-          /images/3.png 1024w,
-          /images/2.png 1440w,
-        "
-        src="/images/1.png"
-        alt="Description of the"
-      /> */}
         {/* BATTLESHIP */}
         <section className="projects-section-1">
           <Project
@@ -87,7 +75,6 @@ function Projects() {
         </section>
       </Element>
       <Element id="scroll-projects-2" name="scroll-projects-2">
-        {/* "http://localhost:5173/case-study/battleship" */}
         <section className="projects-section-2">
           <Project
             projectData={battleship || null}
@@ -99,7 +86,7 @@ function Projects() {
           />
         </section>
       </Element>
-      <Element id="scroll-projects-3" name="scroll-projects-3">
+      {/* <Element id="scroll-projects-3" name="scroll-projects-3">
         <section className="projects-section-3">
           <Project
             projectData={cliDatStruct || null}
@@ -111,9 +98,8 @@ function Projects() {
             arrowColor="#000000"
           />
         </section>
-      </Element>
-      <Element id="scroll-projects-4" name="scroll-projects-4">
-        {/* "http://localhost:5173/case-study/battleship" */}
+      </Element> */}
+      {/* <Element id="scroll-projects-4" name="scroll-projects-4">
         <section className="projects-section-2">
           <Project
             projectData={portfolioWebsite || null}
@@ -124,8 +110,8 @@ function Projects() {
             arrowColor="#ffffff"
           />
         </section>
-      </Element>
-      <Element id="scroll-projects-5" name="scroll-projects-5">
+      </Element> */}
+      {/* <Element id="scroll-projects-5" name="scroll-projects-5">
         <section className="projects-section-4">
           <header className="other-projects-header">
             <h2>Other Projects</h2>
@@ -133,13 +119,8 @@ function Projects() {
           <OtherProjectsCarousel
             projects={otherProjects || null}
           />
-          {/* <article>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem molestias asperiores qui pariatur, tempora blanditiis dicta? Facilis consequuntur minus quidem.
-            </p>
-          </article> */}
         </section>
-      </Element>
+      </Element> */}
     </>
   );
 }

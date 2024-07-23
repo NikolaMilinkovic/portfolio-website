@@ -35,7 +35,7 @@ function Home() {
               </div>
             </p>
             <p id="landing-sub-text" className="para">
-              Hi. I am Nick.
+              Hi, I am Nick.
             </p>
           </div>
 

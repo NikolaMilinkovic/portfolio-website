@@ -73,7 +73,24 @@ function ProjectCarousel({ images = [], videos = [], arrowColor = 'white' }) {
               <img
                 key={`carousel-image-${index}`}
                 className="carousel-img"
-                src={image}
+                src={image.src}
+                srcSet={`
+                  ${image.SrcSet.img400w} 400w,
+                  ${image.SrcSet.img600w} 600w,
+                  ${image.SrcSet.img800w} 800w,
+                  ${image.SrcSet.img1024w} 1024w,
+                  ${image.SrcSet.img1440w} 1440w,
+                  ${image.SrcSet.img1600w} 1600w,
+                  ${image.SrcSet.img2000w} 2000w,
+                  ${image.SrcSet.img2500w} 2500w`}
+                sizes="(max-width: 400px) 100vw,
+                       (max-width: 600px) 100vw,
+                       (max-width: 800px) 100vw,
+                       (max-width: 1024px) 100vw,
+                       (max-width: 1440px) 100vw,
+                       (max-width: 1600px) 100vw,
+                       (max-width: 2000px) 100vw,
+                       (max-width: 2500px) 100vw"
                 alt="project description"
               />
             </div>
