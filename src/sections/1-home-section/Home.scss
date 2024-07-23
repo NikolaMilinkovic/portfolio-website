@@ -8,7 +8,7 @@
   max-height: 100vh !important;
   width: 100vw !important;
   box-sizing: border-box;
-  height: 100%;
+  overflow: visible;
 
   .para-container{
     position: relative;
@@ -16,6 +16,8 @@
     grid-template-areas: "stack";
     contain: paint;
     box-sizing: border-box;
+    height: 100%;
+    overflow: visible;
 
 
      .para {
@@ -24,7 +26,6 @@
       animation: parallax linear;
       animation-timeline: scroll();
       min-height: 100vh;
-
     }
 
     .hero-wrapper{

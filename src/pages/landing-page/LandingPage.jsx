@@ -16,20 +16,18 @@ function LandingPage() {
   const loading = useImageLoader();
 
   return (
-    <div className="landing-page-wrapper">
+    <>
       <Loading
         isLoading={loading}
       />
       <Navbar />
-      {/* HOME IS CAUSING SIDE ISSUE */}
       <Home />
       <About />
       <Projects />
       {/* <Skills /> */}
       <Contact />
       <Footer />
-    </div>
-
+    </>
   );
 }
 
