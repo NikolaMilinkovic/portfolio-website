@@ -97,33 +97,33 @@ function Home() {
             <>
               <BirdGif
                 id="bird-1"
-                initialTop="50vh"
+                initialTop={50}
                 left="-2"
-                speed={screenWidth / 50}
+                moveSpeed={screenWidth / 50}
               />
               <BirdGif
                 id="bird-2"
-                initialTop="65vh"
+                initialTop={65}
                 left="-44"
-                speed={screenWidth / 50}
+                moveSpeed={screenWidth / 50}
               />
               <BirdGif
                 id="bird-3"
-                initialTop="48vh"
+                initialTop={48}
                 left="-50"
-                speed={screenWidth / 50}
+                moveSpeed={screenWidth / 50}
               />
               <BirdGif
                 id="bird-4"
-                initialTop="46vh"
+                initialTop={46}
                 left="-40"
-                speed={screenWidth / 50}
+                moveSpeed={screenWidth / 50}
               />
               <BirdGif
                 id="bird-5"
-                initialTop="70vh"
+                initialTop={70}
                 left="-7"
-                speed={screenWidth / 50}
+                moveSpeed={screenWidth / 50}
               />
             </>
           )}

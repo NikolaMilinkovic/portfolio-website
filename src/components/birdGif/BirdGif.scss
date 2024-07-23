@@ -7,7 +7,13 @@
 
   animation: animate-bird linear infinite;
   animation-delay: 1s;
-  transition: 6s linear;
+  transition: 3s linear;
+
+  &:hover{
+    width: 40px;
+    height: 40px;
+  }
+  cursor: pointer;
 }
 
 @keyframes animate-bird {
@@ -16,4 +22,7 @@
   } to {
     transform: translateX(var(--translateX-end, 150vw));
   }
+}
+
+.test-bird{
 }

@@ -5,9 +5,9 @@
   // @include sectionLayout;
   z-index: 2 !important;
   // background-color: #10190D;
-  background-color: #040707;
+  // background-color: #040707;
   background: #040707;
-  // background-color: #10190D;
+  // background-color: #131d0e;
   // background: linear-gradient(to bottom, #10190D 20%, #000000 80%);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -26,6 +26,9 @@
     padding: 0px;
     border: none;
     font-weight: 500;
+    min-height: 45px;
+    align-items: center;
+    justify-content: center;
 
     .contact-me-link{
       display: flex;

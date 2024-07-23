@@ -86,7 +86,7 @@ function Projects() {
           />
         </section>
       </Element>
-      {/* <Element id="scroll-projects-3" name="scroll-projects-3">
+      <Element id="scroll-projects-3" name="scroll-projects-3">
         <section className="projects-section-3">
           <Project
             projectData={cliDatStruct || null}
@@ -98,8 +98,8 @@ function Projects() {
             arrowColor="#000000"
           />
         </section>
-      </Element> */}
-      {/* <Element id="scroll-projects-4" name="scroll-projects-4">
+      </Element>
+      <Element id="scroll-projects-4" name="scroll-projects-4">
         <section className="projects-section-2">
           <Project
             projectData={portfolioWebsite || null}
@@ -110,8 +110,8 @@ function Projects() {
             arrowColor="#ffffff"
           />
         </section>
-      </Element> */}
-      {/* <Element id="scroll-projects-5" name="scroll-projects-5">
+      </Element>
+      <Element id="scroll-projects-5" name="scroll-projects-5">
         <section className="projects-section-4">
           <header className="other-projects-header">
             <h2>Other Projects</h2>
@@ -120,7 +120,7 @@ function Projects() {
             projects={otherProjects || null}
           />
         </section>
-      </Element> */}
+      </Element>
     </>
   );
 }
