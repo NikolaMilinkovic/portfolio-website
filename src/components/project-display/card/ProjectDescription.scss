@@ -16,7 +16,8 @@
   }
 
   .project-text{
-    text-align: center;
+    text-align: justify;
+    hyphens: auto;
     font-size: clamp(12px, 14px, 16px);
     max-width: 600px;
     margin-top: 1rem;

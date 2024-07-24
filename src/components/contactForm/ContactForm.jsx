@@ -60,7 +60,7 @@ function ContactForm() {
         <p>If you are looking to send anther message you can do so here:</p>
       </div>
       <form ref={form} className={`contact-form ${showForm ? 'showForm' : 'hideForm'} ${isVisible ? 'show-left' : 'hide-left'}`} onSubmit={(e) => sendEmail(e)}>
-        <h2>Contact me!</h2>
+        <h1>Contact me!</h1>
         <FormInput
           label="Name"
           id="user_name"

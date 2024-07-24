@@ -2,20 +2,13 @@
 @import '../../global/mixins.scss';
 
 .about-section{
-  // @include sectionLayout;
   z-index: 2 !important;
-  // background-color: #10190D;
-  // background-color: #040707;
   background: #040707;
-  // background-color: #131d0e;
-  // background: linear-gradient(to bottom, #10190D 20%, #000000 80%);
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
   padding: 0px 5vw;
   min-height: calc(100dvh + 100px) !important;
-  // min-height: max-content !important;
-  // min-height: 100vh;
   overflow: hidden;
 
   .contact-me-btn{
@@ -59,14 +52,14 @@
       font-weight: 600;
       z-index: 2;
       bottom: 7vw;
-      left: 7vw;
+      left: 3vw;
       text-shadow: 0px 0px 3px rgba(0,0,0,0.5);
 
       transition: 0.8s ease;
     }
     .border-div{
       position: absolute;
-      left: 10vw;
+      left: 5vw;
       bottom: 7vw;
       border: 4px solid #B2CC85;
       width: 30vw;
@@ -75,7 +68,7 @@
     }
     .profile-image{
       position: absolute;
-      left: 14vw;
+      left: 8vw;
       bottom: 5vw;
       width: 30vw;
       min-height: 60%;
@@ -92,9 +85,8 @@
     flex-direction: column;
     margin-top: auto;
     margin-bottom: auto;
-    // margin-bottom: 100px;
     position: relative;
-    padding-left: 5vw;
+    padding-left: 7%;
     padding-right: 5vw;
     padding-top: 7vw;
 
@@ -108,7 +100,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      // position: absolute;
       left: 10%;
       right: 10%;
       top: 52%;
@@ -142,6 +133,8 @@
       color: white;
       font-size: 14px;
       text-align: justify;
+      hyphens: auto;
+
 
       transition: 0.8s ease;
     }
@@ -184,19 +177,20 @@
   .about-section{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    padding-top: 3rem;
     .about-left{
       display: flex;
-      align-items: start;
-      justify-content: start;
+      align-items: center;
+      justify-content: center;
       .border-div{
         width: 60vw;
-        height: 100%;
-        max-height: 400px;
+        left: 50%;
+        transform: translateX(-50%);
       }
       .profile-image{
-        width: 60vw;
-        height: 100%;
-        max-height: 400px;
+        min-width: 60vw;
+        left: 50%;
+        transform: translateX(-42%);
       }
     }
     .about-right{
@@ -213,6 +207,7 @@
         top: 25%;
         height: max-content;
         text-align: justify;
+        hyphens: auto;
         margin-bottom: 50px;
       }
     }

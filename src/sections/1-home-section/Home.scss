@@ -3,12 +3,13 @@
 
 .home-section{
   @include sectionLayout;
-  background: linear-gradient(to bottom, #ffffff 70%, #040707 30%);
-  background: transparent;
+  // background: linear-gradient(to bottom, #ffffff 70%, #040707 30%);
+  // background: transparent;
   max-height: 100vh !important;
   width: 100vw !important;
   box-sizing: border-box;
   overflow: visible;
+  background-color: #FCFFFC !important;
 
   .para-container{
     position: relative;

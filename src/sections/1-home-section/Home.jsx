@@ -26,17 +26,17 @@ function Home() {
           <SocialsSidebar />
 
           <div className="hero-wrapper para">
-            <p id="landing-hero-text" className="para">
+            <h1 id="landing-hero-text" className="para">
               A&nbsp;
               <span className="header-span">FullStack Web Developer</span>
 
               <div className="scroll-down-icon para">
                 <ScrollDownIcon />
               </div>
-            </p>
-            <p id="landing-sub-text" className="para">
+            </h1>
+            <h1 id="landing-sub-text" className="para">
               Hi, I am Nick.
-            </p>
+            </h1>
           </div>
 
           <img

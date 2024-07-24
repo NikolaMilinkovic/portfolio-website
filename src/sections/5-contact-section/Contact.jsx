@@ -9,7 +9,6 @@ function Contact() {
       <Element id="scroll-contact" name="scroll-contact">
         <ContactForm />
       </Element>
-      {/* <img src="/images/2.png" className="footer-image" alt="forest transition" /> */}
     </section>
   );
 }

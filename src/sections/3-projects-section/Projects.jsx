@@ -114,7 +114,7 @@ function Projects() {
       <Element id="scroll-projects-5" name="scroll-projects-5">
         <section className="projects-section-4">
           <header className="other-projects-header">
-            <h2>Other Projects</h2>
+            <h1>Other Projects</h1>
           </header>
           <OtherProjectsCarousel
             projects={otherProjects || null}

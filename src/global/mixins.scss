@@ -35,3 +35,16 @@
   box-sizing: border-box;
   overflow: hidden;
 }
+
+@mixin h1_default(){
+  font-size: var(--h1-size);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @media screen and (max-width: 800px) {
+    font-size: var(--h1-size-mobile);
+  }
+}

@@ -33,13 +33,13 @@ function About() {
           <img ref={imageRef} alt="Nikola Milinkovic" src="/images/IMG_4556.JPG" className={`profile-image ${isVisible ? 'show-element-left' : 'hide-element-left'}`} />
         </div>
         <div className="about-right">
-          <h2 className={`about-header ${isVisible ? 'show-element-right' : 'hide-element-right'}`}>
+          <h1 className={`about-header ${isVisible ? 'show-element-right' : 'hide-element-right'}`}>
             My name is Nikola,
             <br />
             {' '}
             Full Stack Web Developer from Europe.
             <div className={`header-underline ${isVisible ? 'show-element-right' : 'hide-element-right'}`} />
-          </h2>
+          </h1>
           <article className={`about-article ${isVisible ? 'show-element-right' : 'hide-element-right'}`}>
             <p className="about-text">
               For some time now I&apos;ve been deeply immersed in web development. My humble beginnings in this career path came through self - study and

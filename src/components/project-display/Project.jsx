@@ -42,36 +42,39 @@ function Project({
 
       {/* HEADER */}
       <header className="header">
-        {data && (data.name)}
+        <h1 className="header-h1">
+          {data && (data.name)}
+        </h1>
+
+        <div className="buttons-container">
+          {showCaseStudyBtn && (
+          <CardButton
+            path={cardButtonPath}
+            text="Case Study"
+            background={cardButtonBackground}
+            color={cardButtonColor}
+          />
+          )}
+          {data && (
+          <>
+            <CardButton
+              path={data.demoLink}
+              text="Live Demo"
+              background={cardButtonBackground}
+              color={cardButtonColor}
+            />
+            <CardButton
+              path={data.gitLink}
+              text="Code"
+              background={cardButtonBackground}
+              color={cardButtonColor}
+            />
+          </>
+          )}
+        </div>
       </header>
 
       {/* Link Buttons */}
-      <div className="buttons-container">
-        {showCaseStudyBtn && (
-        <CardButton
-          path={cardButtonPath}
-          text="Case Study"
-          background={cardButtonBackground}
-          color={cardButtonColor}
-        />
-        )}
-        {data && (
-        <>
-          <CardButton
-            path={data.demoLink}
-            text="Live Demo"
-            background={cardButtonBackground}
-            color={cardButtonColor}
-          />
-          <CardButton
-            path={data.gitLink}
-            text="Code"
-            background={cardButtonBackground}
-            color={cardButtonColor}
-          />
-        </>
-        )}
-      </div>
 
       {/* Carousel */}
       {data && (

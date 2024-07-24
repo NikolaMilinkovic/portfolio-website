@@ -14,6 +14,8 @@
     height: 40px;
   }
   cursor: pointer;
+
+  -webkit-tap-highlight-color: none !important;
 }
 
 @keyframes animate-bird {

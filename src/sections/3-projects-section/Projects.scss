@@ -16,6 +16,15 @@
 }
 
 .projects-section-1,
+.projects-section-3{
+  // background-color: #76ac6d;
+  // background-color: #96A972;
+  // public\images\testing\paprat-0.jpg
+  background: radial-gradient(circle, rgba(150, 169, 114, 0.3), rgba(32, 45, 29, 0.3)), url('/images/testing/paprat-0.jpg');
+  // background-blend-mode: overlay;
+}
+
+.projects-section-1,
 .projects-section-2,
 .projects-section-3{
   // background-color: #ffffff;
@@ -25,21 +34,16 @@
   justify-content: center;
   color: black;
 
-
-
   .header{
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 1rem;
     position: relative;
   }
-
-
-
 }
 .projects-section-1{
-  background-color: rgb(150, 169, 114);
-  background-color: #96A972;
+  // background-color: rgb(150, 169, 114);
+  // background-color: #96A972;
   // background-color: #D9EAC0;
   // background-color: #2A421E;
 
@@ -54,7 +58,7 @@
   background-color: var(--background-custom-black);
 }
 .projects-section-3{
-  background-color: #ffffff;
+  // background-color: #ffffff;
 }
 
 // @media screen and (max-width: 800px){
@@ -90,6 +94,10 @@
     align-items: center;
     justify-content: center;
     margin: 0px;
+
+    h1{
+      @include h1_default;
+    }
 
     > * {
       margin: 0px;
