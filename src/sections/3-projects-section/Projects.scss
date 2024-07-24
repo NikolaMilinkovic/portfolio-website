@@ -17,10 +17,11 @@
 
 .projects-section-1,
 .projects-section-3{
+
   // background-color: #76ac6d;
-  // background-color: #96A972;
+  background-color: #96A972;
   // public\images\testing\paprat-0.jpg
-  background: radial-gradient(circle, rgba(150, 169, 114, 0.3), rgba(32, 45, 29, 0.3)), url('/images/testing/paprat-0.jpg');
+  // background: radial-gradient(circle, rgba(150, 169, 114, 0.3), rgba(32, 45, 29, 0.3)), url('/images/testing/paprat-0.jpg');
   // background-blend-mode: overlay;
 }
 
@@ -42,12 +43,27 @@
   }
 }
 .projects-section-1{
+  height: 100vh;
+  position: relative;
+  background: rgb(113, 128, 84);
+
+
+  .scene-container{
+    position: absolute;
+    background-color: transparent;
+    background: transparent;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+  }
+
+
   // background-color: rgb(150, 169, 114);
   // background-color: #96A972;
   // background-color: #D9EAC0;
   // background-color: #2A421E;
 
-  // background: linear-gradient(to bottom, rgb(4, 6, 6) 20%, rgb(42, 67, 30));
   // background: linear-gradient(to bottom, rgba(4, 7, 7, 0.8), rgb(150, 169, 114)), url('/images/mcSchematicManager/mc-schematic-manager-1.png');
   // background-blend-mode: overlay;
 }

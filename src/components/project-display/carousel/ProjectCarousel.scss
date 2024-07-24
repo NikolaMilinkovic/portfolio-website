@@ -3,12 +3,13 @@
 .project-carousel{
   --padding: 10vw;
   display: grid;
-  width: 100%;
+  width: 85%;
   grid-template-columns: 1fr 100fr 1fr;
   overflow: hidden;
-  height: fit-content !important;
+  // height: fit-content !important;
+  height: 100%;
   background-color: transparent !important;
-  // max-height: 65vh;
+  // max-height: 60vh;
 
       .right,
       .left{

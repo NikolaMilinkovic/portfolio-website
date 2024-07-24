@@ -7,6 +7,8 @@ import OtherProjectsCarousel from '../../components/project-display/other-projec
 import Project from '../../components/project-display/Project';
 import './Projects.scss';
 
+import AnimatePr1 from './project-1/AnimatePr1';
+
 function Projects() {
   const [battleship, setBattleship] = useState(null);
   const [mcSchemMan, setMcSchemMan] = useState(null);
@@ -61,16 +63,20 @@ function Projects() {
   return (
     <>
       <Element id="scroll-projects-1" name="scroll-projects-1">
-        {/* BATTLESHIP */}
         <section className="projects-section-1">
+          <div className="scene-container">
+            <AnimatePr1 />
+          </div>
           <Project
             projectData={mcSchemMan || null}
             cardButtonPath="http://localhost:5173/case-study/mc-schematic-manager"
+            headerColor="f5f5f5"
             cardButtonBackground="white"
             cardButtonColor="black"
             projectDescritpionColor="black"
             animateSide="right"
             arrowColor="#000000"
+            timeout={2300}
           />
         </section>
       </Element>
