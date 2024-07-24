@@ -23,6 +23,7 @@ function Project({
   const [data, setData] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
   const [direction, setDirection] = useState(animateSide);
+  const [hasLoadedOnce, setHasLoadedOnce] = useState(false);
   const [containerRef] = useElementOnScreen({
     root: null,
     rootMargin: '0px',
@@ -42,25 +43,33 @@ function Project({
   }, [animateSide, containerRef, isVisible, direction]);
 
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
+    function handleClasses() {
       if (containerRef.current) {
         containerRef.current.classList.remove('hide-left');
         containerRef.current.classList.remove('hide-right');
-        // if (direction === 'right' || direction === 'left') {
         containerRef.current.classList.add(
           direction === 'left'
             ? (isVisible ? 'show-left' : 'hide-left')
             : (isVisible ? 'show-right' : 'hide-right'),
         );
-        // }
-        // if (direction === 'center') {
-        //   containerRef.current.classList.add('show-center');
-        // }
       }
-    }, timeout);
+    }
 
-    return () => clearTimeout(timeoutId);
-  }, [isVisible, direction, containerRef, timeout]);
+    // Runs once to remove delay when using react-scroll
+    // as it will rerender the component each time
+    // If we have delay it will only do it once
+    if (hasLoadedOnce === false) {
+      const timeoutId = setTimeout(() => {
+        handleClasses();
+        setHasLoadedOnce(true);
+      }, timeout);
+
+      return () => clearTimeout(timeoutId);
+    }
+
+    // Runs always
+    handleClasses();
+  }, [isVisible, direction, containerRef, timeout, hasLoadedOnce]);
 
   return (
     <div

@@ -13,6 +13,7 @@
   padding-right: 10vw;
   gap: 5vw;
   overflow: hidden;
+  height: 100vh;
 }
 
 .projects-section-1,
@@ -43,7 +44,6 @@
   }
 }
 .projects-section-1{
-  height: 100vh;
   position: relative;
   background: rgb(113, 128, 84);
 
