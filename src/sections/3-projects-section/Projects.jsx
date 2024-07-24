@@ -76,7 +76,7 @@ function Projects() {
             projectDescritpionColor="black"
             animateSide="right"
             arrowColor="#000000"
-            timeout={2300}
+            timeout={1500}
           />
         </section>
       </Element>
