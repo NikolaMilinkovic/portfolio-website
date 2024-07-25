@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { motion, useMotionValue } from 'framer-motion';
 import './SwipeCarousel.scss';
 
-const ONE_SECOND = 1000;
 const DRAG_BUFFER = 30;
 
 const SPRING_OPTIONS = {
@@ -91,33 +90,10 @@ function SwipeCarousel({ images = [] }) {
             className="carousel-image-div"
           />
         ))}
-        {/* <Images imgIndex={imgIndex} /> */}
       </motion.div>
 
       {/* <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} /> */}
     </div>
-  );
-}
-
-function Images({ imgIndex }) {
-  return (
-    <>
-      {imgs.map((imgSrc, idx) => (
-        <motion.div
-          key={idx}
-          style={{
-            backgroundImage: `url(${imgSrc})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-          animate={{
-            scale: imgIndex === idx ? 0.95 : 0.85,
-          }}
-          transition={SPRING_OPTIONS}
-          className="aspect-video w-screen shrink-0 rounded-xl bg-neutral-800 object-cover"
-        />
-      ))}
-    </>
   );
 }
 

@@ -64,9 +64,6 @@ function Projects() {
     <>
       <Element id="scroll-projects-1" name="scroll-projects-1">
         <section className="projects-section-1">
-          <div className="scene-container">
-            <AnimatePr1 />
-          </div>
           <Project
             projectData={mcSchemMan || null}
             cardButtonPath="http://localhost:5173/case-study/mc-schematic-manager"
@@ -76,6 +73,9 @@ function Projects() {
             animateSide="right"
             arrowColor="#000000"
           />
+          <div className="scene-container">
+            <AnimatePr1 />
+          </div>
         </section>
       </Element>
       <Element id="scroll-projects-2" name="scroll-projects-2">
