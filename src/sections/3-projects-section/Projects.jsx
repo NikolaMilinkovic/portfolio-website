@@ -95,6 +95,9 @@ function Projects() {
       </Element>
       <Element id="scroll-projects-3" name="scroll-projects-3">
         <section className="projects-section-3">
+          <div className="scene-container">
+            <AnimatePr1 />
+          </div>
           <Project
             projectData={cliDatStruct || null}
             cardButtonPath="http://localhost:5173/case-study/cli-data-structures"
