@@ -14,31 +14,40 @@ function TechBox({ text, tech, color }) {
       <div className="outline" style={{ color, borderColor: color }}>
         {/* JavaScript */}
         {tech && tech === 'JavaScript' && (
-          <IoLogoJavascript />
+          // <IoLogoJavascript />
+          <img className="tech-icon" src="/icons/colored/javascript.svg" alt="javascript-icon" />
         )}
         {tech && tech === 'HTML' && (
-          <FaHtml5 />
+          // <FaHtml5 />
+          <img className="tech-icon" src="/icons/colored/html.svg" alt="javascript-icon" />
         )}
         {tech && tech === 'CSS' && (
-          <FaCss3Alt />
+          // <FaCss3Alt />
+          <img className="tech-icon" src="/icons/colored/css.svg" alt="javascript-icon" />
         )}
         {tech && tech === 'React' && (
-          <FaReact />
+          // <FaReact />
+          <img className="tech-icon" src="/icons/colored/react.svg" alt="javascript-icon" />
         )}
         {tech && tech === 'SASS' && (
-          <FaSass />
+          // <FaSass />
+          <img className="tech-icon" src="/icons/colored/sass.svg" alt="javascript-icon" />
         )}
         {tech && tech === 'NodeJs' && (
-          <FaNodeJs />
+          // <FaNodeJs />
+          <img className="tech-icon" src="/icons/colored/node.svg" alt="javascript-icon" />
         )}
         {tech && tech === 'MongoDB' && (
-          <BiLogoMongodb />
+          // <BiLogoMongodb />
+          <img className="tech-icon" src="/icons/colored/mongodb.svg" alt="javascript-icon" />
         )}
         {tech && tech === 'Express' && (
-          <SiExpress />
+          // <SiExpress />
+          <img className="tech-icon" src="/icons/colored/express.svg" alt="javascript-icon" />
         )}
         {tech && tech === 'Vite' && (
-          <SiVite />
+          // <SiVite />
+          <img className="tech-icon" src="/icons/colored/vite.svg" alt="javascript-icon" />
         )}
       </div>
       <p className="text">

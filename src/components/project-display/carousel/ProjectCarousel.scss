@@ -54,6 +54,8 @@
           height: inherit;
           align-items: center;
           width: 100%;
+          user-select: none;
+          cursor: pointer;
 
           .video-container{
             background-color: transparent;
@@ -72,12 +74,13 @@
             justify-content: center;
             max-height: 65vh;
 
+            user-select: none;
+            pointer-events: none;
+            -webkit-user-drag: none;
+
             .carousel-img{
               display: flex;
               min-width: 100%;
-              object-fit: contain;
-              user-select: none;
-              pointer-events: none;
               object-fit: contain;
               border-radius: 5px;
             }
@@ -102,4 +105,11 @@
       }
     }
   }
+}
+
+.active {
+  background: rgba(255,255,255,0.3);
+  cursor: grabbing !important;
+  cursor: -webkit-grabbing !important;
+  // transform: scale(1.05) !important;
 }

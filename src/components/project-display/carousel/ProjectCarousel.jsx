@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable max-len */
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './ProjectCarousel.scss';
 import PlayYoutube from './video/PlayYoutube';
 
@@ -10,7 +10,12 @@ function ProjectCarousel({ images = [], videos = [], arrowColor = 'white' }) {
   const [data, setData] = useState([]);
   const [videoData, setVideoData] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [sliderWidth, setSliderWidth] = useState(0);
+  const sliderRef = useRef(null);
 
+  // useEffect(() => {
+  //   setSliderWidth(sliderRef.clientWidth);
+  // }, [sliderRef.clientWidth]);
   useEffect(() => {
     if (data && videoData) {
       // console.log(data.length);
@@ -28,6 +33,62 @@ function ProjectCarousel({ images = [], videos = [], arrowColor = 'white' }) {
       setData((prev) => [...prev, videos]);
     }
   }, []);
+
+  // SLIDER LOGIC
+  useEffect(() => {
+    const slider = sliderRef.current;
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    const handleMouseDown = (e) => {
+      isDown = true;
+      slider.classList.add('active');
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    };
+
+    const handleMouseLeave = () => {
+      isDown = false;
+      slider.classList.remove('active');
+    };
+
+    const handleMouseUp = (e) => {
+      isDown = false;
+      slider.classList.remove('active');
+
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 2; // scroll-fast
+      const totalScroll = scrollLeft - walk;
+      const itemWidth = slider.clientWidth;
+      const newIndex = Math.round(totalScroll / itemWidth);
+      // setCurrentIndex(Math.round(newIndex));
+    };
+
+    const handleMouseMove = (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 2; // scroll-fast
+      slider.scrollLeft = scrollLeft - walk;
+    };
+
+    slider.addEventListener('mousedown', handleMouseDown);
+    slider.addEventListener('mouseleave', handleMouseLeave);
+    slider.addEventListener('mouseup', handleMouseUp);
+    slider.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      slider.removeEventListener('mousedown', handleMouseDown);
+      slider.removeEventListener('mouseleave', handleMouseLeave);
+      slider.removeEventListener('mouseup', handleMouseUp);
+      slider.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, [data]);
+
+  useEffect(() => {
+    console.log('Current index is: ', currentIndex);
+  }, [currentIndex]);
 
   // Arrow methods
   function handleNext() {
@@ -57,8 +118,10 @@ function ProjectCarousel({ images = [], videos = [], arrowColor = 'white' }) {
       </div>
 
       {/* SLIDER */}
-      <div className="projects">
-        <div className="image-window" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+      <div className="projects" ref={sliderRef}>
+        <div className="image-window">
+          {/* style={{ transform: `translateX(-${currentIndex * 100}%)` }} */}
+
           {/* IMAGES & VIDEOS */}
           {videoData && videoData.map((video, index) => (
             <div className="video-container">
@@ -69,9 +132,8 @@ function ProjectCarousel({ images = [], videos = [], arrowColor = 'white' }) {
             </div>
           ))}
           {images && images.map((image, index) => (
-            <div className="image-container">
+            <div className="image-container" key={`carousel-image-${index}`}>
               <img
-                key={`carousel-image-${index}`}
                 className="carousel-img"
                 src={image.src}
                 srcSet={`

@@ -6,6 +6,7 @@ import ProjectCarousel from './carousel/ProjectCarousel';
 import ProjectDescription from './card/ProjectDescription';
 import CardButton from './card/cardButton/CardButton';
 import useElementOnScreen from '../../util/useElementOnScreen';
+import SwipeCarousel from './carousel/ProjectCarousel2.jsx/SwipeCarousel';
 import './Project.scss';
 
 function Project({
@@ -115,11 +116,14 @@ function Project({
 
       {/* Carousel */}
       {data && (
-      <ProjectCarousel
-        images={data.images}
-        videos={data.embedData}
-        arrowColor={arrowColor}
-      />
+        <SwipeCarousel
+          images={data.images}
+        />
+      // <ProjectCarousel
+      //   images={data.images}
+      //   videos={data.embedData}
+      //   arrowColor={arrowColor}
+      // />
       )}
 
       {/* Project Description */}

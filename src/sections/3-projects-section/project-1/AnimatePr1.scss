@@ -52,10 +52,11 @@
    // GLOBAL STATIC ASSETS
    .static-asset{
     position: absolute;
-    z-index: 1;
     user-select: none;
     -webkit-user-select: none;
     -webkit-user-drag: none;
+    pointer-events: none;
+    z-index: 1;
   }
 
   // SHRUB 0
@@ -131,4 +132,32 @@
     bottom: -4vh;
   }
 }
- 
+
+@media screen and (max-width: 800px){
+  .scene{
+    .shrub-0-move{
+      transform: translateX(45%);
+      right: 0vw;
+    }
+    .shrub-1-move{
+      transform: translateX(-45%);
+      height: 28vh;
+      left: 0;
+    }
+    .shrub-2-move{
+      transform: translateX(5%);
+      height: 20vh;
+      left: 0;
+    }
+    .move-rock-0{
+      height: 10vh;
+      bottom: -4vh;
+    }
+    .wolf-0{
+      transition: 2s linear;
+    }
+    .wolf-1{
+      transition: 2.5s linear;
+    }
+  }
+}
