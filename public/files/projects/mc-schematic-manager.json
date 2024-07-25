@@ -15,18 +15,31 @@
       }
     },
     {
-      "src": "/images/mcSchematicManager/img-1/mc-schematic-manager-1-1600w.webp",
+      "src": "/images/mcSchematicManager/img-2/mc-schematic-manager-2-1600w.webp",
       "srcSet": {
-        "img400w": "/images/mcSchematicManager/img-1/mc-schematic-manager-1-400w.webp",
-        "img600w": "/images/mcSchematicManager/img-1/mc-schematic-manager-1-600w.webp",
-        "img800w": "/images/mcSchematicManager/img-1/mc-schematic-manager-1-800w.webp",
-        "img1024w": "/images/mcSchematicManager/img-1/mc-schematic-manager-1-1024w.webp",
-        "img1440w": "/images/mcSchematicManager/img-1/mc-schematic-manager-1-1440w.webp",
-        "img1600w": "/images/mcSchematicManager/img-1/mc-schematic-manager-1-1600w.webp",
-        "img2000w": "/images/mcSchematicManager/img-1/mc-schematic-manager-1-2000w.webp",
-        "img2500w": "/images/mcSchematicManager/img-1/mc-schematic-manager-1-2500w.webp"
+        "img400w": "/images/mcSchematicManager/img-2/mc-schematic-manager-2-400w.webp",
+        "img600w": "/images/mcSchematicManager/img-2/mc-schematic-manager-2-600w.webp",
+        "img800w": "/images/mcSchematicManager/img-2/mc-schematic-manager-2-800w.webp",
+        "img1024w": "/images/mcSchematicManager/img-2/mc-schematic-manager-2-1024w.webp",
+        "img1440w": "/images/mcSchematicManager/img-2/mc-schematic-manager-2-1440w.webp",
+        "img1600w": "/images/mcSchematicManager/img-2/mc-schematic-manager-2-1600w.webp",
+        "img2000w": "/images/mcSchematicManager/img-2/mc-schematic-manager-2-2000w.webp",
+        "img2500w": "/images/mcSchematicManager/img-2/mc-schematic-manager-2-2500w.webp"
       }
-    }
+    },
+    {
+      "src": "/images/mcSchematicManager/img-3/mc-schematic-manager-3-1600w.webp",
+      "srcSet": {
+        "img400w": "/images/mcSchematicManager/img-3/mc-schematic-manager-3-400w.webp",
+        "img600w": "/images/mcSchematicManager/img-3/mc-schematic-manager-3-600w.webp",
+        "img800w": "/images/mcSchematicManager/img-3/mc-schematic-manager-3-800w.webp",
+        "img1024w": "/images/mcSchematicManager/img-3/mc-schematic-manager-3-1024w.webp",
+        "img1440w": "/images/mcSchematicManager/img-3/mc-schematic-manager-3-1440w.webp",
+        "img1600w": "/images/mcSchematicManager/img-3/mc-schematic-manager-3-1600w.webp",
+        "img2000w": "/images/mcSchematicManager/img-3/mc-schematic-manager-3-2000w.webp",
+        "img2500w": "/images/mcSchematicManager/img-3/mc-schematic-manager-3-2500w.webp"
+      }
+    }  
   ],
   "landingText": "Minecraft Schematic Manager is the ultimate online tool for managing your personal minecraft assets (schematics). It is designed to be user friendly and can be used by Studios and individuals as well.",
   "demoLink": "https://mc-schematic-manager.vercel.app/",
