@@ -64,6 +64,15 @@ function Projects() {
     <>
       <Element id="scroll-projects-1" name="scroll-projects-1">
         <section className="projects-section-1">
+          {/* <Project
+            projectData={battleship || null}
+            cardButtonPath="http://localhost:5173/case-study/battleship"
+            cardButtonBackground="white"
+            cardButtonColor="black"
+            projectDescritpionColor="black"
+            animateSide="right"
+            arrowColor="#000000"
+          /> */}
           <Project
             projectData={mcSchemMan || null}
             cardButtonPath="http://localhost:5173/case-study/mc-schematic-manager"
@@ -71,7 +80,7 @@ function Projects() {
             cardButtonColor="black"
             projectDescritpionColor="black"
             animateSide="right"
-            arrowColor="#000000"
+            timeout={1000}
           />
           <div className="scene-container">
             <AnimatePr1 />

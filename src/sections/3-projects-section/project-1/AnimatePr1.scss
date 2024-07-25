@@ -38,7 +38,7 @@
     transition: 2s linear;
   }
   .leaf-left-fade-out{
-    animation: moveAndRotateLeavesLeft 2s linear forwards;
+    animation: moveAndRotateLeavesLeft 1.5s linear forwards;
   }
   @keyframes moveAndRotateLeavesLeft {
     from {

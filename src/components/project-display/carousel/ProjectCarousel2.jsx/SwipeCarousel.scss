@@ -7,6 +7,39 @@
   width: 100%;
   cursor: grab;
   overflow: hidden;
+  padding-bottom: 1rem;
+
+  .dots-container{
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    .dot{
+      // background-color: lightgray;
+      width: 45px;
+      height: 6px;
+      border: none;
+      z-index: 12;
+      box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
+      cursor: pointer;
+
+      &:hover{
+        transform: scale(1.05);
+      }
+    }
+    .neutral-dot{
+      background-color: #161b0d;
+    }
+    .active-dot{
+      background-color: var(--highlight-hover);
+    }
+  }
 
 
   .motion-div{

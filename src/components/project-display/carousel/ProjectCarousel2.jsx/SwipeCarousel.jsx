@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useEffect, useState } from 'react';
 import { motion, useMotionValue } from 'framer-motion';
 import './SwipeCarousel.scss';
@@ -87,7 +88,7 @@ function SwipeCarousel({ images = [] }) {
         ))}
       </motion.div>
 
-      {/* <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} /> */}
+      <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} imgs={imgs} />
     </div>
   );
 }
@@ -98,13 +99,14 @@ function Dots({ imgIndex, setImgIndex, imgs }) {
     setDotImgs(imgs);
   }, [imgs]);
   return (
-    <div className="mt-4 flex w-full justify-center gap-2">
+    <div className="dots-container">
       {dotImgs && dotImgs.map((_, idx) => (
         <button
+          type="button"
           key={idx}
           onClick={() => setImgIndex(idx)}
-          className={`h-3 w-3 rounded-full transition-colors ${
-            idx === imgIndex ? 'bg-neutral-50' : 'bg-neutral-500'
+          className={`dot ${
+            idx === imgIndex ? 'active-dot' : 'neutral-dot'
           }`}
         />
       ))}
