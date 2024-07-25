@@ -43,41 +43,51 @@ function Home() {
             id="img-5"
             className="para"
             alt="parallax-vector"
-            src="/images/5.png"
-            srcSet="/images/home/500w/5.png 500w"
-            sizes="(max-width: 500px) 100vw"
+            src="/images/home/5.png"
+            srcSet="/images/home/500w/5.png 500w,
+                    /images/home/5.png 1024w"
+            sizes="(max-width: 500px) 100vw,
+                   (min-width: 501px) 100vw"
           />
           <img
             id="img-4"
             className="para"
             alt="parallax-vector"
-            src="/images/4.png"
-            srcSet="/images/home/500w/4.png 500w"
-            sizes="(max-width: 500px) 100vw"
+            src="/images/home/4.png"
+            srcSet="/images/home/500w/4.png 500w,
+                    /images/home/4.png 1024w"
+            sizes="(max-width: 500px) 100vw,
+                   (min-width: 501px) 100vw"
           />
           <img
             id="img-3"
             className="para"
             alt="parallax-vector"
-            src="/images/3.png"
-            srcSet="/images/home/500w/3.png 500w"
-            sizes="(max-width: 500px) 100vw"
+            src="/images/home/3.png"
+            srcSet="/images/home/500w/3.png 500w,
+                    /images/home/3.png 1024w"
+            sizes="(max-width: 500px) 100vw,
+                   (min-width: 501px) 100vw"
           />
           <img
             id="img-2"
             className="para"
             alt="parallax-vector"
-            src="/images/2.png"
-            srcSet="/images/home/500w/2.png 500w"
-            sizes="(max-width: 500px) 100vw"
+            src="/images/home/2.png"
+            srcSet="/images/home/500w/2.png 500w,
+                    /images/home/2.png 1024w"
+            sizes="(max-width: 500px) 100vw,
+                   (min-width: 501px) 100vw"
           />
           <img
             id="img-1"
             className="para"
             alt="parallax-vector"
-            src="/images/1.png"
-            srcSet="/images/home/500w/1.png 500w"
-            sizes="(max-width: 500px) 100vw"
+            src="/images/home/1.png"
+            srcSet="/images/home/500w/1.png 500w,
+                    /images/home/1.png 1024w"
+            sizes="(max-width: 500px) 100vw,
+                   (min-width: 501px) 100vw"
           />
 
           {/* Birds */}
