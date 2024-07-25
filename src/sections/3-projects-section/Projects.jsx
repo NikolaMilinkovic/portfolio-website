@@ -68,23 +68,14 @@ function Projects() {
             <AnimatePr1 />
           </div>
           {mcSchemMan !== null && (
-          // <Project
-          //   projectData={mcSchemMan}
-          //   cardButtonPath="http://localhost:5173/case-study/mc-schematic-manager"
-          //   // headerColor="f5f5f5"
-          //   // cardButtonBackground="white"
-          //   // cardButtonColor="black"
-          //   // projectDescritpionColor="black"
-          //   animateSide="right"
-          //   // arrowColor="#000000"
-          // />
           <Project
-            projectData={battleship || null}
-            cardButtonPath="http://localhost:5173/case-study/battleship"
-            cardButtonBackground="black"
-            cardButtonColor="white"
-            projectDescritpionColor="white"
-            arrowColor="#ffffff"
+            projectData={mcSchemMan}
+            cardButtonPath="http://localhost:5173/case-study/mc-schematic-manager"
+            cardButtonBackground="white"
+            cardButtonColor="black"
+            projectDescritpionColor="black"
+            animateSide="right"
+            arrowColor="#000000"
           />
           )}
         </section>
