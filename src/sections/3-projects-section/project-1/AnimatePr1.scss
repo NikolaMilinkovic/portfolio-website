@@ -155,9 +155,14 @@
     }
     .wolf-0{
       transition: 2s linear;
+      right: -70vw;
     }
     .wolf-1{
       transition: 2.5s linear;
+      right: -90vw;
+    }
+    .move-wolf{
+      right: 100vw;
     }
   }
 }

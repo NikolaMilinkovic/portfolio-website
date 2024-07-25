@@ -119,11 +119,6 @@ function Project({
         <SwipeCarousel
           images={data.images}
         />
-      // <ProjectCarousel
-      //   images={data.images}
-      //   videos={data.embedData}
-      //   arrowColor={arrowColor}
-      // />
       )}
 
       {/* Project Description */}
