@@ -64,9 +64,9 @@ function Projects() {
     <>
       <Element id="scroll-projects-1" name="scroll-projects-1">
         <section className="projects-section-1">
-          <div className="scene-container">
+          {/* <div className="scene-container">
             <AnimatePr1 />
-          </div>
+          </div> */}
           {mcSchemMan !== null && (
           <Project
             projectData={mcSchemMan}
