@@ -12,20 +12,20 @@ function About() {
   const [containerRef] = useElementOnScreen({
     root: null,
     rootMargin: '0px',
-    threshold: 0.6,
+    threshold: 0.3,
   }, isVisible, setIsVisible, true);
 
   const [imageRef] = useElementOnScreen({
     root: null,
     rootMargin: '0px',
-    threshold: 1,
+    threshold: 0.1,
   }, isImgVisible, setIsImgVisible, true);
 
   return (
     <>
       <Element id="scroll-about" name="scroll-about" />
-      <section className="about-section">
-        <div className="about-left" ref={containerRef}>
+      <section className="about-section" ref={containerRef}>
+        <div className="about-left">
           <p className={`about-section-hero-text ${isImgVisible ? 'show-element-left' : 'hide-element-left'}`}>
             About Me
           </p>
