@@ -3,7 +3,7 @@
   "images": [
     {
       "src": "/images/portfolioWebsite/portfolio-website-0.png",
-      "SrcSet": {
+      "srcSet": {
         "img400w": "/images/portfolioWebsite/portfolio-website-0.png",
         "img600w": "/images/portfolioWebsite/portfolio-website-0.png",
         "img800w": "/images/portfolioWebsite/portfolio-website-0.png",

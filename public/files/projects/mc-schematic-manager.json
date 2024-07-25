@@ -3,7 +3,7 @@
   "images": [
     {
       "src": "/images/mcSchematicManager/mc-schematic-manager.png",
-      "SrcSet": {
+      "srcSet": {
         "img400w": "/images/mcSchematicManager/img-0/mc-schematic-manager-400w.png",
         "img600w": "/images/mcSchematicManager/img-0/mc-schematic-manager-600w.png",
         "img800w": "/images/mcSchematicManager/img-0/mc-schematic-manager-800w.png",
@@ -16,7 +16,7 @@
     },
     {
       "src": "/images/mcSchematicManager/mc-schematic-manager-1.png",
-      "SrcSet": {
+      "srcSet": {
         "img400w": "/images/mcSchematicManager/img-1/mc-schematic-manager-1-400w.webp",
         "img600w": "/images/mcSchematicManager/img-1/mc-schematic-manager-1-600w.webp",
         "img800w": "/images/mcSchematicManager/img-1/mc-schematic-manager-1-800w.webp",
@@ -29,7 +29,7 @@
     },
     {
       "src": "/images/mcSchematicManager/mc-schematic-manager-2.png",
-      "SrcSet": {
+      "srcSet": {
         "img400w": "/images/mcSchematicManager/img-2/mc-schematic-manager-2-400w.webp",
         "img600w": "/images/mcSchematicManager/img-2/mc-schematic-manager-2-600w.webp",
         "img800w": "/images/mcSchematicManager/img-2/mc-schematic-manager-2-800w.webp",
@@ -42,7 +42,7 @@
     },
     {
       "src": "/images/mcSchematicManager/mc-schematic-manager-3.png",
-      "SrcSet": {
+      "srcSet": {
         "img400w": "/images/mcSchematicManager/img-3/mc-schematic-manager-3-400w.webp",
         "img600w": "/images/mcSchematicManager/img-3/mc-schematic-manager-3-600w.webp",
         "img800w": "/images/mcSchematicManager/img-3/mc-schematic-manager-3-800w.webp",

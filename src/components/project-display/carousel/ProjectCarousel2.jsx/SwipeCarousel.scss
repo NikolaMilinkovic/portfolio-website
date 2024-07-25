@@ -27,21 +27,19 @@
 
 }
 
-.carousel {
-  // overflow: hidden;
-  position: relative;
-  width: 100%;
+// .carousel {
+//   position: relative;
+//   width: 100%;
 
-  .carousel div {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
+//   .carousel div {
+//     display: flex;
+//     flex-direction: row;
+//     width: 100%;
+//   }
   
-  .carousel-image-div {
-    min-width: 100%; /* Ensure each image takes up the full width of the carousel */
-    // height: auto; /* Adjust as needed */
-  }
-}
+//   .carousel-image-div {
+//     min-width: 100%;
+//   }
+// }
 
 
