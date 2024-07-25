@@ -3,8 +3,6 @@
 
 .project-description-background{
   display: flex;
-  margin-top: 5rem;
-
   flex-direction: column;
   // width: 100% !important;
   width: fit-content;
@@ -13,10 +11,10 @@
   border-radius: 10px;
   align-items: center;
   justify-content: end;
-  margin-bottom: 4rem;
-
   opacity: 0;
   transition: 0.7s ease;
+  margin-bottom: 100%;
+  margin-top: 100%;
 
   .header{
     .header-h1{

@@ -83,7 +83,7 @@ function Project({
           {data && (data.name)}
         </h1>
 
-        <div className="buttons-container">
+        {/* <div className="buttons-container">
           {showCaseStudyBtn && (
           <CardButton
             path={cardButtonPath}
@@ -108,7 +108,7 @@ function Project({
             />
           </>
           )}
-        </div>
+        </div> */}
       </header>
 
       {/* Link Buttons */}
