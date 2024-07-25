@@ -83,11 +83,11 @@ function Projects() {
           <Project
             projectData={mcSchemMan || null}
             cardButtonPath="http://localhost:5173/case-study/mc-schematic-manager"
-            cardButtonBackground="white"
-            cardButtonColor="black"
-            projectDescritpionColor="black"
-            animateSide="right"
-            arrowColor="#000000"
+            // cardButtonBackground="white"
+            // cardButtonColor="black"
+            // projectDescritpionColor="black"
+            // animateSide="right"
+            // arrowColor="#000000"
           />
           {/* <Project
             projectData={battleship || null}
