@@ -54,7 +54,6 @@
       }
     }  
   ],
-
   "landingText": "Minecraft Schematic Manager is the ultimate online tool for managing your personal minecraft assets (schematics). It is designed to be user friendly and can be used by Studios and individuals as well.",
   "demoLink": "https://mc-schematic-manager.vercel.app/",
   "gitLink": "https://github.com/NikolaMilinkovic/mc-schematic-manager",
