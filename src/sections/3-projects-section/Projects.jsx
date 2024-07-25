@@ -67,8 +67,9 @@ function Projects() {
           <div className="scene-container">
             <AnimatePr1 />
           </div>
+          {mcSchemMan !== null && (
           <Project
-            projectData={mcSchemMan || null}
+            projectData={mcSchemMan}
             cardButtonPath="http://localhost:5173/case-study/mc-schematic-manager"
             headerColor="f5f5f5"
             cardButtonBackground="white"
@@ -76,8 +77,8 @@ function Projects() {
             projectDescritpionColor="black"
             animateSide="right"
             arrowColor="#000000"
-            // timeout={1500}
           />
+          )}
         </section>
       </Element>
       <Element id="scroll-projects-2" name="scroll-projects-2">
