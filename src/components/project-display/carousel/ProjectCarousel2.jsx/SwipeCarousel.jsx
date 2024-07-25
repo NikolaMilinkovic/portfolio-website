@@ -79,7 +79,7 @@ function SwipeCarousel({ images = [] }) {
                        (max-width: 1600px) 100vw,
                        (max-width: 2000px) 100vw,
                        (max-width: 2500px) 100vw"
-            alt="project description"
+            alt={image.src}
             style={{
               backgroundSize: 'cover',
               backgroundPosition: 'center',
