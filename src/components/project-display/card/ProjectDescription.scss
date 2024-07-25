@@ -21,5 +21,9 @@
     width: 60%;
     margin-top: 1rem;
     margin-bottom: 1rem;
+
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
   }
 }
