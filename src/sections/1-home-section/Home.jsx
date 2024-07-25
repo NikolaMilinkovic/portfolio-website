@@ -44,52 +44,40 @@ function Home() {
             className="para"
             alt="parallax-vector"
             src="/images/5.png"
-            // srcSet="/images/landing/400w/forest-400w-5.png 600w,
-            //         /images/landing/600w/forest-600w-5.png 610w
-            //         /images/5.png 1000w"
-            // sizes="(max-width: 400px) 100vw,
-            //        (max-width: 610px) 100vw
-            //        (max-width: 1000px) 100vw"
+            srcSet="/images/home/500w/5.png 500w"
+            sizes="(max-width: 500px) 100vw"
           />
           <img
             id="img-4"
             className="para"
             alt="parallax-vector"
             src="/images/4.png"
-            // srcSet="/images/landing/400w/forest-400w-4.png 400w,
-            //         /images/landing/600w/forest-600w-4.png 610w"
-            // sizes="(max-width: 400px) 100vw,
-            //        (max-width: 610px) 100vw"
+            srcSet="/images/home/500w/4.png 500w"
+            sizes="(max-width: 500px) 100vw"
           />
           <img
             id="img-3"
             className="para"
             alt="parallax-vector"
             src="/images/3.png"
-            // srcSet="/images/landing/400w/forest-400w-3.png 400w,
-            //         /images/landing/600w/forest-600w-3.png 610w"
-            // sizes="(max-width: 400px) 100vw,
-            //        (max-width: 610px) 100vw"
+            srcSet="/images/home/500w/3.png 500w"
+            sizes="(max-width: 500px) 100vw"
           />
           <img
             id="img-2"
             className="para"
             alt="parallax-vector"
             src="/images/2.png"
-            // srcSet="/images/landing/400w/forest-400w-2.png 400w,
-            //         /images/landing/600w/forest-600w-2.png 610w"
-            // sizes="(max-width: 400px) 100vw,
-            //        (max-width: 610px) 100vw"
+            srcSet="/images/home/500w/2.png 500w"
+            sizes="(max-width: 500px) 100vw"
           />
           <img
             id="img-1"
             className="para"
             alt="parallax-vector"
             src="/images/1.png"
-            // srcSet="/images/landing/400w/forest-400w-1.png 400w,
-            //         /images/landing/600w/forest-600w-1.png 610w"
-            // sizes="(max-width: 610px) 100vw,
-            //        (max-width: 400px) 100vw"
+            srcSet="/images/home/500w/1.png 500w"
+            sizes="(max-width: 500px) 100vw"
           />
 
           {/* Birds */}
