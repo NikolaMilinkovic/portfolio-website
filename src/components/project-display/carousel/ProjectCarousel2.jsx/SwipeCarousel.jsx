@@ -79,10 +79,10 @@ function SwipeCarousel({ images = [] }) {
                        (max-width: 2000px) 100vw,
                        (max-width: 2500px) 100vw"
             alt={image.src}
-            style={{
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
+            // style={{
+            //   backgroundSize: 'cover',
+            //   backgroundPosition: 'center',
+            // }}
             animate={{
               scale: imgIndex === index ? 0.95 : 0.85,
             }}
