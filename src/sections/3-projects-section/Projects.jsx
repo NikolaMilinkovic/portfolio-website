@@ -81,13 +81,22 @@ function Projects() {
       <Element id="scroll-projects-2" name="scroll-projects-2">
         <section className="projects-section-2">
           <Project
+            projectData={mcSchemMan || null}
+            cardButtonPath="http://localhost:5173/case-study/mc-schematic-manager"
+            cardButtonBackground="white"
+            cardButtonColor="black"
+            projectDescritpionColor="black"
+            animateSide="right"
+            arrowColor="#000000"
+          />
+          {/* <Project
             projectData={battleship || null}
             cardButtonPath="http://localhost:5173/case-study/battleship"
             cardButtonBackground="black"
             cardButtonColor="white"
             projectDescritpionColor="white"
             arrowColor="#ffffff"
-          />
+          /> */}
         </section>
       </Element>
       <Element id="scroll-projects-3" name="scroll-projects-3">
