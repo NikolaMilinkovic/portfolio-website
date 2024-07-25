@@ -1,7 +1,19 @@
 {
   "name": "Mc Schematic Manager",
   "images": [
-
+    {
+      "src": "/images/mcSchematicManager/mc-schematic-manager.png",
+      "SrcSet": {
+        "img400w": "/images/mcSchematicManager/img-0/mc-schematic-manager-400w.png",
+        "img600w": "/images/mcSchematicManager/img-0/mc-schematic-manager-600w.png",
+        "img800w": "/images/mcSchematicManager/img-0/mc-schematic-manager-800w.png",
+        "img1024w": "/images/mcSchematicManager/img-0/mc-schematic-manager-1024w.png",
+        "img1440w": "/images/mcSchematicManager/img-0/mc-schematic-manager-1440w.png",
+        "img1600w": "/images/mcSchematicManager/img-0/mc-schematic-manager-1600w.png",
+        "img2000w": "/images/mcSchematicManager/img-0/mc-schematic-manager-1600w.png",
+        "img2500w": "/images/mcSchematicManager/img-0/mc-schematic-manager-1600w.png"
+      }
+    },
     {
       "src": "/images/mcSchematicManager/mc-schematic-manager-1.png",
       "SrcSet": {
