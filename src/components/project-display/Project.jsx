@@ -93,13 +93,15 @@ function Project({
           )}
         </div>
       </header>
+      {/* <div className="layout-testing"> */}
       {/* Carousel */}
-      {data && (
+      <div>
+        {data && (
         <SwipeCarousel
           images={data.images}
         />
-      )}
-
+        )}
+      </div>
       {/* Project Description */}
       {data && (
         <ProjectDescription
@@ -108,6 +110,8 @@ function Project({
         />
       )}
     </div>
+  // </div>
+
   );
 }
 

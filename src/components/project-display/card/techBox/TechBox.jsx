@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './TechBox.scss';
 import {
   FaReact, FaHtml5, FaCss3Alt, FaSass,
@@ -9,9 +9,18 @@ import { BiLogoMongodb } from 'react-icons/bi';
 import { SiExpress, SiVite } from 'react-icons/si';
 
 function TechBox({ text, tech, color }) {
+  const [iconBackground, setIconBackgoround] = useState('rgba(244, 244, 244, 0.8)');
+  useEffect(() => {
+    if (color === 'black') {
+      setIconBackgoround('rgba(244, 244, 244, 0.8)');
+    } else {
+      setIconBackgoround('rgba(0, 0, 0, 0.8)');
+    }
+  }, [color]);
+
   return (
     <div className="wrapper" style={{ color }}>
-      <div className="outline" style={{ color, borderColor: color }}>
+      <div className="outline" style={{ color, borderColor: color, backgroundColor: iconBackground }}>
         {/* JavaScript */}
         {tech && tech === 'JavaScript' && (
           // <IoLogoJavascript />
