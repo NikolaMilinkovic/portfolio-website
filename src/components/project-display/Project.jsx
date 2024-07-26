@@ -9,6 +9,7 @@ import './Project.scss';
 
 function Project({
   projectData,
+  caseStudyLink,
   projectDescritpionColor = 'black',
   animateSide = 'left',
   timeout = 0,
@@ -76,6 +77,21 @@ function Project({
         <h1 className="header-h1" style={{ color: headerColor }}>
           {data && (data.name)}
         </h1>
+        <div className="header-links">
+          {data && (
+            <>
+              <a className="header-icon-link link-demo" href={data.demoLink} target="_blank">
+                <img className="header-icon" alt="Demo" src={headerColor === 'black' ? '/icons/black/desktop-solid.svg' : '/icons/white/desktop-solid-w.svg'} />
+              </a>
+              <a className="header-icon-link link-git" href={data.gitLink} target="_blank">
+                <img className="header-icon" alt="GitHub" src={headerColor === 'black' ? '/icons/black/code-solid.svg' : '/icons/white/code-solid-w.svg'} />
+              </a>
+              <a className="header-icon-link link-case-study" href={caseStudyLink} target="_blank">
+                <img className="header-icon" alt="Case study" src={headerColor === 'black' ? '/icons/black/circle-info-solid.svg' : '/icons/white/circle-info-solid-w.svg'} />
+              </a>
+            </>
+          )}
+        </div>
       </header>
       {/* Carousel */}
       {data && (

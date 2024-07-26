@@ -19,10 +19,47 @@
   .header{
     .header-h1{
       @include h1_default;
+      margin-bottom: 0px;
     }
     margin-top: 45px;
-
     margin-bottom: 0px !important;
+    
+    .header-links{
+      display: none;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      height: 30px;
+      overflow: hidden;
+      gap: 0.2rem;
+
+      @media screen and (max-width: 800px) {
+        display: flex;
+      }
+
+      .header-icon-link{
+        position: relative;
+      
+        .header-icon{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 6px;
+          border-radius: 5px;
+          height: 24px;
+          width: 24px;
+          cursor: pointer;
+          opacity: 0.9;
+
+          &:hover{
+            background-color: var(--highlight);
+            opacity: 1;
+          }
+
+
+        }
+      }
+    }
   }
 
   .carousel-wrapper{
