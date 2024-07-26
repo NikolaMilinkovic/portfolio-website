@@ -4,7 +4,6 @@
   position: absolute;
   right: 0px;
   top: 30%;
-  bottom: 50%;
   background-color: var(--socials-sidebar-background);
   display: flex;
   flex-direction: column;
@@ -57,9 +56,6 @@
 
     &:hover{
       background-color: var(--socials-hover);
-    }
-    * &:hover {
-      // transform: scale(1.05);
     }
 
     .sidebar-icon{
