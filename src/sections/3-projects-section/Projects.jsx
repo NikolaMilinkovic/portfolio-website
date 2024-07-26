@@ -7,7 +7,8 @@ import OtherProjectsCarousel from '../../components/project-display/other-projec
 import Project from '../../components/project-display/Project';
 import './Projects.scss';
 
-import AnimatePr1 from './project-1/AnimatePr1';
+import AnimatePr1 from './animate-project-1/AnimatePr1';
+import AnimatePr2 from './animate-project-2/AnimatePr2';
 
 function Projects() {
   const [battleship, setBattleship] = useState(null);
@@ -64,20 +65,9 @@ function Projects() {
     <>
       <Element id="scroll-projects-1" name="scroll-projects-1">
         <section className="projects-section-1">
-          {/* <Project
-            projectData={battleship || null}
-            cardButtonPath="http://localhost:5173/case-study/battleship"
-            cardButtonBackground="white"
-            cardButtonColor="black"
-            projectDescritpionColor="black"
-            animateSide="right"
-            arrowColor="#000000"
-          /> */}
           <Project
             projectData={mcSchemMan || null}
             cardButtonPath="http://localhost:5173/case-study/mc-schematic-manager"
-            cardButtonBackground="white"
-            cardButtonColor="black"
             projectDescritpionColor="black"
             animateSide="right"
             timeout={1000}
@@ -92,11 +82,12 @@ function Projects() {
           <Project
             projectData={battleship || null}
             cardButtonPath="http://localhost:5173/case-study/battleship"
-            cardButtonBackground="black"
-            cardButtonColor="white"
             projectDescritpionColor="white"
-            arrowColor="#ffffff"
+            headerColor="white"
           />
+          <div className="scene-container">
+            <AnimatePr2 />
+          </div>
         </section>
       </Element>
       <Element id="scroll-projects-3" name="scroll-projects-3">

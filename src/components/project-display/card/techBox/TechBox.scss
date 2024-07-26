@@ -9,6 +9,7 @@
   -webkit-user-drag: none;
   user-select: none;
 
+
   .outline{
     display: flex;
     align-items: center;
@@ -46,7 +47,8 @@
   .wrapper{
     gap: 0.1rem;
     .outline{
-      width: 40px;
+      width: 30px;
+      padding: 6px;
     }
     .text{
       font-size: 13px;

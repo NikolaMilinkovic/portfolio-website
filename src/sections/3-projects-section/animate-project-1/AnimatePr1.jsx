@@ -51,14 +51,14 @@ function AnimatePr1() {
   }, [isVisible, containerRef]);
   return (
     <div ref={containerRef} className="scene">
-      <img className="static-asset shrub-0" alt="shrub" src="/images/testing/shrub-0.svg" ref={shrub_0} />
-      <img className="static-asset shrub-1" alt="shrub" src="/images/testing/shrub-0.svg" ref={shrub_1} />
-      <img className="static-asset shrub-2" alt="shrub" src="/images/testing/shrub-0.svg" ref={shrub_2} />
-      <img className="static-asset wolf-0" alt="wolf" src="/images/testing/wolf.gif" ref={wolf_0} />
-      <img className="static-asset wolf-1" alt="wolf" src="/images/testing/wolf.gif" ref={wolf_1} />
-      <img className="static-asset rock-0" alt="rock" src="/images/testing/rock-0.svg" ref={rock_0} />
-      <img className="static-asset leaf-left" alt="leaf left" src="/images/testing/fade-in-leaves-left.webp" ref={leavesLeft} />
-      <img className="static-asset leaf-right" alt="leaf right" src="/images/testing/fade-in-leaves-right.webp" ref={leavesRight} />
+      <img className="static-asset shrub-0" alt="shrub" src="/images/animation-1/shrub-0.svg" ref={shrub_0} />
+      <img className="static-asset shrub-1" alt="shrub" src="/images/animation-1/shrub-0.svg" ref={shrub_1} />
+      <img className="static-asset shrub-2" alt="shrub" src="/images/animation-1/shrub-0.svg" ref={shrub_2} />
+      <img className="static-asset wolf-0" alt="wolf" src="/images/animation-1/wolf.gif" ref={wolf_0} />
+      <img className="static-asset wolf-1" alt="wolf" src="/images/animation-1/wolf.gif" ref={wolf_1} />
+      <img className="static-asset rock-0" alt="rock" src="/images/animation-1/rock-0.svg" ref={rock_0} />
+      <img className="static-asset leaf-left" alt="leaf left" src="/images/animation-1/fade-in-leaves-left.webp" ref={leavesLeft} />
+      <img className="static-asset leaf-right" alt="leaf right" src="/images/animation-1/fade-in-leaves-right.webp" ref={leavesRight} />
     </div>
   );
 }

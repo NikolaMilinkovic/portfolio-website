@@ -3,7 +3,8 @@
 
 .projects-section-1,
 .projects-section-2,
-.projects-section-3{
+.projects-section-3,
+.projects-section-4{
   @include sectionLayout;
   display: grid;
   grid-template-columns: 1fr;
@@ -14,21 +15,12 @@
   gap: 5vw;
   overflow: hidden;
   height: 100vh;
-}
-
-.projects-section-1,
-.projects-section-3{
-  // background-color: #76ac6d;
-  // background-color: #96A972;
-  // public\images\testing\paprat-0.jpg
-  // background: radial-gradient(circle, rgba(150, 169, 114, 0.3), rgba(32, 45, 29, 0.3)), url('/images/testing/paprat-0.jpg');
-  // background-blend-mode: overlay;
+  position: relative;
 }
 
 .projects-section-1,
 .projects-section-2,
 .projects-section-3{
-  // background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,35 +49,27 @@
     position: absolute;
     background-color: transparent;
     background: transparent;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
+    inset: 0px 0px 0px 0px;
   }
 }
-.projects-section-2{
+.projects-section-2,
+.projects-section-4{
   color: #ffffffff;
-}
-.projects-section-2{
   background-color: var(--background-custom-black);
+
+  .scene-container{
+    position: absolute;
+    background-color: transparent;
+    background: transparent;
+    inset: 0px 0px 0px 0px;
+    background-color: red !important;
+  }
 }
 .projects-section-3{
-  // background-color: #ffffff;
 }
 
-// @media screen and (max-width: 800px){
-//   .projects-section-1,
-// .projects-section-2,
-// .projects-section-3{
-//   @include sectionLayout;
-//     grid-template-columns: 1fr;
-//     padding: 5vh;
-//   }
-// }
 
 .projects-section-4{
-  // display: grid;
-  // grid-template-columns: 1fr;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -95,12 +79,11 @@
   padding-right: 5vw;
   box-sizing: border-box;
   background-color: white;
-  height: 100vh;
+  min-height: 50vh;
   align-items: center;
   justify-content: center;
   gap: 0px !important;
-
-
+  padding-top: 80px;
   .other-projects-header{
     display: flex;
     align-items: center;

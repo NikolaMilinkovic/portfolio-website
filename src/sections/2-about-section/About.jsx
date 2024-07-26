@@ -39,7 +39,7 @@ function About() {
               /images/aboutSection/me-1024w.webp 1024w,
               /images/aboutSection/me-1600w.webp 1600w,
               /images/aboutSection/me-2000w.webp 2000w,
-              /images/aboutSection/me-2500.webp 2500w
+              /images/aboutSection/me-2500w.webp 2500w
               `}
             sizes="(max-width: 1024px) 100vw,
                    (max-width: 1600px) 100vw,

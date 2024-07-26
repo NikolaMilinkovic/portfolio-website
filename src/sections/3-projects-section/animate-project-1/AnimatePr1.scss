@@ -11,6 +11,7 @@
   height: 100%;
   background-color: rgba(0,0,0,0.9);
   transition: 2s linear;
+  
 
   // FADE IN LEAVES
   .leaf-right{
@@ -138,20 +139,24 @@
     .shrub-0-move{
       transform: translateX(45%);
       right: 0vw;
+      z-index: 0 !important;
     }
     .shrub-1-move{
       transform: translateX(-45%);
       height: 28vh;
       left: 0;
+      z-index: 0 !important;
     }
     .shrub-2-move{
       transform: translateX(5%);
       height: 20vh;
       left: 0;
+      z-index: 0 !important;
     }
     .move-rock-0{
       height: 10vh;
       bottom: -4vh;
+      z-index: 0 !important;
     }
     .wolf-0{
       transition: 2s linear;

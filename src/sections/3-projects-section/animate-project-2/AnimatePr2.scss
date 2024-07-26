@@ -1,0 +1,157 @@
+@import '../../../index.scss';
+@import '../../../global/mixins.scss';
+
+
+.scene-fade-in{
+  background-color: rgba(0,0,0,0) !important;
+}
+.scene{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  transition: 2s linear;
+
+   // GLOBAL STATIC ASSETS
+   .static-asset{
+    position: absolute;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  // Bird 0
+  .bird-0{
+    left: 0vw;
+    bottom: -5vh;
+    height: 40vh;
+    transition: 0.2s linear;
+    opacity: 0;
+  }
+  .bird-0-move{
+    left: 0vw;
+    opacity: 1;
+    bottom: -5vh;
+    animation: bird-fly 10s linear forwards;
+  }
+  // 11.36s bird-0
+  @keyframes bird-fly {
+    0%{
+    } 
+    10%{
+    }
+    30%{
+      
+      left: 0vw;
+    }
+    40%{
+      left: 3vw;
+    }
+    50%{
+      left: 6vw;
+    }
+    60%{
+      left: 9vw;
+    }
+    70%{
+      // Ovde krece da leti
+      bottom: -5vh;
+      left: 9vw;
+    }
+    75%{
+      left: 15vw;
+      bottom: 10vh;
+    }
+    80%{
+      left: 20vw;
+      bottom: 25vh;
+    }
+    90%{
+      left: 45vw;
+      opacity: 1;
+      transform: scale(1);
+    }
+    100%{
+      left: 80vw;
+      opacity: 0;
+      bottom: 35vh;
+      transform: scale(0.7);
+    }
+  }
+
+  // Boat
+  .boat{
+    height: 22vh;
+    right: 8vw;
+    bottom: 4vh;
+    transition: 1s linear;
+  }
+  .boat-move{
+    animation: boat 7s ease-in-out infinite;
+  }
+  @keyframes boat {
+    0%{
+      transform: translateX(10px) translateY(5px);
+    } 20%{
+    } 40% {
+    } 60% {
+      transform: translateX(5px) translateY(0px);
+    } 80%{
+    } 100%{
+      transform: translateX(10px) translateY(5px);
+    }
+  }
+
+  // Cane Right
+  .cane-right{
+    height: 25vh;
+    right: 0vw;
+    bottom: 0vh;
+    z-index: 0;
+    @media screen and (max-width: 600px) {
+      height: 22vh;
+    }
+  }
+  .cane-right-2{
+    height: 20vh;
+    right: 5vw;
+    bottom: 0vh;
+    z-index: 0;
+    @media screen and (max-width: 600px) {
+      height: 18vh;
+    }
+  }
+  .cane-right-small{
+    height: 14vh;
+    right: 10.5vw;
+    bottom: -25px;
+    z-index: 0;
+    transform: rotateY(180deg);
+    @media screen and (max-width: 600px) {
+      right: 14vw;
+      height: 12vh;
+    }
+  }
+  .bird-right{
+    height: 52vh;
+    right: -130px;
+    bottom: -60px;
+    transform: rotateY(180deg);
+    z-index: 0;
+
+    @media screen and (max-width: 800px) {
+      height: 45vh;
+      right: -120px;
+    }
+  }
+  // Cane left
+  .cane-left{
+    height: 30vh;
+    left: 0vw;
+    bottom: -4vh;
+    transform: rotateY(180deg);
+    z-index: 0;
+  }
+}
