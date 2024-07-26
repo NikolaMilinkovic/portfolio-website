@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, useMotionValue } from 'framer-motion';
@@ -68,6 +69,7 @@ function SwipeCarousel({ images = [] }) {
       >
         {images && images.map((image, index) => (
           <motion.img
+            key={`img-${index}`}
             src={image.src}
             srcSet={`
                   ${image.srcSet.img400w} 400w,
