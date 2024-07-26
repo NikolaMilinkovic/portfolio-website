@@ -13,16 +13,6 @@ function ProjectCarousel({ images = [], videos = [], arrowColor = 'white' }) {
   const [sliderWidth, setSliderWidth] = useState(0);
   const sliderRef = useRef(null);
 
-  // useEffect(() => {
-  //   setSliderWidth(sliderRef.clientWidth);
-  // }, [sliderRef.clientWidth]);
-  useEffect(() => {
-    if (data && videoData) {
-      // console.log(data.length);
-      // console.log(videoData.length);
-    }
-  }, [data, videoData]);
-
   useEffect(() => {
     setData(images);
   }, [images]);
@@ -85,10 +75,6 @@ function ProjectCarousel({ images = [], videos = [], arrowColor = 'white' }) {
       slider.removeEventListener('mousemove', handleMouseMove);
     };
   }, [data]);
-
-  useEffect(() => {
-    console.log('Current index is: ', currentIndex);
-  }, [currentIndex]);
 
   // Arrow methods
   function handleNext() {

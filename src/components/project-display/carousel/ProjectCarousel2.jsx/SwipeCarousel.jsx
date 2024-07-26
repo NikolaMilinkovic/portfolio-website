@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { motion, useMotionValue } from 'framer-motion';
 import './SwipeCarousel.scss';
 
@@ -17,6 +17,19 @@ function SwipeCarousel({ images = [] }) {
   const [imgIndex, setImgIndex] = useState(0);
   const dragX = useMotionValue(0);
 
+  const handleTap = (e) => {
+    tapCount.current += 1;
+    if (tapCount.current === 1) {
+      tapTimeout.current = setTimeout(() => {
+        tapCount.current = 0;
+      }, 300);
+    } else if (tapCount.current === 2) {
+      clearTimeout(tapCount.current);
+      tapCount.current = 0;
+      openFullscreen(e);
+    }
+  };
+
   useEffect(() => {
     setImgs(images);
   }, [images]);
@@ -29,16 +42,12 @@ function SwipeCarousel({ images = [] }) {
     } else if (x >= DRAG_BUFFER && imgIndex > 0) {
       setImgIndex((pv) => pv - 1);
     } else if (x >= DRAG_BUFFER && imgIndex === 0) {
-      console.log('Setting to last image now!');
       setImgIndex(imgs.length - 1);
     } else if (x <= -DRAG_BUFFER && imgIndex === imgs.length - 1) {
-      console.log('Setting to last image now!');
       setImgIndex(0);
     }
   };
-  useEffect(() => {
-    console.log(imgIndex);
-  }, [imgIndex]);
+
   return (
     <div className="carousel">
       <motion.div
@@ -58,7 +67,6 @@ function SwipeCarousel({ images = [] }) {
         className="motion-div"
       >
         {images && images.map((image, index) => (
-          // <div key={`carousel-image-${index}`}>
           <motion.img
             src={image.src}
             srcSet={`
@@ -87,7 +95,6 @@ function SwipeCarousel({ images = [] }) {
           />
         ))}
       </motion.div>
-
       <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} imgs={imgs} />
     </div>
   );

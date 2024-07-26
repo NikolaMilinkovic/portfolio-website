@@ -12,47 +12,26 @@ function AnimatePr2() {
   }, isVisible, setIsVisible, true);
 
   // Fade in leaves
-  const leavesRight = useRef(null);
-  const leavesLeft = useRef(null);
-
-  // Wolves ref
-  const wolf_0 = useRef(null);
-  const wolf_1 = useRef(null);
-
-  // Bird ref
-  const bird_0 = useRef(null);
-  const bird_1 = useRef(null);
-
-  // Boat ref
-  const boat = useRef(null);
+  const cane_0 = useRef(null);
+  const cane_1 = useRef(null);
+  const cane_2 = useRef(null);
+  const bird = useRef(null);
 
   useEffect(() => {
     if (isVisible) {
       // Fade in leaves
-      // leavesRight.current.classList.add('leaf-right-fade-out');
-      // leavesLeft.current.classList.add('leaf-left-fade-out');
-      // containerRef.current.classList.add('scene-fade-in');
-
-      // bird_0.current.classList.add('bird-0-move');
-      // shrub_1.current.classList.add('shrub-1-move');
-      // shrub_2.current.classList.add('shrub-2-move');
-
-      // WOLVES
-      // setTimeout(() => {
-      //   wolf_0.current.classList.add('move-wolf');
-      //   wolf_1.current.classList.add('move-wolf');
-      // }, 500);
+      containerRef.current.classList.add('fade-in');
     }
   }, [isVisible, containerRef]);
   return (
-    <div ref={containerRef} className="scene">
+    <div ref={containerRef} className="scene-2">
       {/* <img className="static-asset bird-0" alt="bird" src="/images/animation-2/bird0w.gif" ref={bird_0} /> */}
-      <img className="static-asset cane-right" alt="bird" src="/images/animation-2/cane-right.webp" />
-      <img className="static-asset cane-right-2" alt="bird" src="/images/animation-2/cane-right.webp" />
-      <img className="static-asset cane-right-small" alt="bird" src="/images/animation-2/cane-small.webp" />
+      <img className="static-asset cane-right" ref={cane_0} alt="cane" src="/images/animation-2/cane-right.webp" />
+      <img className="static-asset cane-right-2" ref={cane_1} alt="cane" src="/images/animation-2/cane-right.webp" />
+      <img className="static-asset cane-right-small" ref={cane_2} alt="cane" src="/images/animation-2/cane-small.webp" />
       {/* <img className="static-asset cane-left" alt="bird" src="/images/animation-2/cane-right.webp" /> */}
       {/* <img className="static-asset test" alt="bird" src="/images/animation-2/fisherman.webp" /> */}
-      <img className="static-asset bird-right" alt="bird" src="/images/animation-2/bird1w.gif" />
+      <img className="static-asset bird-right" ref={bird} alt="bird" src="/images/animation-2/bird1w.gif" />
     </div>
   );
 }

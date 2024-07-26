@@ -42,7 +42,6 @@ function ContactForm() {
         .then(
           () => {
             setShowForm(false);
-            console.log('SUCCESS!');
           },
           (error) => {
             console.log('FAILED...', error.text);

@@ -5,6 +5,7 @@ import { Element } from 'react-scroll';
 import { useNavigate } from 'react-router-dom';
 import OtherProjectsCarousel from '../../components/project-display/other-projects-carousel/OtherProjectsCarousel';
 import Project from '../../components/project-display/Project';
+import ProjectSidebar from '../../components/project-display/project-sidebar/ProjectSidebar';
 import './Projects.scss';
 
 import AnimatePr1 from './animate-project-1/AnimatePr1';
@@ -65,9 +66,12 @@ function Projects() {
     <>
       <Element id="scroll-projects-1" name="scroll-projects-1">
         <section className="projects-section-1">
+          <ProjectSidebar
+            projectData={mcSchemMan || null}
+            caseStudyLink="http://localhost:5173/case-study/mc-schematic-manager"
+          />
           <Project
             projectData={mcSchemMan || null}
-            cardButtonPath="http://localhost:5173/case-study/mc-schematic-manager"
             projectDescritpionColor="black"
             animateSide="right"
             timeout={1000}
@@ -77,11 +81,16 @@ function Projects() {
           </div>
         </section>
       </Element>
+
       <Element id="scroll-projects-2" name="scroll-projects-2">
         <section className="projects-section-2">
+          <ProjectSidebar
+            projectData={battleship || null}
+            caseStudyLink="http://localhost:5173/case-study/battleship"
+            color="white"
+          />
           <Project
             projectData={battleship || null}
-            cardButtonPath="http://localhost:5173/case-study/battleship"
             projectDescritpionColor="white"
             headerColor="white"
           />
@@ -90,14 +99,18 @@ function Projects() {
           </div>
         </section>
       </Element>
+
       <Element id="scroll-projects-3" name="scroll-projects-3">
         <section className="projects-section-3">
           <div className="scene-container">
             <AnimatePr1 />
           </div>
+          <ProjectSidebar
+            projectData={cliDatStruct || null}
+            caseStudyLink="http://localhost:5173/case-study/cli-data-structures"
+          />
           <Project
             projectData={cliDatStruct || null}
-            cardButtonPath="http://localhost:5173/case-study/cli-data-structures"
             cardButtonBackground="white"
             cardButtonColor="black"
             projectDescritpionColor="black"
@@ -106,11 +119,16 @@ function Projects() {
           />
         </section>
       </Element>
+
       <Element id="scroll-projects-4" name="scroll-projects-4">
         <section className="projects-section-2">
+          <ProjectSidebar
+            projectData={portfolioWebsite || null}
+            caseStudyLink="http://localhost:5173/case-study/portfolio-website"
+            color="white"
+          />
           <Project
             projectData={portfolioWebsite || null}
-            cardButtonPath="http://localhost:5173/case-study/portfolio-website"
             cardButtonBackground="black"
             cardButtonColor="white"
             projectDescritpionColor="white"
@@ -118,6 +136,7 @@ function Projects() {
           />
         </section>
       </Element>
+
       <Element id="scroll-projects-5" name="scroll-projects-5">
         <section className="projects-section-4">
           <header className="other-projects-header">

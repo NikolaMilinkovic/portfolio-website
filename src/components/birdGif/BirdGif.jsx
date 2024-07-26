@@ -25,10 +25,6 @@ function BirdGif({
   }, [speed]);
 
   useEffect(() => {
-    console.log('toggler is ', toggler);
-  }, [toggler]);
-
-  useEffect(() => {
     function clickBird(e) {
       const includesBirdEl = e.composedPath().includes(birdRef.current);
       if (birdRef.current && includesBirdEl) {

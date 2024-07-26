@@ -2,15 +2,18 @@
 @import '../../../global/mixins.scss';
 
 
-.scene-fade-in{
-  background-color: rgba(0,0,0,0) !important;
+// .scene-fade-in{
+//   background-color: rgba(0,0,0,0) !important;
+// }
+.fade-in{
+  opacity: 1 !important;
 }
-.scene{
+.scene-2{
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.9);
-  transition: 2s linear;
+  transition: 1.2s linear;
+  opacity: 0;
 
    // GLOBAL STATIC ASSETS
    .static-asset{
@@ -19,7 +22,6 @@
     -webkit-user-select: none;
     -webkit-user-drag: none;
     pointer-events: none;
-    z-index: 1;
   }
 
   // Bird 0
@@ -29,6 +31,7 @@
     height: 40vh;
     transition: 0.2s linear;
     opacity: 0;
+    z-index: 2;
   }
   .bird-0-move{
     left: 0vw;

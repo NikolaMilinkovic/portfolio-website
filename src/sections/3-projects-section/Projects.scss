@@ -54,15 +54,15 @@
 }
 .projects-section-2,
 .projects-section-4{
-  color: #ffffffff;
+  color: #ffffff;
   background-color: var(--background-custom-black);
+  z-index: 2;
 
   .scene-container{
     position: absolute;
     background-color: transparent;
     background: transparent;
     inset: 0px 0px 0px 0px;
-    background-color: red !important;
   }
 }
 .projects-section-3{

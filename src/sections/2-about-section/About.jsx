@@ -34,17 +34,17 @@ function About() {
             ref={imageRef}
             alt="Nikola Milinkovic"
             className={`profile-image ${isVisible ? 'show-element-left' : 'hide-element-left'}`}
-            src="/images/aboutSection/me-1024w.webp"
-            srcSet={`
-              /images/aboutSection/me-1024w.webp 1024w,
-              /images/aboutSection/me-1600w.webp 1600w,
-              /images/aboutSection/me-2000w.webp 2000w,
-              /images/aboutSection/me-2500w.webp 2500w
-              `}
-            sizes="(max-width: 1024px) 100vw,
-                   (max-width: 1600px) 100vw,
-                   (max-width: 2000px) 100vw,
-                   (max-width: 2500px) 100vw"
+            src="/images/aboutSection/me.jpg"
+            // srcSet={`
+            //   /images/aboutSection/me-1024w.webp 1024w,
+            //   /images/aboutSection/me-1600w.webp 1600w,
+            //   /images/aboutSection/me-2000w.webp 2000w,
+            //   /images/aboutSection/me-2500w.webp 2500w
+            //   `}
+            // sizes="(max-width: 1024px) 100vw,
+            //        (max-width: 1600px) 100vw,
+            //        (max-width: 2000px) 100vw,
+            //        (max-width: 2500px) 100vw"
           />
         </div>
         <div className="about-right">
