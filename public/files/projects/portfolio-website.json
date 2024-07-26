@@ -13,6 +13,19 @@
         "img2000w": "/images/portfolioWebsite/portfolio-website-0.png",
         "img2500w": "/images/portfolioWebsite/portfolio-website-0.png"
       }
+    },
+    {
+      "src": "/images/portfolioWebsite/portfolio-website-0.png",
+      "srcSet": {
+        "img400w": "/images/portfolioWebsite/portfolio-website-0.png",
+        "img600w": "/images/portfolioWebsite/portfolio-website-0.png",
+        "img800w": "/images/portfolioWebsite/portfolio-website-0.png",
+        "img1024w": "/images/portfolioWebsite/portfolio-website-0.png",
+        "img1440w": "/images/portfolioWebsite/portfolio-website-0.png",
+        "img1600w": "/images/portfolioWebsite/portfolio-website-0.png",
+        "img2000w": "/images/portfolioWebsite/portfolio-website-0.png",
+        "img2500w": "/images/portfolioWebsite/portfolio-website-0.png"
+      }
     }
   ],
   "landingText": "Personal portfolio website used to showcase some my skills, technologies and personal projects that I have worked on.",

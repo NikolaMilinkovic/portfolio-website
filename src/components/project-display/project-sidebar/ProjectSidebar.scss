@@ -4,6 +4,7 @@
   position: absolute;
   right: 0px;
   top: 50%;
+  gap: 0.2rem;
   transform: translateY(-50%);
   background-color: var(--socials-sidebar-background);
   display: flex;
@@ -29,7 +30,7 @@
     justify-content: center;
     min-width: max-content;
     position: absolute;
-    right: 0;
+    right: 40px;
     opacity: 0;
     transition: 0.2s linear;
     z-index: 0;

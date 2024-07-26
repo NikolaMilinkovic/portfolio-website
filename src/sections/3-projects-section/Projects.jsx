@@ -93,6 +93,7 @@ function Projects() {
             projectData={battleship || null}
             projectDescritpionColor="white"
             headerColor="white"
+            timeout={1000}
           />
           <div className="scene-container">
             <AnimatePr2 />
@@ -111,11 +112,8 @@ function Projects() {
           />
           <Project
             projectData={cliDatStruct || null}
-            cardButtonBackground="white"
-            cardButtonColor="black"
             projectDescritpionColor="black"
-            animateSide="right"
-            arrowColor="#000000"
+            timeout={1000}
           />
         </section>
       </Element>
@@ -129,10 +127,9 @@ function Projects() {
           />
           <Project
             projectData={portfolioWebsite || null}
-            cardButtonBackground="black"
-            cardButtonColor="white"
             projectDescritpionColor="white"
-            arrowColor="#ffffff"
+            headerColor="white"
+            timeout={1000}
           />
         </section>
       </Element>
