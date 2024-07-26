@@ -2,22 +2,15 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable camelcase */
 import React, { useEffect, useState, useRef } from 'react';
-import ProjectCarousel from './carousel/ProjectCarousel';
 import ProjectDescription from './card/ProjectDescription';
-import CardButton from './card/cardButton/CardButton';
 import useElementOnScreen from '../../util/useElementOnScreen';
 import SwipeCarousel from './carousel/ProjectCarousel2.jsx/SwipeCarousel';
 import './Project.scss';
 
 function Project({
   projectData,
-  cardButtonPath,
-  cardButtonBackground = 'white',
-  cardButtonColor = 'black',
   projectDescritpionColor = 'black',
   animateSide = 'left',
-  arrowColor,
-  showCaseStudyBtn = true,
   timeout = 0,
   headerColor = 'black',
 }) {
@@ -84,7 +77,6 @@ function Project({
           {data && (data.name)}
         </h1>
       </header>
-
       {/* Carousel */}
       {data && (
         <SwipeCarousel
@@ -94,10 +86,10 @@ function Project({
 
       {/* Project Description */}
       {data && (
-      <ProjectDescription
-        projectData={data}
-        color={projectDescritpionColor}
-      />
+        <ProjectDescription
+          projectData={data}
+          color={projectDescritpionColor}
+        />
       )}
     </div>
   );
