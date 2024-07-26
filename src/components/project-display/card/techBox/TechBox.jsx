@@ -19,35 +19,39 @@ function TechBox({ text, tech, color }) {
         )}
         {tech && tech === 'HTML' && (
           // <FaHtml5 />
-          <img className="tech-icon" src="/icons/colored/html.svg" alt="javascript-icon" />
+          <img className="tech-icon" src="/icons/colored/html.svg" alt="html-icon" />
         )}
         {tech && tech === 'CSS' && (
           // <FaCss3Alt />
-          <img className="tech-icon" src="/icons/colored/css.svg" alt="javascript-icon" />
+          <img className="tech-icon" src="/icons/colored/css.svg" alt="css-icon" />
         )}
         {tech && tech === 'React' && (
           // <FaReact />
-          <img className="tech-icon" src="/icons/colored/react.svg" alt="javascript-icon" />
+          <img className="tech-icon" src="/icons/colored/react.svg" alt="react-icon" />
         )}
         {tech && tech === 'SASS' && (
           // <FaSass />
-          <img className="tech-icon" src="/icons/colored/sass.svg" alt="javascript-icon" />
+          <img className="tech-icon" src="/icons/colored/sass.svg" alt="sass-icon" />
         )}
         {tech && tech === 'NodeJs' && (
           // <FaNodeJs />
-          <img className="tech-icon" src="/icons/colored/node.svg" alt="javascript-icon" />
+          <img className="tech-icon" src="/icons/colored/node.svg" alt="nodejs-icon" />
         )}
         {tech && tech === 'MongoDB' && (
           // <BiLogoMongodb />
-          <img className="tech-icon" src="/icons/colored/mongodb.svg" alt="javascript-icon" />
+          <img className="tech-icon" src="/icons/colored/mongodb.svg" alt="mongodb-icon" />
         )}
         {tech && tech === 'Express' && (
           // <SiExpress />
-          <img className="tech-icon" src="/icons/colored/express.svg" alt="javascript-icon" />
+          <img className="tech-icon" src="/icons/colored/express.svg" alt="express-icon" />
         )}
         {tech && tech === 'Vite' && (
           // <SiVite />
-          <img className="tech-icon" src="/icons/colored/vite.svg" alt="javascript-icon" />
+          <img className="tech-icon" src="/icons/colored/vite.svg" alt="vite-icon" />
+        )}
+        {tech && tech === 'Heroku' && (
+          // <SiVite />
+          <img className="tech-icon" src="/icons/colored/heroku.svg" alt="heroku-icon" />
         )}
       </div>
       <p className="text">

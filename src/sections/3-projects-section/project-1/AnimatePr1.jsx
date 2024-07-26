@@ -46,7 +46,7 @@ function AnimatePr1() {
       setTimeout(() => {
         wolf_0.current.classList.add('move-wolf');
         wolf_1.current.classList.add('move-wolf');
-      }, 1000);
+      }, 500);
     }
   }, [isVisible, containerRef]);
   return (

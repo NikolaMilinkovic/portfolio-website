@@ -9,9 +9,11 @@
 
   .tech-used{
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
+    box-sizing: border-box;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
   }
 
   .project-text{
