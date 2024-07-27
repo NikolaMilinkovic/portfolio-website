@@ -10,6 +10,7 @@ import './Projects.scss';
 
 import AnimatePr1 from './animate-project-1/AnimatePr1';
 import AnimatePr2 from './animate-project-2/AnimatePr2';
+import AnimatePr3 from './animate-project-3/AnimatePr3';
 
 function Projects() {
   const [battleship, setBattleship] = useState(null);
@@ -64,6 +65,7 @@ function Projects() {
 
   return (
     <>
+      {/* PROJECT 1 */}
       <Element id="scroll-projects-1" name="scroll-projects-1">
         <section className="projects-section-1">
           <ProjectSidebar
@@ -82,6 +84,7 @@ function Projects() {
         </section>
       </Element>
 
+      {/* PROJECT 2 */}
       <Element id="scroll-projects-2" name="scroll-projects-2">
         <section className="projects-section-2">
           <ProjectSidebar
@@ -101,10 +104,11 @@ function Projects() {
         </section>
       </Element>
 
+      {/* PROJECT 3 */}
       <Element id="scroll-projects-3" name="scroll-projects-3">
         <section className="projects-section-3">
           <div className="scene-container">
-            <AnimatePr1 />
+            <AnimatePr3 />
           </div>
           <ProjectSidebar
             projectData={cliDatStruct || null}
@@ -118,6 +122,7 @@ function Projects() {
         </section>
       </Element>
 
+      {/* PROJECT 4 */}
       <Element id="scroll-projects-4" name="scroll-projects-4">
         <section className="projects-section-2">
           <ProjectSidebar
@@ -134,6 +139,7 @@ function Projects() {
         </section>
       </Element>
 
+      {/* OTHER PROJECTS */}
       <Element id="scroll-projects-5" name="scroll-projects-5">
         <section className="projects-section-4">
           <header className="other-projects-header">
