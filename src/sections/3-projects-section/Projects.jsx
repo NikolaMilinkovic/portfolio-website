@@ -81,6 +81,7 @@ function Projects() {
           <div className="scene-container">
             <AnimatePr1 />
           </div>
+          <div className="ground" />
         </section>
       </Element>
 
@@ -119,6 +120,7 @@ function Projects() {
             projectDescritpionColor="black"
             timeout={1000}
           />
+          <div className="ground" />
         </section>
       </Element>
 

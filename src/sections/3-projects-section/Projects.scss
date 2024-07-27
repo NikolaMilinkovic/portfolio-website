@@ -16,6 +16,16 @@
   overflow: hidden;
   height: 100vh;
   position: relative;
+
+  .ground{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 20px;
+    z-index: 12 !important;
+    background-color: black;
+  }
 }
 
 .projects-section-1,

@@ -22,23 +22,23 @@
 
   .fox-sitting{
     height: 38vh;
-    bottom: -59px;
+    bottom: -39px;
     right: -60px;
 
     @media screen and (max-width: 600px) {
       height: 33vh;
-      bottom: -52px;
+      bottom: -32px;
       right: -100px;
     }
   }
   .fox-jumping{
     height: 22vh;
     transform: rotateY(180deg);
-    bottom: 32px;
+    bottom: 52px;
     left: 60px;
 
     @media screen and (max-width: 600px) {
-      bottom: 32px;
+      bottom: 52px;
       left: -10px;
     }
   }
@@ -46,13 +46,13 @@
     // ROCK 0
     .rock-0{
       height: 10vh;
-      right: 12vw;
-      bottom: -30px;
+      right: 14vw;
+      bottom: -18px;
       transition: 1.4s linear;
       transform: rotateY(180deg);
 
       @media screen and (max-width: 600px) {
-        right: 25vw;
+        right: 20vw;
       }
     }
     .move-rock-0{
@@ -61,22 +61,22 @@
     }
     .rock-1{
       height: 15vh;
-      bottom: -40px;
+      bottom: -20px;
       left: -10px;
 
       @media screen and (max-width: 600px) {
-        left: -70px;
+        left: -75px;
       }
     }
     .rock-2{
       height: 10vh;
       left: 170px;
       right: 20vw;
-      bottom: -30px;
+      bottom: -10px;
       transition: 1.4s linear;
 
       @media screen and (max-width: 600px) {
-        left: 70px;
+        left: 90px;
       }
     }
 }

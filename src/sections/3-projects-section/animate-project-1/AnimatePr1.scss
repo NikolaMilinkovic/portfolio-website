@@ -64,7 +64,7 @@
   .shrub-0{
     right: -20vw;
     transform: translateX(25%);
-    bottom: -10vh;
+    bottom: -8.5vh;
     height: 30vh;
     transition: 1.4s linear;
   }
@@ -77,7 +77,7 @@
   .shrub-1{
     left: -20vw;
     transform: translateX(-35%);
-    bottom: -10vh;
+    bottom: -8.5vh;
     height: 10vh;
     transition: 1.4s linear;
   }
@@ -92,7 +92,7 @@
   .shrub-2{
     left: -20vw;
     transform: translateX(15%);
-    bottom: -10vh;
+    bottom: -8.5vh;
     height: 7vh;
     transition: 1.4s linear;
   }
@@ -105,7 +105,7 @@
   // WOLF 0
   .wolf-0{
     height: 30vh;
-    bottom: -4.8vh;
+    bottom: -15px;
     right: -50vw;
     transition: 3s linear;
   }
@@ -113,7 +113,7 @@
   // WOLF 1
   .wolf-1{
     height: 25vh;
-    bottom: -4.8vh;
+    bottom: -15px;
     right: -70vw;
     transition: 4s linear;
   }
@@ -125,12 +125,12 @@
   .rock-0{
     height: 10vh;
     right: 20vw;
-    bottom: -10vh;
-    transition: 1.4s linear;
+    bottom: -8.5vh;
+    // transition: 1.4s linear;
   }
   .move-rock-0{
     height: 10vh;
-    bottom: -4vh;
+    bottom: -10px;
   }
 }
 
