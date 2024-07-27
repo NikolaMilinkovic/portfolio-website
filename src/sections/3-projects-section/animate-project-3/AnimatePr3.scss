@@ -22,24 +22,24 @@
 
   .fox-sitting{
     height: 38vh;
-    bottom: -39px;
+    bottom: -50px;
     right: -60px;
 
     @media screen and (max-width: 600px) {
       height: 33vh;
-      bottom: -32px;
-      right: -100px;
+      bottom: -35px;
+      right: -120px;
     }
   }
   .fox-jumping{
     height: 22vh;
     transform: rotateY(180deg);
-    bottom: 52px;
-    left: 60px;
+    bottom: 70px;
+    left: 67px;
 
     @media screen and (max-width: 600px) {
-      bottom: 52px;
-      left: -10px;
+      bottom: 59px;
+      left: -5px;
     }
   }
 
