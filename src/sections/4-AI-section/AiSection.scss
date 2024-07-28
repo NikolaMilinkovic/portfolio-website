@@ -7,13 +7,85 @@
   color: white;
   position: relative;
   padding: 0px 5vw;
-  overflow: hidden;
   height: 100vh;
   overflow: hidden;
   box-sizing: border-box;
   padding-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .chat-section{
+    background-color: rgb(185, 185, 185);
+  }
+
+  .info-area{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+  }
 
   .info-area h1{
     text-align: center;
+  }
+
+  .ai-left{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    padding-left: 7%;
+    padding-right: 5vw;
+
+    .about-header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      left: 10%;
+      right: 10%;
+      top: 52%;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+      font-size: clamp(16px, 18px, 20px);
+
+      transition: 0.8s ease;
+
+      &:hover > .header-underline{
+        animation: extend-line 0.3s ease forwards;
+      }
+      .header-underline{
+        display: flex;
+        margin-top: 3px;
+        height: 3px;
+        width: 15%;
+        background-color: #B2CC85;
+        animation: shrink-line 0.3s ease forwards;
+
+        transition: 0.8s ease;
+      }
+    }
+    .about-article{
+      right: 10vw;
+      left: 10%;
+      right: 10%;
+      top: 60%;
+      color: white;
+      font-size: 14px;
+      text-align: justify;
+      hyphens: auto;
+
+
+      transition: 0.8s ease;
+    }
+  }
+  
+
+
+  .ai-right{
+    position: relative;
+
+
+   
   }
 }
