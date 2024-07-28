@@ -11,6 +11,8 @@ import './Projects.scss';
 import AnimatePr1 from './animate-project-1/AnimatePr1';
 import AnimatePr2 from './animate-project-2/AnimatePr2';
 import AnimatePr3 from './animate-project-3/AnimatePr3';
+import AnimatePr4 from './animate-project-4/AnimatePr4';
+import OtherProjectsSwiper from '../../components/project-display/other-projects-carousel/swiper/OtherProjectsSwiper';
 
 function Projects() {
   const [battleship, setBattleship] = useState(null);
@@ -126,7 +128,7 @@ function Projects() {
 
       {/* PROJECT 4 */}
       <Element id="scroll-projects-4" name="scroll-projects-4">
-        <section className="projects-section-2">
+        <section className="projects-section-4">
           <ProjectSidebar
             projectData={portfolioWebsite || null}
             caseStudyLink="http://localhost:5173/case-study/portfolio-website"
@@ -138,16 +140,22 @@ function Projects() {
             headerColor="white"
             timeout={1000}
           />
+          <div className="scene-container">
+            <AnimatePr4 />
+          </div>
         </section>
       </Element>
 
       {/* OTHER PROJECTS */}
       <Element id="scroll-projects-5" name="scroll-projects-5">
-        <section className="projects-section-4">
+        <section className="projects-section-5">
           <header className="other-projects-header">
             <h1>Other Projects</h1>
           </header>
-          <OtherProjectsCarousel
+          {/* <OtherProjectsCarousel
+            projects={otherProjects || null}
+          /> */}
+          <OtherProjectsSwiper
             projects={otherProjects || null}
           />
         </section>

@@ -18,19 +18,6 @@ function SwipeCarousel({ images = [] }) {
   const [imgIndex, setImgIndex] = useState(0);
   const dragX = useMotionValue(0);
 
-  const handleTap = (e) => {
-    tapCount.current += 1;
-    if (tapCount.current === 1) {
-      tapTimeout.current = setTimeout(() => {
-        tapCount.current = 0;
-      }, 300);
-    } else if (tapCount.current === 2) {
-      clearTimeout(tapCount.current);
-      tapCount.current = 0;
-      openFullscreen(e);
-    }
-  };
-
   useEffect(() => {
     setImgs(images);
   }, [images]);
@@ -96,6 +83,7 @@ function SwipeCarousel({ images = [] }) {
             className="carousel-image-div"
           />
         ))}
+        <p>test test</p>
       </motion.div>
       <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} imgs={imgs} />
     </div>

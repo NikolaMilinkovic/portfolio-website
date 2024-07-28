@@ -2,6 +2,19 @@
   "name": "Portfolio Website",
   "images": [
     {
+      "src": "/images/portfolioWebsite/landing-page.gif",
+      "srcSet": {
+        "img400w": "/images/portfolioWebsite/landing-page.gif",
+        "img600w": "/images/portfolioWebsite/landing-page.gif",
+        "img800w": "/images/portfolioWebsite/landing-page.gif",
+        "img1024w": "/images/portfolioWebsite/landing-page.gif",
+        "img1440w": "/images/portfolioWebsite/landing-page.gif",
+        "img1600w": "/images/portfolioWebsite/landing-page.gif",
+        "img2000w": "/images/portfolioWebsite/landing-page.gif",
+        "img2500w": "/images/portfolioWebsite/landing-page.gif"
+      }
+    },
+    {
       "src": "/images/portfolioWebsite/portfolio-website-0.png",
       "srcSet": {
         "img400w": "/images/portfolioWebsite/portfolio-website-0.png",

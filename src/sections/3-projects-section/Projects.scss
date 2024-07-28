@@ -30,7 +30,8 @@
 
 .projects-section-1,
 .projects-section-2,
-.projects-section-3{
+.projects-section-3,
+.projects-section-4{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,11 +76,9 @@
     inset: 0px 0px 0px 0px;
   }
 }
-.projects-section-3{
-}
 
 
-.projects-section-4{
+.projects-section-5{
   display: flex;
   flex-direction: column;
   width: 100%;

@@ -109,6 +109,10 @@
             height: 70%;
             border-radius: 5px;
             min-height: 100px;
+
+            user-select: none;
+            pointer-events: none;
+            -webkit-user-drag: none;
           }
         }
       }
@@ -156,11 +160,4 @@
       }
     }
   }
-}
-
-.show-left{
-  opacity: 1;
-}
-.hide-left{
-  opacity: 0;
 }

@@ -1,0 +1,102 @@
+@import '../../../../index.scss';
+
+
+.swiper-card{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: calc(100% / 4) !important;
+  padding: 1rem;
+  box-sizing: border-box;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  transition: 0.7s ease;
+
+  .header{
+    margin: 0px;
+    margin-bottom: 0.2rem;
+    font-size: 12px;
+  }
+
+
+  .swiper-card-inside{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-sizing: border-box;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.2s ease;
+
+    .buttons-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 0.7rem;
+
+      .button{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+      }
+    }
+
+    &:hover{
+      // background-color: rgba(0,0,0,0.15);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+      0 1px 3px rgba(0, 0, 0, 0.08);
+      transform: scale(1.05);
+    }
+    
+    .carousel-img{
+      overflow: hidden;
+      object-fit: cover !important;
+      height: 70%;
+      border-radius: 5px;
+      min-height: 160px;
+
+      user-select: none;
+      pointer-events: none;
+      -webkit-user-drag: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .swiper-card{
+    min-width: calc(100% / 3) !important;
+    .carousel-img{
+    }
+  }
+}
+
+@media screen and (max-width: 800px){
+  .swiper-card{
+    min-width: calc(100% / 2) !important;
+    .carousel-img{
+    }
+  }
+}
+
+@media screen and (max-width: 550px){
+  .swiper-card{
+    min-width: calc(100% / 1) !important;
+    .carousel-img{
+    }
+  }
+}
+
+.swiper-show-left{
+  opacity: 1;
+  transform: translateX(0px);
+}
+.swiper-hide-left{
+  opacity: 0;
+  transform: translateX(-100px);
+}
