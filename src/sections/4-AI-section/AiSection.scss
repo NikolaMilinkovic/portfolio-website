@@ -1,0 +1,19 @@
+@import '../../index.scss';
+@import '../../global/mixins.scss';
+
+.ai-section{
+  @include sectionLayout;
+  background: #040707;
+  color: white;
+  position: relative;
+  padding: 0px 5vw;
+  overflow: hidden;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-top: 80px;
+
+  .info-area h1{
+    text-align: center;
+  }
+}

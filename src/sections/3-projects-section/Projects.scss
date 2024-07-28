@@ -17,6 +17,7 @@
   height: 100vh;
   position: relative;
 
+  .ground-white,
   .ground{
     position: absolute;
     bottom: 0px;
@@ -25,6 +26,9 @@
     height: 20px;
     z-index: 12 !important;
     background-color: black;
+  }
+  .ground-white{
+    background-color: #ffffff;
   }
 }
 

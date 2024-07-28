@@ -58,6 +58,16 @@ function Navbar() {
           updateNav={(e) => updateNav(e)}
           activeBtn={activeButton}
         />
+        {/* AI */}
+        <NavButton
+          to="scroll-ai"
+          duration={600}
+          offset={0}
+          name="Ask Ai"
+          text="Ask Ai"
+          updateNav={(e) => updateNav(e)}
+          activeBtn={activeButton}
+        />
         {/* PROJECTS */}
         {showDropdown ? (
           <div className="projects">

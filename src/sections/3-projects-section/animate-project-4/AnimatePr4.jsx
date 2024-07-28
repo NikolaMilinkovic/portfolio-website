@@ -21,7 +21,8 @@ function AnimatePr4() {
   }, [isVisible, containerRef]);
   return (
     <div ref={containerRef} className="scene-4">
-      <img className="static-asset deer-couple" alt="Deer couple" src="/images/animation-4/deer_couple.webp" ref={deer_couple} />
+      {/* <img className="static-asset deer-male deer-couple" alt="Deer male" src="/images/animation-4/deer-male.webp" ref={deer_couple} />
+      <img className="static-asset deer-female deer-couple" alt="Deer female" src="/images/animation-4/deer-female.webp" ref={deer_couple} /> */}
     </div>
   );
 }
