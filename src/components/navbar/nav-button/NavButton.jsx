@@ -3,12 +3,17 @@ import { Link } from 'react-scroll';
 import './NavButton.scss';
 
 function NavButton({
-  to, duration, name, text, updateNav, activeBtn, offset,
+  to, duration, name, text, updateNav, activeBtn, offset, isDropdownBtn = [],
 }) {
   const [active, setActive] = useState('false');
   useEffect(() => {
-    activeBtn === name ? setActive(true) : setActive(false);
-  }, [activeBtn, name]);
+    if (isDropdownBtn.length > 0) {
+      const isActive = isDropdownBtn.includes(activeBtn) || activeBtn === name;
+      setActive(isActive);
+    } else {
+      activeBtn === name ? setActive(true) : setActive(false);
+    }
+  }, [activeBtn, name, isDropdownBtn]);
 
   return (
     <button name={name} type="button" onClick={(e) => updateNav(e)} className="nav-button">

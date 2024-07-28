@@ -21,7 +21,6 @@ function Home() {
   return (
     <Element id="scroll-home" name="scroll-home">
       <section className="home-section">
-
         <div className="para-container">
           <SocialsSidebar />
 

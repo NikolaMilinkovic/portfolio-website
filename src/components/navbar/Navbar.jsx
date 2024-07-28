@@ -76,6 +76,7 @@ function Navbar() {
               className="scroll-link"
               duration={600}
               offset={0}
+              isDropdownBtn={['mc-schematic-manager', 'battleship', 'cli-data-structures', 'portfolio-website', 'other-projects']}
               name="Projects"
               text="Projects"
               updateNav={(e) => updateNav(e)}
@@ -86,7 +87,7 @@ function Navbar() {
                 to="scroll-projects-1"
                 duration={600}
                 offset={0}
-                name="Projects"
+                name="mc-schematic-manager"
                 text="Mc Schematic Manager"
                 updateNav={(e) => updateNav(e)}
                 activeBtn={activeButton}
