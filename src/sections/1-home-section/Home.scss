@@ -11,6 +11,8 @@
   overflow: visible;
   background-color: #FCFFFC !important;
 
+
+
   .para-container{
     position: relative;
     display: grid;
@@ -19,6 +21,7 @@
     box-sizing: border-box;
     height: 100%;
     overflow: visible;
+
 
 
      .para {
@@ -79,6 +82,8 @@
     #img-4,
     #img-5{
       z-index: 0;
+      -webkit-user-drag: none;
+      pointer-events: none;
     }
 
     #img-1 { --para-speed: 4; }

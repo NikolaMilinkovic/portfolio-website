@@ -43,13 +43,13 @@ function SwiperCard({
           <div className="buttons-container">
             <CardButton
               className="button"
-              path={data.gitLink}
-              text="Code"
+              path={data.demoLink}
+              text="Live"
             />
             <CardButton
               className="button"
-              path={data.demoLink}
-              text="Live"
+              path={data.gitLink}
+              text="Code"
             />
           </div>
         </div>

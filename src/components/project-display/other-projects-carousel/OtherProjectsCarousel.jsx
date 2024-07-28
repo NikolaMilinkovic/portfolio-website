@@ -3,7 +3,6 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable max-len */
 import React, { useEffect, useState, useRef } from 'react';
-import CardButton from '../card/cardButton/CardButton';
 import useWindowDimensions from '../../../util/windowDimentions';
 import useElementOnScreen from '../../../util/useElementOnScreen';
 import ProjectCard from './projectCard/ProjectCard';

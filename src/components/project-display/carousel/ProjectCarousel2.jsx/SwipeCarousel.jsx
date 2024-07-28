@@ -83,7 +83,6 @@ function SwipeCarousel({ images = [] }) {
             className="carousel-image-div"
           />
         ))}
-        <p>test test</p>
       </motion.div>
       <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} imgs={imgs} />
     </div>

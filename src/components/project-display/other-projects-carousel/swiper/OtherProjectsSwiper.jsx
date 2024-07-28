@@ -131,7 +131,7 @@ function OtherProjectsSwiper({ projects }) {
               key={`project-card-${index}`}
               project={project}
               index={index}
-              isVisible
+              isVisible={isVisible}
               className="swiper-card"
               width={`${100 / cardWidth.current}px`}
             />

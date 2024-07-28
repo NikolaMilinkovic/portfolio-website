@@ -3,20 +3,41 @@
 .link{
   text-decoration: none;
   
-  .button{
+  .card-button{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     background-color: transparent;
     color: black;
-    border: 1px solid rgba(0,0,0,0.7);
-    border-radius: 3px;
-    padding: 8px;
+    border-radius: 5px;
+    padding: 6px;
     cursor: pointer;
-    background-color: #ffffff;
+    border: none;
+    transition: 0.1s linear;
 
     &:hover{
-      background-color: #9cca4d !important;
+      background-color: #ffffff !important;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+      transform: scale(1.06);
     }
     &:active{
-      transform: scale(0.95);
+      transform: scale(1);
+    }
+
+  .card-button-header-icon{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      height: 22px;
+      width: 22px;
+      cursor: pointer;
+      opacity: 0.9;
+
+      &:hover{
+        opacity: 1;
+      }
     }
   }
 }

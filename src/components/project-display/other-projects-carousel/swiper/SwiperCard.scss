@@ -14,11 +14,14 @@
   color: black;
   font-size: 14px;
   transition: 0.7s ease;
+  height: min-content;
+
 
   .header{
     margin: 0px;
     margin-bottom: 0.2rem;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 500;
   }
 
 
@@ -27,7 +30,6 @@
     flex-direction: column;
     padding: 1rem;
     box-sizing: border-box;
-    height: 100%;
     text-align: center;
     border-radius: 10px;
     transition: 0.2s ease;
@@ -37,6 +39,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
       margin-top: 0.7rem;
+
 
       .button{
         display: flex;
@@ -49,15 +52,16 @@
 
     &:hover{
       // background-color: rgba(0,0,0,0.15);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
-      0 1px 3px rgba(0, 0, 0, 0.08);
-      transform: scale(1.05);
+      // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+      //             0 1px 3px rgba(0, 0, 0, 0.08);
+      transform: scale(1.03);
+      background-color: rgb(247, 247, 247);
     }
     
     .carousel-img{
       overflow: hidden;
       object-fit: cover !important;
-      height: 70%;
+      // height: 70%;
       border-radius: 5px;
       min-height: 160px;
 
