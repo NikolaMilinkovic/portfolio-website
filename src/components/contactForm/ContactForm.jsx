@@ -16,6 +16,9 @@ function ContactForm() {
   }, isVisible, setIsVisible, true);
   // Show / Hide form on submit
   const [showForm, setShowForm] = useState(true);
+  function toggleForm() {
+    setShowForm(!showForm);
+  }
 
   const [formData, setFormData] = useState({
     user_name: '',
@@ -43,6 +46,11 @@ function ContactForm() {
         .then(
           () => {
             setShowForm(false);
+            setFormData({
+              user_name: '',
+              user_email: '',
+              message: '',
+            });
           },
           (error) => {
             console.log('FAILED...', error.text);
@@ -57,6 +65,7 @@ function ContactForm() {
       <div className={`after-message-screen ${showForm ? 'hideForm' : 'showForm'}`}>
         <AfterContact
           isActive={showForm}
+          toggleForm={toggleForm}
         />
       </div>
       <form ref={form} className={`contact-form ${showForm ? 'showForm' : 'hideForm'} ${isVisible ? 'show-left' : 'hide-left'}`} onSubmit={(e) => sendEmail(e)}>

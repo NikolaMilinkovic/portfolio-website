@@ -1,0 +1,19 @@
+
+
+.copy-btn{
+  display: flex;
+  min-width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  // color: var(--highlight);
+  font-weight: 600;
+  height: 30px;
+  
+
+  &:hover{
+    color: var(--highlight-hover);
+  }
+}

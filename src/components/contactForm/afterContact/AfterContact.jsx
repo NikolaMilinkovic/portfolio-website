@@ -1,8 +1,10 @@
+/* eslint-disable max-len */
 import './AfterContact.scss';
 import React, { useEffect, useRef } from 'react';
 import DisplayWebm from '../../../util/DisplayWebm';
+import OnClickCopy from './onClickCopy/OnClickCopy';
 
-function AfterContact({ isActive }) {
+function AfterContact({ isActive, toggleForm }) {
   const headerRef = useRef(null);
   const textRef = useRef(null);
   useEffect(() => {
@@ -15,6 +17,12 @@ function AfterContact({ isActive }) {
       }, 1800);
     }
   }, [isActive]);
+  function toggleAnimation() {
+    toggleForm();
+    headerRef.current.classList.remove('move-header');
+    textRef.current.classList.remove('display-text');
+  }
+
   return (
     <div className="after-contact-container">
       <div className="content">
@@ -32,8 +40,7 @@ function AfterContact({ isActive }) {
         {/* display-text */}
         <div className="text-wrapper" ref={textRef}>
           <p>Thank you for contacting me! I usually respond in the next 48h.</p>
-          <p>If you are looking to send anther message you can do so here:</p>
-          <button type="button">Send another message</button>
+          <button type="button" onClick={toggleAnimation} className="send-another-message">Send another message?</button>
           <p>Feel free to check out my socials for another way of reaching out!</p>
           <div className="socials">
             <a className="socials-icon-link" href="https://www.linkedin.com/in/nikola-milinkovic-2231451a6/" target="_blank">
@@ -46,6 +53,13 @@ function AfterContact({ isActive }) {
               <img className="icon" alt="Instagram" src="/icons/colored/instagram.png" />
             </a>
           </div>
+
+          <p>
+            Or contact me via email at
+          </p>
+          <OnClickCopy
+            string="nikolamilinkovic221@gmail.com"
+          />
         </div>
 
       </div>
