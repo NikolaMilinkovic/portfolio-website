@@ -28,7 +28,8 @@
     background-color: black;
   }
   .ground-white{
-    background-color: #ffffff;
+    background-color: #FCFFFC !important;
+    background-color: var(--background-color);
   }
 }
 
@@ -57,7 +58,7 @@
 .projects-section-3{
   position: relative;
   background-color: #c0d69f;
-  background-color: rgb(244, 244, 244);
+  background-color: var(--background-color);
   z-index: 0;
 
   .scene-container{
@@ -91,7 +92,7 @@
   padding-left: 5vw;
   padding-right: 5vw;
   box-sizing: border-box;
-  background-color: white;
+  background-color: var(--background-color);
   min-height: 100vh;
   align-items: center;
   justify-content: center;

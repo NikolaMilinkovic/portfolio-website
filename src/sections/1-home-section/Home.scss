@@ -9,7 +9,10 @@
   width: 100vw !important;
   box-sizing: border-box;
   overflow: visible;
-  background-color: #FCFFFC !important;
+  background-color: var(--background-color);
+  background: linear-gradient(to bottom, var(--background-color), #f5e480, #ff6f3b);
+
+
 
 
 
