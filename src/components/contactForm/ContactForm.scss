@@ -11,6 +11,7 @@
   }
 
   .contact-form{
+    z-index: 2;
     margin: 2rem;
     display: flex;
     flex-direction: column;
@@ -68,5 +69,6 @@
   user-select: none;
   -webkit-user-select: none;
   z-index: -1;
+  pointer-events: none;
 }
 

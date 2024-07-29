@@ -1,0 +1,95 @@
+@import '../../../index.scss';
+@import '../../../global/mixins.scss';
+
+.after-contact-container{
+  display: flex;
+  margin-bottom: 15vw;
+  justify-content: center;
+  background-color: transparent;
+
+  .content{
+    z-index: 2;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    transition: 0.6s linear;
+
+    width: 100%;
+    background-color: rgba(255,255,255,0.8);
+    padding: 1rem;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+                0 1px 3px rgba(0, 0, 0, 0.08);
+    position: relative;
+    padding-top: 20%;
+
+    .move-header{
+      transition: 0.4s ease-in;
+      transform: translateX(-50%) translateY(-50%) scale(1) !important;
+      top:15% !important;
+    }
+    .header{
+      transition: 0.4s ease-in;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      min-height: 100px;
+      // top:15%; Ovo za move
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%) scale(1.5);
+
+      .success-icon{
+        display: flex;
+        min-height: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+        height: fit-content;
+      }
+    }
+
+    .text-wrapper{
+      display: flex;
+      flex-direction: column;
+      transition: 0.5s ease-in;
+      opacity: 0;
+
+      .socials{
+        display: flex;
+  
+        .socials-icon-link{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 50px;
+          width: 50px;
+          .icon{
+            height: 40px;
+            width: 40px;
+            padding: 4px;
+          }
+        }
+      }
+    }
+    .display-text{
+      opacity: 1;
+    }
+
+    p {
+      margin: 0.2rem;
+    }
+
+    h1 {
+      @include h1_default;
+      justify-content: start;
+    }
+
+
+  }
+}

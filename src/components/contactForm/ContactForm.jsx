@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import FormInput from './formInput/FormInput';
 import FormTextarea from './formInput/FormTextarea';
 import useElementOnScreen from '../../util/useElementOnScreen';
+import AfterContact from './afterContact/AfterContact';
 import './ContactForm.scss';
 
 function ContactForm() {
@@ -54,9 +55,9 @@ function ContactForm() {
   return (
     <div className="contact-wrapper" ref={containerRef}>
       <div className={`after-message-screen ${showForm ? 'hideForm' : 'showForm'}`}>
-        <p>This text appears after a message has been sent!</p>
-        <p>Thank you for contacting me! I usually respond in the next 48h.</p>
-        <p>If you are looking to send anther message you can do so here:</p>
+        <AfterContact
+          isActive={showForm}
+        />
       </div>
       <form ref={form} className={`contact-form ${showForm ? 'showForm' : 'hideForm'} ${isVisible ? 'show-left' : 'hide-left'}`} onSubmit={(e) => sendEmail(e)}>
         <h1>Contact me!</h1>

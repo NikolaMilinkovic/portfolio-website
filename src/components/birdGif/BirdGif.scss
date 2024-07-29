@@ -8,6 +8,7 @@
   animation: animate-bird linear infinite;
   animation-delay: 1s;
   transition: 3s linear;
+  z-index: 1;
 
   &:hover{
     width: 40px;
@@ -24,7 +25,4 @@
   } to {
     transform: translateX(var(--translateX-end, 150vw));
   }
-}
-
-.test-bird{
 }
