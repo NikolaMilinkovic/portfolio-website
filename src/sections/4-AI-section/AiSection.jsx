@@ -2,8 +2,8 @@
 import React, { useState, useRef } from 'react';
 import { Element } from 'react-scroll';
 import './AiSection.scss';
-import ContactForm from '../../components/contactForm/ContactForm';
 import useElementOnScreen from '../../util/useElementOnScreen';
+import AiChat from '../../components/aiChat/AiChat';
 
 function AiSection() {
   const [isImgVisible, setIsImgVisible] = useState(false);
@@ -19,20 +19,27 @@ function AiSection() {
       <section className="ai-section" ref={containerRef}>
         <div className="ai-left">
           <h1 className={`about-header ${isVisible ? 'show-element-right' : 'hide-element-right'}`}>
-            Ask AI all you want to know about me!
+            Wanna know more about me? Ask AI!
             <div className={`header-underline ${isVisible ? 'show-element-right' : 'hide-element-right'}`} />
           </h1>
           <div className="ai-section-hero-text">
-            <p>Looking to find out more about me? Ask away! The AI companion will try his best to give you all the information that you need.</p>
+            <p>Enter your question and the AI companion will try his best to give you a satisfactory answer!</p>
+            <p>
+              Not sure what to ask?
+            </p>
+            <div className="questions-container">
+              <button type="button">Question 1</button>
+              <button type="button">Question 2</button>
+              <button type="button">Question 3</button>
+              <button type="button">Question 4</button>
+              <button type="button">Question 5</button>
+              <button type="button">Question 6</button>
+            </div>
           </div>
         </div>
         <div className="ai-right">
-          {/* <div className="chat-display">
-            <p>This is the chat section</p>
-          </div>
-          <div className="input-section">
-            <p>This is the input section</p>
-          </div> */}
+          <div className="border-div" />
+          <AiChat />
         </div>
       </section>
     </Element>
