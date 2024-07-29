@@ -9,7 +9,7 @@ function Footer() {
       <img src="/images/home/4.png" className="footer-image" alt="forest transition" />
       <img src="/images/home/3.png" className="footer-image" alt="forest transition" />
       <img src="/images/home/2.png" className="footer-image" alt="forest transition" />
-      <img src="/images/home/1.png" id="img-1" className="footer-image" alt="forest transition" />
+      <img src="/images/home/1.png" id="img-1" className="footer-image black-trees" alt="forest transition" />
 
       <div className="upper-section">
         <div className="left">

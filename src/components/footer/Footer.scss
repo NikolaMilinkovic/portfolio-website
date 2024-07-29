@@ -3,7 +3,7 @@
 
 
 footer{
-  height: 40dvh;
+  min-height: 40vh;
   min-height: 280px;
   background-color: var(--background-custom-black);
   color: var(--footer-text-color);
@@ -22,6 +22,9 @@ footer{
     -webkit-user-select: none;
     -webkit-user-drag: none;
     z-index: -1;
+  }
+  .black-trees{
+    top: -495px;
   }
 
   .upper-section{
