@@ -6,7 +6,6 @@ function BirdGif({
 }) {
   const [top, setTop] = useState(initialTop);
   const [speed, setSpeed] = useState(moveSpeed);
-  const [toggler, setToggler] = useState(1);
   const birdRef = useRef(null);
 
   function getRand(min, max) {
@@ -26,15 +25,22 @@ function BirdGif({
 
   useEffect(() => {
     function clickBird(e) {
+      // Checks to see if rand is in the range of top + 10 || top - 10
+      // If its outside the range returns true
+      function checkRand(rand) {
+        return rand < top - 10 || rand > top + 10;
+      }
+
       const includesBirdEl = e.composedPath().includes(birdRef.current);
       if (birdRef.current && includesBirdEl) {
-        if (toggler) {
-          setTop((prev) => prev + 20);
-          setToggler(0);
-        } else {
-          setTop((prev) => prev - 20);
-          setToggler(1);
+        let rand = getRand(35, 80);
+
+        // When rand returns TRUE the ! will turn it to FALSE thus ending the loop.
+        while (!checkRand(rand)) {
+          rand = getRand(35, 80);
         }
+
+        setTop(rand);
       }
     }
 
