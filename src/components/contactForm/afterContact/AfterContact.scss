@@ -32,7 +32,7 @@
     .move-header{
       transition: 0.4s ease-in;
       transform: translateX(-50%) translateY(-50%) scale(1) !important;
-      top:15% !important;
+      top: 15% !important;
     }
     .header{
       transition: 0.4s ease-in;
@@ -42,7 +42,6 @@
       justify-content: center;
       position: absolute;
       min-height: 100px;
-      // top:15%; Ovo za move
       top: 50%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%) scale(1.5);
@@ -67,7 +66,6 @@
 
       .send-another-message{
         display: flex;
-        // margin-right: auto;
         background-color: var(--highlight);
         border-radius: 5px;
         border: none;
@@ -110,6 +108,8 @@
 
     p {
       margin: 0.2rem;
+      text-align: center;
+      font-size: 14px
     }
 
     h1 {
