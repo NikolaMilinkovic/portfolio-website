@@ -123,12 +123,18 @@
 // PATH SVG's
 
 .projects-section-1{
+  .path-container-0{
+    position: absolute;
+    min-height: 300px;
+    left: 0px;
+    right: 0px;
+  }
   .path-container{
     position: absolute;
     min-height: 300px;
-    bottom: -11vw;
-    left: 0px;
-    right: 0px;
+    bottom: -7vw;
+    // left: 0px;
+    right: -18vw;
     z-index: -1;
 
     @media screen and (max-width: 800px) {
@@ -140,10 +146,10 @@
     min-height: 300px;
     bottom: -160px;
     bottom: -10vw;
-    left: -100px;
+    left: -20vw;
     right: 0px;
     z-index: -1;
-    transform: rotate(180deg) rotateX(140deg) rotateY(200deg);
+    transform: rotateY(180deg) rotateX(30deg);
 
     @media screen and (max-width: 800px) {
       bottom: -17vw;
