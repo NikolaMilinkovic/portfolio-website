@@ -3,6 +3,7 @@ import React, {
   useState, useEffect, useRef, useCallback,
 } from 'react';
 import './AiChat.scss';
+import { getAboutInfo } from '../../util/getAiInfo';
 
 function AiChat() {
   const textareaRef = useRef(null);
@@ -14,15 +15,6 @@ function AiChat() {
       text: 'Ask away!',
     },
   ]);
-
-  function getAboutInfo() {
-    const now = new Date();
-    const currentDate = now.toDateString();
-
-    const aboutMeText = `name: Nikola Milinkovic, Web Developer, date of birth: 27.04.1997, current date for calculating age is ${currentDate}, lives in Belgrade the capitol city of Serbia.`;
-
-    return aboutMeText;
-  }
 
   // ===============================[ Submit Method ]===============================
   const submit = useCallback(async (e) => {
@@ -153,25 +145,48 @@ function DisplayAi({ data }) {
     };
   }, [data, speed]);
 
-  // Function to render text with bold sections
-  const renderTextWithBold = (text) => {
-    const parts = text.split(/(\*\*.*?\*\*)/g);
-    return parts.map((part, index) => {
-      if (part.startsWith('**') && part.endsWith('**')) {
-        return (
-          <strong key={index}>
-            {part.slice(2, -2)}
-            {' '}
-          </strong>
-        );
-      }
-      return <span key={index}>{part}</span>;
+  // Function to render text with bold sections and links
+  const renderTextWithBoldAndLinks = (text) => {
+    // Split by newlines and keep track of indexes for keys
+    const lines = text.split('\n').map((line, lineIndex) => {
+      // Handle bold text and links
+      const parts = line.split(/(\*\*.*?\*\*|\[.*?\]\(.*?\))/g);
+      return parts.map((part, partIndex) => {
+        if (part.startsWith('**') && part.endsWith('**')) {
+          // Bold text
+          return (
+            <strong key={`${lineIndex}-${partIndex}`}>
+              {part.slice(2, -2)}
+              {' '}
+              {/* Remove the ** markers */}
+              {' '}
+            </strong>
+          );
+        }
+
+        // Check if part is a link
+        const linkMatch = part.match(/\[(.*?)\]\((.*?)\)/);
+        if (linkMatch) {
+          const linkText = linkMatch[1];
+          const linkUrl = linkMatch[2];
+          return (
+            <a className="ai-link" key={`${lineIndex}-${partIndex}`} href={linkUrl} target="_blank" rel="noopener noreferrer">
+              {linkText}
+            </a>
+          );
+        }
+
+        // Regular text
+        return <span key={`${lineIndex}-${partIndex}`}>{part}</span>;
+      });
     });
+
+    return <>{lines}</>;
   };
 
   // Split text into lines and render each line with bold formatting
   const textWithLineBreaks = text.split('\n').map((line, index) => (
-    <p className="p-ai" key={index}>{renderTextWithBold(line)}</p>
+    <p className="p-ai" key={index}>{renderTextWithBoldAndLinks(line)}</p>
   ));
 
   return (
