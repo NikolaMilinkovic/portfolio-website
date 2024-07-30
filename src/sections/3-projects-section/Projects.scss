@@ -123,6 +123,16 @@
 // PATH SVG's
 
 .projects-section-1{
+  .color-fill{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 4vh;
+    background-color: #D9EAC0;
+    z-index: -1;
+  }
+
   .path-container-0{
     position: absolute;
     min-height: 300px;

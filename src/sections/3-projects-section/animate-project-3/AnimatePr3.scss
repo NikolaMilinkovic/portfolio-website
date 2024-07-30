@@ -64,7 +64,7 @@
   .fox-sitting{
     opacity: 0;
     height: 38vh;
-    bottom: -50px;
+    bottom: -6.6vh;
     right: -60px;
 
     @media screen and (max-width: 600px) {
@@ -106,11 +106,18 @@
     .rock-1{
       opacity: 0;
       height: 15vh;
-      bottom: -20px;
-      left: -10px;
+      bottom: -2.4vh;
+      left: -2.5vw;
+
+      @media screen and (min-width: 600px) and (max-width: 1200px) {
+        left: -75px;
+        left: -4vw;
+        bottom: -2.2vh;
+      }
 
       @media screen and (max-width: 600px) {
         left: -75px;
+        bottom: -1.2vh;
       }
     }
     .rock-2{
