@@ -69,7 +69,7 @@
   display: flex;
   flex-direction: column;
   height: 70vh;
-  font-size: 14px;
+  font-size: var(--text-size);
   z-index: 1;
   width: inherit;
   box-sizing: border-box;
@@ -89,7 +89,7 @@
     border-radius: 10px;
     margin-right: 30px;
     width: 100%;
-    font-size: 14px;
+    font-size: var(--text-size);
     overflow-x: hidden !important;
 
   }
@@ -135,7 +135,7 @@
       outline: none;
       padding: 0px 12px !important;
       color: white;
-      font-size: 14px;
+      font-size: var(--text-size);
       text-align: start;
       justify-content: end;
       align-items: end;
