@@ -4,10 +4,15 @@ import { Element } from 'react-scroll';
 import './AiSection.scss';
 import useElementOnScreen from '../../util/useElementOnScreen';
 import AiChat from '../../components/aiChat/AiChat';
+import AI_FAQ from '../../components/aiChat/FAQ/AI_FAQ';
 
 function AiSection() {
   const [isImgVisible, setIsImgVisible] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [activeFAQ, setActiveFAQ] = useState('');
+  function handleFAQ(e) {
+    setActiveFAQ(e.target.name);
+  }
 
   const [containerRef] = useElementOnScreen({
     root: null,
@@ -28,18 +33,38 @@ function AiSection() {
               Not sure what to ask?
             </p>
             <div className="questions-container">
-              <button type="button">Question 1</button>
-              <button type="button">Question 2</button>
-              <button type="button">Question 3</button>
-              <button type="button">Question 4</button>
-              <button type="button">Question 5</button>
-              <button type="button">Question 6</button>
+              <AI_FAQ
+                question="What is your tech stack?"
+                onClick={(e) => handleFAQ(e)}
+              />
+              <AI_FAQ
+                question="Are you open to relocate for a full time opportunity?"
+                onClick={(e) => handleFAQ(e)}
+              />
+              <AI_FAQ
+                question="Test question 3"
+                onClick={(e) => handleFAQ(e)}
+              />
+              <AI_FAQ
+                question="Test question 4"
+                onClick={(e) => handleFAQ(e)}
+              />
+              <AI_FAQ
+                question="Test question 5"
+                onClick={(e) => handleFAQ(e)}
+              />
+              <AI_FAQ
+                question="Test question 6"
+                onClick={(e) => handleFAQ(e)}
+              />
             </div>
           </div>
         </div>
         <div className="ai-right">
           {/* <div className="border-div" /> */}
-          <AiChat />
+          <AiChat
+            triggerFAQ={activeFAQ}
+          />
         </div>
       </section>
     </Element>

@@ -5,9 +5,10 @@ import React, {
 import './AiChat.scss';
 import { getAboutInfo } from '../../util/getAiInfo';
 
-function AiChat() {
+function AiChat({ triggerFAQ }) {
   const textareaRef = useRef(null);
   const chatboxRef = useRef(null);
+  const submitBtn = useRef(null);
   const [inputData, setInputData] = useState('');
   const [displayData, setDisplayData] = useState([
     {
@@ -15,6 +16,19 @@ function AiChat() {
       text: 'Ask away!',
     },
   ]);
+
+  useEffect(() => {
+    if (triggerFAQ !== '') {
+      setInputData(triggerFAQ);
+      textareaRef.current.value = triggerFAQ;
+    }
+  }, [triggerFAQ]);
+
+  useEffect(() => {
+    if (inputData === triggerFAQ && inputData !== '') {
+      submitBtn.current.click();
+    }
+  }, [inputData, triggerFAQ]);
 
   // ===============================[ Submit Method ]===============================
   const submit = useCallback(async (e) => {
@@ -115,7 +129,7 @@ function AiChat() {
           className="text-input"
           onChange={(e) => handleChange(e)}
         />
-        <button type="submit" className="btn-submit">
+        <button type="submit" className="btn-submit" ref={submitBtn}>
           <img src="/icons/black/paper-plane-solid.svg" alt="send message" className="icon-send" />
         </button>
       </form>

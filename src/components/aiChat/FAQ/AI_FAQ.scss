@@ -1,0 +1,26 @@
+@import '../../../index.scss';
+
+
+
+.faq-btn{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 1rem;
+
+  
+  border-radius: 5px;
+  border: none;
+  background-color: #333333;
+  color: whitesmoke;
+  cursor: pointer;
+  padding: 1rem;
+  padding-left: 2rem;
+
+  &:hover{
+    background-color: #3d3d3d;
+  }
+  &:active{
+    transform: scale(0.98);
+  }
+}
