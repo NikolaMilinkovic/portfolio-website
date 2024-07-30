@@ -72,7 +72,7 @@ function Navbar() {
         {showDropdown ? (
           <div className="projects">
             <NavButton
-              to="scroll-projects-1"
+              to="projects"
               className="scroll-link"
               duration={600}
               offset={0}

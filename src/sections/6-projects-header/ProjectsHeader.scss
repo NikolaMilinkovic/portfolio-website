@@ -1,0 +1,18 @@
+@import '../../index.scss';
+@import '../../global/mixins.scss';
+
+.project-header-section{
+  // @include sectionLayout;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-top: 80px;
+  height: 30vh;
+  max-height: 30vh !important;
+  align-items: center;
+  justify-content: center;
+}

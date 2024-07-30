@@ -24,7 +24,11 @@ function AiSection() {
       <section className="ai-section" ref={containerRef}>
         <div className="ai-left">
           <h1 className={`about-header ${isVisible ? 'show-element-right' : 'hide-element-right'}`}>
-            Wanna know more about me? Ask AI!
+            Want to learn more about me?
+            {' '}
+            <br />
+            {' '}
+            Ask away!
             <div className={`header-underline ${isVisible ? 'show-element-right' : 'hide-element-right'}`} />
           </h1>
           <div className="ai-section-hero-text">
@@ -38,15 +42,15 @@ function AiSection() {
                 onClick={(e) => handleFAQ(e)}
               />
               <AI_FAQ
-                question="Are you open to relocate for a full time opportunity?"
+                question="What practical experience do you have?"
                 onClick={(e) => handleFAQ(e)}
               />
               <AI_FAQ
-                question="Test question 3"
+                question="What is your academic background?"
                 onClick={(e) => handleFAQ(e)}
               />
               <AI_FAQ
-                question="Test question 4"
+                question="In which way can we do business?"
                 onClick={(e) => handleFAQ(e)}
               />
               <AI_FAQ
