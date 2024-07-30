@@ -36,40 +36,68 @@ function AiSection() {
             <p>
               Not sure what to ask?
             </p>
+            {/* // question, onClick, offset, name, to, duration, */}
+
             <div className="questions-container">
               <AI_FAQ
                 question="What is your tech stack?"
                 onClick={(e) => handleFAQ(e)}
+                offset={-80}
+                name="chat-window"
+                to="chat-window"
+                duration={600}
               />
               <AI_FAQ
                 question="What practical experience do you have?"
                 onClick={(e) => handleFAQ(e)}
+                offset={-80}
+                name="chat-window"
+                to="chat-window"
+                duration={600}
               />
               <AI_FAQ
                 question="What is your academic background?"
                 onClick={(e) => handleFAQ(e)}
+                offset={-80}
+                name="chat-window"
+                to="chat-window"
+                duration={600}
               />
               <AI_FAQ
                 question="In which way can we do business?"
                 onClick={(e) => handleFAQ(e)}
+                offset={-80}
+                name="chat-window"
+                to="chat-window"
+                duration={600}
               />
               <AI_FAQ
                 question="Test question 5"
                 onClick={(e) => handleFAQ(e)}
+                offset={-80}
+                name="chat-window"
+                to="chat-window"
+                duration={600}
               />
               <AI_FAQ
                 question="Test question 6"
                 onClick={(e) => handleFAQ(e)}
+                offset={-80}
+                name="chat-window"
+                to="chat-window"
+                duration={600}
               />
             </div>
           </div>
         </div>
-        <div className="ai-right">
-          {/* <div className="border-div" /> */}
-          <AiChat
-            triggerFAQ={activeFAQ}
-          />
-        </div>
+        <Element id="chat-window" name="chat-window">
+          <div className="ai-right">
+            {/* <div className="border-div" /> */}
+            <AiChat
+              triggerFAQ={activeFAQ}
+            />
+          </div>
+        </Element>
       </section>
     </Element>
   );

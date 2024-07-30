@@ -20,8 +20,20 @@
     grid-template-columns: 1fr;
     min-height: 100vh;
     height: unset;
-    gap: 100px;
     padding-bottom: 2rem;
+    // gap: 80px;
+  }
+
+  #chat-window{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    @media screen and (max-width: 800px){
+    }
   }
 
   .chat-section{
@@ -103,10 +115,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 7%;
     width: 100%;
     max-width: inherit;
     padding-left: 7%;
+
+    @media screen and (max-width: 800px) {
+      height: 100vh;
+    }
 
     // .border-div{
     //   position: absolute;

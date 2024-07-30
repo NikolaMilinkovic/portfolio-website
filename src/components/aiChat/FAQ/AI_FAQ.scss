@@ -6,7 +6,6 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  margin-left: 1rem;
 
   
   border-radius: 5px;
@@ -14,13 +13,20 @@
   background-color: #333333;
   color: whitesmoke;
   cursor: pointer;
-  padding: 1rem;
-  padding-left: 2rem;
+  padding: 0px;
+  
+  margin-left: 1rem;
 
   &:hover{
     background-color: #3d3d3d;
   }
   &:active{
     transform: scale(0.98);
+  }
+  .faq-scroll-link{
+    display: flex;
+    padding-left: 2rem;
+    padding: 1rem;
+    width: 100%;
   }
 }
