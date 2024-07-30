@@ -61,6 +61,8 @@
   background-color: var(--background-color);
   z-index: 0;
 
+
+
   .scene-container{
     position: absolute;
     background-color: transparent;
@@ -115,4 +117,45 @@
       margin: 0px;
     }
   }
+}
+
+
+// PATH SVG's
+
+.projects-section-1{
+  .path-container{
+    position: absolute;
+    bottom: -170px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+  }
+  .path-container-2{
+    position: absolute;
+    bottom: -160px;
+    left: -100px;
+    right: 0px;
+    z-index: -1;
+    transform: rotate(180deg) rotateX(140deg) rotateY(200deg);
+  }
+}
+
+.projects-section-3{
+  .path-container{
+    position: absolute;
+    bottom: -110px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    transform: rotateX(120deg) rotateZ(180deg);
+  }
+  .path-container-2{
+    position: absolute;
+    bottom: -270px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    transform: rotateX(120deg);
+  }
+
 }
