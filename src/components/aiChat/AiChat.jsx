@@ -11,7 +11,7 @@ function AiChat() {
   const [displayData, setDisplayData] = useState([
     {
       user: 'ai',
-      text: 'What would you like to know?',
+      text: 'Ask away!',
     },
   ]);
 
@@ -55,6 +55,7 @@ function AiChat() {
         user: 'ai',
         text: data.response,
       };
+      console.log(newData);
       setDisplayData((prev) => [...prev, newData]);
     }
 
@@ -135,11 +136,11 @@ function DisplayAi({ data }) {
   const speed = 12;
 
   useEffect(() => {
-    setText(''); // Reset text when new data comes in
-    const tempText = data.split('');
+    setText('');
+    const tempTextArr = data.split('');
     const timeouts = [];
 
-    tempText.forEach((char, index) => {
+    tempTextArr.forEach((char, index) => {
       const timeout = setTimeout(() => {
         setText((prev) => `${prev}${char}`);
       }, speed * index);
@@ -150,16 +151,34 @@ function DisplayAi({ data }) {
     return () => {
       timeouts.forEach(clearTimeout);
     };
-  }, [data, speed]); // Add speed as a dependency if it can change
+  }, [data, speed]);
 
+  // Function to render text with bold sections
+  const renderTextWithBold = (text) => {
+    const parts = text.split(/(\*\*.*?\*\*)/g);
+    return parts.map((part, index) => {
+      if (part.startsWith('**') && part.endsWith('**')) {
+        return (
+          <strong key={index}>
+            {part.slice(2, -2)}
+            {' '}
+          </strong>
+        );
+      }
+      return <span key={index}>{part}</span>;
+    });
+  };
+
+  // Split text into lines and render each line with bold formatting
   const textWithLineBreaks = text.split('\n').map((line, index) => (
-    <p key={index}>{line}</p>
+    <p className="p-ai" key={index}>{renderTextWithBold(line)}</p>
   ));
 
   return (
     <div className="ai-text">{textWithLineBreaks}</div>
   );
 }
+
 function DisplayUser({ data, key }) {
   return (
     <p className="user-text" key={key}>{data}</p>

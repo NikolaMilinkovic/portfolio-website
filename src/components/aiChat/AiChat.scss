@@ -4,14 +4,36 @@
 .user-text{
   display: flex;
   margin-left: auto;
+  width: fit-content;
   padding: 1rem;
+  border-radius: 10px;
+  // background-color: #556933;
+  background-color: #232323;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05),
+  0 1px 3px rgba(255, 255, 255, 0.08);
+  justify-content: end;
+}
+.ai-text{
+  display: flex;
+  width: fit-content;
+  margin-right: auto;
+  padding: 1rem;
+  padding-top: 0rem;
   border-radius: 10px;
   background-color: #333333;
   margin-top: 6px;
   margin-bottom: 6px;
   box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05),
   0 1px 3px rgba(255, 255, 255, 0.08);
-  margin-left: 2rem;
+  margin-right: 4rem;
+  flex-direction: column;
+
+  .p-ai{
+    margin: 0px;
+    margin-top: 1rem;
+  }
 }
 
 .ai-chat-wrapper{
@@ -36,7 +58,6 @@
     margin-right: 30px;
     width: 100%;
     font-size: 14px;
-    line-height: 18px;
   }
   .inputs{
     display: flex;
