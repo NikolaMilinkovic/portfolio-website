@@ -125,18 +125,29 @@
 .projects-section-1{
   .path-container{
     position: absolute;
-    bottom: -170px;
+    min-height: 300px;
+    bottom: -11vw;
     left: 0px;
     right: 0px;
     z-index: -1;
+
+    @media screen and (max-width: 800px) {
+      bottom: -14vw;
+    }
   }
   .path-container-2{
     position: absolute;
+    min-height: 300px;
     bottom: -160px;
+    bottom: -10vw;
     left: -100px;
     right: 0px;
     z-index: -1;
     transform: rotate(180deg) rotateX(140deg) rotateY(200deg);
+
+    @media screen and (max-width: 800px) {
+      bottom: -17vw;
+    }
   }
 }
 
