@@ -33,7 +33,7 @@ html, body {
   --h1-size: 34px;
   --h1-size-mobile: 24px;
   --h2-size: 14px;
-  --text-size: 12px;
+  --text-size: clamp(12px, 16px, 18px);
 
   /* ======= [ Colors ] ======= */
   /* Base Colors */
