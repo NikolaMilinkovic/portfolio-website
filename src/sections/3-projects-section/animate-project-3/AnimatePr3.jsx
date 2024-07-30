@@ -11,6 +11,8 @@ function AnimatePr3() {
     threshold: 0.35,
   }, isVisible, setIsVisible, true);
 
+  const scene_3 = useRef(null);
+
   // Fade in leaves
   const leavesRight = useRef(null);
   const leavesLeft = useRef(null);
@@ -27,7 +29,9 @@ function AnimatePr3() {
       // Fade in leaves
       leavesRight.current.classList.add('leaf-right-fade-out');
       leavesLeft.current.classList.add('leaf-left-fade-out');
-      containerRef.current.classList.add('fade-in');
+      // containerRef.current.classList.add('fade-in');
+      containerRef.current.classList.add('scene-fade-in');
+
 
       // ROCKS
       fox_sitting.current.classList.add('fade-in');

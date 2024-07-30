@@ -5,10 +5,15 @@
   transition: 1s linear;
   opacity: 1 !important;
 }
+.scene-fade-in{
+  background-color: rgba(0,0,0,0) !important;
+}
 .scene-3{
   position: relative;
   width: 100%;
   height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  transition: 2s linear;
 
   // FADE IN LEAVES
   .leaf-right{

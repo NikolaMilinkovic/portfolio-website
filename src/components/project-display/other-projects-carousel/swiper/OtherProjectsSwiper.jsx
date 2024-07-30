@@ -145,7 +145,6 @@ function OtherProjectsSwiper({ projects }) {
 }
 
 function Dots({ index, setIndex, dots }) {
-  console.log(`Current screens is : ${dots}`);
   const [dotImgs, setDotImgs] = useState([]);
 
   useEffect(() => {

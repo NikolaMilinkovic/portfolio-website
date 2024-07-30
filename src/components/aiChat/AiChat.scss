@@ -11,19 +11,21 @@
   margin-bottom: 6px;
   box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05),
   0 1px 3px rgba(255, 255, 255, 0.08);
+  margin-left: 2rem;
 }
 
 .ai-chat-wrapper{
   display: flex;
-  align-self: center;
-  justify-self: center;
   flex-direction: column;
   height: 70vh;
-  box-sizing: border-box;
   font-size: 14px;
   z-index: 1;
+  width: inherit;
+  padding-right: 5vw;
+  box-sizing: border-box;
 
   .chatbox{
+    box-sizing: border-box; 
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -32,6 +34,9 @@
     background-color: #0b1313;
     border-radius: 10px;
     margin-right: 30px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
   }
   .inputs{
     display: flex;

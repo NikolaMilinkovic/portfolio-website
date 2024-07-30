@@ -34,7 +34,7 @@ function About() {
             ref={imageRef}
             alt="Nikola Milinkovic"
             className={`profile-image ${isVisible ? 'show-element-left' : 'hide-element-left'}`}
-            src="/images/aboutSection/IMG_4585-1200w.webp"
+            src="/images/aboutSection/IMG_6085-1200w.webp"
             // srcSet={`
             //   /images/aboutSection/IMG_4585-1200w.webp 1800w,
             //   /images/aboutSection/IMG_4585.webp 1801w,

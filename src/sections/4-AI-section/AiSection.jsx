@@ -38,7 +38,7 @@ function AiSection() {
           </div>
         </div>
         <div className="ai-right">
-          <div className="border-div" />
+          {/* <div className="border-div" /> */}
           <AiChat />
         </div>
       </section>

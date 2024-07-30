@@ -11,17 +11,51 @@ function AiChat() {
   const [displayData, setDisplayData] = useState([
     {
       user: 'ai',
-      text: 'Welcome to the AI chat section! Here you can ask anything you would like to know about me and the AI companion will try his best to give you a satisfactory answer!',
-    },
-    {
-      user: 'ai',
       text: 'What would you like to know?',
     },
   ]);
 
-  // SUBMIT METHOD
-  const submit = useCallback((e) => {
-    console.log('Submit called');
+  function getAboutInfo() {
+    const now = new Date();
+    const currentDate = now.toDateString();
+
+    const aboutMeText = `name: Nikola Milinkovic, Web Developer, date of birth: 27.04.1997, current date for calculating age is ${currentDate}, lives in Belgrade the capitol city of Serbia.`;
+
+    return aboutMeText;
+  }
+
+  // ===============================[ Submit Method ]===============================
+  const submit = useCallback(async (e) => {
+    // API Call for AI response
+    async function getResponse() {
+      const formData = new FormData();
+      formData.append('question', inputData);
+      formData.append('aboutText', getAboutInfo());
+      const response = await fetch('http://localhost:3000/put-about-question', {
+        method: 'PUT',
+        body: formData,
+      });
+
+      if (response.status !== 200) {
+        const data = await response.json();
+        const newData = {
+          user: 'ai',
+          text: data.message,
+        };
+        setDisplayData((prev) => [...prev, newData]);
+        return;
+      }
+      //
+
+      // Parsirani podaci
+      const data = await response.json();
+      const newData = {
+        user: 'ai',
+        text: data.response,
+      };
+      setDisplayData((prev) => [...prev, newData]);
+    }
+
     e.preventDefault();
     if (inputData.trim() === '') return;
     const data = {
@@ -30,7 +64,9 @@ function AiChat() {
     };
     setDisplayData((prev) => [...prev, data]);
     setInputData('');
+    getResponse();
   }, [inputData]);
+    // ===============================[ \Submit Method ]===============================
 
   // Scroll automatically for each new message
   useEffect(() => {
@@ -92,9 +128,34 @@ function AiChat() {
   );
 }
 
-function DisplayAi({ data, key }) {
+function DisplayAi({ data }) {
+  const [text, setText] = useState('');
+  const speed = 20;
+
+  useEffect(() => {
+    setText(''); // Reset text when new data comes in
+    const tempText = data.split('');
+    const timeouts = [];
+
+    tempText.forEach((char, index) => {
+      const timeout = setTimeout(() => {
+        setText((prev) => `${prev}${char}`);
+      }, speed * index);
+      timeouts.push(timeout);
+    });
+
+    // Cleanup function to clear timeouts
+    return () => {
+      timeouts.forEach(clearTimeout);
+    };
+  }, [data, speed]); // Add speed as a dependency if it can change
+
+  const textWithLineBreaks = text.split('\n').map((line, index) => (
+    <p key={index}>{line}</p>
+  ));
+
   return (
-    <p className="ai-text" key={key}>{data}</p>
+    <div className="ai-text">{textWithLineBreaks}</div>
   );
 }
 function DisplayUser({ data, key }) {
