@@ -14,6 +14,12 @@
   box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05),
   0 1px 3px rgba(255, 255, 255, 0.08);
   justify-content: end;
+  // margin-left: 4rem;
+
+
+  @media screen and (max-width: 800px) {
+    margin-left: auto;
+  }
 }
 
 .ai-text{
@@ -26,11 +32,16 @@
   background-color: #333333;
   // background-color: #556933;
 
+  @media screen and (max-width: 800px) {
+    margin-right: 2rem;
+  }
+
+
   margin-top: 6px;
   margin-bottom: 6px;
   box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05),
   0 1px 3px rgba(255, 255, 255, 0.08);
-  margin-right: 4rem;
+  margin-right: 2rem;
   flex-direction: column;
 
   .ai-link{
@@ -39,7 +50,11 @@
 
   .p-ai{
     margin: 0px;
-    margin-top: 1rem;
+    margin-top: 0.4rem;
+
+    @media screen and (max-width: 800px) {
+      margin-right: 0.4rem;
+    }
   }
 }
 
@@ -50,11 +65,10 @@
   font-size: 14px;
   z-index: 1;
   width: inherit;
-  padding-right: 5vw;
   box-sizing: border-box;
 
   @media screen and (max-width: 800px) {
-    margin-right: 5vw;
+    // margin-right: 5vw;
   }
 
   .chatbox{
@@ -69,6 +83,8 @@
     margin-right: 30px;
     width: 100%;
     font-size: 14px;
+    overflow-x: hidden !important;
+
   }
   .inputs{
     display: flex;
