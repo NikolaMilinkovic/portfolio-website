@@ -41,6 +41,15 @@ function App() {
             />
           )}
         />
+        {/* CLI DATA STRUCTURES */}
+        <Route
+          path="/case-study/portfolio-website"
+          element={(
+            <ProjectPage
+              projectUrl="/files/projects/portfolio-website.json"
+            />
+          )}
+        />
       </Routes>
     </BrowserRouter>
   );

@@ -10,15 +10,21 @@
   
   border-radius: 5px;
   border: none;
-  background-color: #333333;
+  // background-color: #333333;
+  // background-color: #556933;
+  background-color: var(--highlight);
   color: whitesmoke;
+  color: black;
+  font-weight: 500;
   cursor: pointer;
   padding: 0px;
   
   margin-left: 1rem;
 
   &:hover{
-    background-color: #3d3d3d;
+    // background-color: #3d3d3d;
+    background-color: #819262;
+    background-color: var(--highlight-hover);
   }
   &:active{
     transform: scale(0.98);

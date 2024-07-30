@@ -14,6 +14,8 @@ function Project({
   animateSide = 'left',
   timeout = 0,
   headerColor = 'black',
+  mTop = '100%',
+  mBottom = '100%',
 }) {
   const [data, setData] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -69,6 +71,7 @@ function Project({
   return (
     <div
       className="project-description-background"
+      style={{ marginTop: mTop, marginBottom: mBottom, color: headerColor }}
       ref={containerRef}
     >
 

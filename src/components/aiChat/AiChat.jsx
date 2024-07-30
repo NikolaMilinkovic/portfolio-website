@@ -79,11 +79,15 @@ function AiChat({ triggerFAQ }) {
     // ===============================[ \Submit Method ]===============================
 
   // Scroll automatically for each new message
-  useEffect(() => {
+  const scrollToBottom = useCallback(() => {
     if (chatboxRef.current) {
       chatboxRef.current.scrollTop = chatboxRef.current.scrollHeight;
     }
-  }, [displayData]);
+  }, []);
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [displayData, scrollToBottom]);
 
   // TEXTAREA LISTENERS
   const keyPressEnter = useCallback((e) => {
@@ -113,6 +117,7 @@ function AiChat({ triggerFAQ }) {
             <DisplayAi
               key={index}
               data={message.text}
+              onComplete={scrollToBottom}
             />
           ) : (
             <DisplayUser
@@ -138,7 +143,7 @@ function AiChat({ triggerFAQ }) {
   );
 }
 
-function DisplayAi({ data }) {
+function DisplayAi({ data, onComplete }) {
   const [text, setText] = useState('');
   const speed = 12;
 
@@ -146,19 +151,23 @@ function DisplayAi({ data }) {
     setText('');
     const tempTextArr = data.split('');
     const timeouts = [];
+    const textLength = tempTextArr.length;
 
     tempTextArr.forEach((char, index) => {
       const timeout = setTimeout(() => {
-        setText((prev) => `${prev}${char}`);
+        setText((prev) => {
+          const newText = `${prev}${char}`;
+          onComplete();
+          return newText;
+        });
       }, speed * index);
       timeouts.push(timeout);
     });
 
-    // Cleanup function to clear timeouts
     return () => {
       timeouts.forEach(clearTimeout);
     };
-  }, [data, speed]);
+  }, [data, speed, onComplete]);
 
   // Function to render text with bold sections and links
   const renderTextWithBoldAndLinks = (text) => {

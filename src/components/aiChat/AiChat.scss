@@ -14,7 +14,7 @@
   box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05),
   0 1px 3px rgba(255, 255, 255, 0.08);
   justify-content: end;
-  // margin-left: 4rem;
+  color: whitesmoke;
 
 
   @media screen and (max-width: 800px) {
@@ -29,8 +29,11 @@
   padding: 1rem;
   padding-top: 0rem;
   border-radius: 10px;
-  background-color: #333333;
   // background-color: #556933;
+  background-color: #96A972;
+  background-color: #223618;
+  background-color: #333333;
+  color: whitesmoke;
 
   @media screen and (max-width: 800px) {
     margin-right: 2rem;
@@ -46,6 +49,10 @@
 
   .ai-link{
     color: var(--highlight);
+
+    &:hover{
+      color: var(--highlight-hover);
+    }
   }
 
   .p-ai{
