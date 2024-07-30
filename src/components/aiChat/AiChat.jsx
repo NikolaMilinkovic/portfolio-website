@@ -31,7 +31,9 @@ function AiChat() {
       const formData = new FormData();
       formData.append('question', inputData);
       formData.append('aboutText', getAboutInfo());
-      const response = await fetch('http://localhost:3000/put-about-question', {
+      // http://localhost:3000/
+
+      const response = await fetch(`${import.meta.env.VITE_DOMAIN}put-about-question`, {
         method: 'PUT',
         body: formData,
       });
@@ -130,7 +132,7 @@ function AiChat() {
 
 function DisplayAi({ data }) {
   const [text, setText] = useState('');
-  const speed = 20;
+  const speed = 12;
 
   useEffect(() => {
     setText(''); // Reset text when new data comes in
