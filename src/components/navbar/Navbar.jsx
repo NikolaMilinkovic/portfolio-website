@@ -63,8 +63,8 @@ function Navbar() {
           to="scroll-ai"
           duration={600}
           offset={0}
-          name="Ask Ai"
-          text="Ask Ai"
+          name="FAQ"
+          text="FAQ"
           updateNav={(e) => updateNav(e)}
           activeBtn={activeButton}
         />

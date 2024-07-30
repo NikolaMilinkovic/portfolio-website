@@ -53,6 +53,10 @@
   padding-right: 5vw;
   box-sizing: border-box;
 
+  @media screen and (max-width: 800px) {
+    margin-right: 5vw;
+  }
+
   .chatbox{
     box-sizing: border-box; 
     display: flex;
