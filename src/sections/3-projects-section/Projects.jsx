@@ -75,6 +75,7 @@ function Projects() {
             caseStudyLink="http://localhost:5173/case-study/mc-schematic-manager"
           />
           <Project
+            caseStudyLink="http://localhost:5173/case-study/mc-schematic-manager"
             projectData={mcSchemMan || null}
             projectDescritpionColor="black"
             animateSide="right"
@@ -103,6 +104,7 @@ function Projects() {
             color="white"
           />
           <Project
+            caseStudyLink="http://localhost:5173/case-study/battleship"
             projectData={battleship || null}
             projectDescritpionColor="white"
             headerColor="white"
@@ -125,6 +127,7 @@ function Projects() {
             caseStudyLink="http://localhost:5173/case-study/cli-data-structures"
           />
           <Project
+            caseStudyLink="http://localhost:5173/case-study/cli-data-structures"
             projectData={cliDatStruct || null}
             projectDescritpionColor="black"
             timeout={1000}
@@ -148,6 +151,7 @@ function Projects() {
             color="white"
           />
           <Project
+            caseStudyLink="http://localhost:5173/case-study/portfolio-website"
             projectData={portfolioWebsite || null}
             projectDescritpionColor="white"
             headerColor="white"

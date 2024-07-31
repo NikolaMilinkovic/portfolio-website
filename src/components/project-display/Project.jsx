@@ -110,6 +110,7 @@ function Project({
         <ProjectDescription
           projectData={data}
           color={projectDescritpionColor}
+          caseStudyPath={caseStudyLink || '#'}
         />
       )}
     </div>

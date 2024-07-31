@@ -14,10 +14,15 @@ function ProjectDescription({ projectData, color, caseStudyPath = '#' }) {
     <div className="project-description">
       <p className="project-text">
         {data && (data.landingText)}
-        {' '}
-        For more information see this projects
-        {' '}
-        <a className="case-study-link" href={caseStudyPath}>case study.</a>
+        {caseStudyPath !== '#' && (
+          <>
+            {' '}
+            For more information see this projects
+            {' '}
+            <a className="case-study-link" href={caseStudyPath}>case study.</a>
+          </>
+        )}
+
       </p>
 
       <div className="tech-used">

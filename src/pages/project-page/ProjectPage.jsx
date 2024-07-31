@@ -35,7 +35,7 @@ function ProjectPage({ projectUrl }) {
   }, [projectUrl]);
 
   return (
-    <>
+    <main className="case-study-page">
       <Navbar />
       <section className="project-section">
         <SocialsSidebar />
@@ -53,12 +53,12 @@ function ProjectPage({ projectUrl }) {
             />
           </section>
         )}
-        <svg className="path-container" width="100%" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+        {/* <svg className="path-container" width="100%" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
           <path fill="#D9EAC0" fillOpacity="1" d="M0,160L80,160C160,160,320,160,480,138.7C640,117,800,75,960,53.3C1120,32,1280,32,1360,32L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z" />
         </svg>
         <svg className="path-container-2" width="100%" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
           <path fill="#D9EAC0" fillOpacity="1" d="M0,160L80,160C160,160,320,160,480,138.7C640,117,800,75,960,53.3C1120,32,1280,32,1360,32L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z" />
-        </svg>
+        </svg> */}
 
         {/* Birds */}
         {/* { screenWidth && (
@@ -98,15 +98,52 @@ function ProjectPage({ projectUrl }) {
       </section>
       <section className="case-study-section">
         <div className="case-content">
-          <p className="z-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt a unde aut temporibus rem enim quidem eaque non eos veniam aperiam, nobis voluptatibus architecto fugiat ducimus veritatis voluptatum recusandae amet vel ipsa vero dicta nulla! Eum impedit pariatur natus ab, iste rem deleniti magni odio ratione molestias sapiente cupiditate dolorum?</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt a unde aut temporibus rem enim quidem eaque non eos veniam aperiam, nobis voluptatibus architecto fugiat ducimus veritatis voluptatum recusandae amet vel ipsa vero dicta nulla! Eum impedit pariatur natus ab, iste rem deleniti magni odio ratione molestias sapiente cupiditate dolorum?</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt a unde aut temporibus rem enim quidem eaque non eos veniam aperiam, nobis voluptatibus architecto fugiat ducimus veritatis voluptatum recusandae amet vel ipsa vero dicta nulla! Eum impedit pariatur natus ab, iste rem deleniti magni odio ratione molestias sapiente cupiditate dolorum?</p>
+          <h1>Project Context</h1>
+          <h2>Who is it for?</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur dolores, aliquid doloremque harum architecto ipsa neque numquam sequi perspiciatis!</p>
+          <br />
+          <h1>Understanding the Challenge</h1>
+          <h2>Problem Overiew</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, culpa eaque! Laborum, atque culpa quisquam dignissimos dolore deserunt soluta illo?</p>
+          <h2>Key objectives</h2>
+          <ul>
+            <li>problem 1</li>
+            <li>problem 2</li>
+            <li>problem 3</li>
+            <li>problem 4</li>
+          </ul>
+          <br />
+          <h1>Achieved solution</h1>
+          <h2>Core Features</h2>
+          <ul>
+            <li>feature 1 - short description</li>
+            <li>feature 2 - short description</li>
+            <li>feature 3 - short description</li>
+            <li>feature 4 - short description</li>
+          </ul>
+          <br />
+          <h1>Tech used</h1>
+          <h2>Tech name</h2>
+          <p>What technologies (APIs, libraries, third party solutions etc) were used and for what?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officiis facilis amet maiores aliquam dolorum odit laudantium temporibus animi consequatur.</p>
+          <br />
+          <h1>Conclusion</h1>
+          <h2>What have I learned?</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsa quidem odit non rem? Dolores minus placeat ab impedit explicabo!</p>
+          <h2>Challenges ahead and planned features?</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque et possimus soluta unde, animi vitae architecto totam dolore corrupti blanditiis!</p>
+          <ul>
+            <li>feature 1 - short description</li>
+            <li>feature 2 - short description</li>
+            <li>feature 3 - short description</li>
+            <li>feature 4 - short description</li>
+          </ul>
         </div>
       </section>
-      <div className="footer-wrapepr">
-        <Footer />
-      </div>
-    </>
+      {/* <div className="footer-wrapepr"> */}
+      <Footer />
+      {/* </div> */}
+    </main>
   );
 }
 

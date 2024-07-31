@@ -64,22 +64,45 @@ function About() {
             <p className="about-text">
               I enjoy building fun, pleasing and usefull applications that aim to solve problems, enhance workflows and or at very least bring a smile to the face of its user. At this moment I am freelancing, crafting web apps and looking out for full time opportunities.
             </p>
+            {/* <p className="about-text">
+              Looking to learn more about my career? Take a look at my CV by clicking the button bellow!
+            </p>
+            <div className="buttons-container">
+              <button type="button" className="contact-me-btn">
+                <Link
+                  offset={-80}
+                  name="Contact"
+                  className="contact-me-link"
+                  to="scroll-contact"
+                  smooth
+                  duration={800}
+                >
+                  Download my CV
+                  <img className="link-icon" src="/icons/black/envelope-solid.svg" alt="envelope" />
+                </Link>
+              </button>
+            </div> */}
             <p className="about-text">
               Looking to collaborate, work together, or grab a cup of coffee and talk about tech? Get in touch by clicking the button bellow!
             </p>
 
-            <button type="button" className="contact-me-btn">
-              <Link
-                offset={-80}
-                name="Contact"
-                className="contact-me-link"
-                to="scroll-contact"
-                smooth
-                duration={800}
-              >
-                Contact me here!
-              </Link>
-            </button>
+            <div className="buttons-container">
+
+              <button type="button" className="contact-me-btn">
+                <Link
+                  offset={-80}
+                  name="Contact"
+                  className="contact-me-link"
+                  to="scroll-contact"
+                  smooth
+                  duration={800}
+                >
+                  Contact me here!
+                  <img className="link-icon" src="/icons/black/envelope-solid.svg" alt="envelope" />
+                </Link>
+              </button>
+            </div>
+
           </article>
         </div>
       </section>

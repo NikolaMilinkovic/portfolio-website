@@ -56,6 +56,8 @@
     position: relative;
     padding-left: 7%;
     padding-right: 5vw;
+    transition: 0.8s ease;
+
 
     .questions-container{
       display: grid;
@@ -117,6 +119,7 @@
     max-width: inherit;
     padding-left: 7%;
     padding-right: 7%;
+    transition: 0.8s ease;
 
     @media screen and (max-width: 800px) {
       height: 100vh;
@@ -132,4 +135,22 @@
     //   z-index: 0;
     // }
   }
+}
+
+
+.show-element-left{
+  opacity: 1;
+  transform: translateX(0px);
+}
+.hide-element-left{
+  opacity: 0;
+  transform: translateX(-100px);
+}
+.show-element-right{
+  opacity: 1;
+  transform: translateX(0px);
+}
+.hide-element-right{
+  opacity: 0;
+  transform: translateX(+100px);
 }

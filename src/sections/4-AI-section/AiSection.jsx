@@ -22,14 +22,14 @@ function AiSection() {
   return (
     <Element id="scroll-ai" name="scroll-ai">
       <section className="ai-section" ref={containerRef}>
-        <div className="ai-left">
-          <h1 className={`about-header ${isVisible ? 'show-element-right' : 'hide-element-right'}`}>
+        <div className={`ai-left ${isVisible ? 'show-element-left' : 'hide-element-left'}`}>
+          <h1 className="about-header ">
             Want to learn more about me?
             {' '}
             <br />
             {' '}
             Ask away!
-            <div className={`header-underline ${isVisible ? 'show-element-right' : 'hide-element-right'}`} />
+            <div className="header-underline" />
           </h1>
           <div className="ai-section-hero-text">
             <p>Enter your question and the AI companion will try his best to give you a satisfactory answer!</p>
@@ -91,7 +91,7 @@ function AiSection() {
           </div>
         </div>
         <Element id="chat-window" name="chat-window">
-          <div className="ai-right">
+          <div className={`ai-right  ${isVisible ? 'show-element-right' : 'hide-element-right'}`}>
             {/* <div className="border-div" /> */}
             <AiChat
               triggerFAQ={activeFAQ}

@@ -11,33 +11,51 @@
   min-height: calc(100dvh + 100px) !important;
   overflow: hidden;
 
-  .contact-me-btn{
+  .buttons-container{
     display: flex;
-    margin-left: auto;
-    background-color: var(--highlight);
-    border-radius: 5px;
-    padding: 0px;
-    border: none;
-    font-weight: 500;
-    min-height: 45px;
-    align-items: center;
-    justify-content: center;
+    gap: 1rem;
+    justify-content: end;
 
-    .contact-me-link{
+    .contact-me-btn{
       display: flex;
-      padding: 10px;
+      background-color: var(--highlight);
       border-radius: 5px;
-    }
-
-
-    &:hover{
-      background-color: var(--highlight-hover);
-      cursor: pointer;
-    }
-    &:active{
-      transform: scale(0.97);
+      padding: 0px;
+      border: none;
+      font-weight: 500;
+      min-height: 45px;
+      align-items: center;
+      justify-content: center;
+  
+      .link-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 26px;
+        width: 26px;
+  
+      }
+  
+      .contact-me-link{
+        display: flex;
+        padding: 10px;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+        gap: 0.7rem;
+      }
+  
+      &:hover{
+        background-color: var(--highlight-hover);
+        cursor: pointer;
+      }
+      &:active{
+        transform: scale(0.97);
+      }
     }
   }
+
 
 
   .about-left{
