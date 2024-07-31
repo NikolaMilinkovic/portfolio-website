@@ -170,19 +170,27 @@
 .projects-section-3{
   .path-container{
     position: absolute;
-    bottom: -110px;
+    bottom: -6vw;
     left: 0px;
     right: 0px;
     z-index: -1;
     transform: rotateX(120deg) rotateZ(180deg);
+
+    @media screen and (max-width: 800px) {
+      bottom: 2vw;
+    }
   }
   .path-container-2{
     position: absolute;
-    bottom: -270px;
+    bottom: -12vw;
     left: 0px;
     right: 0px;
     z-index: -1;
     transform: rotateX(120deg);
+
+    @media screen and (max-width: 800px) {
+      bottom: -7vw;
+    }
   }
 
 }

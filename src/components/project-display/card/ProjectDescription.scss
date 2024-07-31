@@ -29,5 +29,13 @@
     @media screen and (max-width: 800px) {
       width: 100%;
     }
+
+    .case-study-link{
+      color: var(--highlight-hover);
+
+      &:hover{
+        color: var(--highlight);
+      }
+    }
   }
 }
