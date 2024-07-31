@@ -100,11 +100,11 @@ function ProjectPage({ projectUrl }) {
         <div className="case-content">
           <h1>Project Context</h1>
           <h2>Who is it for?</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur dolores, aliquid doloremque harum architecto ipsa neque numquam sequi perspiciatis!</p>
+          <p>Opis korisnika / If the client doesn’t have a website that explains this, then explain what the client’s business is. Who are their customers, how do they make money, what industries are their customers in, what employees/roles does the client and their customers typically have. The case must give the reader a high-level perspective and not just list features. This adds context for prospective clients.</p>
           <br />
           <h1>Understanding the Challenge</h1>
           <h2>Problem Overiew</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, culpa eaque! Laborum, atque culpa quisquam dignissimos dolore deserunt soluta illo?</p>
+          <p>Detaljan opis problema.</p>
           <h2>Key objectives</h2>
           <ul>
             <li>problem 1</li>
@@ -125,11 +125,10 @@ function ProjectPage({ projectUrl }) {
           <h1>Tech used</h1>
           <h2>Tech name</h2>
           <p>What technologies (APIs, libraries, third party solutions etc) were used and for what?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officiis facilis amet maiores aliquam dolorum odit laudantium temporibus animi consequatur.</p>
           <br />
           <h1>Conclusion</h1>
           <h2>What have I learned?</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsa quidem odit non rem? Dolores minus placeat ab impedit explicabo!</p>
+          <p>Kratak opis naucenih stvari iz ovog projekta</p>
           <h2>Challenges ahead and planned features?</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque et possimus soluta unde, animi vitae architecto totam dolore corrupti blanditiis!</p>
           <ul>
