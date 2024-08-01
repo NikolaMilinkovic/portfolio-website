@@ -3,7 +3,8 @@ import './ProjectSidebar.scss';
 
 function ProjectSidebar({ projectData, caseStudyLink = '', color = 'black' }) {
   const [data, setData] = useState(projectData || null);
-  const [caseStudy, setCaseStudy] = useState(() => {
+  const [caseStudy, setCaseStudy] = useState(caseStudyLink || null);
+  useEffect(() => {
     setCaseStudy(caseStudyLink);
   }, [caseStudyLink]);
   useEffect(() => {
