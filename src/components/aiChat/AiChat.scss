@@ -139,6 +139,12 @@
       text-align: start;
       justify-content: end;
       align-items: end;
+
+      transition: 0.2s ease;
+
+      &:focus{
+        border-bottom: 1px solid var(--highlight);
+      }
     }
   }
 }

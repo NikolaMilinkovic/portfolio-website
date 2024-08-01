@@ -109,9 +109,14 @@ function AiChat({ triggerFAQ }) {
     setInputData(e.target.value);
   };
 
+  function focusInput() {
+    textareaRef.current.focus();
+    console.log('FOCUSING');
+  }
+
   return (
     <div className="ai-chat-wrapper">
-      <div className="chatbox" ref={chatboxRef}>
+      <div className="chatbox" ref={chatboxRef} onClick={() => focusInput()}>
         {displayData && displayData.map((message, index) => (
           message.user === 'ai' ? (
             <DisplayAi

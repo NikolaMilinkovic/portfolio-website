@@ -62,7 +62,10 @@ function About() {
               curriculum. While my academic background is also programming - centric, my tangible knowledge has largely come from my self - taught journey, tinkering with new techonologies and working on projects.
             </p>
             <p className="about-text">
-              I enjoy building fun, pleasing and usefull applications that aim to solve problems, enhance workflows and or at very least bring a smile to the face of its user. At this moment I am freelancing, crafting web apps and looking out for full time opportunities.
+              I enjoy building fun, pleasing and usefull applications that aim to solve problems, enhance workflows and or at very least bring a smile to the face of its user.
+            </p>
+            <p className="about-text">
+              At this moment I am freelancing, crafting web apps and looking out for full time opportunities.
             </p>
             {/* <p className="about-text">
               Looking to learn more about my career? Take a look at my CV by clicking the button bellow!
