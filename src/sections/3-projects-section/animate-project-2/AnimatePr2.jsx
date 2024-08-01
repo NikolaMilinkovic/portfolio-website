@@ -35,9 +35,9 @@ function AnimatePr2() {
         className="static-asset bird-right"
         ref={bird}
         alt="bird"
-        srcSet="/images/animation-2/bird-mobile.gif 799w, /images/animation-2/bird1w.gif 800w"
+        srcSet="/images/animation-2/bird-mobile.gif 799w, /images/animation-2/bird1w.gif 3000w"
         sizes="(max-width: 799px) 100vw,
-               (min-width: 800px) 100vw"
+               (max-width: 3000px) 100vw"
         src="/images/animation-1/bird1w.gif"
       />
     </div>
