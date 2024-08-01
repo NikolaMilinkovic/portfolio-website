@@ -16,6 +16,7 @@ function Project({
   headerColor = 'black',
   mTop = '100%',
   mBottom = '100%',
+  customHeader = '',
 }) {
   const [data, setData] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -79,6 +80,8 @@ function Project({
       <header className="header">
         <h1 className="header-h1" style={{ color: headerColor }}>
           {data && (data.name)}
+          <br />
+          {customHeader}
         </h1>
         <div className="header-links">
           {data && (

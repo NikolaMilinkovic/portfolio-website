@@ -31,7 +31,15 @@ function AnimatePr2() {
       <img className="static-asset cane-right-small" ref={cane_2} alt="cane" src="/images/animation-2/cane-small.webp" />
       {/* <img className="static-asset cane-left" alt="bird" src="/images/animation-2/cane-right.webp" /> */}
       {/* <img className="static-asset test" alt="bird" src="/images/animation-2/fisherman.webp" /> */}
-      <img className="static-asset bird-right" ref={bird} alt="bird" src="/images/animation-2/bird1w.gif" />
+      <img
+        className="static-asset bird-right"
+        ref={bird}
+        alt="bird"
+        srcSet="/images/animation-2/bird-mobile.gif 799w, /images/animation-2/bird1w.gif 800w"
+        sizes="(max-width: 799px) 100vw,
+               (min-width: 800px) 100vw"
+        src="/images/animation-1/bird1w.gif"
+      />
     </div>
   );
 }

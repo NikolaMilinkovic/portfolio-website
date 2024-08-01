@@ -9,8 +9,6 @@ import './Navbar.scss';
 
 const Navbar = React.memo(() => {
   // Handles active button display
-  // const [activeButton, setActiveButton] = useState('Home');
-  // const [showDropdown, setShowDropdown] = useState(true);
   const {
     activeButton, setActiveButton, showDropdown, setShowDropdown,
   } = useNavbar();
@@ -19,6 +17,7 @@ const Navbar = React.memo(() => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  // Handle responsive navbar
   const showNavbar = () => {
     if (width < 1024) {
       navRef.current.classList.toggle('responsive_nav');
@@ -29,6 +28,7 @@ const Navbar = React.memo(() => {
     }
   };
 
+  // Smooth scroll to element
   const scrollToSection = (id, offset = 0) => {
     const element = document.getElementById(id);
     if (element) {
@@ -54,6 +54,7 @@ const Navbar = React.memo(() => {
     }
   };
 
+  // Scroll to section upon location change
   useEffect(() => {
     if (location.state && location.state.scrollTo) {
       setTimeout(() => {
