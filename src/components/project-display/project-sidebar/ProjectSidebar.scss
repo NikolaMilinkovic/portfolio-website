@@ -35,6 +35,7 @@
     transition: 0.2s linear;
     z-index: 0;
     font-size: clamp(12px, 14px, 16px);
+    pointer-events: none;
   }
 
   .link-demo,
@@ -48,6 +49,7 @@
         padding: 6px;
         padding-right: 1.8rem;
         cursor: pointer;
+        pointer-events: unset;
       }
     }
   }
