@@ -28,6 +28,7 @@
   margin-right: auto;
   padding: 1rem;
   padding-top: 0rem;
+  padding-bottom: 0.5rem;
   border-radius: 10px;
   // background-color: #556933;
   background-color: #96A972;
@@ -144,6 +145,10 @@
 
       &:focus{
         border-bottom: 1px solid var(--highlight);
+
+        .btn-submit{
+          border-bottom: 1px solid var(--highlight);
+        }
       }
     }
   }

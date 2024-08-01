@@ -36,6 +36,9 @@
       background-color: transparent;
       cursor: pointer;
       color: var(--highlight-hover);
+      text-decoration: underline;
+      font-weight: 600;
+      // text-shadow: 0px 0px 0.5px rgb(31, 58, 23);
 
       &:hover{
         color: var(--highlight);
