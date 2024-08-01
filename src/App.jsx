@@ -19,7 +19,7 @@ function App() {
   return (
     <NavbarProvider>
       <BrowserRouter>
-        {/* <ScrollToTop /> */}
+        <ScrollToTop />
         <Navbar
           activeButton={activeButton}
           setActiveButton={setActiveButton}
