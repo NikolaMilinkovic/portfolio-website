@@ -6,10 +6,11 @@ import ProjectDescription from './card/ProjectDescription';
 import useElementOnScreen from '../../util/useElementOnScreen';
 import SwipeCarousel from './carousel/ProjectCarousel2.jsx/SwipeCarousel';
 import './Project.scss';
+import { useNavigate } from 'react-router-dom';
 
 function Project({
   projectData,
-  caseStudyLink,
+  caseStudyLink = '',
   projectDescritpionColor = 'black',
   animateSide = 'left',
   timeout = 0,
@@ -22,12 +23,17 @@ function Project({
   const [isVisible, setIsVisible] = useState(false);
   const [direction, setDirection] = useState(animateSide);
   const [hasLoadedOnce, setHasLoadedOnce] = useState(false);
+  const navigate = useNavigate();
+  const [caseStudy, setCaseStudy] = useState('');
   const [containerRef] = useElementOnScreen({
     root: null,
     rootMargin: '0px',
     threshold: 0.35,
   }, isVisible, setIsVisible, true);
 
+  useEffect(() => {
+    setCaseStudy(caseStudyLink);
+  }, [caseStudyLink]);
   useEffect(() => {
     setData(projectData);
   }, [projectData]);
@@ -92,9 +98,12 @@ function Project({
               <a className="header-icon-link link-git" href={data.gitLink} target="_blank">
                 <img className="header-icon" alt="GitHub" src={headerColor === 'black' ? '/icons/black/code-solid.svg' : '/icons/white/code-solid-w.svg'} />
               </a>
-              <a className="header-icon-link link-case-study" href={caseStudyLink} target="_blank">
+              {caseStudy && (
+              <button className="header-icon-link link-case-study" onClick={() => navigate(caseStudy)} type="button">
                 <img className="header-icon" alt="Case study" src={headerColor === 'black' ? '/icons/black/circle-info-solid.svg' : '/icons/white/circle-info-solid-w.svg'} />
-              </a>
+              </button>
+              )}
+
             </>
           )}
         </div>

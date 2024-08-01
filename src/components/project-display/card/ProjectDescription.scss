@@ -31,6 +31,10 @@
     }
 
     .case-study-link{
+      background-color: transparent;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
       color: var(--highlight-hover);
 
       &:hover{

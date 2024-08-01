@@ -2,8 +2,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import TechBox from './techBox/TechBox';
 import './ProjectDescription.scss';
+import { useNavigate } from 'react-router-dom';
 
 function ProjectDescription({ projectData, color, caseStudyPath = '#' }) {
+  const navigate = useNavigate();
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -19,7 +21,7 @@ function ProjectDescription({ projectData, color, caseStudyPath = '#' }) {
             {' '}
             For more information see this projects
             {' '}
-            <a className="case-study-link" href={caseStudyPath}>case study.</a>
+            <button className="case-study-link" onClick={() => navigate(caseStudyPath)} type="button">case study.</button>
           </>
         )}
 
