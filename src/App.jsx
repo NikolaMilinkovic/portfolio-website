@@ -26,7 +26,7 @@ function App() {
 
           {/* BATTLESHIP */}
           <Route
-            path="/case-study/battleship"
+            path="nikola-portfolio-website.vercel.app/case-study/battleship"
             element={(
               <ProjectPage
                 projectUrl="/files/projects/battleship.json"
@@ -36,7 +36,7 @@ function App() {
 
           {/* MC-SCHEM-MAN */}
           <Route
-            path="/case-study/mc-schematic-manager"
+            path="nikola-portfolio-website.vercel.app/case-study/mc-schematic-manager"
             element={(
               <ProjectPage
                 projectUrl="/files/projects/mc-schematic-manager.json"
@@ -46,7 +46,7 @@ function App() {
 
           {/* CLI DATA STRUCTURES */}
           <Route
-            path="/case-study/cli-data-structures"
+            path="nikola-portfolio-website.vercel.app/case-study/cli-data-structures"
             element={(
               <ProjectPage
                 projectUrl="/files/projects/cli-data-structures.json"
@@ -55,7 +55,7 @@ function App() {
           />
           {/* CLI DATA STRUCTURES */}
           <Route
-            path="/case-study/portfolio-website"
+            path="nikola-portfolio-website.vercel.app/case-study/portfolio-website"
             element={(
               <ProjectPage
                 projectUrl="/files/projects/portfolio-website.json"
