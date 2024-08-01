@@ -72,10 +72,10 @@ function Projects() {
         <section className="projects-section-1">
           <ProjectSidebar
             projectData={mcSchemMan || null}
-            caseStudyLink="http://localhost:5173/case-study/mc-schematic-manager"
+            caseStudyLink="https://nikola-portfolio-website.vercel.app/case-study/mc-schematic-manager"
           />
           <Project
-            caseStudyLink="http://localhost:5173/case-study/mc-schematic-manager"
+            caseStudyLink="https://nikola-portfolio-website.vercel.app/case-study/mc-schematic-manager"
             projectData={mcSchemMan || null}
             projectDescritpionColor="black"
             animateSide="right"
@@ -100,11 +100,11 @@ function Projects() {
         <section className="projects-section-2">
           <ProjectSidebar
             projectData={battleship || null}
-            caseStudyLink="http://localhost:5173/case-study/battleship"
+            caseStudyLink="https://nikola-portfolio-website.vercel.app/case-study/battleship"
             color="white"
           />
           <Project
-            caseStudyLink="http://localhost:5173/case-study/battleship"
+            caseStudyLink="https://nikola-portfolio-website.vercel.app/case-study/battleship"
             projectData={battleship || null}
             projectDescritpionColor="white"
             headerColor="white"
@@ -124,10 +124,10 @@ function Projects() {
           </div>
           <ProjectSidebar
             projectData={cliDatStruct || null}
-            caseStudyLink="http://localhost:5173/case-study/cli-data-structures"
+            caseStudyLink="https://nikola-portfolio-website.vercel.app/case-study/cli-data-structures"
           />
           <Project
-            caseStudyLink="http://localhost:5173/case-study/cli-data-structures"
+            caseStudyLink="https://nikola-portfolio-website.vercel.app/case-study/cli-data-structures"
             projectData={cliDatStruct || null}
             projectDescritpionColor="black"
             timeout={1000}
@@ -147,11 +147,11 @@ function Projects() {
         <section className="projects-section-4">
           <ProjectSidebar
             projectData={portfolioWebsite || null}
-            caseStudyLink="http://localhost:5173/case-study/portfolio-website"
+            caseStudyLink="https://nikola-portfolio-website.vercel.app/case-study/portfolio-website"
             color="white"
           />
           <Project
-            caseStudyLink="http://localhost:5173/case-study/portfolio-website"
+            caseStudyLink="https://nikola-portfolio-website.vercel.app/case-study/portfolio-website"
             projectData={portfolioWebsite || null}
             projectDescritpionColor="white"
             headerColor="white"

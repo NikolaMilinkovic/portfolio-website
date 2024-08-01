@@ -8,6 +8,9 @@ import ScrollDownIcon from '../../components/scrollDownIcon/ScrollDownIcon';
 import BirdGif from '../../components/birdGif/BirdGif';
 import './ProjectPage.scss';
 
+// Display components
+import DisplayHeader from '../../components/textDisplay/header/DisplayHeader';
+
 function ProjectPage({ projectUrl }) {
   const [data, setData] = useState(null);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -99,14 +102,21 @@ function ProjectPage({ projectUrl }) {
       </section>
       <section className="case-study-section">
         <div className="case-content">
-          <h1>Project Context</h1>
-          <h2>Who is it for?</h2>
+          <DisplayHeader
+            data="Project Context"
+            hSize="h2"
+          />
+          {/* <h1>Project Context</h1> */}
+          <h3>Who is it for?</h3>
           <p>Opis korisnika / If the client doesn’t have a website that explains this, then explain what the client’s business is. Who are their customers, how do they make money, what industries are their customers in, what employees/roles does the client and their customers typically have. The case must give the reader a high-level perspective and not just list features. This adds context for prospective clients.</p>
           <br />
-          <h1>Understanding the Challenge</h1>
-          <h2>Problem Overiew</h2>
-          <p>Detaljan opis problema.</p>
-          <h2>Key objectives</h2>
+          <DisplayHeader
+            data="Understanding the Challenge"
+            hSize="h2"
+          />
+          <h3>Problem Overiew</h3>
+          <p>Detaljan opis problema. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, mollitia voluptatum. Facilis corrupti deserunt alias? Voluptatibus iste amet inventore. Impedit.</p>
+          <h3>Key objectives</h3>
           <ul>
             <li>problem 1</li>
             <li>problem 2</li>
@@ -114,23 +124,28 @@ function ProjectPage({ projectUrl }) {
             <li>problem 4</li>
           </ul>
           <br />
-          <h1>Achieved solution</h1>
-          <h2>Core Features</h2>
+          <DisplayHeader
+            data="Achieved solution"
+            hSize="h2"
+          />
+          <h3>Core Features</h3>
           <ul>
-            <li>feature 1 - short description</li>
-            <li>feature 2 - short description</li>
-            <li>feature 3 - short description</li>
-            <li>feature 4 - short description</li>
+            <li>feature 1 - short description Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, cum.</li>
+            <li>feature 2 - short description Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, cum.</li>
+            <li>feature 3 - short description Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, cum.</li>
+            <li>feature 4 - short description Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, cum.</li>
           </ul>
           <br />
-          <h1>Tech used</h1>
-          <h2>Tech name</h2>
+          <h3>Tech used</h3>
           <p>What technologies (APIs, libraries, third party solutions etc) were used and for what?</p>
           <br />
-          <h1>Conclusion</h1>
-          <h2>What have I learned?</h2>
+          <DisplayHeader
+            data="Conclusion"
+            hSize="h2"
+          />
+          <h3>What have I learned?</h3>
           <p>Kratak opis naucenih stvari iz ovog projekta</p>
-          <h2>Challenges ahead and planned features?</h2>
+          <h3>Challenges ahead and planned features?</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque et possimus soluta unde, animi vitae architecto totam dolore corrupti blanditiis!</p>
           <ul>
             <li>feature 1 - short description</li>

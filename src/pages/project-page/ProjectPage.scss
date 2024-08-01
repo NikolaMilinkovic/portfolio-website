@@ -20,7 +20,8 @@
     z-index: 0;
   
     .project{
-      position: absolute;
+      justify-self: center;
+      align-self: center;
       top: -40px;
       z-index: 2 !important;
     }
@@ -48,8 +49,40 @@
     align-items: center;
     justify-content: center;
     text-align: start;
-    padding: 0px 7vw;
+    padding: 0px 20vw;
     box-sizing: border-box;
+    // text-align: center;
+
+    h2{
+      margin-top: 3rem;
+    }
+    h3{
+      margin: 0px;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    
+    }
+
+    p{
+      text-align: justify;
+      display: flex;
+      margin-left: 1.5rem;
+      margin-right: 1rem;
+      width: fit-content;
+    }
+    ul{
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      margin-left: 1.5rem;
+      margin-right: 1rem;
+    }
+
+    @media screen and (max-width: 800px) {
+      padding: 0px 7vw;
+    }
   
     // .case-content{
     //   height: max-content;
