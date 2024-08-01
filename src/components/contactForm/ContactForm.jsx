@@ -12,7 +12,7 @@ function ContactForm() {
   const [containerRef] = useElementOnScreen({
     root: null,
     rootMargin: '0px',
-    threshold: 0.6,
+    threshold: 0.3,
   }, isVisible, setIsVisible, true);
   // Show / Hide form on submit
   const [showForm, setShowForm] = useState(true);
