@@ -10,13 +10,13 @@
   .project-section{
     padding: 0px 7vw;
     box-sizing: border-box;
+    padding: 0px 16vw;
 
 
-    // background-color: var(--background-custom-black);
     background-color: transparent;
     color: var(--footer-text-color);
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     z-index: 0;
   

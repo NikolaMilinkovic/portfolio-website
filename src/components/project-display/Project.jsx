@@ -18,6 +18,7 @@ function Project({
   mTop = '100%',
   mBottom = '100%',
   customHeader = '',
+  type = 1,
 }) {
   const [data, setData] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -78,13 +79,19 @@ function Project({
   return (
     <div
       className="project-description-background"
-      style={{ marginTop: mTop, marginBottom: mBottom, color: headerColor }}
+      style={{
+        marginTop: mTop, marginBottom: mBottom, color: headerColor, height: type === 2 ? '90vh' : '100vh',
+      }}
       ref={containerRef}
     >
-
+      {data && type === 2 && (
+        <SwipeCarousel
+          images={data.images}
+        />
+      )}
       {/* HEADER */}
       <header className="header">
-        <h1 className="header-h1" style={{ color: headerColor }}>
+        <h1 className="header-h1" style={{ color: headerColor, marginTop: type === 2 ? 'unset' : '0px' }}>
           {data && (data.name)}
           <br />
           {customHeader}
@@ -111,14 +118,14 @@ function Project({
       {/* <div className="layout-testing"> */}
       {/* Carousel */}
       {/* <div> */}
-      {data && (
+      {data && type === 1 && (
         <SwipeCarousel
           images={data.images}
         />
       )}
       {/* </div> */}
       {/* Project Description */}
-      {data && (
+      {data && type === 1 && (
         <ProjectDescription
           projectData={data}
           color={projectDescritpionColor}

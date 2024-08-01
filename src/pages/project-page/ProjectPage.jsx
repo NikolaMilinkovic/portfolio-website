@@ -54,6 +54,7 @@ function ProjectPage({ projectUrl }) {
               mBottom="0%"
               headerColor="black"
               customHeader="Case Study"
+              type={2}
             />
           </section>
         )}
