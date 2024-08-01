@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './ProjectSidebar.scss';
+import { useNavigate } from 'react-router-dom';
 
 function ProjectSidebar({ projectData, caseStudyLink = '', color = 'black' }) {
   const [data, setData] = useState(projectData || null);
@@ -10,6 +11,12 @@ function ProjectSidebar({ projectData, caseStudyLink = '', color = 'black' }) {
   useEffect(() => {
     setData(projectData);
   }, [projectData]);
+
+  const navigate = useNavigate();
+
+  const navigateToPath = (string) => {
+    navigate(string);
+  };
   return (
     <aside className="project-sidebar">
       {data && (
@@ -28,12 +35,12 @@ function ProjectSidebar({ projectData, caseStudyLink = '', color = 'black' }) {
             </div>
           </a>
           {caseStudy && (
-          <a className="sidebar-icon-link link-case-study" href={caseStudy} target="_blank" style={{ color }}>
+          <button type="button" className="sidebar-icon-link link-case-study case-study-btn" onClick={() => navigateToPath(caseStudy)} style={{ color }}>
             <img className="sidebar-icon" alt="Case study" src="/icons/black/circle-info-solid.svg" />
             <div className="slider slide-case-study">
               <p>Case Study</p>
             </div>
-          </a>
+          </button>
           )}
         </>
       )}
