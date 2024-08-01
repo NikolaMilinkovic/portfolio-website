@@ -14,7 +14,7 @@ function AiChat({ triggerFAQ }) {
   const [displayData, setDisplayData] = useState([
     {
       user: 'ai',
-      text: 'Ask me anything you are interested in!',
+      text: 'Ask away!',
     },
   ]);
 
