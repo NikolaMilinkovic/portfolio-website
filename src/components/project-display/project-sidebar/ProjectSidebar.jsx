@@ -27,7 +27,7 @@ function ProjectSidebar({ projectData, caseStudyLink = '', color = 'black' }) {
             </div>
           </a>
           {caseStudy && (
-          <a className="sidebar-icon-link link-case-study" href={caseStudyLink} target="_blank" style={{ color }}>
+          <a className="sidebar-icon-link link-case-study" href={caseStudy} target="_blank" style={{ color }}>
             <img className="sidebar-icon" alt="Case study" src="/icons/black/circle-info-solid.svg" />
             <div className="slider slide-case-study">
               <p>Case Study</p>
