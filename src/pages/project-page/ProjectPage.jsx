@@ -36,7 +36,7 @@ function ProjectPage({ projectUrl }) {
 
   return (
     <main className="case-study-page">
-      <Navbar />
+      {/* <Navbar /> */}
       <section className="project-section">
         <SocialsSidebar />
 

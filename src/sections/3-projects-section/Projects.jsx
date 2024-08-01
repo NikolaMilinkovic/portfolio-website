@@ -68,7 +68,7 @@ function Projects() {
   return (
     <>
       {/* PROJECT 1 */}
-      <Element id="scroll-projects-1" name="scroll-projects-1">
+      <Element id="scroll-mc-schematic-manager" name="scroll-mc-schematic-manager">
         <section className="projects-section-1">
           <ProjectSidebar
             projectData={mcSchemMan || null}
@@ -96,7 +96,7 @@ function Projects() {
       </Element>
 
       {/* PROJECT 2 */}
-      <Element id="scroll-projects-2" name="scroll-projects-2">
+      <Element id="scroll-battleship" name="scroll-battleship">
         <section className="projects-section-2">
           <ProjectSidebar
             projectData={battleship || null}
@@ -117,7 +117,7 @@ function Projects() {
       </Element>
 
       {/* PROJECT 3 */}
-      <Element id="scroll-projects-3" name="scroll-projects-3">
+      <Element id="scroll-cli-data-structures" name="scroll-cli-data-structures">
         <section className="projects-section-3">
           <div className="scene-container">
             <AnimatePr3 />
@@ -143,7 +143,7 @@ function Projects() {
       </Element>
 
       {/* PROJECT 4 */}
-      <Element id="scroll-projects-4" name="scroll-projects-4">
+      <Element id="scroll-portfolio-website" name="scroll-portfolio-website">
         <section className="projects-section-4">
           <ProjectSidebar
             projectData={portfolioWebsite || null}
@@ -165,7 +165,7 @@ function Projects() {
       </Element>
 
       {/* OTHER PROJECTS */}
-      <Element id="scroll-projects-5" name="scroll-projects-5">
+      <Element id="scroll-other-projects" name="scroll-other-projects">
         <section className="projects-section-5">
           <header className="other-projects-header">
             <h1>Other Projects</h1>

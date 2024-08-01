@@ -98,7 +98,7 @@ function About() {
                   duration={800}
                 >
                   Contact me here!
-                  <img className="link-icon" src="/icons/black/envelope-solid.svg" alt="envelope" />
+                  {/* <img className="link-icon" src="/icons/black/envelope-solid.svg" alt="envelope" /> */}
                 </Link>
               </button>
             </div>

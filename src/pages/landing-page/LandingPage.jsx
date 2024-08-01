@@ -11,25 +11,28 @@ import Contact from '../../sections/5-contact-section/Contact';
 import Footer from '../../components/footer/Footer';
 import Loading from '../../components/loading/Loading';
 import './LandingPage.scss';
-import ProjectsHeader from '../../sections/6-projects-header/ProjectsHeader';
 
 function LandingPage() {
   const loading = useImageLoader();
+  const [csActive, setCSActive] = useState(false);
+  function toggleCS() {
+    if (csActive) {
+      setCSActive(!csActive);
+    }
+  }
 
   return (
-    <>
+    <div className="main-content">
       <Loading
         isLoading={loading}
       />
-      <Navbar />
       <Home />
       <About />
       <AiSection />
-      {/* <ProjectsHeader /> */}
       <Projects />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 

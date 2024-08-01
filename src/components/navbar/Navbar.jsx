@@ -4,12 +4,16 @@ import CV from '/files/CV.pdf';
 import { useNavigate, useLocation } from 'react-router-dom';
 import NavButton from './nav-button/NavButton';
 import useWindowDimensions from '../../util/windowDimentions';
+import { useNavbar } from '../../../NavbarContext';
 import './Navbar.scss';
 
-function Navbar() {
+const Navbar = React.memo(() => {
   // Handles active button display
-  const [activeButton, setActiveButton] = useState('Home');
-  const [showDropdown, setShowDropdown] = useState(true);
+  // const [activeButton, setActiveButton] = useState('Home');
+  // const [showDropdown, setShowDropdown] = useState(true);
+  const {
+    activeButton, setActiveButton, showDropdown, setShowDropdown,
+  } = useNavbar();
   const { width } = useWindowDimensions();
   const navRef = useRef();
   const navigate = useNavigate();
@@ -24,12 +28,43 @@ function Navbar() {
       setShowDropdown(true);
     }
   };
-  function updateNav(event) {
-    navigate('/');
+
+  const scrollToSection = (id, offset = 0) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition + offset,
+        behavior: 'smooth',
+      });
+    } else {
+      console.warn(`Element with ID ${id} not found.`);
+    }
+  };
+
+  const handleNavClick = (event) => {
     const { name } = event.target;
     setActiveButton(name);
     showNavbar();
-  }
+
+    if (location.pathname !== '/') {
+      navigate('/', { state: { scrollTo: name } });
+    } else {
+      scrollToSection(`scroll-${name.toLowerCase()}`);
+    }
+  };
+
+  useEffect(() => {
+    if (location.state && location.state.scrollTo) {
+      setTimeout(() => {
+        if (location.state.scrollTo.toLowerCase() === 'about') {
+          scrollToSection(`scroll-${location.state.scrollTo.toLowerCase()}`, 80);
+        } else {
+          scrollToSection(`scroll-${location.state.scrollTo.toLowerCase()}`);
+        }
+      }, 1200);
+    }
+  }, [location]);
 
   return (
     <nav className="navbar">
@@ -45,7 +80,7 @@ function Navbar() {
           offset={-80}
           name="Home"
           text="Home"
-          updateNav={(e) => updateNav(e)}
+          updateNav={(e) => handleNavClick(e)}
           activeBtn={activeButton}
         />
         {/* ABOUT */}
@@ -55,77 +90,77 @@ function Navbar() {
           offset={100}
           name="About"
           text="About"
-          updateNav={(e) => updateNav(e)}
+          updateNav={(e) => handleNavClick(e)}
           activeBtn={activeButton}
         />
         {/* AI */}
         <NavButton
-          to="scroll-ai"
+          to="scroll-faq"
           duration={600}
           offset={0}
           name="FAQ"
           text="FAQ"
-          updateNav={(e) => updateNav(e)}
+          updateNav={(e) => handleNavClick(e)}
           activeBtn={activeButton}
         />
         {/* PROJECTS */}
         {showDropdown ? (
           <div className="projects">
             <NavButton
-              to="scroll-projects-1"
+              to="mc-schematic-manager"
               className="scroll-link"
               duration={600}
               offset={0}
               isDropdownBtn={['mc-schematic-manager', 'battleship', 'cli-data-structures', 'portfolio-website', 'other-projects']}
-              name="Projects"
+              name="mc-schematic-manager"
               text="Projects"
-              updateNav={(e) => updateNav(e)}
+              updateNav={(e) => handleNavClick(e)}
               activeBtn={activeButton}
             />
             <div className="projects-dropdown">
               <NavButton
-                to="scroll-projects-1"
+                to="scroll-mc-schematic-manager"
                 duration={600}
                 offset={0}
                 name="mc-schematic-manager"
                 text="Mc Schematic Manager"
-                updateNav={(e) => updateNav(e)}
+                updateNav={(e) => handleNavClick(e)}
                 activeBtn={activeButton}
               />
               <NavButton
-                to="scroll-projects-2"
+                to="scroll-battleship"
                 duration={600}
                 offset={0}
                 name="battleship"
                 text="Battleship"
-                updateNav={(e) => updateNav(e)}
+                updateNav={(e) => handleNavClick(e)}
                 activeBtn={activeButton}
               />
               <NavButton
-                to="scroll-projects-3"
+                to="scroll-cli-data-structures"
                 duration={600}
                 offset={0}
                 name="cli-data-structures"
                 text="CLI Data Structures"
-                updateNav={(e) => updateNav(e)}
+                updateNav={(e) => handleNavClick(e)}
                 activeBtn={activeButton}
               />
               <NavButton
-                to="scroll-projects-4"
+                to="scroll-portfolio-website"
                 duration={600}
                 offset={0}
                 name="portfolio-website"
                 text="Portfolio Website"
-                updateNav={(e) => updateNav(e)}
+                updateNav={(e) => handleNavClick(e)}
                 activeBtn={activeButton}
               />
               <NavButton
-                to="scroll-projects-5"
+                to="scroll-other-projects"
                 duration={600}
                 offset={0}
                 name="other-projects"
                 text="Other Projects"
-                updateNav={(e) => updateNav(e)}
+                updateNav={(e) => handleNavClick(e)}
                 activeBtn={activeButton}
               />
             </div>
@@ -138,7 +173,7 @@ function Navbar() {
             offset={0}
             name="Projects"
             text="Projects"
-            updateNav={(e) => updateNav(e)}
+            updateNav={(e) => handleNavClick(e)}
             activeBtn={activeButton}
           />
         )}
@@ -150,7 +185,7 @@ function Navbar() {
           offset={-80}
           name="Skills"
           text="Skills"
-          updateNav={(e) => updateNav(e)}
+          updateNav={(e) => handleNavClick(e)}
           activeBtn={activeButton}
         /> */}
         {/* CONTACT */}
@@ -160,7 +195,7 @@ function Navbar() {
           offset={-80}
           name="Contact"
           text="Contact"
-          updateNav={(e) => updateNav(e)}
+          updateNav={(e) => handleNavClick(e)}
           activeBtn={activeButton}
         />
         {/* CV DOWNLOAD */}
@@ -176,6 +211,6 @@ function Navbar() {
       </button>
     </nav>
   );
-}
+});
 
 export default Navbar;

@@ -1,0 +1,20 @@
+
+
+.test{
+  position: relative;
+}
+
+
+.hide-main{
+  opacity: 0;
+  transform: translateX(-200px);
+  pointer-events: none;
+  user-select: none;
+  display: none;
+}
+.show-main{
+  opacity: 1;
+  transform: translateX(0px);
+  pointer-events: unset;
+  user-select: unset;
+}

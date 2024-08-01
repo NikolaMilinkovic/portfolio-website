@@ -1,0 +1,15 @@
+@import '../../index.scss';
+@import '../../global/mixins.scss';
+
+main.cs-main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  height: 55px;
+  box-sizing: border-box;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px !important;
+  z-index: 221 !important;
+}

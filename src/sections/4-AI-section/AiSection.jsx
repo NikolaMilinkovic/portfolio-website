@@ -20,7 +20,7 @@ function AiSection() {
     threshold: 0.3,
   }, isVisible, setIsVisible, true);
   return (
-    <Element id="scroll-ai" name="scroll-ai">
+    <Element id="scroll-faq" name="scroll-faq">
       <section className="ai-section" ref={containerRef}>
         <div className={`ai-left ${isVisible ? 'show-element-left' : 'hide-element-left'}`}>
           <h1 className="about-header ">
