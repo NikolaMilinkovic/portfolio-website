@@ -111,7 +111,7 @@ function ProjectPage({ projectUrl }) {
           <p>Opis korisnika / If the client doesn’t have a website that explains this, then explain what the client’s business is. Who are their customers, how do they make money, what industries are their customers in, what employees/roles does the client and their customers typically have. The case must give the reader a high-level perspective and not just list features. This adds context for prospective clients.</p>
           <br />
           <DisplayHeader
-            data="Understanding the Challenge"
+            data="Challenges & Objectives"
             hSize="h2"
           />
           <h3>Problem Overiew</h3>
