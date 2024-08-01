@@ -41,11 +41,13 @@
   .link-case-study,
   .link-git{
     &:hover{
+      cursor: pointer;
       .slider{
         opacity: 1;
-        right: 60px;
+        right: 50px;
         padding: 6px;
-        padding-right: 1rem;
+        padding-right: 1.8rem;
+        cursor: pointer;
       }
     }
   }
