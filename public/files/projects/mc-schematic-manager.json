@@ -58,5 +58,60 @@
   "demoLink": "https://mc-schematic-manager.vercel.app/",
   "gitLink": "https://github.com/NikolaMilinkovic/mc-schematic-manager",
   "usedTech": ["JavaScript", "HTML", "CSS", "SASS", "React", "Vite", "Express", "NodeJs", "MongoDB", "Heroku"],
-  "embedData": []
+  "embedData": [],
+  "caseStudyData": {
+    "usedTechInDepth": ["JavaScript", "HTML", "CSS", "SASS", "React", "Vite", "Express", "NodeJs", "MongoDB", "Heroku", "Puppeteer", "Cloudinary"],
+    "projectContext": [
+      {
+        "title": "Who is it for?",
+        "text": [
+          "Minecraft Schematic Manager is designed for studios and individuals who specialize in creating Minecraft maps for both commercial and non-commercial purposes. This includes a diverse range of users, from professional game design studios to freelance builders and hobbyists.",
+
+          "These creators often work on projects requiring intricate and detailed map designs with a large number of assets. The maps can be used for various purposes such as gaming servers, educational tools, and entertainment."
+        ]
+      }
+    ],
+    "challenges&Objectives": [
+      {
+        "title": "Problem Overiew",
+        "text": [
+          "In the dynamic world of Minecraft map creation, both studios and individual builders face the significant challenge of managing a vast array of assets. Over the course of a year, a single studio or builder can produce dozens of maps and potentially hundreds of individual assets. Despite even the best organizational efforts, tracking these assets becomes increasingly difficult as the volume grows.",
+          
+          "Builders often struggle to maintain a clear inventory of their available assets, which can lead to inefficiencies and missed opportunities for asset reuse. This disorganization can result in wasted time searching for specific items, redundant creation of similar assets, and ultimately, delays in project timelines.",
+
+          "Currently in order to have an asset imported to the server builders have to locate the file, upload it to FAWE schematics server via their website, copy the returned text that is then used as a command on the server in order to get the asset into their clipboard. This system is slow and inefficient."
+        ]
+      },
+      {
+        "title": "Key Objectives",
+        "text": [],
+        "bulletPoints": [
+          "Efficient asset storage and lookup method",
+          "Cut time needed for asset upload",
+          "Provide studios a way of generating new user accounts and ability to set their permissions",
+          "Possibility of creating collections for better asset sorting",
+          "Enhance work speed by keeping everything fast and simple"
+        ]
+      }
+    ],
+    "achievedSolution": [
+      {
+        "title": "Core Features",
+        "text": [],
+        "bulletPoints": [
+          "JWT authentication and authorization method",
+          "Fast File / Image upload via drag & drop or clipboard paste (ctrl+c / ctrl+v)",
+          "Autocomplete suggestions based on previous entries",
+          "Instant asset upload & paste command copied to clipboard via single button click",
+          "Asset & Collections lookup via search input that uses names & tags to find suggestions",
+          "Methods for adding / editing / removing an asset or collection",
+          "User manager dashboard for adding or removing users / handling permissions / updating information",
+          "Profile section for customization and information handling"
+        ]
+      },
+      {
+
+      }
+    ]
+  }
 }

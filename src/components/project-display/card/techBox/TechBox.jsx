@@ -62,6 +62,13 @@ function TechBox({ text, tech, color }) {
           // <SiVite />
           <img className="tech-icon" src="/icons/colored/heroku.svg" alt="heroku-icon" />
         )}
+        {tech && tech === 'Cloudinary' && (
+          // <SiVite />
+          <img className="tech-icon" src="/icons/colored/cloudinary.svg" alt="cloudinary-icon" />
+        )}
+        {tech && tech === 'Puppeteer' && (
+          <img className="tech-icon" src="/icons/colored/puppeteer.svg" alt="puppeteer-icon" />
+        )}
       </div>
       <p className="text">
         {text}
