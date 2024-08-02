@@ -23,6 +23,13 @@
     position: relative;
     z-index: 0;
 
+    .social-sidebar-container{
+     
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+
     @media screen and (max-width: 800px) {
       padding: 0px 0vw;
     }

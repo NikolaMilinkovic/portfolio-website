@@ -7,6 +7,8 @@ import Footer from '../../components/footer/Footer';
 import ScrollDownIcon from '../../components/scrollDownIcon/ScrollDownIcon';
 import BirdGif from '../../components/birdGif/BirdGif';
 import TechBox from '../../components/project-display/card/techBox/TechBox';
+import useImageLoader from '../../util/useImageLoader';
+import Loading from '../../components/loading/Loading';
 
 import DisplayText from '../../components/textDisplay/text/DisplayText';
 import './ProjectPage.scss';
@@ -17,6 +19,7 @@ import DisplayHeader from '../../components/textDisplay/header/DisplayHeader';
 function ProjectPage({ projectUrl }) {
   const [data, setData] = useState(null);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const loading = useImageLoader();
 
   useEffect(() => {
     const handleResize = () => {
@@ -43,8 +46,13 @@ function ProjectPage({ projectUrl }) {
   return (
     <main className="case-study-page">
       {/* <Navbar /> */}
+      <Loading
+        isLoading={loading}
+      />
       <section className="project-section">
-        <SocialsSidebar />
+        <div className="social-sidebar-container">
+          <SocialsSidebar />
+        </div>
 
         {data && (
           <section className="project">
@@ -143,6 +151,10 @@ function ProjectPage({ projectUrl }) {
             <DisplayText
               textData={data.caseStudyData.conclusion}
             />
+            <div>
+              <button type="button">Live Link</button>
+              <button type="button">Code</button>
+            </div>
           </>
           )}
         </div>

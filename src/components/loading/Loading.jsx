@@ -11,12 +11,12 @@ function Loading({ isLoading }) {
       document.documentElement.classList.add('no-scroll');
       setActive(true);
     } else {
-      const timeoutId = setTimeout(() => {
-        document.documentElement.classList.remove('no-scroll');
-        setActive(false);
-      }, 1000);
+      // const timeoutId = setTimeout(() => {
+      document.documentElement.classList.remove('no-scroll');
+      setActive(false);
+      // }, 0);
 
-      return () => clearTimeout(timeoutId);
+      // return () => clearTimeout(timeoutId);
     }
   }, [isLoading]);
 

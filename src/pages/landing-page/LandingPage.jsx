@@ -14,12 +14,6 @@ import './LandingPage.scss';
 
 function LandingPage() {
   const loading = useImageLoader();
-  const [csActive, setCSActive] = useState(false);
-  function toggleCS() {
-    if (csActive) {
-      setCSActive(!csActive);
-    }
-  }
 
   return (
     <div className="main-content">

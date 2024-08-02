@@ -104,7 +104,7 @@ function Project({
           <br />
           {customHeader}
         </h1>
-        <div className="header-links">
+        <div className="header-links" style={{ display: type === 2 ? 'flex' : 'none' }}>
           {data && (
             <>
               <a className="header-icon-link link-demo" href={data.demoLink} target="_blank">
