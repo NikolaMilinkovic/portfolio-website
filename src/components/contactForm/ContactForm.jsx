@@ -4,6 +4,7 @@ import FormInput from './formInput/FormInput';
 import FormTextarea from './formInput/FormTextarea';
 import useElementOnScreen from '../../util/useElementOnScreen';
 import AfterContact from './afterContact/AfterContact';
+import OnClickCopy from './afterContact/onClickCopy/OnClickCopy';
 import './ContactForm.scss';
 
 function ContactForm() {
@@ -70,12 +71,22 @@ function ContactForm() {
       </div>
       <form ref={form} className={`contact-form ${showForm ? 'showForm' : 'hideForm'} ${isVisible ? 'show-left' : 'hide-left'}`} onSubmit={(e) => sendEmail(e)}>
         <h1>Contact me!</h1>
+        <p>
+          <span className="bold-span">Email:</span>
+          {' '}
+          <OnClickCopy
+            string="nikolamilinkovic221@gmail.com"
+            align="center"
+            justify="start"
+            minWidth="unset"
+          />
+        </p>
         <FormInput
           label="Name"
           id="user_name"
           name="user_name"
           type="text"
-          placeholder=""
+          placeholder="Your name"
           required
           text={formData.user_name}
           onChange={(e) => onChange(e)}
@@ -85,7 +96,7 @@ function ContactForm() {
           id="user_email"
           name="user_email"
           type="text"
-          placeholder=""
+          placeholder="Your email address"
           required
           text={formData.user_email}
           onChange={(e) => onChange(e)}
@@ -94,7 +105,7 @@ function ContactForm() {
           label="Message"
           id="input-message"
           name="message"
-          placeholder=""
+          placeholder="Message"
           required
           text={formData.message}
           onChange={(e) => onChange(e)}

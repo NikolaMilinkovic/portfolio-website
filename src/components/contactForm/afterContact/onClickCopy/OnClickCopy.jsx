@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './OnClickCopy.scss';
 
-function OnClickCopy({ string }) {
+function OnClickCopy({
+  string, align = 'center', justify = 'center', minWidth = '100%',
+}) {
   const [data, setData] = useState('');
   useEffect(() => {
     setData(string);
@@ -14,7 +16,16 @@ function OnClickCopy({ string }) {
     }, 1200);
   }
   return (
-    <button type="button" onClick={copyToClipboard} className="copy-btn">
+    <button
+      type="button"
+      onClick={copyToClipboard}
+      className="copy-btn"
+      style={{
+        alignItems: align,
+        justifyContent: justify,
+        minWidth,
+      }}
+    >
       { data }
     </button>
   );
