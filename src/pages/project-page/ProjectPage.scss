@@ -5,7 +5,7 @@
   min-height: max-content;
   width: 100vw;
   hyphens: auto;
-
+  box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: auto;
 
@@ -18,8 +18,6 @@
     padding: 0px 7vw;
     box-sizing: border-box;
     padding: 0px 16vw;
-
-
     background-color: transparent;
     color: var(--footer-text-color);
     position: relative;
@@ -95,6 +93,9 @@
     }
   
     .case-content{
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
       .tech-used{
         display: grid;
         grid-template-columns: repeat(8, 1fr);
