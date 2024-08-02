@@ -151,9 +151,16 @@ function ProjectPage({ projectUrl }) {
             <DisplayText
               textData={data.caseStudyData.conclusion}
             />
-            <div>
-              <button type="button">Live Link</button>
-              <button type="button">Code</button>
+            <h3>Project Links:</h3>
+            <div className="links">
+              <a className="project-link" href={data.demoLink} target="_blank">
+                Live Link
+                <img className="project-icon" alt="Demo" src="/icons/black/desktop-solid.svg" />
+              </a>
+              <a className="project-link" href={data.gitLink} target="_blank">
+                Code
+                <img className="project-icon" alt="GitHub" src="/icons/black/code-solid.svg" />
+              </a>
             </div>
           </>
           )}
