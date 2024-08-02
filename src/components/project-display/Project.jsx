@@ -90,8 +90,16 @@ function Project({
         />
       )}
       {/* HEADER */}
-      <header className="header">
-        <h1 className="header-h1" style={{ color: headerColor, marginTop: type === 2 ? 'unset' : '0px' }}>
+      <header
+        className="header"
+        style={{
+          marginTop: type === 2 ? '2rem' : '4rem',
+        }}
+      >
+        <h1
+          className="header-h1"
+          style={{ color: headerColor, marginTop: type === 2 ? 'unset' : '0px' }}
+        >
           {data && (data.name)}
           <br />
           {customHeader}

@@ -57,5 +57,80 @@
   "landingText": "Challenging Battleship game with smart AI opponent, storyline, randomly generated fields and much more!",
   "demoLink": "https://nikolamilinkovic.github.io/battleship/",
   "gitLink": "https://github.com/NikolaMilinkovic/battleship",
-  "usedTech": ["JavaScript", "HTML", "CSS"]
+  "usedTech": ["JavaScript", "HTML", "CSS"],
+  "caseStudyData": {
+    "usedTechInDepth": ["JavaScript", "HTML", "CSS"],
+    "projectContext": [
+      {
+        "title": "Who is it for?",
+        "text": [
+          "Minecraft Schematic Manager is designed for studios and individuals who specialize in creating Minecraft maps for both commercial and non-commercial purposes. This includes a diverse range of users, from professional game design studios to freelance builders and hobbyists.",
+
+          "These creators often work on projects requiring intricate and detailed map designs with a large number of assets. The maps can be used for various purposes such as gaming servers, educational tools, and entertainment."
+        ],
+        "bulletPoints": []
+      }
+    ],
+    "challengesAndObjectives": [
+      {
+        "title": "Problem Overiew",
+        "text": [
+          "In the dynamic world of Minecraft map creation, studios and individual builders face the challenge of managing numerous assets. Over the course of a year, a single studio or builder can produce dozens of maps and potentially hundreds of assets. Despite good organizational efforts, tracking these assets becomes increasingly difficult.",
+          
+          "Builders often struggle to maintain a clear inventory of their assets, leading to inefficiencies, missed opportunities for asset reuse, and delays in project timelines. The current process to import assets to the server is slow and inefficient, requiring builders to locate files, upload them to the FAWE schematics server, and manually copy and use returned commands."
+        ],
+        "bulletPoints": []
+      },
+      {
+        "title": "Key Objectives",
+        "text": [],
+        "bulletPoints": [
+          "Efficient asset storage and lookup method",
+          "Cut time needed for asset upload",
+          "Provide studios a way of generating new user accounts and ability to set their permissions",
+          "Possibility of creating collections for better asset sorting",
+          "Enhance work speed by keeping everything fast and simple"
+        ]
+      }
+    ],
+    "achievedSolution": [
+      {
+        "title": "Core Features",
+        "text": [],
+        "bulletPoints": [
+          "JWT authentication and authorization method",
+          "Fast File / Image upload via drag & drop or clipboard paste (ctrl+c / ctrl+v)",
+          "Autocomplete suggestions based on previous entries",
+          "Instant asset upload & paste command copied to clipboard via single button click",
+          "Asset & Collections lookup via search input that uses names & tags to find suggestions",
+          "Methods for adding / editing / removing an asset or collection",
+          "User manager dashboard for adding or removing users / handling permissions / updating information",
+          "Profile section for customization and information handling"
+        ]
+      }
+    ],
+    "conclusion": [
+      {
+      "title": "What have i learned?",
+      "text": [
+        "During this project I had to tackle numerous new and interesting problems that pushed me to become a better developer. From custom user authentication / authorization with combination of JWT, database organization & planning, cloudinary implementation & using puppeteer script to communicate with an api-less service. I gained experience in working on a more sizeable project that has a real user bases on the other side using the service that this app provides.",
+        
+        "The experience from building this project allows me to better structure projects in the future and provides a foundation from which I can build my skills when working on similar sized projects."
+      ],
+      "bulletPoints": []
+    },
+    {
+      "title": "Challenges ahead and planned features?",
+      "text": [
+        "Update the application to better handle large amount of data and be able to scale properly with more users."
+      ],
+      "bulletPoints": [
+        "Update UI and visual components to be more pleasing.",
+        "Update asset search system & input to be more efficient when working with large amount of data.",
+        "Implement paganation for asset display.",
+        "Bulk asset / collection zipping & download."
+      ]
+    }
+  ]
+  }
 }
