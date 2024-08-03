@@ -40,6 +40,12 @@ function AiChat({ triggerFAQ }) {
       formData.append('aboutText', getAboutInfo());
       // http://localhost:3000/
 
+      const loading = {
+        user: 'ai',
+        text: 'Thinking...',
+      };
+
+      setDisplayData((prev) => [...prev, loading]);
       const response = await fetch(`${import.meta.env.VITE_DOMAIN}put-about-question`, {
         method: 'PUT',
         body: formData,
@@ -51,6 +57,7 @@ function AiChat({ triggerFAQ }) {
           user: 'ai',
           text: data.message,
         };
+        setDisplayData((prev) => prev.slice(0, -1));
         setDisplayData((prev) => [...prev, newData]);
         return;
       }
@@ -63,6 +70,7 @@ function AiChat({ triggerFAQ }) {
         text: data.response,
       };
       console.log(newData);
+      setDisplayData((prev) => prev.slice(0, -1));
       setDisplayData((prev) => [...prev, newData]);
     }
 
