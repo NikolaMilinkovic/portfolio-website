@@ -200,7 +200,7 @@ const Navbar = React.memo(() => {
           activeBtn={activeButton}
         />
         {/* CV DOWNLOAD */}
-        <a href={CV} download="CV" taget="_blank" className="cv-download-link">
+        <a href="/files/test_cv_doc.pdf" download="CV_Nikola_Milinkovic" taget="_blank" className="cv-download-link">
           <button type="button" className="cv-download-btn">
             Download CV
           </button>
