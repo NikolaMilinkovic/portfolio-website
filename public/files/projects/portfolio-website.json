@@ -49,13 +49,18 @@
     "usedTechInDepth": ["JavaScript", "HTML", "CSS", "SASS", "React", "Vite"],
     "projectContext": [
       {
-        "title": "Who is it for?",
+        "title": "What is the purpose of this website?",
         "text": [
-          "Minecraft Schematic Manager is designed for studios and individuals who specialize in creating Minecraft maps for both commercial and non-commercial purposes. This includes a diverse range of users, from professional game design studios to freelance builders and hobbyists.",
-
-          "These creators often work on projects requiring intricate and detailed map designs with a large number of assets. The maps can be used for various purposes such as gaming servers, educational tools, and entertainment."
+          "Purpose of this website is to create my own personalized presence on the internet where I can showcase myself and my work to potential Employers, Clients, Collaborators or any other Tech Enthusiast."
         ],
-        "bulletPoints": []
+        "bulletPoints": [
+          "Highlighting my skills and expertise in web development, including languages, frameworks, and tools I am proficient in.",
+          "Displaying a portfolio of my projects, detailing the challenges faced, solutions implemented, and technologies used.",
+          "Providing case studies that offer in-depth insights into my showcased projects.",
+          "Facilitating easy contact for potential job opportunities, freelance projects, and collaborative ventures through a dedicated contact form or my social links.",
+          "Provide live links & GitHub repository links for my projects.",
+          "Offering downloadable resources like my resume."
+        ]
       }
     ],
     "challengesAndObjectives": [

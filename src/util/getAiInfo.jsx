@@ -4,7 +4,12 @@ export function getAboutInfo() {
   const now = new Date();
   const currentDate = now.toDateString();
 
-  const aboutMeText = `name: Nikola Milinkovic, Web Developer, date of birth: 27.04.1997, current date for calculating age is ${currentDate}, lives in Belgrade the capitol city of Serbia. Not married.
+  const aboutMeText = `name: Nikola Milinkovic, Web Developer, date of birth: 27.04.1997, current date for calculating age is ${currentDate}, lives in Belgrade the capital city of Serbia. Not married.
+  Languages:
+   - Serbian (Native)
+   - English (Proficient)
+   - German (Elementary Proficiency)
+   - Japanese (Elementary Proficiency)
 
   I specialize in MERN stack, but am not limited to it. My current stack looks something like this: JavaScript, HTML/CSS, React, SASS. On the backend i use NodeJS with Express. When it comes to databases I am comfortable using relational(SQL) and non relational databases: mySQL, PostgreSQL, MongoDB. Testing - Jest. 
   I often venture out of my stack to familiarize and learn new tchnologies, I am always looking to learn something new and improve my current capabilities.
@@ -20,7 +25,19 @@ export function getAboutInfo() {
   
   I enjoy nature, outdoor obstacle running, hiking and I love animals. I have always been surrounded by animals and pets, I have a dog, Petra.
   
-  To stay updated in tech world I follow multiple tech channels such as Fireship, ThePrimeTime/ThePrimeagen, WebDevSimplified & Kevin Powell and am subscribed to DEV Digest newsletter.`;
+  To stay updated in tech world I follow multiple tech channels such as Fireship, ThePrimeTime/ThePrimeagen, WebDevSimplified & Kevin Powell and am subscribed to DEV Digest newsletter.
+  
+  Some of the projects that I am most proud of are:
+  Minecraft Schematic Manager - https://mc-schematic-manager.vercel.app/
+  CLI-Data-Structures - https://nikolamilinkovic.github.io/CLI-data-structures/
+  Battleship - https://nikolamilinkovic.github.io/battleship/
+  My portfolio website - https://nikola-portfolio-website.vercel.app/
+  Complete list on GitHub - https://github.com/NikolaMilinkovic
+
+  I do LeetCode from time to time to keep my skills sharp. LeetCode profile - https://leetcode.com/u/NikolaMilinkovic/
+
+  DO NOT HALLUCINATE DATA AND ANSWERS THAT CAN NOT BE DERIVED FROM THIS TEXT.
+  `;
 
   return aboutMeText;
 }
