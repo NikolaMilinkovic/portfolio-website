@@ -63,11 +63,20 @@
     "usedTechInDepth": ["JavaScript", "HTML", "CSS", "SASS", "React", "Vite", "Express", "NodeJs", "MongoDB", "Heroku", "Puppeteer", "Cloudinary"],
     "projectContext": [
       {
+        "title": "What is Minecraft Schematic Manager?",
+        "text": [
+          "Minecraft Schematic Manager is an online tool that is used for storing, managing and retrieving schematic files as well as more efficient upload of these assets to the server.",
+
+          "Minecraft schematic file (.schematic) is a type of file used to save and share structures or builds in Minecraft. These files capture a portion of a Minecraft world, including blocks, their types, and positions, allowing players to easily replicate or import these structures into other worlds."
+        ],
+        "bulletPoints": []
+      },
+      {
         "title": "Who is it for?",
         "text": [
-          "Minecraft Schematic Manager is designed for studios and individuals who specialize in creating Minecraft maps for both commercial and non-commercial purposes. This includes a diverse range of users, from professional game design studios to freelance builders and hobbyists.",
+          "Minecraft Schematic Manager is designed for design studios and individuals who specialize in creating Minecraft maps for both commercial and non-commercial purposes. This includes a diverse range of users, from professional game design studios to freelance game designers and hobbyists.",
 
-          "These creators often work on projects requiring intricate and detailed map designs with a large number of assets. The maps can be used for various purposes such as gaming servers, educational tools, and entertainment."
+          "These creators often work on projects requiring intricate and detailed map designs with a large number of assets. These maps can be used for various purposes such as gaming servers, educational tools, and entertainment."
         ],
         "bulletPoints": []
       }
@@ -76,9 +85,9 @@
       {
         "title": "Problem Overiew",
         "text": [
-          "In the dynamic world of Minecraft map creation, studios and individual builders face the challenge of managing numerous assets. Over the course of a year, a single studio or builder can produce dozens of maps and potentially hundreds of assets. Despite good organizational efforts, tracking these assets becomes increasingly difficult.",
+          "In the dynamic world of Minecraft map creation, design studios and individual designers face the challenge of managing numerous assets. Over the course of a year, they can produce dozens of maps and potentially hundreds of assets. Despite good organizational efforts, tracking these assets becomes increasingly difficult.",
           
-          "Builders often struggle to maintain a clear inventory of their assets, leading to inefficiencies, missed opportunities for asset reuse, and delays in project timelines. The current process to import assets to the server is slow and inefficient, requiring builders to locate files, upload them to the FAWE schematics server, and manually copy and use returned commands."
+          "They often struggle to maintain a clear inventory of their assets, leading to inefficiencies, missed opportunities for asset reuse, and delays in project timelines. The current process to import assets to the server is slow and inefficient, requiring designers to locate files, upload them to the FAWE schematics server, manually copy and use returned commands."
         ],
         "bulletPoints": []
       },
@@ -87,7 +96,7 @@
         "text": [],
         "bulletPoints": [
           "Efficient asset storage and lookup method",
-          "Cut time needed for asset upload",
+          "Shorten the time needed for asset upload",
           "Provide studios a way of generating new user accounts and ability to set their permissions",
           "Possibility of creating collections for better asset sorting",
           "Enhance work speed by keeping everything fast and simple"
@@ -116,7 +125,7 @@
       "text": [
         "During this project I had to tackle numerous new and interesting problems that pushed me to become a better developer. From custom user authentication / authorization with combination of JWT, database organization & planning, cloudinary implementation & using puppeteer script to communicate with an api-less service. I gained experience in working on a more sizeable project that has a real user bases on the other side using the service that this app provides.",
         
-        "The experience from building this project allows me to better structure projects in the future and provides a foundation from which I can build my skills when working on similar sized projects."
+        "The experience from building this project allows me to better structure projects in the future and provides a foundation from which I can develop my skills when working on similar sized projects."
       ],
       "bulletPoints": []
     },
@@ -128,8 +137,9 @@
       "bulletPoints": [
         "Update UI and visual components to be more pleasing.",
         "Update asset search system & input to be more efficient when working with large amount of data.",
-        "Implement paganation for asset display.",
-        "Bulk asset / collection zipping & download."
+        "Implement pagination for asset display.",
+        "Bulk asset / collection zipping & download.",
+        "Automatic image generation of imported asset by transforming .schematic file to .ojb and capturing an image of that model."
       ]
     }
   ]

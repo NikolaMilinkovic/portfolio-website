@@ -73,52 +73,84 @@ function ProjectPage({ projectUrl }) {
         <div className="case-content">
           {data && (
           <>
-            <DisplayHeader
-              data="Project Context"
-              hSize="h2"
-            />
+            {/* Project Context Section */}
+            {data.caseStudyData.projectContext && (
+              <DisplayHeader
+                data="Project Context"
+                hSize="h2"
+              />
+            )}
             <DisplayText
               textData={data.caseStudyData.projectContext}
             />
-            <DisplayHeader
-              data="Challenges & Objectives"
-              hSize="h2"
-            />
+
+            {/* Challenged & Objectives Section */}
+            {data.caseStudyData.challengesAndObjectives && (
+              <DisplayHeader
+                data="Challenges & Objectives"
+                hSize="h2"
+              />
+            )}
             <DisplayText
               textData={data.caseStudyData.challengesAndObjectives}
             />
-            <DisplayHeader
-              data="Achieved solution"
-              hSize="h2"
-            />
+
+            {/* Achieved Solution Section */}
+            {data.caseStudyData.achievedSolution && (
+              <DisplayHeader
+                data="Achieved solution"
+                hSize="h2"
+              />
+            )}
             <DisplayText
               textData={data.caseStudyData.achievedSolution}
             />
-            <h3>Tech used</h3>
-            <div className="tech-used">
-              {data && data.caseStudyData.usedTechInDepth.map((tech, index) => (
-                <TechBox text={tech} tech={tech} color="black" key={`tech-${index}`} />
-              ))}
-            </div>
-            <br />
-            <DisplayHeader
-              data="Conclusion"
-              hSize="h2"
-            />
+
+            {/* Tech Used Section */}
+            {data.caseStudyData.usedTechInDepth && (
+              <>
+                <h3>Tech used</h3>
+                <div className="tech-used">
+                  {data && data.caseStudyData.usedTechInDepth.map((tech, index) => (
+                    <TechBox text={tech} tech={tech} color="black" key={`tech-${index}`} />
+                  ))}
+                </div>
+                <br />
+              </>
+            )}
+
+            {/* Conclustion Section */}
+            {data.caseStudyData.conclusion && (
+              <DisplayHeader
+                data="Conclusion"
+                hSize="h2"
+              />
+            )}
             <DisplayText
               textData={data.caseStudyData.conclusion}
             />
-            <h3>Project Links:</h3>
-            <div className="links">
-              <a className="project-link" href={data.demoLink} target="_blank">
-                Live Link
-                <img className="project-icon" alt="Demo" src="/icons/black/desktop-solid.svg" />
-              </a>
-              <a className="project-link" href={data.gitLink} target="_blank">
-                Code
-                <img className="project-icon" alt="GitHub" src="/icons/black/code-solid.svg" />
-              </a>
-            </div>
+
+            {/* Project Links Section */}
+            {(data.demoLink || data.gitLink) && (
+              <>
+                <h3>Project Links:</h3>
+                <div className="links">
+                  {data.demoLink && (
+                  <a className="project-link" href={data.demoLink} target="_blank">
+                    Live Link
+                    <img className="project-icon" alt="Demo" src="/icons/black/desktop-solid.svg" />
+                  </a>
+                  )}
+                  {data.gitLink && (
+                  <a className="project-link" href={data.gitLink} target="_blank">
+                    Code
+                    <img className="project-icon" alt="GitHub" src="/icons/black/code-solid.svg" />
+                  </a>
+                  )}
+                </div>
+              </>
+            )}
+
           </>
           )}
         </div>
