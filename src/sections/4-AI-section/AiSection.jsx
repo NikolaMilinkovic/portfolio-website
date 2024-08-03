@@ -40,14 +40,6 @@ function AiSection() {
 
             <div className="questions-container">
               <AI_FAQ
-                question="What is your tech stack?"
-                onClick={(e) => handleFAQ(e)}
-                offset={-80}
-                name="chat-window"
-                to="chat-window"
-                duration={600}
-              />
-              <AI_FAQ
                 question="What practical experience do you have?"
                 onClick={(e) => handleFAQ(e)}
                 offset={-80}
@@ -57,6 +49,14 @@ function AiSection() {
               />
               <AI_FAQ
                 question="What is your academic background?"
+                onClick={(e) => handleFAQ(e)}
+                offset={-80}
+                name="chat-window"
+                to="chat-window"
+                duration={600}
+              />
+              <AI_FAQ
+                question="What is your tech stack?"
                 onClick={(e) => handleFAQ(e)}
                 offset={-80}
                 name="chat-window"
