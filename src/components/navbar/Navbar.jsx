@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import CV from '/files/CV.pdf';
 import { useNavigate, useLocation } from 'react-router-dom';
 import NavButton from './nav-button/NavButton';
 import useWindowDimensions from '../../util/windowDimentions';
