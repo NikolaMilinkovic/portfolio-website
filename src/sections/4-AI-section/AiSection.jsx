@@ -71,7 +71,7 @@ function AiSection() {
                 to="chat-window"
                 duration={600}
               />
-              <AI_FAQ
+              {/* <AI_FAQ
                 question="Test question 5"
                 onClick={(e) => handleFAQ(e)}
                 offset={-80}
@@ -86,7 +86,7 @@ function AiSection() {
                 name="chat-window"
                 to="chat-window"
                 duration={600}
-              />
+              /> */}
             </div>
           </div>
         </div>
