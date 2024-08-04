@@ -1,8 +1,7 @@
-@import '../../index.scss';
 @import '../../global/mixins.scss';
+@import '../../index.scss';
 
 .project-header-section{
-  // @include sectionLayout;
   display: flex;
   overflow: hidden;
   position: relative;

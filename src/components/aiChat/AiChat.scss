@@ -32,18 +32,16 @@
   border-radius: 10px;
   background-color: #333333;
   color: whitesmoke;
-
-  @media screen and (max-width: 800px) {
-    margin-right: 0rem;
-  }
-
-
   margin-top: 6px;
   margin-bottom: 6px;
   box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05),
               0 1px 3px rgba(255, 255, 255, 0.08);
   margin-right: 2rem;
   flex-direction: column;
+
+  @media screen and (max-width: 800px) {
+    margin-right: 0rem;
+  }
 
   .ai-link{
     color: var(--highlight);
@@ -71,10 +69,6 @@
   z-index: 1;
   width: inherit;
   box-sizing: border-box;
-
-  @media screen and (max-width: 800px) {
-    // margin-right: 5vw;
-  }
 
   .chatbox{
     box-sizing: border-box; 

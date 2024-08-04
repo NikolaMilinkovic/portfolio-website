@@ -1,21 +1,23 @@
-@import '../../index.scss';
 @import '../../global/mixins.scss';
+@import '../../index.scss';
 
 .projects-section-1,
 .projects-section-2,
 .projects-section-3,
 .projects-section-4{
   @include sectionLayout;
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-content: center;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  gap: 5vw;
-  overflow: hidden;
-  height: 100vh;
-  position: relative;
+  &{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    gap: 5vw;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+  }
 
   .ground-white,
   .ground{
@@ -60,8 +62,6 @@
   background-color: #c0d69f;
   background-color: var(--background-color);
   z-index: 0;
-
-
 
   .scene-container{
     position: absolute;

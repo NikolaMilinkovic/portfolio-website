@@ -1,21 +1,24 @@
-@import '../../index.scss';
 @import '../../global/mixins.scss';
+@import '../../index.scss';
 
 
 .navbar{
-  background-color: var(--nav-background-color);
-  display: flex;
-  width: 100%;
-  height: 55px;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  box-sizing: border-box;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 22;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05),
-              0 1px 3px rgba(0, 0, 0, 0.08);
+  &{
+    background-color: var(--nav-background-color);
+    display: flex;
+    width: 100%;
+    height: 55px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    box-sizing: border-box;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 22;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05),
+                0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+
 
 
   .navbar-options{
@@ -61,7 +64,6 @@
         }
       }
     }
-
   }
 
   .cv-download-link{
@@ -69,18 +71,20 @@
     @include navButton;
     .cv-download-btn{
       @include navButton;
-      font-size: var(--nav-font-size);
+      &{
+        font-size: var(--nav-font-size);
+      }
     }
   }
 
 
   .nav-btn{
     @include navButton;
-    max-width: 100px;
-    display: none;
-  }
-  .nav-close-btn{
-
+    &{
+      max-width: 100px;
+      display: none;
+    }
+    
   }
   .nav-open-btn{
     position: absolute;
@@ -137,7 +141,9 @@
     }
     .nav-btn{
       @include navButton;
-      display: flex;
+      &{
+        display: flex;
+      }
     }
     .nav-close-btn{
       max-width: 100vw;

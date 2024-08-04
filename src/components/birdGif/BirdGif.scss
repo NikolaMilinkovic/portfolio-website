@@ -9,14 +9,13 @@
   animation-delay: 1s;
   transition: 3s linear;
   z-index: 1;
+  cursor: pointer;
+  -webkit-tap-highlight-color: none !important;
 
   &:hover{
     width: 40px;
     height: 40px;
   }
-  cursor: pointer;
-
-  -webkit-tap-highlight-color: none !important;
 }
 
 @keyframes animate-bird {

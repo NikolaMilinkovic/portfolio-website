@@ -1,5 +1,5 @@
-@import '../../index.scss';
 @import '../../global/mixins.scss';
+@import '../../index.scss';
 
 .contact-wrapper{
   display: flex;
@@ -8,7 +8,6 @@
 
   .after-message-screen{
     position: absolute;
-    
   }
 
   .contact-form{
@@ -49,7 +48,9 @@
     }
     h1 {
       @include h1_default;
-      justify-content: start;
+      &{
+        justify-content: start;
+      }
     }
 
     .btn-submit{
@@ -86,11 +87,11 @@
   opacity: 0;
   transform: translateX(-100px);
 }
+form.hideForm,
 .hideForm{
-  opacity: 0;
   user-select: none;
   -webkit-user-select: none;
   z-index: -1;
   pointer-events: none;
+  opacity: 0 !important;
 }
-

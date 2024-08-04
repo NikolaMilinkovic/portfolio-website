@@ -1,11 +1,13 @@
-@import '../../index.scss';
 @import '../../global/mixins.scss';
+@import '../../index.scss';
 
 .contact-section{
   @include sectionLayout;
-  position: relative;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  box-sizing: border-box;
-  overflow: hidden;
+  &{
+    position: relative;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
 }

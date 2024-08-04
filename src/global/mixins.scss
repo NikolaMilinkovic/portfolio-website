@@ -6,45 +6,51 @@
   $min-width: 100px, 
   $hover-color: '--nav-hover-color'
   ){
-    display: flex;
-    min-width: $min-width;
-    background-color: $background-color;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-    cursor: pointer;
-    position: relative;
-    color: var(#{$color});
-    font-size: var(--nav-font-size);
-    // overflow-x: hidden;
-    
-    &:hover{
-      color: var(#{$hover-color});
-    }
-    &:active{
-      background-color: transparent;
+    &{
+      display: flex;
+      min-width: $min-width;
+      background-color: $background-color;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      width: 100%;
+      height: 100%;
+      padding: 0px;
+      cursor: pointer;
+      position: relative;
+      color: var(#{$color});
+      font-size: var(--nav-font-size);
+      // overflow-x: hidden;
+      
+      &:hover{
+        color: var(#{$hover-color});
+      }
+      &:active{
+        background-color: transparent;
+      }
     }
 }
 
 @mixin sectionLayout(){
-  min-height: 100vh;
-  box-sizing: border-box;
-  overflow: hidden;
+  &{
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
 }
 
 @mixin h1_default(){
-  font-size: var(--h1-size);
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-  @media screen and (max-width: 800px) {
-    font-size: var(--h1-size-mobile);
+  &{
+    font-size: var(--h1-size);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    @media screen and (max-width: 800px) {
+      font-size: var(--h1-size-mobile);
+    }
   }
 }

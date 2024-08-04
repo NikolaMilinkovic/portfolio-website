@@ -1,29 +1,30 @@
-@import '../../index.scss';
 @import '../../global/mixins.scss';
+@import '../../index.scss';
 
 .ai-section{
   @include sectionLayout;
-  background: #040707;
-  color: white;
-  position: relative;
-  padding: 0px 5vw;
-  min-height: 100vh;
-  // width: 100%;
-  // max-width: 100vw;
-  overflow: hidden;
-  box-sizing: border-box;
-  padding-top: 80px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  font-size: var(--text-size);
-
-  @media screen and (max-width: 800px){
-    grid-template-columns: 1fr;
+  &{
+    background: #040707;
+    color: white;
+    position: relative;
+    padding: 0px 5vw;
     min-height: 100vh;
-    height: unset;
-    padding-bottom: 2rem;
-    // gap: 80px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: var(--text-size);
+
+    @media screen and (max-width: 800px){
+      grid-template-columns: 1fr;
+      min-height: 100vh;
+      height: unset;
+      padding-bottom: 2rem;
+    }
   }
+
+
 
   #chat-window{
     display: flex;
@@ -102,8 +103,6 @@
       font-size: var(--text-size);
       text-align: justify;
       hyphens: auto;
-
-
       transition: 0.8s ease;
     }
   }
@@ -124,16 +123,6 @@
     @media screen and (max-width: 800px) {
       height: 100vh;
     }
-
-    // .border-div{
-    //   position: absolute;
-    //   border: 4px solid #B2CC85;
-    //   width: 95%;
-    //   height: 88%;
-    //   left: 30px;
-    //   top: -30px;
-    //   z-index: 0;
-    // }
   }
 }
 

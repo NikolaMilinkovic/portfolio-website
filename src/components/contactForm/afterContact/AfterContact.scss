@@ -1,5 +1,5 @@
-@import '../../../index.scss';
 @import '../../../global/mixins.scss';
+@import '../../../index.scss';
 
 .after-contact-container{
   display: flex;
@@ -14,7 +14,6 @@
     flex-direction: column;
     max-width: 700px;
     transition: 0.6s linear;
-
     background-color: rgba(255,255,255,0.8);
     padding: 3rem;
     border-radius: 5px;
@@ -115,9 +114,9 @@
 
     h1 {
       @include h1_default;
-      justify-content: start;
+      &{
+        justify-content: start;
+      }
     }
-
-
   }
 }

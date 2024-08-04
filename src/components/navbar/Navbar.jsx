@@ -56,9 +56,17 @@ const Navbar = React.memo(() => {
   // Scroll to section upon location change
   useEffect(() => {
     if (location.state && location.state.scrollTo) {
+      // window.scrollTo({
+      //   top: document.documentElement.scrollHeight,
+      // });
+      // window.scrollTo(0, document.body.scrollHeight);
+      // window.scrollTo(0, 0);
+      // window.scrollTo(0, document.body.scrollHeight);
       setTimeout(() => {
         if (location.state.scrollTo.toLowerCase() === 'about') {
           scrollToSection(`scroll-${location.state.scrollTo.toLowerCase()}`, 80);
+        } else if (location.state.scrollTo.toLowerCase() === 'home') {
+          scrollToSection(`scroll-${location.state.scrollTo.toLowerCase()}`, -80);
         } else {
           scrollToSection(`scroll-${location.state.scrollTo.toLowerCase()}`);
         }

@@ -1,20 +1,16 @@
-@import '../../index.scss';
 @import '../../global/mixins.scss';
+@import '../../index.scss';
 
 .home-section{
   @include sectionLayout;
-  // background: linear-gradient(to bottom, #ffffff 70%, #040707 30%);
-  // background: transparent;
-  max-height: 100vh !important;
-  width: 100vw !important;
-  box-sizing: border-box;
-  overflow: visible;
-  background-color: var(--background-color);
-  background: linear-gradient(to bottom, var(--background-color), var(--background-color), var(--background-color), #a9bb96b7, #a9bb96b5);
-
-
-
-
+  &{
+    max-height: 100vh !important;
+    width: 100vw !important;
+    box-sizing: border-box;
+    overflow: visible;
+    background-color: var(--background-color);
+    background: linear-gradient(to bottom, var(--background-color), var(--background-color), var(--background-color), #a9bb96b7, #a9bb96b5);
+  }
 
   .para-container{
     position: relative;
@@ -24,8 +20,6 @@
     box-sizing: border-box;
     height: 100%;
     overflow: visible;
-
-
 
      .para {
       width: 100vw;
@@ -55,24 +49,37 @@
 
       #landing-sub-text{
         top: 100px;
-        font-size: clamp(16px, 3vw, 1.5rem) !important;
-        color: #B2CC85;
         --para-speed: 35;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .subtext-span{
+          color: #B2CC85;
+          font-size: clamp(16px, 3vw, 1.5rem);
+        }
+        .header-span{
+          font-size: clamp(16px, 2vw + 1rem, 2.5rem);
+          color: black;
+          transform: translateY(-10px);
+        }
+        .scroll-down-icon{
+          display: flex;
+          justify-content: center;
+          --para-speed: 2;
+        }
       }
 
       #landing-hero-text{
         position: relative;
 
-        .scroll-down-icon{
+        .header-span{
           position: absolute;
           left: 50%;
-          top: 70px;
-          bottom: 60px;
-          transform: translateX(-20px);
-          --para-speed: 2;
-
-          cursor: pointer;
+          transform: translateX(-50%);
         }
+
+
       }
     }
 
