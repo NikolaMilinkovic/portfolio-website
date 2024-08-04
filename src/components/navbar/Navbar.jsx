@@ -108,8 +108,8 @@ const Navbar = React.memo(() => {
           to="scroll-skills"
           duration={600}
           offset={0}
-          name="skills"
-          text="skills"
+          name="Skills"
+          text="Skills"
           updateNav={(e) => handleNavClick(e)}
           activeBtn={activeButton}
         />
@@ -177,15 +177,26 @@ const Navbar = React.memo(() => {
           </div>
         ) : (
           <NavButton
-            to="scroll-projects-1"
+            to="scroll-mc-schematic-manager"
             className="scroll-link"
             duration={600}
             offset={0}
-            name="Projects"
+            isDropdownBtn={['mc-schematic-manager', 'battleship', 'cli-data-structures', 'portfolio-website', 'other-projects']}
+            name="mc-schematic-manager"
             text="Projects"
             updateNav={(e) => handleNavClick(e)}
             activeBtn={activeButton}
           />
+        // <NavButton
+        //   to="mc-schematic-manager"
+        //   className="scroll-link"
+        //   duration={600}
+        //   offset={0}
+        //   name="mc-schematic-manager"
+        //   text="Projects"
+        //   updateNav={(e) => handleNavClick(e)}
+        //   activeBtn={activeButton}
+        // />
         )}
 
         {/* SKILLS */}
