@@ -13,7 +13,7 @@ export function getAboutInfo() {
 
  I specialize in the MERN stack but am not limited to it. My current stack looks something like this: JavaScript, HTML/CSS, React, and SASS. On the backend, I use NodeJS with Express. When it comes to databases I am comfortable using relational(SQL) and non-relational databases: MySQL, PostgreSQL, MongoDB. Testing - Jest. 
  I often venture out of my stack to familiarize myself and learn new technologies, I am always looking to learn something new and improve my current capabilities.
- For version control I use GitHub.
+ Version control - GitHub.
 
  While my academic background is also programming-centric as I have finished ITS Information Technology School (https://eng.its.edu.rs/) in Belgrade, my tangible knowledge has largely come from my self-taught journey, working on projects and completing The Odin Project curriculum (https://www.theodinproject.com/). I also have a middle school degree in economics.
 

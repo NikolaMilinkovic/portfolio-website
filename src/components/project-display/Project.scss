@@ -33,7 +33,7 @@
   .header{
     margin-bottom: 0px !important;
 
-    
+
     .header-h1{
       @include h1_default;
 
@@ -51,7 +51,7 @@
       gap: 0.2rem;
 
       @media screen and (max-width: 800px) {
-        display: flex;
+        display: flex !important;
       }
 
       .link-case-study{

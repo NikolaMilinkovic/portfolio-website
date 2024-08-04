@@ -69,7 +69,6 @@ function AiChat({ triggerFAQ }) {
         user: 'ai',
         text: data.response,
       };
-      console.log(newData);
       setDisplayData((prev) => prev.slice(0, -1));
       setDisplayData((prev) => [...prev, newData]);
     }
@@ -119,7 +118,6 @@ function AiChat({ triggerFAQ }) {
 
   function focusInput() {
     textareaRef.current.focus();
-    console.log('FOCUSING');
   }
 
   return (

@@ -5,15 +5,8 @@ import './DisplayText.scss';
 function DisplayText({ textData }) {
   const [data, setData] = useState(null);
   useEffect(() => {
-    console.log('Text data is:');
-    console.log(textData);
     setData(textData);
   }, [textData]);
-
-  useEffect(() => {
-    console.log('Data is:');
-    console.log(data);
-  }, [data]);
 
   return (
     <>

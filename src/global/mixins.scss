@@ -21,7 +21,6 @@
       position: relative;
       color: var(#{$color});
       font-size: var(--nav-font-size);
-      // overflow-x: hidden;
       
       &:hover{
         color: var(#{$hover-color});
