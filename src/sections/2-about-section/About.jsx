@@ -53,19 +53,19 @@ function About() {
           </h1>
           <article className={`about-article ${isVisible ? 'show-element-right' : 'hide-element-right'}`}>
             <p className="about-text">
-              For some time now I&apos;ve been deeply immersed in web development. My humble beginnings in this career path came through self - study and
+              For some time now I&apos;ve been deeply immersed in web development. My humble beginnings in this career path came through self-study and
               {' '}
               <a className="link" href="https://www.theodinproject.com/" target="_blank">
                 TheOdinProject
               </a>
               {' '}
-              curriculum. While my academic background is also programming - centric, my tangible knowledge has largely come from my self - taught journey, tinkering with new techonologies and working on projects.
+              curriculum. While my academic background is also programming-centric, my tangible knowledge largely comes from my self-taught journey, tinkering with new technologies and working on projects.
             </p>
             <p className="about-text">
-              I enjoy building fun, pleasing and usefull applications that aim to solve problems, enhance workflows and or at very least bring a smile to the face of its user.
+              I enjoy building fun, pleasing, and useful applications that aim to solve problems, enhance workflows, and at the very least bring a smile to the face of its user.
             </p>
             <p className="about-text">
-              At this moment I am freelancing, crafting web apps and looking out for full time opportunities.
+              At this moment I am freelancing, crafting web apps, and looking out for full-time opportunities.
             </p>
             {/* <p className="about-text">
               Looking to learn more about my career? Take a look at my CV by clicking the button bellow!
@@ -86,7 +86,7 @@ function About() {
               </button>
             </div> */}
             <p className="about-text">
-              Looking to collaborate, work together, or grab a cup of coffee and talk about tech? Get in touch by clicking the button bellow!
+              Looking to collaborate, work together, or grab a cup of coffee and talk about tech? Get in touch by clicking the button below!
             </p>
 
             <div className="buttons-container">

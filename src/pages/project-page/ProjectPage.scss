@@ -89,6 +89,7 @@
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
+
       .tech-used{
         display: grid;
         grid-template-columns: repeat(8, 1fr);
@@ -126,7 +127,7 @@
           width: 120px;
           text-decoration: none;
           gap: 6px;
-          color: black;
+          color: #96A972;
           font-weight: 500;
           padding: 0.7rem;
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
@@ -135,12 +136,19 @@
   
           &:hover{
             background-color: var(--highlight);
+            color: black;
+
+
+            .project-icon{
+              fill: black;
+            }
           }
   
   
           .project-icon{
             width: 24px;
             height: 24px;
+            fill: #96A972;
           }
         }
       }

@@ -75,7 +75,7 @@
       color: white;
       text-align: center;
       cursor: pointer;
-      font-size: clamp(16px, 18px, 20px);
+      font-size: var(--h2-size);
 
       transition: 0.8s ease;
 
@@ -99,7 +99,7 @@
       right: 10%;
       top: 60%;
       color: white;
-      font-size: 14px;
+      font-size: var(--text-size);
       text-align: justify;
       hyphens: auto;
 

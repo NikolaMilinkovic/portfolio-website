@@ -39,10 +39,10 @@ footer{
 
       .footer-header{
         font-weight: bold;
-        font-size: 18px;
+        font-size: var(--h2-size);
       }
       .footer-text{
-        font-size: 12px;
+        font-size: 14px;
       }
     }
 
@@ -52,7 +52,7 @@ footer{
       align-items: end;
       justify-content: center;
       font-weight: bold;
-      font-size: 18px;
+      font-size: var(--h2-size);
 
       .footer-socials{
         display: grid;

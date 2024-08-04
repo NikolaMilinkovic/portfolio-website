@@ -1,0 +1,14 @@
+@import '../../../../index.scss';
+
+
+.project-card{
+
+  .project-card-inside{
+
+
+    .header{
+      font-size: var(--h2-size);
+      color: cyan !important;
+    }
+  }
+}

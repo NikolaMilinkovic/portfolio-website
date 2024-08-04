@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { Element } from 'react-scroll';
 import './AiSection.scss';
 import useElementOnScreen from '../../util/useElementOnScreen';
@@ -7,7 +7,6 @@ import AiChat from '../../components/aiChat/AiChat';
 import AI_FAQ from '../../components/aiChat/FAQ/AI_FAQ';
 
 function AiSection() {
-  const [isImgVisible, setIsImgVisible] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [activeFAQ, setActiveFAQ] = useState('');
   function handleFAQ(e) {
@@ -32,7 +31,7 @@ function AiSection() {
             <div className="header-underline" />
           </h1>
           <div className="ai-section-hero-text">
-            <p>Enter your question and the AI companion will try his best to give you a satisfactory answer!</p>
+            <p>Please enter your question and the AI companion will try his best to give you a satisfactory answer!</p>
             <p>
               Not sure what to ask?
             </p>

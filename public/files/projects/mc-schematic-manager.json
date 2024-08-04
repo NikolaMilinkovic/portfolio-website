@@ -54,7 +54,7 @@
       }
     }  
   ],
-  "landingText": "Minecraft Schematic Manager is the ultimate online tool for managing your personal minecraft assets (schematics). It is designed to be user friendly and can be used by Studios and individuals as well.",
+  "landingText": "Minecraft Schematic Manager is the ultimate online tool for managing your personal Minecraft assets (schematics). It is designed to be user-friendly and can be used by Studios and individuals as well.",
   "demoLink": "https://mc-schematic-manager.vercel.app/",
   "gitLink": "https://github.com/NikolaMilinkovic/mc-schematic-manager",
   "usedTech": ["JavaScript", "HTML", "CSS", "SASS", "React", "Vite", "Express", "NodeJs", "MongoDB", "Heroku"],
@@ -65,7 +65,7 @@
       {
         "title": "What is Minecraft Schematic Manager?",
         "text": [
-          "Minecraft Schematic Manager is an online tool that is used for storing, managing and retrieving schematic files as well as more efficient upload of these assets to the server.",
+          "Minecraft Schematic Manager is an online tool that is used for storing, managing, and retrieving schematic files as well as more efficient upload of these assets to the server.",
 
           "Minecraft schematic file (.schematic) is a type of file used to save and share structures or builds in Minecraft. These files capture a portion of a Minecraft world, including blocks, their types, and positions, allowing players to easily replicate or import these structures into other worlds."
         ],
@@ -83,11 +83,11 @@
     ],
     "challengesAndObjectives": [
       {
-        "title": "Problem Overiew",
+        "title": "Problem Overview",
         "text": [
           "In the dynamic world of Minecraft map creation, design studios and individual designers face the challenge of managing numerous assets. Over the course of a year, they can produce dozens of maps and potentially hundreds of assets. Despite good organizational efforts, tracking these assets becomes increasingly difficult.",
           
-          "They often struggle to maintain a clear inventory of their assets, leading to inefficiencies, missed opportunities for asset reuse, and delays in project timelines. The current process to import assets to the server is slow and inefficient, requiring designers to locate files, upload them to the FAWE schematics server, manually copy and use returned commands."
+          "They often struggle to maintain a clear inventory of their assets, leading to inefficiencies, missed opportunities for asset reuse, and delays in project timelines. The current process to import assets to the server is slow and inefficient, requiring designers to locate files, upload them to the FAWE schematics server, and manually copy and use returned commands."
         ],
         "bulletPoints": []
       },
@@ -95,11 +95,11 @@
         "title": "Key Objectives",
         "text": [],
         "bulletPoints": [
-          "Efficient asset storage and lookup method",
-          "Shorten the time needed for asset upload",
-          "Provide studios a way of generating new user accounts and ability to set their permissions",
-          "Possibility of creating collections for better asset sorting",
-          "Enhance work speed by keeping everything fast and simple"
+          "Efficient asset storage and lookup method.",
+          "Shorten the time needed for asset upload.",
+          "Provide studios a way of generating new user accounts and the ability to set their permissions.",
+          "Possibility of creating collections for better asset sorting.",
+          "Enhance work speed by keeping everything fast and simple."
         ]
       }
     ],
@@ -108,37 +108,37 @@
         "title": "Core Features",
         "text": [],
         "bulletPoints": [
-          "JWT authentication and authorization method",
-          "Fast File / Image upload via drag & drop or clipboard paste (ctrl+c / ctrl+v)",
-          "Autocomplete suggestions based on previous entries",
-          "Instant asset upload & paste command copied to clipboard via single button click",
-          "Asset & Collections lookup via search input that uses names & tags to find suggestions",
-          "Methods for adding / editing / removing an asset or collection",
-          "User manager dashboard for adding or removing users / handling permissions / updating information",
-          "Profile section for customization and information handling"
+          "JWT authentication and authorization method.",
+          "Fast File / Image upload via drag & drop or clipboard paste (ctrl+c / ctrl+v).",
+          "Autocomplete suggestions based on previous entries.",
+          "Instant asset upload & paste command copied to clipboard via single button click.",
+          "Asset & Collections lookup via search input that uses names & tags to find suggestions.",
+          "Methods for adding / editing / removing an asset or collection.",
+          "User manager dashboard for adding or removing users / handling permissions / updating information.",
+          "Profile section for customization and information handling."
         ]
       }
     ],
     "conclusion": [
       {
-      "title": "What have i learned?",
+      "title": "What have I learned?",
       "text": [
-        "During this project I had to tackle numerous new and interesting problems that pushed me to become a better developer. From custom user authentication / authorization with combination of JWT, database organization & planning, cloudinary implementation & using puppeteer script to communicate with an api-less service. I gained experience in working on a more sizeable project that has a real user bases on the other side using the service that this app provides.",
+        "During this project, I had to tackle numerous new and interesting problems that pushed me to become a better developer. From custom user authentication/authorization with a combination of JWT, database organization & planning, Cloudinary implementation & using puppeteer script to communicate with an API-less service. I gained experience in working on a more sizeable project that has a real user base on the other side using the service that this app provides.",
         
-        "The experience from building this project allows me to better structure projects in the future and provides a foundation from which I can develop my skills when working on similar sized projects."
+        "The experience from building this project allows me to better structure projects in the future and provides a foundation from which I can develop my skills when working on similar-sized projects."
       ],
       "bulletPoints": []
     },
     {
       "title": "Challenges ahead and planned features?",
       "text": [
-        "Update the application to better handle large amount of data and be able to scale properly with more users."
+        "Update the application to better handle large amounts of data and be able to scale properly with more users."
       ],
       "bulletPoints": [
         "Update UI and visual components to be more pleasing.",
-        "Update asset search system & input to be more efficient when working with large amount of data.",
+        "Update asset search system & input to be more efficient when working with large amounts of data.",
         "Implement pagination for asset display.",
-        "Bulk asset / collection zipping & download.",
+        "Bulk asset/collection zipping & download.",
         "Automatic image generation of imported asset by transforming .schematic file to .ojb and capturing an image of that model."
       ]
     }

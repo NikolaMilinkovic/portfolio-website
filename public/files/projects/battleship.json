@@ -54,7 +54,7 @@
       }
     }
   ],
-  "landingText": "Challenging Battleship game with smart AI opponent, storyline, randomly generated fields and much more!",
+  "landingText": "Challenging Battleship game with smart AI opponent, storyline, randomly generated fields, and much more!",
   "demoLink": "https://nikolamilinkovic.github.io/battleship/",
   "gitLink": "https://github.com/NikolaMilinkovic/battleship",
   "usedTech": ["JavaScript", "HTML", "CSS"],
@@ -64,9 +64,9 @@
       {
         "title": "What is battleship?",
         "text": [
-          "Battleship is a classic strategy game where player places his ships on a grid and tries to sink their opponent's fleet by guessing the locations on the map.",
+          "Battleship is a classic strategy game where the player places his ships on a grid and tries to sink their opponent's fleet by guessing the locations on the map.",
 
-          "Player and AI take turns in calling out the coordinates of the attack. First one to run out of ships loses."
+          "The player and AI take turns calling out the coordinates of the attack. The first one to run out of ships loses."
         ],
         "bulletPoints": []
       },
@@ -74,7 +74,7 @@
         "title": "Game rules:",
         "text": [],
         "bulletPoints": [
-          "Player places his ships on a grid. Ships can be placed horizontally or vertically, but not diagonally. Ships cannot overlap and must fit within the grid.",
+          "The player places his ships on a grid. Ships can be placed horizontally or vertically, but not diagonally. Ships cannot overlap and must fit within the grid.",
           "Players take turns calling out coordinates to try and hit the opponent's ships.",
           "Hits and misses are marked on the board.",
           "The player who sinks all of the opponent's ships first wins the game."
@@ -83,11 +83,11 @@
     ],
     "challengesAndObjectives": [
       {
-        "title": "Problem Overiew",
+        "title": "Problem Overview",
         "text": [
           "Vanilla Battleship game can be at times boring and plain, as you are just marking the positions on an empty grid.",
           
-          "Challenge for this project is to make it more interactive and to immerse the player in a short storyline. You take control of the fleet with your trusty quartermaster Jolly Roger Jack at your side as you face off the Blackbeard Bones fleet in an epic battle."
+          "The challenge for this project is to make it more interactive and to immerse the player in a short storyline. You take control of the fleet with your trusty quartermaster Jolly Roger Jack at your side as you face off against the Blackbeard Bones fleet in an epic battle."
         ],
         "bulletPoints": []
       },
@@ -96,7 +96,7 @@
         "text": [],
         "bulletPoints": [
           "Immerse the player in the short storyline",
-          "Give the player seemles instructions on what he is expected to do in each section of the game.",
+          "Give the player seamless instructions on what he is expected to do in each section of the game.",
           "Add new features such as bombs and islands.",
           "Implement a smart AI opponent."
         ]
@@ -109,7 +109,7 @@
         "bulletPoints": [
           "Parallax animations.",
           "Custom audio controls.",
-          "Programatically generated boards with random sea mines placement",
+          "Programmatically generated boards with random sea mines placement.",
           "Smart AI opponent that upon hitting a ship travels through adjacent fields to continue hitting it until sunk.",
           "Randomized ship placement or manual placement via dragging and dropping the ship on the board.",
           "Settings for manipulating islands and sea mines."
@@ -118,22 +118,22 @@
     ],
     "conclusion": [
       {
-      "title": "What have i learned?",
+      "title": "What have I learned?",
       "text": [
         "Even though this project is a part of The Odin Project curriculum I have strived to make it as unique and interesting as possible. I have gained valuable experience in using classes as well as promises for tacking the execution order in the game.",
         
-        "At the time of making this project I was introduced to alghorithms and recursion which I used extensively for ship placement instance and the smart AI opponent."
+        "At the time of making this project, I was introduced to algorithms and recursion which I used extensively for ship placement instances and the smart AI opponent."
       ],
       "bulletPoints": []
     },
     {
       "title": "Challenges ahead and planned features?",
       "text": [
-        "Update application to support multiple players and add new features to enhance gameplay. Include multiple levels. Perhaps use chatGPT API for generating dialogue?"
+        "Update the application to support multiple players and add new features to enhance gameplay. Include multiple levels. Perhaps use chatGPT API for generating dialogue?"
       ],
       "bulletPoints": [
         "Add multiplayer support.",
-        "Add new attack patterns and floating chests that when struck give random prizes.",
+        "Add new attack patterns and floating chests that, when struck, give random prizes.",
         "Add random world events.",
         "Implement new levels and opponents."
       ]

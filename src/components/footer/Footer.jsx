@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.scss';
-import BirdGif from '../birdGif/BirdGif';
 
 function Footer() {
   return (
@@ -15,7 +14,7 @@ function Footer() {
         <div className="left">
           <div>
             <p className="footer-header">Nikola Milinkovic</p>
-            <p className="footer-text">Thank you for checking out my portfolio, lets get in touch and work towards creating something special!</p>
+            <p className="footer-text">Thank you for checking out my portfolio, let&apos;s get in touch and work towards creating something special!</p>
           </div>
         </div>
 

@@ -33,7 +33,7 @@ function SwiperCard({
         style={{ width }}
       >
         <div className="swiper-card-inside">
-          <p className="header">{data.name}</p>
+          <p className="swiper-header">{data.name}</p>
           <img
             key={`carousel-image-${index}`}
             className="carousel-img"

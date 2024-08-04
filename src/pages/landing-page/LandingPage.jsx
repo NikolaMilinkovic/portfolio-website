@@ -10,6 +10,7 @@ import Projects from '../../sections/3-projects-section/Projects';
 import Contact from '../../sections/5-contact-section/Contact';
 import Footer from '../../components/footer/Footer';
 import Loading from '../../components/loading/Loading';
+import Skills from '../../sections/7-skills/Skills';
 import './LandingPage.scss';
 
 function LandingPage() {
@@ -23,6 +24,7 @@ function LandingPage() {
       <Home />
       <About />
       <AiSection />
+      <Skills />
       <Projects />
       <Contact />
       <Footer />

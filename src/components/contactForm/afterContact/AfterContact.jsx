@@ -39,7 +39,7 @@ function AfterContact({ isActive, toggleForm }) {
         </header>
         {/* display-text */}
         <div className="text-wrapper" ref={textRef}>
-          <p>Thank you for contacting me! I usually respond in the next 48h.</p>
+          <p>Thank you for contacting me! I usually respond in the next 48 hours.</p>
           <button type="button" onClick={toggleAnimation} className="send-another-message">Send another message?</button>
           <p>Feel free to check out my socials for another way of reaching out!</p>
           <div className="socials">

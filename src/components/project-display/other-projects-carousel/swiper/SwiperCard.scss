@@ -17,10 +17,10 @@
   height: min-content;
 
 
-  .header{
+  .swiper-header{
     margin: 0px;
     margin-bottom: 0.2rem;
-    font-size: 14px;
+    font-size: var(--h2-size);
     font-weight: 500;
   }
 
@@ -75,24 +75,18 @@
 @media screen and (max-width: 1000px){
   .swiper-card{
     min-width: calc(100% / 3) !important;
-    .carousel-img{
-    }
   }
 }
 
 @media screen and (max-width: 800px){
   .swiper-card{
     min-width: calc(100% / 2) !important;
-    .carousel-img{
-    }
   }
 }
 
 @media screen and (max-width: 550px){
   .swiper-card{
     min-width: calc(100% / 1) !important;
-    .carousel-img{
-    }
   }
 }
 

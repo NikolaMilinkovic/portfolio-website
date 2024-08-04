@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 /* eslint-disable camelcase */
-import React, { useEffect, useState, useRef } from 'react';
+import React from 'react';
 import { Element } from 'react-scroll';
 import './ProjectsHeader.scss';
 

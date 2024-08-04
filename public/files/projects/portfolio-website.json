@@ -2,46 +2,46 @@
   "name": "Portfolio Website",
   "images": [
     {
-      "src": "/images/portfolioWebsite/landing-page.gif",
+      "src": "/files/gifs/port-web-page.gif",
       "srcSet": {
-        "img400w": "/images/portfolioWebsite/landing-page.gif",
-        "img600w": "/images/portfolioWebsite/landing-page.gif",
-        "img800w": "/images/portfolioWebsite/landing-page.gif",
-        "img1024w": "/images/portfolioWebsite/landing-page.gif",
-        "img1440w": "/images/portfolioWebsite/landing-page.gif",
-        "img1600w": "/images/portfolioWebsite/landing-page.gif",
-        "img2000w": "/images/portfolioWebsite/landing-page.gif",
-        "img2500w": "/images/portfolioWebsite/landing-page.gif"
+        "img400w": "/files/gifs/port-web-page.gif",
+        "img600w": "/files/gifs/port-web-page.gif",
+        "img800w": "/files/gifs/port-web-page.gif",
+        "img1024w": "/files/gifs/port-web-page.gif",
+        "img1440w": "/files/gifs/port-web-page.gif",
+        "img1600w": "/files/gifs/port-web-page.gif",
+        "img2000w": "/files/gifs/port-web-page.gif",
+        "img2500w": "/files/gifs/port-web-page.gif"
       }
     },
     {
-      "src": "/images/portfolioWebsite/portfolio-website-0.png",
+      "src": "/files/gifs/port-web-faq.gif",
       "srcSet": {
-        "img400w": "/images/portfolioWebsite/portfolio-website-0.png",
-        "img600w": "/images/portfolioWebsite/portfolio-website-0.png",
-        "img800w": "/images/portfolioWebsite/portfolio-website-0.png",
-        "img1024w": "/images/portfolioWebsite/portfolio-website-0.png",
-        "img1440w": "/images/portfolioWebsite/portfolio-website-0.png",
-        "img1600w": "/images/portfolioWebsite/portfolio-website-0.png",
-        "img2000w": "/images/portfolioWebsite/portfolio-website-0.png",
-        "img2500w": "/images/portfolioWebsite/portfolio-website-0.png"
+        "img400w": "/files/gifs/port-web-faq.gif",
+        "img600w": "/files/gifs/port-web-faq.gif",
+        "img800w": "/files/gifs/port-web-faq.gif",
+        "img1024w": "/files/gifs/port-web-faq.gif",
+        "img1440w": "/files/gifs/port-web-faq.gif",
+        "img1600w": "/files/gifs/port-web-faq.gif",
+        "img2000w": "/files/gifs/port-web-faq.gif",
+        "img2500w": "/files/gifs/port-web-faq.gif"
       }
     },
     {
-      "src": "/images/portfolioWebsite/portfolio-website-0.png",
+      "src": "/files/gifs/port-web-proj.gif",
       "srcSet": {
-        "img400w": "/images/portfolioWebsite/portfolio-website-0.png",
-        "img600w": "/images/portfolioWebsite/portfolio-website-0.png",
-        "img800w": "/images/portfolioWebsite/portfolio-website-0.png",
-        "img1024w": "/images/portfolioWebsite/portfolio-website-0.png",
-        "img1440w": "/images/portfolioWebsite/portfolio-website-0.png",
-        "img1600w": "/images/portfolioWebsite/portfolio-website-0.png",
-        "img2000w": "/images/portfolioWebsite/portfolio-website-0.png",
-        "img2500w": "/images/portfolioWebsite/portfolio-website-0.png"
+        "img400w": "/files/gifs/port-web-proj.gif",
+        "img600w": "/files/gifs/port-web-proj.gif",
+        "img800w": "/files/gifs/port-web-proj.gif",
+        "img1024w": "/files/gifs/port-web-proj.gif",
+        "img1440w": "/files/gifs/port-web-proj.gif",
+        "img1600w": "/files/gifs/port-web-proj.gif",
+        "img2000w": "/files/gifs/port-web-proj.gif",
+        "img2500w": "/files/gifs/port-web-proj.gif"
       }
     }
   ],
-  "landingText": "Personal portfolio website used to showcase some my skills, technologies and personal projects that I have worked on.",
+  "landingText": "My personal portfolio website is used to showcase some of my skills, technologies, and personal projects that I have worked on. For more information see this project's case study.",
   "demoLink": "https://nikola-portfolio-website.vercel.app/",
   "gitLink": "https://github.com/NikolaMilinkovic/portfolio-website",
   "usedTech": ["JavaScript", "HTML", "CSS", "SASS", "React", "Vite"],
@@ -51,7 +51,7 @@
       {
         "title": "What is the purpose of this website?",
         "text": [
-          "Purpose of this website is to create my own personalized presence on the internet where I can showcase myself and my work to potential Employers, Clients, Collaborators or any other Tech Enthusiast."
+          "The purpose of this website is to create my own personalized presence on the Internet where I can showcase myself and my work to potential Employers, Clients, Collaborators, or any other Tech Enthusiast."
         ],
         "bulletPoints": [
           "Highlighting my skills and expertise in web development, including languages, frameworks, and tools I am proficient in.",
@@ -65,9 +65,9 @@
     ],
     "challengesAndObjectives": [
       {
-        "title": "Problem Overiew",
+        "title": "Problem Overview",
         "text": [
-          "For this project I wanted to create someting simple yet unique enough to be memorable. I chose nature theme as it is something that represents me and my hobbies and it fits well with home page parallax effect. Finding assets such as fitting gifs proved to be a bit more tricky than anticipated."
+          "For this project, I wanted to create something simple yet unique enough to be memorable. I chose the nature theme as it is something that represents me and my hobbies and it fits well with the home page parallax effect. Finding assets such as fitting gifs proved to be a bit more tricky than anticipated."
         ],
         "bulletPoints": []
       },
@@ -75,9 +75,9 @@
         "title": "Key Objectives",
         "text": [],
         "bulletPoints": [
-          "Showcase myself, my projects and my abilities.",
-          "Create simple & clean, yet unique website.",
-          "Provide visitors with many different ways of communication via social links and contact form.",
+          "Showcase myself, my projects, and my abilities.",
+          "Create a simple & clean, yet unique website.",
+          "Provide visitors with many different ways of communication via social links and contact forms.",
           "Write a more detailed Case Study for each of the highlighted projects.",
           "Keep the website simple and with minimal backend usage.",
           "Provide easy access to my CV.",
@@ -91,9 +91,9 @@
         "text": [],
         "bulletPoints": [
           "React-scroll and vanilla js implementation of scrolling functionality.",
-          "Emailjs/browser library used to send emails via website.",
+          "Emailjs/browser library used to send emails via the website.",
           "Implementation of GPT-4o-mini API in the FAQ section used to answer questions.",
-          "Parallax effect used for landing page.",
+          "Parallax effect used for the landing page.",
           "Framer-motion library for carousels."
         ]
       }
@@ -102,10 +102,10 @@
       {
       "title": "Challenges ahead and planned features?",
       "text": [
-        "As I have previousely stated I was looking to avoid adding backend service for this project but have done so in the end anyway to incorporate GPT-4o-mini. Therefore scaling this website to include a database for all project information and a separate interface for adding new projects is something that seems like a fitting next step. Also, Blog!"
+        "As I have previously stated I was looking to avoid adding backend service for this project but have done so in the end anyway to incorporate GPT-4o-mini. Therefore scaling this website to include a database for all project information and a separate interface for adding new projects is something that seems like a fitting next step. Also, Blog!"
       ],
       "bulletPoints": [
-        "Add interface for adding new projects.",
+        "Add an interface for adding new projects.",
         "Implement a database to store all information about projects.",
         "Add a blog section and interface for adding new entries."
       ]

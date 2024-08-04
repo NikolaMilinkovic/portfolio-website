@@ -103,6 +103,16 @@ const Navbar = React.memo(() => {
           updateNav={(e) => handleNavClick(e)}
           activeBtn={activeButton}
         />
+        {/* SKILLS */}
+        <NavButton
+          to="scroll-skills"
+          duration={600}
+          offset={0}
+          name="skills"
+          text="skills"
+          updateNav={(e) => handleNavClick(e)}
+          activeBtn={activeButton}
+        />
         {/* PROJECTS */}
         {showDropdown ? (
           <div className="projects">

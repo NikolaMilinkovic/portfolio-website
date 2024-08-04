@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-useless-fragment */
 import React, { useState, useRef, useEffect } from 'react';
 import CardButton from '../../card/cardButton/CardButton';
+import './ProjectCard.scss';
 
 function ProjectCard({ project, index, isVisible = false }) {
   const [data, setData] = useState(project || null);
