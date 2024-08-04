@@ -20,7 +20,7 @@ function Footer() {
 
         <div className="right">
           <div className="footer-socials">
-            <p className="socials-text">socials</p>
+            <p className="socials-text">Socials</p>
             <div>
               <a className="footer-socials-icon-link" href="https://www.linkedin.com/in/nikola-milinkovic-2231451a6/" target="_blank">
                 <img className="footer-icon" alt="LinkedIn" src="/icons/white/linkedin-white.svg" />
