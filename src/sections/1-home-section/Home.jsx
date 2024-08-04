@@ -25,7 +25,6 @@ function Home() {
           <SocialsSidebar />
 
           <div className="hero-wrapper para">
-            {/* <h1 id="landing-hero-text" className="para" /> */}
             <h1 id="landing-sub-text" className="para">
               <span className="subtext-span">
                 Hi, I am Nick.

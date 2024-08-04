@@ -106,7 +106,7 @@
 
 @keyframes parallax {
   to {
-    transform: translateY(calc(var(--para-speed) * 200px));
+    transform: translateY(calc(var(--para-speed) * 230px));
   }
 }
 @keyframes zoom-out {
@@ -118,13 +118,7 @@
 @media screen and (min-width: 600px) and (max-width: 800px) {
   .home-section{
     .para-container{
-      #img-1, #img-2, #img-3, #img-4, #img-5{
-        // width: 100vw;
-      }
       .hero-wrapper{
-        #landing-hero-text{
-          top: 40px;
-        }
         #landing-sub-text{
           top: 30px;
         }
@@ -136,13 +130,7 @@
 @media screen and (max-width: 600px) {
   .home-section{
     .para-container{
-      #img-1, #img-2, #img-3, #img-4, #img-5{
-        // width: 100vw;
-      }
       .hero-wrapper{
-        #landing-hero-text{
-          top: 50px;
-        }
         #landing-sub-text{
           top: 45px;
         }
