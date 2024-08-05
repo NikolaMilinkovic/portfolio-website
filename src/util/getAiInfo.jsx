@@ -11,7 +11,7 @@ export function getAboutInfo() {
  - German (Elementary Proficiency)
  - Japanese (Elementary Proficiency)
 
- I specialize in the MERN stack but am not limited to it. My current stack looks something like this: JavaScript, HTML/CSS, React, and SASS. On the backend, I use NodeJS with Express. When it comes to databases I am comfortable using relational(SQL) and non-relational databases: MySQL, PostgreSQL, MongoDB. Testing - Jest. 
+ I specialize in the MERN stack but am not limited to it. My current stack looks something like this: JavaScript, HTML/CSS, React, React Native, Pug and SASS. On the backend, I use NodeJS with Express. When it comes to databases I am comfortable using relational(SQL) and non-relational databases: Microsoft SQL Server, PostgreSQL, MongoDB. Testing - Jest. 
  I often venture out of my stack to familiarize myself and learn new technologies, I am always looking to learn something new and improve my current capabilities.
  Version control - GitHub.
 
