@@ -1,6 +1,6 @@
 {
   "frontEnd": ["JavaScript", "HTML", "CSS", "React", "SASS"],
   "backEnd": ["Express", "NodeJs"],
-  "other": ["Jest"],
+  "other": ["Jest","MongoDB","MySQL"],
   "databases": ["MongoDB","MySQL"]
 }
