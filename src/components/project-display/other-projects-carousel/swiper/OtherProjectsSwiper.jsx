@@ -51,7 +51,6 @@ function OtherProjectsSwiper({ projects }) {
     };
 
     const handleWheel = (event) => {
-      console.log(screens);
       if (event.shiftKey) {
         if (event.shiftKey) {
           event.preventDefault();
