@@ -156,13 +156,12 @@ function AiChat({ triggerFAQ }) {
 
 function DisplayAi({ data, onComplete }) {
   const [text, setText] = useState('');
-  const speed = 12;
+  const speed = 10;
 
   useEffect(() => {
     setText('');
     const tempTextArr = data.split('');
     const timeouts = [];
-    const textLength = tempTextArr.length;
 
     tempTextArr.forEach((char, index) => {
       const timeout = setTimeout(() => {
