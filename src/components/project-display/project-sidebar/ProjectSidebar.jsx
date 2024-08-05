@@ -36,7 +36,7 @@ function ProjectSidebar({ projectData, caseStudyLink = '', color = 'black' }) {
           </a>
 
           {caseStudy && (
-          <a className="" href={`https://nikola-portfolio-website.vercel.app${caseStudyLink}`} target="_blank" style={{ color }}>
+          <a className="link-case-study" href={`https://nikola-portfolio-website.vercel.app${caseStudyLink}`} target="_blank" style={{ color }}>
             <button type="button" className="sidebar-icon-link link-case-study case-study-btn" onClick={() => navigateToPath(caseStudy)} style={{ color }}>
               <img className="sidebar-icon" alt="Case study" src="/icons/black/circle-info-solid.svg" />
               <div className="slider slide-case-study">
