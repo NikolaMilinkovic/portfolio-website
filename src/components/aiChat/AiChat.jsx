@@ -38,7 +38,6 @@ function AiChat({ triggerFAQ }) {
       const formData = new FormData();
       formData.append('question', inputData);
       formData.append('aboutText', getAboutInfo());
-      // http://localhost:3000/
 
       const loading = {
         user: 'ai',

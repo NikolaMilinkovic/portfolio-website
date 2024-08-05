@@ -10,6 +10,7 @@ function Skills() {
   const frontRef = useRef(null);
   const backRef = useRef(null);
   const otherRef = useRef(null);
+  const databaseRef = useRef(null);
   useEffect(() => {
     async function getData() {
       const res_1 = await fetch('/files/other/skills.json');
@@ -33,8 +34,11 @@ function Skills() {
         backRef.current.classList.add('show-left');
       }, 100);
       setTimeout(() => {
-        otherRef.current.classList.add('show-left');
+        databaseRef.current.classList.add('show-left');
       }, 200);
+      setTimeout(() => {
+        otherRef.current.classList.add('show-left');
+      }, 300);
     }
   }, [isVisible, containerRef]);
 
@@ -55,6 +59,14 @@ function Skills() {
           <div className="tech-icons-container">
             {data && data.backEnd.map((tech, index) => (
               <TechBox text={tech} tech={tech} color="white" key={`backend-tech-${index}`} />
+            ))}
+          </div>
+        </div>
+        <div className="database" ref={databaseRef}>
+          <p>Database:</p>
+          <div className="tech-icons-container">
+            {data && data.database.map((tech, index) => (
+              <TechBox text={tech} tech={tech} color="white" key={`other-tech-${index}`} />
             ))}
           </div>
         </div>

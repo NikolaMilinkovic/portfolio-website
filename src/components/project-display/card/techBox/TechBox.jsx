@@ -79,6 +79,21 @@ function TechBox({ text, tech, color }) {
         {tech && tech.toLowerCase() === 'jest' && (
           <img className="tech-icon" src="/icons/colored/jest.svg" alt="jest-icon" />
         )}
+        {tech && tech.toLowerCase() === 'sql' && (
+          <img className="tech-icon" src="/icons/colored/sql.svg" alt="sql-icon" />
+        )}
+        {tech && tech.toLowerCase() === 'microsoft sql server' && (
+          <img className="tech-icon" src="/icons/colored/microsoft-sql-server.webp" alt="microsoft-sql-server-icon" />
+        )}
+        {tech && tech.toLowerCase() === 'postgresql' && (
+          <img className="tech-icon" src="/icons/colored/postgresql.svg" alt="postgresql-icon" />
+        )}
+        {tech && tech.toLowerCase() === 'pug' && (
+          <img className="tech-icon" src="/icons/colored/pug.svg" alt="pug-icon" />
+        )}
+        {tech && tech.toLowerCase() === 'react native' && (
+          <img className="tech-icon" src="/icons/colored/react.svg" alt="react-native-icon" />
+        )}
       </div>
       <p className="text">
         {text}

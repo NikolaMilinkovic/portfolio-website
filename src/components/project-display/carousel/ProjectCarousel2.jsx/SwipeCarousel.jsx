@@ -40,13 +40,11 @@ function SwipeCarousel({ images = [] }) {
 
     const handleWheel = (event) => {
       if (event.shiftKey) {
-        if (event.shiftKey) {
-          event.preventDefault();
-          if (event.deltaY < 0) {
-            handleScrollUp();
-          } else if (event.deltaY > 0) {
-            handleScrollDown();
-          }
+        event.preventDefault();
+        if (event.deltaY < 0) {
+          handleScrollUp();
+        } else if (event.deltaY > 0) {
+          handleScrollDown();
         }
       }
     };
