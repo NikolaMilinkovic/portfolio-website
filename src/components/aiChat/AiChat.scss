@@ -8,7 +8,6 @@
   padding: 1rem;
   border-radius: 10px;
   background-color: #232323;
-  // background-color: #2A421E;
   margin-top: 6px;
   margin-bottom: 6px;
   box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05),
@@ -38,6 +37,8 @@
               0 1px 3px rgba(255, 255, 255, 0.08);
   margin-right: 2rem;
   flex-direction: column;
+  font-size: 14px;
+
 
   @media screen and (max-width: 800px) {
     margin-right: 0rem;

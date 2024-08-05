@@ -31,6 +31,50 @@ function OtherProjectsSwiper({ projects }) {
   const dragX = useMotionValue(0);
   const cardWidth = useRef(1);
 
+  // Horizontal Shift Scroll for carousel
+  useEffect(() => {
+    const element = containerRef.current;
+
+    const handleScrollDown = () => {
+      if (currentIndex >= screens - 1) {
+        setCurrentIndex(0);
+      } else {
+        setCurrentIndex((prev) => prev + 1);
+      }
+    };
+    const handleScrollUp = () => {
+      if (currentIndex < 1) {
+        setCurrentIndex(screens - 1);
+      } else {
+        setCurrentIndex((prev) => prev - 1);
+      }
+    };
+
+    const handleWheel = (event) => {
+      console.log(screens);
+      if (event.shiftKey) {
+        if (event.shiftKey) {
+          event.preventDefault();
+          if (event.deltaY < 0) {
+            handleScrollUp();
+          } else if (event.deltaY > 0) {
+            handleScrollDown();
+          }
+        }
+      }
+    };
+
+    if (element) {
+      element.addEventListener('wheel', handleWheel);
+    }
+
+    return () => {
+      if (element) {
+        element.removeEventListener('wheel', handleWheel);
+      }
+    };
+  }, [containerRef, currentIndex, data, screens]);
+
   // Method for setting the number of screens based on user screen width
   useEffect(() => {
     function getScreens() {

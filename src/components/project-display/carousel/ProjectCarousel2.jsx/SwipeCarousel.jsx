@@ -17,6 +17,50 @@ function SwipeCarousel({ images = [] }) {
   const [imgs, setImgs] = useState([]);
   const [imgIndex, setImgIndex] = useState(0);
   const dragX = useMotionValue(0);
+  const carouselRef = useRef(null);
+
+  // Horizontal Shift Scroll for carousel
+  useEffect(() => {
+    const element = carouselRef.current;
+
+    const handleScrollDown = () => {
+      if (imgIndex > imgs.length - 2) {
+        setImgIndex(0);
+      } else {
+        setImgIndex((prev) => prev + 1);
+      }
+    };
+    const handleScrollUp = () => {
+      if (imgIndex < 1) {
+        setImgIndex(imgs.length - 1);
+      } else {
+        setImgIndex((prev) => prev - 1);
+      }
+    };
+
+    const handleWheel = (event) => {
+      if (event.shiftKey) {
+        if (event.shiftKey) {
+          event.preventDefault();
+          if (event.deltaY < 0) {
+            handleScrollUp();
+          } else if (event.deltaY > 0) {
+            handleScrollDown();
+          }
+        }
+      }
+    };
+
+    if (element) {
+      element.addEventListener('wheel', handleWheel);
+    }
+
+    return () => {
+      if (element) {
+        element.removeEventListener('wheel', handleWheel);
+      }
+    };
+  }, [carouselRef, imgIndex, imgs]);
 
   useEffect(() => {
     setImgs(images);
@@ -37,7 +81,7 @@ function SwipeCarousel({ images = [] }) {
   };
 
   return (
-    <div className="carousel">
+    <div className="carousel" ref={carouselRef}>
       <motion.div
         drag="x"
         dragConstraints={{

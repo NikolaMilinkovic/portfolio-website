@@ -6,12 +6,8 @@
   display: flex;
   align-items: center;
   justify-content: start;
-
-  
   border-radius: 5px;
   border: none;
-  // background-color: #333333;
-  // background-color: #556933;
   background-color: var(--highlight);
   color: whitesmoke;
   color: black;
@@ -22,7 +18,6 @@
   margin-left: 1rem;
 
   &:hover{
-    // background-color: #3d3d3d;
     background-color: #819262;
     background-color: var(--highlight-hover);
   }
