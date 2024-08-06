@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 
 // import useImageLoader from '../../util/useImageLoader';
 import useImageLoader from '../../util/useImageLoader';
-import Navbar from '../../components/navbar/Navbar';
 import Home from '../../sections/1-home-section/Home';
 import About from '../../sections/2-about-section/About';
 import AiSection from '../../sections/4-AI-section/AiSection';
