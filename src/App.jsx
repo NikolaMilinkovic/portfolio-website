@@ -3,6 +3,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import {
   BrowserRouter, Routes, Route, useLocation,
 } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import ProjectPage from './pages/project-page/ProjectPage';
 import Navbar from './components/navbar/Navbar';
 import PageTracker from '../PageTracker';
@@ -70,6 +71,8 @@ function App() {
           )}
           />
         </Routes>
+        <Analytics />
+
       </BrowserRouter>
     </NavbarProvider>
   );
