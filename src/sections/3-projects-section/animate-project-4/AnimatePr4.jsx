@@ -11,7 +11,10 @@ function AnimatePr4() {
     threshold: 0.35,
   }, isVisible, setIsVisible, true);
 
-  const deer_couple = useRef(null);
+  const raccoon = useRef(null);
+  const leaves = useRef(null);
+  const raccoonAnimated = useRef(null);
+  const rock = useRef(null);
 
   useEffect(() => {
     if (isVisible) {
@@ -21,8 +24,11 @@ function AnimatePr4() {
   }, [isVisible, containerRef]);
   return (
     <div ref={containerRef} className="scene-4">
-      {/* <img className="static-asset deer-male deer-couple" alt="Deer male" src="/images/animation-4/deer-male.webp" ref={deer_couple} />
-      <img className="static-asset deer-female deer-couple" alt="Deer female" src="/images/animation-4/deer-female.webp" ref={deer_couple} /> */}
+      <img className="static-asset raccoon" alt="raccoon" src="/images/animation-4/raccoon.png" ref={raccoon} />
+      <img className="static-asset raccoon-animated" alt="raccoon" src="/images/animation-4/raccoon-animated-stare.gif" ref={raccoonAnimated} />
+      {/* <img className="static-asset raccoon-animated" alt="raccoon" src="/images/animation-4/raccoon-extended.gif" ref={raccoonAnimated} /> */}
+      <img className="static-asset leaves" alt="leaves" src="/images/animation-4/leaves.gif" ref={leaves} />
+      <img className="static-asset rock" alt="leaves" src="/images/animation-4/rock-0.svg" ref={rock} />
     </div>
   );
 }

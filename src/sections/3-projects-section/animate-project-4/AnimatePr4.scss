@@ -20,15 +20,52 @@
     pointer-events: none;
   }
 
- .deer-couple{
-  height: 30vh;
-  bottom: 20px;
+  .raccoon{
+    position: absolute;
+    bottom: -4px;
+    left: 2vw;
+    height: 22vh;
 
- }
- .deer-male{
-  right: 0;
- }
- .deer-female{
-  left: 0;
- }
+    @media screen and (max-width: 500px) {
+      position: absolute;
+      bottom: -2.5px;
+      left: 0vw;
+      height: 18vh;
+    }
+  }
+  .rock{
+    height: 22vh;
+    bottom: -8.3vh;
+    right: 2vw;
+
+    @media screen and (max-width: 500px) {
+      right: -15vw;
+    }
+  }
+  .raccoon-animated{
+    right: 0vw;
+    bottom: -30px;
+    transform: rotateY(180deg) rotateZ(-15deg);
+    height: 25vh;
+
+    @media screen and (max-width: 500px) {
+      right: -28vw;
+      bottom: -30px;
+    }
+  }
+  .leaves{
+    left: -70px;
+    bottom: 30px;
+    width: 40vw;
+    height: 60vh;
+    aspect-ratio: 1 / 1;
+
+    @media screen and (max-width: 500px) {
+      left: -60px;
+      bottom: 30px;
+      width: 100vw;
+      height: 50vh;
+      opacity: 0.8;
+    }
+  }
 }
