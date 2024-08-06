@@ -7,13 +7,13 @@ function PageTracker() {
   useEffect(() => {
     // Set the page title based on the current path
     const titleMap = {
-      '/': 'Home | Your Website',
-      '/case-study/battleship': 'Battleship Case Study | Your Website',
-      '/case-study/mc-schematic-manager': 'MC Schematic Manager | Your Website',
-      '/case-study/cli-data-structures': 'CLI Data Structures | Your Website',
-      '/case-study/portfolio-website': 'Portfolio Website Case Study | Your Website',
+      '/': 'Nikola Milinkovic | Portfolio',
+      '/case-study/battleship': 'Battleship Case Study | Nikola Milinkovic',
+      '/case-study/mc-schematic-manager': 'MC Schematic Manager | Nikola Milinkovic',
+      '/case-study/cli-data-structures': 'CLI Data Structures | Nikola Milinkovic',
+      '/case-study/portfolio-website': 'Portfolio Website Case Study | Nikola Milinkovic',
     };
-    const title = titleMap[location.pathname] || 'Default Portfolio Website Pageview';
+    const title = titleMap[location.pathname] || 'Nikola Milinkovic | Portfolio';
     document.title = title;
 
     // Track the page view with gtag.js and include the title
