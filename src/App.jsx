@@ -12,7 +12,6 @@ import LandingPage from './pages/landing-page/LandingPage';
 import { NavbarProvider } from '../NavbarContext';
 import ScrollToTop from './util/ScrollToTop';
 
-
 function App() {
   const [activeButton, setActiveButton] = useState('Home');
   const [showDropdown, setShowDropdown] = useState(true);
@@ -34,17 +33,9 @@ function App() {
     // Track the page view with gtag.js and include the title
     window.gtag('config', 'G-8309RXRL30', {
       page_path: location.pathname,
-      title: title,
+      title,
     });
   }, [location]);
-
-
-  useEffect(() => {
-    window.gtag('config', 'G-8309RXRL30', {
-      page_path: location.pathname,
-      title: 
-    });
-  }, [location, titleMap]);
 
   return (
     <NavbarProvider>
