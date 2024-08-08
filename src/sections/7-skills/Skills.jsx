@@ -24,7 +24,7 @@ function Skills() {
   const [containerRef] = useElementOnScreen({
     root: null,
     rootMargin: '0px',
-    threshold: 0.7,
+    threshold: 0.3,
   }, isVisible, setIsVisible, true);
 
   useEffect(() => {
