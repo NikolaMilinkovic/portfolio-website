@@ -1,11 +1,8 @@
+/* eslint-disable react/no-array-index-key */
 import React, { useState, useEffect } from 'react';
-import { Element } from 'react-scroll';
-import Navbar from '../../components/navbar/Navbar';
 import Project from '../../components/project-display/Project';
 import SocialsSidebar from '../../components/socials/SocialsSidebar';
 import Footer from '../../components/footer/Footer';
-import ScrollDownIcon from '../../components/scrollDownIcon/ScrollDownIcon';
-import BirdGif from '../../components/birdGif/BirdGif';
 import TechBox from '../../components/project-display/card/techBox/TechBox';
 import useImageLoader from '../../util/useImageLoader';
 import Loading from '../../components/loading/Loading';
@@ -18,18 +15,18 @@ import DisplayHeader from '../../components/textDisplay/header/DisplayHeader';
 
 function ProjectPage({ projectUrl }) {
   const [data, setData] = useState(null);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  // const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const loading = useImageLoader();
 
-  useEffect(() => {
-    const handleResize = () => {
-      setScreenWidth(window.innerWidth);
-    };
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setScreenWidth(window.innerWidth);
+  //   };
+  //   window.addEventListener('resize', handleResize);
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // }, []);
 
   // Fetch data with projectUrl
   useEffect(() => {
@@ -162,7 +159,6 @@ function ProjectPage({ projectUrl }) {
                 </div>
               </>
             )}
-
           </>
           )}
         </div>

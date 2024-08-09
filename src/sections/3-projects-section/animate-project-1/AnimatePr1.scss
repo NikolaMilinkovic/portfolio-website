@@ -136,20 +136,34 @@
 
 @media screen and (max-width: 800px){
   .scene{
+    .wolf-0{
+      height: 17vh;
+      bottom: -15px;
+      right: -50vw;
+    }
+  
+    // WOLF 1
+    .wolf-1{
+      height: 22vh;
+      bottom: -15px;
+      right: -70vw;
+    }
     .shrub-0-move{
+      bottom: -8.5vh;
+      height: 25vh;
       transform: translateX(45%);
-      right: 0vw;
+      right: 5vw;
       z-index: 0 !important;
     }
     .shrub-1-move{
       transform: translateX(-45%);
-      height: 28vh;
+      height: 25vh;
       left: 0;
       z-index: 0 !important;
     }
     .shrub-2-move{
       transform: translateX(5%);
-      height: 20vh;
+      height: 18vh;
       left: 0;
       z-index: 0 !important;
     }
@@ -157,6 +171,7 @@
       height: 10vh;
       bottom: -4vh;
       z-index: 0 !important;
+      display: none;
     }
     .wolf-0{
       transition: 2s linear;

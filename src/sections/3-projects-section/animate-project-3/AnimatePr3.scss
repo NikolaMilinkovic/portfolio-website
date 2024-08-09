@@ -72,6 +72,11 @@
       bottom: -35px;
       right: -120px;
     }
+    @media screen and (max-width: 800px) {
+      height: 25vh;
+      bottom: -35px;
+      right: -75px;
+    }
   }
   .fox-jumping{
     opacity: 0;
@@ -81,8 +86,9 @@
     left: 60px;
 
     @media screen and (max-width: 600px) {
-      bottom: 59px;
-      left: -5px;
+      height: 16vh;
+      bottom: 50px;
+      left: 12px;
     }
   }
 
@@ -96,6 +102,7 @@
 
       @media screen and (max-width: 600px) {
         right: 20vw;
+        height: 9vh;
       }
     }
     .move-rock-0{
@@ -116,8 +123,9 @@
       }
 
       @media screen and (max-width: 600px) {
-        left: -75px;
+        left: -55px;
         bottom: -1.5vh;
+        height: 13vh;
       }
     }
     .rock-2{
@@ -128,7 +136,7 @@
       bottom: -10px;
 
       @media screen and (max-width: 600px) {
-        left: 90px;
+        left: 100px;
       }
     }
 }

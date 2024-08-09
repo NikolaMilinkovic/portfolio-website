@@ -32,7 +32,6 @@ function AnimatePr3() {
       // containerRef.current.classList.add('fade-in');
       containerRef.current.classList.add('scene-fade-in');
 
-
       // ROCKS
       fox_sitting.current.classList.add('fade-in');
       fox_jumping.current.classList.add('fade-in');

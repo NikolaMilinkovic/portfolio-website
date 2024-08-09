@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 // import useImageLoader from '../../util/useImageLoader';
 import useImageLoader from '../../util/useImageLoader';

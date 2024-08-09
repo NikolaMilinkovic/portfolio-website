@@ -41,7 +41,7 @@
       }
     }
   ],
-  "landingText": "My personal portfolio website is used to showcase some of my skills, technologies, and personal projects that I have worked on. For more information see this project's case study.",
+  "landingText": "My personal portfolio website is used to showcase some of my skills, technologies, and personal projects that I have worked on.",
   "demoLink": "https://nikola-portfolio-website.vercel.app/",
   "gitLink": "https://github.com/NikolaMilinkovic/portfolio-website",
   "usedTech": ["JavaScript", "HTML", "CSS", "SASS", "React", "Vite"],
