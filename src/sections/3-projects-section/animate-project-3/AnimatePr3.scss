@@ -110,6 +110,8 @@
       height: 10vh;
       bottom: -4vh;
     }
+
+    // Big rock
     .rock-1{
       opacity: 0;
       height: 15vh;
@@ -118,7 +120,7 @@
 
       @media screen and (min-width: 600px) and (max-width: 1200px) {
         left: -75px;
-        left: -4vw;
+        left: 1vw;
         bottom: -2.2vh;
       }
 
@@ -128,6 +130,8 @@
         height: 13vh;
       }
     }
+
+    // Small rock left
     .rock-2{
       opacity: 0;
       height: 10vh;
