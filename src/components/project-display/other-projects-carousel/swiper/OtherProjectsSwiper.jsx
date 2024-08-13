@@ -8,7 +8,7 @@ import useWindowDimensions from '../../../../util/windowDimentions';
 import SwiperCard from './SwiperCard';
 import './OtherProjectsSwiper.scss';
 
-const DRAG_BUFFER = 30;
+const DRAG_BUFFER = 10;
 
 const SPRING_OPTIONS = {
   type: 'spring',
