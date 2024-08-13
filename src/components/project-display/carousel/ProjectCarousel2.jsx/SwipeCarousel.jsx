@@ -4,7 +4,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { motion, useMotionValue } from 'framer-motion';
 import './SwipeCarousel.scss';
 
-const DRAG_BUFFER = 30;
+const DRAG_BUFFER = 10;
 
 const SPRING_OPTIONS = {
   type: 'spring',
