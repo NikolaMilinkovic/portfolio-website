@@ -94,6 +94,9 @@ function TechBox({ text, tech, color }) {
         {tech && tech.toLowerCase() === 'react native' && (
           <img className="tech-icon" src="/icons/colored/react.svg" alt="react-native-icon" />
         )}
+        {tech && tech.toLowerCase() === 'typescript' && (
+          <img className="tech-icon" src="/icons/colored/typescript.svg" alt="typescript-icon" />
+        )}
       </div>
       <p className="text">
         {text}
