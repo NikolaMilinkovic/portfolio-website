@@ -2,7 +2,6 @@
 import React, {
   useState, useEffect, useRef, useCallback,
 } from 'react';
-import { Element } from 'react-scroll';
 import './AiChat.scss';
 import { getAboutInfo } from '../../util/getAiInfo';
 
