@@ -21,8 +21,6 @@ export function getAboutInfo() {
 
  My professional experience:
 
- 2 years of working for Golux Technologies as a freelance Frontend Developer. Worked on multiple web apps, collaborated with design & backend teams to implement the most optimal solution.
-
  2 years of working for Game of Edication as a Game Designer & World Builder. Contributed to the success of multiple top performing projects through panning, design, testing. This includes projects such as "How to live inside an Axolotl", "TNT Tools" & "Summer Beach Bunker".
 
  Currently, I am freelancing and looking for full-time opportunities. For a full list of projects, you can check out the projects section or my GitHub profile as I keep it up to date.
