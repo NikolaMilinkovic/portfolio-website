@@ -20,23 +20,23 @@ function App() {
   useEffect(() => {
     console.log(
       '%c ██   ██  █████  ██████  ██████  ██    ██      ██████  ██████  ██████  ██ ███    ██  ██████  ██ ',
-      'color: #0984e3; font-size: 16px; font-weight: bold; background: #dfe6e9; padding: 8px; border-radius: 4px;',
+      'color: #0984e3;',
     );
     console.log(
       '%c ██   ██ ██   ██ ██   ██ ██   ██  ██  ██      ██      ██    ██ ██   ██ ██ ████   ██ ██       ██ ',
-      'color: #0984e3; font-size: 16px; font-weight: bold; background: #dfe6e9; padding: 8px; border-radius: 4px;',
+      'color: #0984e3;',
     );
     console.log(
       '%c ███████ ███████ ██████  ██████    ████       ██      ██    ██ ██   ██ ██ ██ ██  ██ ██   ███ ██ ',
-      'color: #0984e3; font-size: 16px; font-weight: bold; background: #dfe6e9; padding: 8px; border-radius: 4px;',
+      'color: #0984e3;',
     );
     console.log(
       '%c ██   ██ ██   ██ ██      ██         ██        ██      ██    ██ ██   ██ ██ ██  ██ ██ ██    ██    ',
-      'color: #0984e3; font-size: 16px; font-weight: bold; background: #dfe6e9; padding: 8px; border-radius: 4px;',
+      'color: #0984e3;',
     );
     console.log(
       '%c ██   ██ ██   ██ ██      ██         ██         ██████  ██████  ██████  ██ ██   ████  ██████  ██ ',
-      'color: #0984e3; font-size: 16px; font-weight: bold; background: #dfe6e9; padding: 8px; border-radius: 4px;',
+      'color: #0984e3;',
     );
   }, []);
 
