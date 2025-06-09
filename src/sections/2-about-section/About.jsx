@@ -65,7 +65,15 @@ function About() {
               I enjoy building fun, pleasing, and useful applications that aim to solve problems, enhance workflows, and at the very least bring a smile to the face of its user.
             </p>
             <p className="about-text">
-              At this moment I am working as a software developer at Energoprojekt Entel, freelancing, crafting web apps, and looking out for exciting opportunities.
+              At this moment I am working as a software developer at
+            </p>
+            {' '}
+            <a className="link" href="https://www.ep-entel.com/" target="_blank">
+              Energoprojekt Entel
+            </a>
+            {' '}
+            <p>
+              , freelancing, crafting web apps, and looking out for exciting opportunities.
             </p>
             <p className="about-text">
               Looking to collaborate, work together, or grab a cup of coffee and talk about tech? Lets get in touch!
