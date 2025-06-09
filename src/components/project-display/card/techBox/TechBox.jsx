@@ -42,6 +42,14 @@ function TechBox({ text, tech, color }) {
           // <FaSass />
           <img className="tech-icon" src="/icons/colored/sass.svg" alt="sass-icon" />
         )}
+        {tech && tech.toLowerCase() === 'php' && (
+        // <FaNodeJs />
+        <img className="tech-icon" src="/icons/colored/php.svg" alt="php-icon" />
+        )}
+        {tech && tech.toLowerCase() === 'laravel' && (
+        // <FaNodeJs />
+        <img className="tech-icon" src="/icons/colored/laravel.png" alt="laravel-icon" />
+        )}
         {tech && tech.toLowerCase() === 'nodejs' && (
           // <FaNodeJs />
           <img className="tech-icon" src="/icons/colored/node.svg" alt="nodejs-icon" />
