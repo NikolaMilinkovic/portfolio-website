@@ -1,7 +1,7 @@
 import './App.scss';
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState } from 'react';
 import {
-  BrowserRouter, Routes, Route, useLocation,
+  BrowserRouter, Routes, Route,
 } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
 import ProjectPage from './pages/project-page/ProjectPage';

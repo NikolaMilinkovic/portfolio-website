@@ -54,11 +54,11 @@ function ContactForm() {
             });
           },
           (error) => {
-            console.log('FAILED...', error.text);
+            console.error('FAILED...', error.text);
           },
         );
     } else {
-      console.log('Invalid email, sending error.');
+      console.error('Invalid email, sending error.');
     }
   };
   return (
