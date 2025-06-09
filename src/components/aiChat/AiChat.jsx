@@ -1,9 +1,11 @@
 /* eslint-disable max-len */
-import React, {
-  useState, useEffect, useRef, useCallback,
+import {
+  useCallback,
+  useEffect, useRef,
+  useState,
 } from 'react';
-import './AiChat.scss';
 import { getAboutInfo } from '../../util/getAiInfo';
+import './AiChat.scss';
 
 function AiChat({ triggerFAQ }) {
   const textareaRef = useRef(null);
