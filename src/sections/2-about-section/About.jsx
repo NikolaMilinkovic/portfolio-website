@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import React, { useState } from 'react';
-import { Link, Element } from 'react-scroll';
+import { Element, Link } from 'react-scroll';
 import useElementOnScreen from '../../util/useElementOnScreen';
 
 import './About.scss';
@@ -53,7 +53,7 @@ function About() {
           </h1>
           <article className={`about-article ${isVisible ? 'show-element-right' : 'hide-element-right'}`}>
             <p className="about-text">
-              For some time now I&apos;ve been deeply immersed in web development. My humble beginnings in this career path came through self-study and
+              I am a web developer with a strong foundation built through self-study and the
               {' '}
               <a className="link" href="https://www.theodinproject.com/" target="_blank">
                 TheOdinProject
@@ -65,28 +65,10 @@ function About() {
               I enjoy building fun, pleasing, and useful applications that aim to solve problems, enhance workflows, and at the very least bring a smile to the face of its user.
             </p>
             <p className="about-text">
-              At this moment I am freelancing, crafting web apps, and looking out for full-time opportunities.
+              At this moment I am working as a software developer at Energoprojekt Entel, freelancing, crafting web apps, and looking out for exciting opportunities.
             </p>
-            {/* <p className="about-text">
-              Looking to learn more about my career? Take a look at my CV by clicking the button bellow!
-            </p>
-            <div className="buttons-container">
-              <button type="button" className="contact-me-btn">
-                <Link
-                  offset={-80}
-                  name="Contact"
-                  className="contact-me-link"
-                  to="scroll-contact"
-                  smooth
-                  duration={800}
-                >
-                  Download my CV
-                  <img className="link-icon" src="/icons/black/envelope-solid.svg" alt="envelope" />
-                </Link>
-              </button>
-            </div> */}
             <p className="about-text">
-              Looking to collaborate, work together, or grab a cup of coffee and talk about tech? Get in touch by clicking the button below!
+              Looking to collaborate, work together, or grab a cup of coffee and talk about tech? Lets get in touch!
             </p>
 
             <div className="buttons-container">
