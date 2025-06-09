@@ -185,13 +185,10 @@ function DisplayAi({ data, onComplete }) {
       const parts = line.split(/(\*\*.*?\*\*|\[.*?\]\(.*?\))/g);
       return parts.map((part, partIndex) => {
         if (part.startsWith('**') && part.endsWith('**')) {
-          // Bold text
+          const innerText = part.slice(2, -2);
           return (
             <strong key={`${lineIndex}-${partIndex}`}>
-              {part.slice(2, -2)}
-              {' '}
-              {/* Remove the ** markers */}
-              {' '}
+              {renderTextWithBoldAndLinks(innerText)}
             </strong>
           );
         }
