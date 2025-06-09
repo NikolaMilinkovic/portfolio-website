@@ -66,13 +66,11 @@ function About() {
             </p>
             <p className="about-text">
               At this moment I am working as a software developer at
-            </p>
-            {' '}
-            <a className="link" href="https://www.ep-entel.com/" target="_blank">
-              Energoprojekt Entel
-            </a>
-            {' '}
-            <p>
+              {' '}
+              <a className="link" href="https://www.ep-entel.com/" target="_blank">
+                Energoprojekt Entel
+              </a>
+              {' '}
               , freelancing, crafting web apps, and looking out for exciting opportunities.
             </p>
             <p className="about-text">
