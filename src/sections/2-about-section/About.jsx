@@ -70,7 +70,6 @@ function About() {
               <a className="link" href="https://www.ep-entel.com/" target="_blank">
                 Energoprojekt Entel
               </a>
-              {' '}
               , freelancing, crafting web apps, and looking out for exciting opportunities.
             </p>
             <p className="about-text">
