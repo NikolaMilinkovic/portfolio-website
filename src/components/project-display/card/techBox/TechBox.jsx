@@ -118,7 +118,12 @@ function TechBox({ text, tech, color }) {
           <img className="tech-icon" src="/icons/colored/typescript.svg" alt="typescript-icon" />
         )}
       </div>
-      <p className="text" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <p
+        className="text"
+        style={{
+          display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center',
+        }}
+      >
         {text}
       </p>
     </div>
