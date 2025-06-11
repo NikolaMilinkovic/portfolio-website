@@ -44,7 +44,14 @@
   "landingText": "My personal portfolio website is used to showcase some of my skills, technologies, and personal projects that I have worked on.",
   "demoLink": "https://nikola-portfolio-website.vercel.app/",
   "gitLink": "https://github.com/NikolaMilinkovic/portfolio-website",
-  "usedTech": ["JavaScript", "HTML", "CSS", "SASS", "React", "Vite"],
+  "usedTech": [
+  { "text": "JavaScript", "name": "JavaScript" },
+  { "text": "HTML", "name": "HTML" },
+  { "text": "CSS", "name": "CSS" },
+  { "text": "SASS", "name": "SASS" },
+  { "text": "React", "name": "React" },
+  { "text": "Vite", "name": "Vite" }
+  ],
   "caseStudyData": {
     "usedTechInDepth": ["JavaScript", "HTML", "CSS", "SASS", "React", "Vite", "Express"],
     "projectContext": [

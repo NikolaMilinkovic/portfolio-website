@@ -83,7 +83,11 @@
   "landingText": "Learn, visualize, and interact with different Data Structures in a CLI (Command Line Interface) themed environment!",
   "demoLink": "https://nikolamilinkovic.github.io/CLI-data-structures/",
   "gitLink": "https://github.com/NikolaMilinkovic/CLI-data-structures",
-  "usedTech": ["JavaScript", "HTML", "CSS"],
+  "usedTech": [
+    { "text": "JavaScript", "name": "JavaScript" },
+    { "text": "HTML", "name": "HTML" },
+    { "text": "CSS", "name": "CSS" }
+  ],
   "caseStudyData": {
     "usedTechInDepth": ["JavaScript", "HTML", "CSS"],
     "projectContext": [

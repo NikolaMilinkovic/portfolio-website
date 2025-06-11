@@ -125,17 +125,26 @@ const Navbar = React.memo(() => {
         {showDropdown ? (
           <div className="projects">
             <NavButton
-              to="mc-schematic-manager"
+              to="infinity"
               className="scroll-link"
               duration={600}
               offset={0}
-              isDropdownBtn={['mc-schematic-manager', 'battleship', 'cli-data-structures', 'portfolio-website', 'other-projects']}
-              name="mc-schematic-manager"
+              isDropdownBtn={['infinity', 'mc-schematic-manager', 'battleship', 'cli-data-structures', 'portfolio-website', 'other-projects']}
+              name="infinity"
               text="Projects"
               updateNav={(e) => handleNavClick(e)}
               activeBtn={activeButton}
             />
             <div className="projects-dropdown">
+              <NavButton
+                to="scroll-infinity"
+                duration={600}
+                offset={0}
+                name="infinity"
+                text="infinity"
+                updateNav={(e) => handleNavClick(e)}
+                activeBtn={activeButton}
+              />
               <NavButton
                 to="scroll-mc-schematic-manager"
                 duration={600}
@@ -185,12 +194,12 @@ const Navbar = React.memo(() => {
           </div>
         ) : (
           <NavButton
-            to="scroll-mc-schematic-manager"
+            to="scroll-infinity"
             className="scroll-link"
             duration={600}
             offset={0}
-            isDropdownBtn={['mc-schematic-manager', 'battleship', 'cli-data-structures', 'portfolio-website', 'other-projects']}
-            name="mc-schematic-manager"
+            isDropdownBtn={['infinity', 'mc-schematic-manager', 'battleship', 'cli-data-structures', 'portfolio-website', 'other-projects']}
+            name="infinity"
             text="Projects"
             updateNav={(e) => handleNavClick(e)}
             activeBtn={activeButton}

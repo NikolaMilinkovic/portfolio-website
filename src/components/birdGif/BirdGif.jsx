@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import './BirdGif.scss';
 
 function BirdGif({
-  id, left = '-10vw', initialTop, moveSpeed,
+  id, left = '-10vw', initialTop, moveSpeed, onClick = null,
 }) {
   const [top, setTop] = useState(initialTop);
   const [speed, setSpeed] = useState(moveSpeed);
@@ -34,6 +34,10 @@ function BirdGif({
       const includesBirdEl = e.composedPath().includes(birdRef.current);
       if (birdRef.current && includesBirdEl) {
         let rand = getRand(35, 80);
+
+        if (id === 'bird-3') {
+          console.log('%c🦜 You found the magical bird!', 'color: #FF9F1C; font-size: 16px;');
+        }
 
         // When rand returns TRUE the ! will turn it to FALSE thus ending the loop.
         while (!checkRand(rand)) {

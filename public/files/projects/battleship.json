@@ -57,7 +57,11 @@
   "landingText": "Challenging Battleship game with smart AI opponent, storyline, randomly generated fields, and much more!",
   "demoLink": "https://nikolamilinkovic.github.io/battleship/",
   "gitLink": "https://github.com/NikolaMilinkovic/battleship",
-  "usedTech": ["JavaScript", "HTML", "CSS"],
+  "usedTech": [
+    { "text": "JavaScript", "name": "JavaScript" },
+    { "text": "HTML", "name": "HTML" },
+    { "text": "CSS", "name": "CSS" }
+  ],
   "caseStudyData": {
     "usedTechInDepth": ["JavaScript", "HTML", "CSS"],
     "projectContext": [

@@ -19,9 +19,36 @@ function App() {
   const [showDropdown, setShowDropdown] = useState(true);
   useEffect(() => {
     console.log(
-      '%c 01001000 01000001 01010000 01010000 01011001  01000011 01001111 01000100 01001001 01001110 01000111 00100001  ',
-      'color: #0984e3;',
+      '%cThe deeper you look, the more you find...\n🌿 %cHappy exploring! 🌿',
+      'color: #B2CC85; font-size: 16px; font-weight: bold;',
+      'color: #785; font-size: 14px;',
     );
+    console.log(
+      '%cDid you know that clicking the birds does something..\nMaybee there is a secret?',
+      'color: #555; font-size: 14px;',
+    );
+
+    // Unutar komponente BirdGif uradi foru da ti ptica nesto kaze da run u console
+
+    // Easter egg commands
+    window.secret = () => {
+      console.log(
+        '%c✨ You found the secret command!',
+        'color: #FF6B6B; font-size: 18px; font-weight: bold;',
+      );
+      console.log(
+        'Try %cwindow.hint()%c for a clue.',
+        'color: #7BAE7F;',
+        'color: inherit;',
+      );
+    };
+
+    // window.hint = () => {
+    //   console.log(
+    //     '%c💡 Hint: The answer is somewhere in the code...',
+    //     'color: #4ECDC4; font-size: 14px;',
+    //   );
+    // };
   }, []);
 
   return (
@@ -37,6 +64,16 @@ function App() {
         />
         <Routes>
           <Route path="/" element={<LandingPage />} />
+
+          {/* INFINITY */}
+          <Route
+            path="/case-study/infinity"
+            element={(
+              <ProjectPage
+                projectUrl="/files/projects/infinity.json"
+              />
+          )}
+          />
 
           {/* BATTLESHIP */}
           <Route
@@ -78,7 +115,6 @@ function App() {
           />
         </Routes>
         <Analytics />
-
       </BrowserRouter>
     </NavbarProvider>
   );

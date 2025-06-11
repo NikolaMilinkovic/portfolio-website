@@ -21,10 +21,9 @@ function ProjectDescription({ projectData, color, caseStudyPath = '#' }) {
         {caseStudyPath !== '#' && (
           <>
             {' '}
-            For more information see this projects
-            {' '}
+            For more information see this project
             <a href={`https://nikola-portfolio-website.vercel.app${caseStudyPath}`} target="_blank" ref={hiddenLink} rel="noopener noreferrer">
-              <button className="case-study-link" onClick={() => navigate(caseStudyPath)} type="button" ref={caseStudyRef}>case study.</button>
+              <button className="case-study-link" onClick={() => {}} type="button" ref={caseStudyRef}>case study.</button>
             </a>
           </>
         )}
@@ -33,7 +32,7 @@ function ProjectDescription({ projectData, color, caseStudyPath = '#' }) {
 
       <div className="tech-used">
         {data && data.usedTech.map((tech, index) => (
-          <TechBox text={tech} tech={tech} color={color} key={`tech-${index}`} />
+          <TechBox text={tech.text} tech={tech.name} color={color} key={`tech-${index}`} />
         ))}
       </div>
     </div>

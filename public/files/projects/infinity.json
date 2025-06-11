@@ -1,0 +1,145 @@
+{
+  "name": "Infinity Boutique App",
+  "images": [
+    {
+      "src": "/images/infinity/img-0/infinity_hero.gif",
+      "srcSet": {
+        "img400w": "/images/infinity/img-0/infinity_hero.gif",
+        "img600w": "/images/infinity/img-0/infinity_hero.gif",
+        "img800w": "/images/infinity/img-0/infinity_hero.gif",
+        "img1024w": "/images/infinity/img-0/infinity_hero.gif",
+        "img1440w": "/images/infinity/img-0/infinity_hero.gif",
+        "img1600w": "/images/infinity/img-0/infinity_hero.gif",
+        "img2000w": "/images/infinity/img-0/infinity_hero.gif",
+        "img2500w": "/images/infinity/img-0/infinity_hero.gif"
+      }
+    },
+    {
+      "src": "/images/infinity/img-1/infinity_slide_1.jpg",
+      "srcSet": {
+        "img400w": "/images/infinity/img-1/infinity_slide_1.jpg",
+        "img600w": "/images/infinity/img-1/infinity_slide_1.jpg",
+        "img800w": "/images/infinity/img-1/infinity_slide_1.jpg",
+        "img1024w": "/images/infinity/img-1/infinity_slide_1.jpg",
+        "img1440w": "/images/infinity/img-1/infinity_slide_1.jpg",
+        "img1600w": "/images/infinity/img-1/infinity_slide_1.jpg",
+        "img2000w": "/images/infinity/img-1/infinity_slide_1.jpg",
+        "img2500w": "/images/infinity/img-1/infinity_slide_1.jpg"
+      }
+    },
+    {
+      "src": "/images/infinity/img-2/infinity_slide_2.jpg",
+      "srcSet": {
+        "img400w": "/images/infinity/img-2/infinity_slide_2.jpg",
+        "img600w": "/images/infinity/img-2/infinity_slide_2.jpg",
+        "img800w": "/images/infinity/img-2/infinity_slide_2.jpg",
+        "img1024w": "/images/infinity/img-2/infinity_slide_2.jpg",
+        "img1440w": "/images/infinity/img-2/infinity_slide_2.jpg",
+        "img1600w": "/images/infinity/img-2/infinity_slide_2.jpg",
+        "img2000w": "/images/infinity/img-2/infinity_slide_2.jpg",
+        "img2500w": "/images/infinity/img-2/infinity_slide_2.jpg"
+      }
+    } 
+  ],
+  "landingText": "Infinity Boutique App is the ultimate order and stock management tool for Instagram boutiques. It tracks inventory, manages orders, and helps fashion entrepreneurs grow. Trusted by top Serbian boutiques.",
+  "demoLink": "",
+  "gitLink": "https://github.com/NikolaMilinkovic/infinity-ui",
+  "usedTech": [
+    { "text": "JavaScript", "name": "JavaScript" },
+    { "text": "TypeScript", "name": "TypeScript" },
+    { "text": "React Native", "name": "React Native" },
+    { "text": "Express", "name": "express-w" },
+    { "text": "NodeJs", "name": "NodeJs" },
+    { "text": "MongoDB", "name": "MongoDB" },
+    { "text": "Heroku", "name": "Heroku" },
+    { "text": "AWS S3", "name": "AWS S3" },
+    { "text": "Sockets", "name": "sockets" }
+  ],
+  "embedData": [],
+    "caseStudyData": {
+      "usedTechInDepth": ["JavaScript", "TypeScript", "React Native", "Express", "NodeJs", "MongoDB", "Heroku", "AWS S3", "Sockets"],
+      "projectContext": [
+        {
+          "title": "What is Infinity Boutique App?",
+          "text": [
+            "Infinity Boutique App is a comprehensive mobile order and stock management system specifically designed for Instagram-based fashion boutiques. The application streamlines the business workflow from inventory tracking to order fulfillment, providing boutique owners with professional-grade tools to manage their operations efficiently."
+          ],
+          "bulletPoints": []
+        },
+        {
+          "title": "Who is it for?",
+          "text": [
+            "The app serves boutique owners who are transitioning from manual inventory tracking and order management to digital solutions, helping them maintain professional operations while growing their customer base and product offerings."
+          ],
+          "bulletPoints": []
+        }
+      ],
+      "challengesAndObjectives": [
+        {
+          "title": "Problem Overview",
+          "text": [
+            "Instagram boutique owners face significant challenges in managing their growing businesses with manual processes. As their customer base expands and inventory grows, tracking stock levels, managing customer orders, and maintaining organized records becomes increasingly difficult and time-consuming."
+          ],
+          "bulletPoints": [
+            "Manual inventory tracking leads to frequent stock errors.",
+            "No centralized view of available stock per color and size.",
+            "Order tracking is fragmented across chat apps.",
+            "No historical data or insights about sales.",
+            "No automated stock level updates when processing orders."
+          ]
+        },
+        {
+          "title": "Key Objectives",
+          "text": [],
+          "bulletPoints": [
+            "Provide a simple, mobile-first inventory management system.",
+            "Track stock at color and size level.",
+            "Streamline order processing and record keeping.",
+            "Enable boutique owners to manage products and orders anytime, anywhere.",
+            "Integrate scalable image storage for product visuals.",
+            "Save as much time as possible on each action within app.",
+            "Automatize data sorting via Ai model"
+          ]
+        }
+      ],
+      "achievedSolution": [
+        {
+          "title": "Core Technical Features",
+          "text": [],
+          "bulletPoints": [
+            "Mobile-first React Native app.",
+            "User authentication and role management.",
+            "Inventory management with stock tracking per color and size.",
+            "Order creation and tracking with buyer details.",
+            "Automatic stock level updates after order processing.",
+            "Product image upload and storage via AWS S3.",
+            "Automatic data sorting via Ai",
+            "Socket.io keeps everything up to date at all times"
+          ]
+        }
+      ],
+      "conclusion": [
+        {
+        "title": "What have I learned?",
+        "text": [
+          "This project taught me how to design a full-stack mobile app with real-world constraints and requirements. I implemented custom user authentication, optimized API design, and integrated AWS S3 for scalable image storage. I also improved my knowledge of structuring large React Native projects and managing state across complex screens.",
+
+          "Working on a production app with real users helped me improve my ability to prioritize and implement features based on direct feedback from boutique owners."
+        ],
+        "bulletPoints": []
+      },
+      {
+        "title": "Challenges ahead and planned features?",
+        "text": [
+          "To keep the app growing and improving, the following updates are planned:"
+        ],
+        "bulletPoints": [
+            "Better and more efficient flow of fetching data",
+            "Multi language support",
+            "Multiple color themes",
+            "Comprehensive personal settings per user | currently have only basic settings"
+        ]
+      }
+    ]
+  }
+}

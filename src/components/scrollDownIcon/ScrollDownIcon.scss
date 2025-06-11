@@ -8,6 +8,10 @@
   display: flex;
   justify-content: center;
   overflow: hidden;
+
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 .scrollDown span {

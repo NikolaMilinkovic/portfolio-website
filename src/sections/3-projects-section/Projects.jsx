@@ -15,16 +15,20 @@ import AnimatePr4 from './animate-project-4/AnimatePr4';
 import OtherProjectsSwiper from '../../components/project-display/other-projects-carousel/swiper/OtherProjectsSwiper';
 
 function Projects() {
+  const [infinity, setInfinity] = useState(null);
   const [battleship, setBattleship] = useState(null);
   const [mcSchemMan, setMcSchemMan] = useState(null);
   const [cliDatStruct, setCliDatStruct] = useState(null);
   const [portfolioWebsite, setPortfolioWebsite] = useState(null);
   const [otherProjects, setOtherProjects] = useState([]);
-  const navigate = useNavigate();
 
   // Fetch data
   useEffect(() => {
     async function getData() {
+      const res_0 = await fetch('/files/projects/infinity.json');
+      const infinityData = await res_0.json();
+      setInfinity(infinityData);
+
       const res_1 = await fetch('/files/projects/battleship.json');
       const batlleshipData = await res_1.json();
       setBattleship(batlleshipData);
@@ -67,6 +71,26 @@ function Projects() {
 
   return (
     <>
+      {/* PROJECT 0 */}
+      <Element id="scroll-infinity" name="scroll-infinity">
+        <section className="projects-section-0">
+          <ProjectSidebar
+            projectData={infinity || null}
+            caseStudyLink="/case-study/infinity"
+            color="white"
+          />
+          <Project
+            caseStudyLink="/case-study/infinity"
+            projectData={infinity || null}
+            projectDescritpionColor="white"
+            headerColor="white"
+            timeout={1000}
+          />
+          {/* <div className="scene-container">
+            <AnimatePr2 />
+          </div> */}
+        </section>
+      </Element>
       {/* PROJECT 1 */}
       <Element id="scroll-mc-schematic-manager" name="scroll-mc-schematic-manager">
         <section className="projects-section-1">

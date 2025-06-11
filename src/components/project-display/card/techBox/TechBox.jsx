@@ -26,6 +26,14 @@ function TechBox({ text, tech, color }) {
           // <IoLogoJavascript />
           <img className="tech-icon" src="/icons/colored/javascript.svg" alt="javascript-icon" />
         )}
+        {/* Sockets */}
+        {tech && tech.toLowerCase() === 'sockets' && (
+          <img className="tech-icon" src="/icons/colored/socket-io.svg" alt="socket-io-icon" />
+        )}
+        {/* AWS */}
+        {tech && tech.toLowerCase() === 'aws s3' && (
+          <img className="tech-icon" src="/icons/white/aws-w.svg" alt="aws-icon" />
+        )}
         {tech && tech.toLowerCase() === 'html' && (
           // <FaHtml5 />
           <img className="tech-icon" src="/icons/colored/html.svg" alt="html-icon" />
@@ -65,6 +73,10 @@ function TechBox({ text, tech, color }) {
             <path className="tech-icon" d="m1.33 61.74c.72-3.61 1.2-7.29 2.2-10.83 6-21.43 30.6-30.34 47.5-17.06 9.9 7.79 12.36 18.77 11.87 31.15h-55.8c-.84 22.21 15.15 35.62 35.53 28.78 7.15-2.4 11.36-8 13.47-15 1.07-3.51 2.84-4.06 6.14-3.06-1.69 8.76-5.52 16.08-13.52 20.66-12 6.86-29.13 4.64-38.14-4.89-5.32-5.6-7.58-12.57-8.58-20.1-.15-1.2-.46-2.38-.7-3.57q.03-3.04.03-6.08zm5.87-1.49h50.43c-.33-16.06-10.33-27.47-24-27.57-15-.12-25.78 11.02-26.43 27.57z" />
           </svg>
         // <img className="tech-icon" src="/icons/colored/express.svg" alt="express-icon" />
+        )}
+        {tech && tech.toLowerCase() === 'express-w' && (
+          // <SiVite />
+          <img className="tech-icon" src="/icons/white/express-w.svg" alt="express-white-icon" />
         )}
         {tech && tech.toLowerCase() === 'vite' && (
           // <SiVite />
