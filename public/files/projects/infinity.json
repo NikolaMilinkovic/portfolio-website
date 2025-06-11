@@ -98,7 +98,10 @@
             "Enable boutique owners to manage products and orders anytime, anywhere.",
             "Integrate scalable image storage for product visuals.",
             "Save as much time as possible on each action within app.",
-            "Automatize data sorting via Ai model"
+            "Automatize data sorting via AI model.",
+            "Export Excel files with orders data requested by couriers.",
+            "Track sales statistics per day | period | all time.",
+            "Simple user permissions management."
           ]
         }
       ],
@@ -113,8 +116,8 @@
             "Order creation and tracking with buyer details.",
             "Automatic stock level updates after order processing.",
             "Product image upload and storage via AWS S3.",
-            "Automatic data sorting via Ai",
-            "Socket.io keeps everything up to date at all times"
+            "Automatic data sorting via AI.",
+            "Real-time updates via Socket.io."
           ]
         }
       ],
@@ -134,10 +137,12 @@
           "To keep the app growing and improving, the following updates are planned:"
         ],
         "bulletPoints": [
-            "Better and more efficient flow of fetching data",
-            "Multi language support",
-            "Multiple color themes",
-            "Comprehensive personal settings per user | currently have only basic settings"
+            "Better and more efficient flow of fetching data.",
+            "Multi language support.",
+            "Multiple color themes.",
+            "Comprehensive personal settings per user | currently has only basic settings.",
+            "Pretty diagrams for statistics.",
+            "Business insights generated via crunched statistical data & AI analysis."
         ]
       }
     ]
