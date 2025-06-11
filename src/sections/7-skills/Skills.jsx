@@ -7,6 +7,7 @@ import useElementOnScreen from '../../util/useElementOnScreen';
 
 function Skills() {
   const [data, setData] = useState(null);
+  const languagesRef = useRef(null);
   const frontRef = useRef(null);
   const backRef = useRef(null);
   const otherRef = useRef(null);
@@ -29,16 +30,19 @@ function Skills() {
 
   useEffect(() => {
     if (isVisible) {
-      frontRef.current.classList.add('show-left');
+      languagesRef.current.classList.add('show-left');
       setTimeout(() => {
-        backRef.current.classList.add('show-left');
+        frontRef.current.classList.add('show-left');
       }, 100);
       setTimeout(() => {
-        databaseRef.current.classList.add('show-left');
+        backRef.current.classList.add('show-left');
       }, 200);
       setTimeout(() => {
-        otherRef.current.classList.add('show-left');
+        databaseRef.current.classList.add('show-left');
       }, 300);
+      setTimeout(() => {
+        otherRef.current.classList.add('show-left');
+      }, 400);
     }
   }, [isVisible, containerRef]);
 
@@ -46,6 +50,14 @@ function Skills() {
     <Element id="scroll-skills" name="scroll-skills">
       <section className="skills-section" ref={containerRef}>
         <h1 className="skills-header">Skills & Projects</h1>
+        <div className="languages" ref={languagesRef}>
+          <p>Languages:</p>
+          <div className="tech-icons-container">
+            {data && data.languages.map((tech, index) => (
+              <TechBox text={tech} tech={tech} color="white" key={`languages-tech-${index}`} />
+            ))}
+          </div>
+        </div>
         <div className="front" ref={frontRef}>
           <p>Front end:</p>
           <div className="tech-icons-container">

@@ -1,5 +1,6 @@
 {
-  "frontEnd": ["JavaScript", "TypeScript", "PHP", "HTML", "CSS", "React", "React Native", "SASS"],
+  "languages": ["JavaScript", "TypeScript", "PHP"],
+  "frontEnd": ["HTML", "CSS", "React", "React Native", "SASS"],
   "backEnd": ["Express", "NodeJs", "Laravel"],
   "other": ["Jest" ],
   "database": ["MongoDB", "SQL", "Microsoft SQL Server"]
