@@ -1,12 +1,12 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable react/prop-types */
 /* eslint-disable camelcase */
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import ProjectDescription from './card/ProjectDescription';
 import useElementOnScreen from '../../util/useElementOnScreen';
 import SwipeCarousel from './carousel/ProjectCarousel2.jsx/SwipeCarousel';
 import './Project.scss';
-import { useNavigate } from 'react-router-dom';
 
 function Project({
   projectData,
@@ -22,7 +22,7 @@ function Project({
 }) {
   const [data, setData] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [direction, setDirection] = useState(animateSide);
+  const [direction] = useState(animateSide);
   const [hasLoadedOnce, setHasLoadedOnce] = useState(false);
   const navigate = useNavigate();
   const [caseStudy, setCaseStudy] = useState('');

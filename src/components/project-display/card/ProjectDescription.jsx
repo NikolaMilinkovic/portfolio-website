@@ -2,10 +2,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import TechBox from './techBox/TechBox';
 import './ProjectDescription.scss';
-import { useNavigate } from 'react-router-dom';
 
 function ProjectDescription({ projectData, color, caseStudyPath = '#' }) {
-  const navigate = useNavigate();
   const [data, setData] = useState(null);
   const caseStudyRef = useRef(null);
   const hiddenLink = useRef(null);
